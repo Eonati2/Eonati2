@@ -13,6 +13,17 @@
   <meta property="og:description" content="3 Fiverr Pro verified logo designers. 48,000+ reviews. Luxury branding from €23. Escrow protected. Browse portfolios instantly." />
   <meta name="twitter:card" content="summary_large_image" />
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"Best Freelance Logo Designers 2025 | Eonati","description":"Curated directory of top Fiverr Pro logo designers."},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is my payment protected?","acceptedAnswer":{"@type":"Answer","text":"Yes. All orders use Fiverr escrow — payment released only when you approve."}},{"@type":"Question","name":"How long does logo design take?","acceptedAnswer":{"@type":"Answer","text":"3–7 days standard. 24-hour express available."}}]}]}</script>
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V1XK1D0YVD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-V1XK1D0YVD', {
+      page_title: 'Eonati — Premium Logo Designer Directory',
+      page_location: window.location.href
+    });
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -933,14 +944,147 @@
     let exitShown = false;
     const em = document.getElementById('em');
     function closeModal() { em.classList.remove('open'); }
-    function openModal()  { if (!exitShown) { exitShown = true; em.classList.add('open'); } }
+    function openModal()  {
+      if (!exitShown) {
+        exitShown = true;
+        em.classList.add('open');
+        gtag('event', 'exit_intent_shown', { event_category: 'engagement', event_label: 'exit_modal' });
+      }
+    }
     document.addEventListener('mouseleave', e => { if (e.clientY < 30) openModal(); });
-    document.getElementById('em-x').addEventListener('click', closeModal);
-    document.getElementById('em-no').addEventListener('click', closeModal);
-    document.getElementById('em-bg').addEventListener('click', closeModal);
-    document.getElementById('em-yes').addEventListener('click', closeModal);
+    document.getElementById('em-x').addEventListener('click', () => {
+      closeModal();
+      gtag('event', 'exit_intent_dismissed', { event_category: 'engagement', event_label: 'closed_x' });
+    });
+    document.getElementById('em-no').addEventListener('click', () => {
+      closeModal();
+      gtag('event', 'exit_intent_dismissed', { event_category: 'engagement', event_label: 'clicked_no' });
+    });
+    document.getElementById('em-bg').addEventListener('click', () => {
+      closeModal();
+      gtag('event', 'exit_intent_dismissed', { event_category: 'engagement', event_label: 'clicked_backdrop' });
+    });
+    document.getElementById('em-yes').addEventListener('click', () => {
+      closeModal();
+      gtag('event', 'exit_intent_converted', { event_category: 'conversion', event_label: 'clicked_yes' });
+    });
     let mTimer = setTimeout(() => { if (window.innerWidth < 768) openModal(); }, 45000);
     document.addEventListener('touchstart', () => { clearTimeout(mTimer); mTimer = setTimeout(() => openModal(), 45000); }, { passive: true });
+
+    // ── CTA CLICK TRACKING ─────────────────────────────────────────
+    // Map every affiliate CTA to a tracking label so GA shows exactly
+    // which button drove clicks and from which section of the page.
+    const ctaMap = [
+      // Hero block
+      { sel: '.hero-cta-main',                   designer: 'all',      section: 'hero_main_cta' },
+      { sel: 'a[href="#alestra"].hero-cta-alt',   designer: 'alestra',  section: 'hero_quick_select' },
+      { sel: 'a[href="#juhi"].hero-cta-alt',      designer: 'juhi',     section: 'hero_quick_select' },
+      { sel: 'a[href="#valeria"].hero-cta-alt',   designer: 'valeriia', section: 'hero_quick_select' },
+      // Transformation section CTA
+      { sel: '.transform-section .btn-primary',   designer: 'all',      section: 'transformation_cta' },
+      // Social proof section CTA
+      { sel: '.proof-section .btn-primary',       designer: 'all',      section: 'social_proof_cta' },
+      // Urgency strip CTA
+      { sel: '.urgency-strip .btn-primary',       designer: 'all',      section: 'urgency_cta' },
+      // Final CTA section
+      { sel: '.final-section a[href="#alestra"]', designer: 'alestra',  section: 'final_cta' },
+      { sel: '.final-section a[href="#juhi"]',    designer: 'juhi',     section: 'final_cta' },
+      { sel: '.final-section a[href="#valeria"]', designer: 'valeriia', section: 'final_cta' },
+      // Sticky mobile CTA
+      { sel: '.sticky-cta a',                     designer: 'all',      section: 'sticky_mobile_cta' },
+      // Nav CTA
+      { sel: '.nav-cta',                          designer: 'all',      section: 'navbar_cta' },
+    ];
+
+    ctaMap.forEach(({ sel, designer, section }) => {
+      document.querySelectorAll(sel).forEach(el => {
+        el.addEventListener('click', () => {
+          gtag('event', 'cta_click', {
+            event_category: 'conversion',
+            event_label: section,
+            designer: designer,
+            section: section,
+          });
+        });
+      });
+    });
+
+    // Track affiliate link clicks (the actual external "hire" buttons)
+    document.querySelectorAll('.cta-main-btn').forEach(el => {
+      // Determine which designer from the parent card
+      const card = el.closest('.dcard');
+      const designer = card
+        ? (card.id === 'alestra' ? 'Alestra' : card.id === 'juhi' ? 'Juhi' : 'Valeriia')
+        : 'unknown';
+      el.addEventListener('click', () => {
+        gtag('event', 'affiliate_click', {
+          event_category: 'conversion',
+          event_label: 'hire_' + designer.toLowerCase(),
+          designer: designer,
+          value: 1,
+        });
+        // Also fire a GA4 conversion event
+        gtag('event', 'generate_lead', {
+          currency: 'EUR',
+          event_label: designer,
+        });
+      });
+    });
+
+    // ── SCROLL DEPTH TRACKING ──────────────────────────────────────
+    const depths = [25, 50, 75, 90, 100];
+    const firedDepths = new Set();
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      if (total <= 0) return;
+      const pct = Math.round((scrolled / total) * 100);
+      depths.forEach(d => {
+        if (pct >= d && !firedDepths.has(d)) {
+          firedDepths.add(d);
+          gtag('event', 'scroll_depth', {
+            event_category: 'engagement',
+            event_label: d + '%',
+            value: d,
+          });
+        }
+      });
+    }, { passive: true });
+
+    // ── TIME ON PAGE TRACKING ──────────────────────────────────────
+    [30, 60, 120, 180].forEach(secs => {
+      setTimeout(() => {
+        gtag('event', 'time_on_page', {
+          event_category: 'engagement',
+          event_label: secs + 's',
+          value: secs,
+        });
+      }, secs * 1000);
+    });
+
+    // ── SECTION VISIBILITY TRACKING ───────────────────────────────
+    const sections = [
+      { id: 'designers',  label: 'designers_section_viewed' },
+      { id: 'alestra',    label: 'alestra_card_viewed' },
+      { id: 'juhi',       label: 'juhi_card_viewed' },
+      { id: 'valeria',    label: 'valeriia_card_viewed' },
+      { id: 'faq',        label: 'faq_section_viewed' },
+    ];
+    const sio = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          gtag('event', 'section_viewed', {
+            event_category: 'engagement',
+            event_label: e.target.dataset.trackLabel,
+          });
+          sio.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    sections.forEach(({ id, label }) => {
+      const el = document.getElementById(id);
+      if (el) { el.dataset.trackLabel = label; sio.observe(el); }
+    });
 
     // LEAD FORM
     function handleLead(e) {
@@ -949,6 +1093,13 @@
       btn.textContent = '✓ Guide Sent!';
       btn.style.background = 'linear-gradient(130deg,#10b981,#059669)';
       e.target.querySelector('.lead-input').value = '';
+      // Track lead form submission
+      gtag('event', 'form_submit', {
+        event_category: 'conversion',
+        event_label: 'brand_guide_request',
+        value: 1,
+      });
+      gtag('event', 'generate_lead', { currency: 'EUR', event_label: 'email_capture' });
       setTimeout(() => { btn.textContent = 'Get Free Guide →'; btn.style.background = ''; }, 5000);
     }
   </script>
