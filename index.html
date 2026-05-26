@@ -376,7 +376,15 @@
     @media(max-width:400px){
       .nav-links a{padding:4px 6px;font-size:10.5px}
     }
-  </style>
+  
+    /* HERO DIRECT DESIGNER ROW */
+    .hero-direct-row{display:flex;gap:9px;flex-wrap:wrap;justify-content:center;margin-bottom:10px}
+    .hdr-btn{display:inline-flex;align-items:center;padding:11px 18px;background:#fff;font-family:var(--f);font-size:13px;font-weight:700;text-decoration:none;border-radius:10px;box-shadow:0 1px 6px rgba(0,0,0,.07);white-space:nowrap;transition:transform .2s,box-shadow .2s}
+    .hdr-btn:hover{transform:translateY(-2px);box-shadow:0 5px 16px rgba(0,0,0,.12)}
+    .hdr-a{color:#1e3a8a;border:1.5px solid rgba(30,58,138,.22)}
+    .hdr-j{color:#0f172a;border:1.5px solid rgba(15,23,42,.16)}
+    .hdr-v{color:#7a6200;border:1.5px solid rgba(201,162,39,.32)}
+</style>
 </head>
 <body>
 
@@ -430,18 +438,12 @@
     <div class="hero-cta-block">
       <div class="hero-cta-label"><span class="pdot"></span>&nbsp; Choose your designer — browse free, no commitment</div>
       <a href="#designers" class="hero-cta-main">🚀 Start My Brand Transformation →</a>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:8px">
-        <a href="https://go.fiverr.com/visit/?bta=1139651&brand=fp&landingPage=https%253A%252F%252Fpro.fiverr.com%252Fagencies%252Falestra" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:11px 20px;background:#fff;color:#1e3a8a;font-size:13px;font-weight:700;text-decoration:none;border-radius:10px;border:1.5px solid rgba(30,58,138,.25);box-shadow:0 1px 4px rgba(0,0,0,.06);white-space:nowrap;transition:all .2s">🏢 Alestra — Corporate →</a>
-        <a href="https://go.fiverr.com/visit/?bta=1139651&brand=fp&landingPage=https%253A%252F%252Fpro.fiverr.com%252Ffreelancers%252Fexplorance" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:11px 20px;background:#fff;color:#0f172a;font-size:13px;font-weight:700;text-decoration:none;border-radius:10px;border:1.5px solid rgba(15,23,42,.18);box-shadow:0 1px 4px rgba(0,0,0,.06);white-space:nowrap;transition:all .2s">🚀 Juhi — Startups from €23 →</a>
-        <a href="https://go.fiverr.com/visit/?bta=1139651&brand=fp&landingPage=https%253A%252F%252Fpro.fiverr.com%252Ffreelancers%252Fvaleriiaty" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:11px 20px;background:#fff;color:#7a6200;font-size:13px;font-weight:700;text-decoration:none;border-radius:10px;border:1.5px solid rgba(201,162,39,.3);box-shadow:0 1px 4px rgba(0,0,0,.06);white-space:nowrap;transition:all .2s">💎 Valeriia — Luxury →</a>
+      <div class="hero-direct-row">
+        <a href="https://go.fiverr.com/visit/?bta=1139651&brand=fp&landingPage=https%253A%252F%252Fpro.fiverr.com%252Fagencies%252Falestra" target="_blank" rel="noopener noreferrer" class="hdr-btn hdr-a" onclick="gtag&&gtag('event','affiliate_click',{event_category:'conversion',event_label:'alestra_hero'})">🏢 Alestra — Corporate →</a>
+        <a href="https://go.fiverr.com/visit/?bta=1139651&brand=fp&landingPage=https%253A%252F%252Fpro.fiverr.com%252Ffreelancers%252Fexplorance%253Futm_source%253D1139651%2526utm_medium%253Dcx_affiliate%2526utm_campaign%253D_bus-y" target="_blank" rel="noopener noreferrer" class="hdr-btn hdr-j" onclick="gtag&&gtag('event','affiliate_click',{event_category:'conversion',event_label:'juhi_hero'})">🚀 Juhi — Startups from €23 →</a>
+        <a href="https://go.fiverr.com/visit/?bta=1139651&brand=fp&landingPage=https%253A%252F%252Fpro.fiverr.com%252Ffreelancers%252Fvaleriiaty%253Fref_ctx_id%253D2eb6e0b48e78498a81c78fd6468c0401" target="_blank" rel="noopener noreferrer" class="hdr-btn hdr-v" onclick="gtag&&gtag('event','affiliate_click',{event_category:'conversion',event_label:'valeriia_hero'})">💎 Valeriia — Luxury →</a>
       </div>
-      <div class="hero-cta-sub-row">
-        <a href="#alestra" class="hero-cta-alt">Alestra — Corporate</a>
-        <span class="hero-or">or</span>
-        <a href="#juhi" class="hero-cta-alt">Juhi — Startup</a>
-        <span class="hero-or">or</span>
-        <a href="#valeria" class="hero-cta-alt">Valeriia — Luxury</a>
-      </div>
+
       <div class="hero-guarantee">
         <span class="hero-guarantee-icon">🔒</span>
         <span>Escrow protected · Pay only when you approve · No spam</span>
