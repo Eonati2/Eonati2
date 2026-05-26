@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1dbf73"/>
+      <stop offset="100%" style="stop-color:#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="6" fill="url(#green)"/>
+  <text x="80" y="90" font-family="'Arial Black',sans-serif" font-size="32" font-weight="900" fill="#1dbf73" letter-spacing="-1">EONATI REVIEW</text>
+  <rect x="80" y="110" width="180" height="36" rx="18" fill="rgba(29,191,115,0.15)" stroke="#1dbf73" stroke-width="1.5"/>
+  <text x="170" y="133" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#1dbf73" text-anchor="middle">Updated May 2025</text>
+  <text x="80" y="230" font-family="'Arial Black',sans-serif" font-size="58" font-weight="900" fill="#ffffff" letter-spacing="-2">Best Fiverr Pro</text>
+  <text x="80" y="302" font-family="'Arial Black',sans-serif" font-size="58" font-weight="900" fill="#ffffff" letter-spacing="-2">Logo Designers</text>
+  <text x="80" y="374" font-family="'Arial Black',sans-serif" font-size="58" font-weight="900" fill="#1dbf73" letter-spacing="-2">2025 — Ranked</text>
+  <text x="80" y="430" font-family="Arial,sans-serif" font-size="24" fill="#94a3b8">Honest review of 48,398 verified client reviews</text>
+  <rect x="80" y="470" width="420" height="60" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(29,191,115,0.3)" stroke-width="1.5"/>
+  <text x="290" y="495" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#94a3b8" text-anchor="middle">3 FIVERR PRO DESIGNERS COMPARED</text>
+  <text x="290" y="518" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">Corporate · Startup · Luxury</text>
+  <rect x="520" y="470" width="300" height="60" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(29,191,115,0.3)" stroke-width="1.5"/>
+  <text x="670" y="495" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#94a3b8" text-anchor="middle">STARTING FROM</text>
+  <text x="670" y="520" font-family="Arial,sans-serif" font-size="24" font-weight="900" fill="#1dbf73" text-anchor="middle">€23</text>
+  <rect x="840" y="470" width="280" height="60" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(29,191,115,0.3)" stroke-width="1.5"/>
+  <text x="980" y="495" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#94a3b8" text-anchor="middle">ESCROW PROTECTED</text>
+  <text x="980" y="520" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1dbf73" text-anchor="middle">100% Safe</text>
+  <text x="80" y="590" font-family="Arial,sans-serif" font-size="18" fill="#475569">eonati2.github.io/Eonati2</text>
+</svg>
