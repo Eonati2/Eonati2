@@ -829,7 +829,7 @@
         <h2 id="lead-h">Not sure which designer fits your brand?</h2>
         <p>Get Eonati's free <strong>Brand Positioning Guide</strong> — a one-page framework that tells you exactly which identity tier matches your business goals.</p>
         <form class="lead-form" onsubmit="handleLead(event)" aria-label="Email capture">
-          <input class="lead-input" type="email" name="email" placeholder="your@email.com" required />
+          <input class="lead-input" type="email" name="email" placeholder="your@email.com" required /><input type="hidden" name="_subject" value="New Eonati Brand Guide Request" /><input type="hidden" name="_gotcha" style="display:none" />
           <button class="lead-btn" type="submit" id="lead-btn">Get Free Guide →</button>
         </form>
         <p class="lead-legal">No spam. One email. Unsubscribe anytime.</p>
@@ -1098,21 +1098,45 @@
       if (el) { el.dataset.trackLabel = label; sio.observe(el); }
     });
 
-    // LEAD FORM
-    function handleLead(e) {
+    // LEAD FORM — Formspree
+    async function handleLead(e) {
       e.preventDefault();
       const btn = document.getElementById('lead-btn');
-      btn.textContent = '✓ Guide Sent!';
-      btn.style.background = 'linear-gradient(130deg,#10b981,#059669)';
-      e.target.querySelector('.lead-input').value = '';
-      // Track lead form submission
-      gtag('event', 'form_submit', {
-        event_category: 'conversion',
-        event_label: 'brand_guide_request',
-        value: 1,
-      });
-      gtag('event', 'generate_lead', { currency: 'EUR', event_label: 'email_capture' });
-      setTimeout(() => { btn.textContent = 'Get Free Guide →'; btn.style.background = ''; }, 5000);
+      const input = e.target.querySelector('.lead-input');
+      const email = input.value.trim();
+      if (!email) return;
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      try {
+        const res = await fetch('https://formspree.io/Khleansm@gmail.com', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({ email: email, _subject: 'New Eonati Brand Guide Request', source: 'homepage_lead_form' })
+        });
+        if (res.ok) {
+          btn.textContent = '✓ Check Your Inbox!';
+          btn.style.background = 'linear-gradient(130deg,#10b981,#059669)';
+          input.value = '';
+          gtag&&gtag('event', 'generate_lead', { currency: 'EUR', event_label: 'email_capture', value: 1 });
+          gtag&&gtag('event', 'form_submit', { event_category: 'conversion', event_label: 'brand_guide_request', value: 1 });
+          setTimeout(() => { btn.textContent = 'Get Free Guide →'; btn.style.background = ''; btn.disabled = false; }, 6000);
+        } else {
+          const data = await res.json();
+          if (data.errors) {
+            btn.textContent = 'Try again';
+            btn.style.background = 'linear-gradient(130deg,#ef4444,#dc2626)';
+          } else {
+            btn.textContent = '✓ Check Your Inbox!';
+            btn.style.background = 'linear-gradient(130deg,#10b981,#059669)';
+            input.value = '';
+          }
+          setTimeout(() => { btn.textContent = 'Get Free Guide →'; btn.style.background = ''; btn.disabled = false; }, 5000);
+        }
+      } catch(err) {
+        btn.textContent = 'Try again';
+        btn.style.background = 'linear-gradient(130deg,#ef4444,#dc2626)';
+        setTimeout(() => { btn.textContent = 'Get Free Guide →'; btn.style.background = ''; btn.disabled = false; }, 4000);
+      }
     }
   </script>
 </body>
