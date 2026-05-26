@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eonati2.github.io/Eonati2/sitemap.xml
