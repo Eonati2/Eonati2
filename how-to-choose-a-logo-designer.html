@@ -292,6 +292,18 @@
     .db-star{color:#f59e0b;font-size:11px}
     .db-sep{width:1px;height:18px;background:var(--border);flex-shrink:0;margin:0 4px}
     @media(max-width:640px){.db-label{display:none}.db-bar{top:86px;padding:7px 14px}.db-btn{font-size:11px;padding:6px 10px}.db-sep{display:none}}
+  
+    /* ── RELATED ARTICLES ── */
+    .related-section{margin:56px 0 40px}
+    .related-section h2{font-size:clamp(18px,2.4vw,22px);font-weight:800;letter-spacing:-.03em;color:var(--t1);margin-bottom:20px}
+    .related-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .related-card{background:#fff;border:1.5px solid var(--border);border-radius:var(--r2);padding:18px 20px;text-decoration:none;transition:border-color var(--ease),transform var(--ease),box-shadow var(--ease);display:flex;flex-direction:column;gap:6px}
+    .related-card:hover{border-color:var(--g2);transform:translateY(-2px);box-shadow:0 6px 22px rgba(16,185,129,.1)}
+    .rc-tag{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--g2)}
+    .rc-title{font-size:14.5px;font-weight:700;color:var(--t1);line-height:1.3}
+    .rc-desc{font-size:12.5px;color:var(--t2);line-height:1.55;flex:1;margin-top:2px}
+    .rc-read{font-size:11.5px;font-weight:700;color:var(--g2);margin-top:6px}
+    @media(max-width:580px){.related-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -484,6 +496,37 @@
       <div class="verdict">
         <div class="verdict-label">Eonati Recommendation</div>
         <p>Use the three-step filter: <strong>category fit → verified reviews → escrow protection</strong>. Any logo designer who passes all three filters is a safe hire. The designers on Eonati pass all three — manually vetted, thousands of verified reviews, and full Fiverr escrow protection on every order.</p>
+      </div>
+
+      
+      <div class="related-section">
+        <h2>Related Guides</h2>
+        <div class="related-grid">
+        <a href="https://eonati2.github.io/Eonati2/best-logo-designers-2025.html" class="related-card">
+          <span class="rc-tag">Rankings</span>
+          <span class="rc-title">Best Fiverr Pro Logo Designers in 2025</span>
+          <span class="rc-desc">Ranked and reviewed: the top 3 vetted logo designers compared by niche, price, and real results.</span>
+          <span class="rc-read">8 min read →</span>
+        </a>
+        <a href="https://eonati2.github.io/Eonati2/best-logo-designer-for-startups.html" class="related-card">
+          <span class="rc-tag">Startups</span>
+          <span class="rc-title">Best Logo Designer for Startups</span>
+          <span class="rc-desc">Investor-ready logos from €23. The Fiverr Pro specialist that 9,319 founders already trust.</span>
+          <span class="rc-read">6 min read →</span>
+        </a>
+        <a href="https://eonati2.github.io/Eonati2/luxury-logo-designer.html" class="related-card">
+          <span class="rc-tag">Luxury</span>
+          <span class="rc-title">Best Luxury Logo Designer</span>
+          <span class="rc-desc">Premium brand identity, luxury packaging, and editorial aesthetics. From €175 with full escrow.</span>
+          <span class="rc-read">6 min read →</span>
+        </a>
+        <a href="https://eonati2.github.io/Eonati2/logo-design-cost.html" class="related-card">
+          <span class="rc-tag">Pricing</span>
+          <span class="rc-title">How Much Does Logo Design Cost?</span>
+          <span class="rc-desc">Every tier from €5 AI tools to €50,000 agencies — what you actually get at each price point.</span>
+          <span class="rc-read">7 min read →</span>
+        </a>
+        </div>
       </div>
 
       <h2 id="faq">Frequently Asked Questions</h2>
