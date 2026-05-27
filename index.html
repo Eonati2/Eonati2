@@ -112,7 +112,7 @@
     /* ════════════════════════════
        HERO — CONVERSION FIRST
     ════════════════════════════ */
-    .hero{max-width:900px;margin:0 auto;padding:52px 22px 40px;text-align:center}
+    .hero{max-width:900px;margin:0 auto;padding:52px 22px 40px;text-align:center;position:relative}
     .hero-kicker{display:inline-flex;align-items:center;gap:8px;background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.2);color:#dc2626;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:100px;margin-bottom:24px}
     .hero h1{font-size:clamp(32px,6vw,60px);font-weight:900;letter-spacing:-.045em;line-height:1.04;color:var(--t1);margin-bottom:18px}
     .hero h1 em{font-style:normal;background:linear-gradient(130deg,var(--g1) 20%,var(--g2) 80%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
@@ -334,7 +334,7 @@
        STICKY MOBILE CTA
     ════════════════════════════ */
     .sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:998;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-top:1px solid var(--border);padding:11px 18px;box-shadow:0 -4px 20px rgba(0,0,0,.08)}
-    .sticky-cta a{display:block;width:100%;padding:15px;background:linear-gradient(130deg,#1dbf73,#10b981);color:#fff;font-size:14.5px;font-weight:800;text-align:center;text-decoration:none;border-radius:var(--r2);box-shadow:0 4px 16px rgba(16,185,129,.38)}
+    .sticky-cta a{display:block;width:100%;padding:15px;background:linear-gradient(130deg,#1dbf73,#10b981);color:#fff;font-size:14.5px;font-weight:800;text-align:center;text-decoration:none;border-radius:var(--r2);box-shadow:0 4px 16px rgba(16,185,129,.38);position:relative;overflow:hidden}
 
     /* ════════════════════════════
        SCROLL REVEAL
@@ -428,6 +428,13 @@
 
   <!-- ═══ HERO ═══════════════════════════════════ -->
   <header class="hero">
+    <div aria-hidden="true" style="position:absolute;pointer-events:none;overflow:hidden;inset:0;z-index:0;border-radius:inherit">
+      <div style="position:absolute;top:10%;left:7%;width:7px;height:7px;border-radius:50%;background:#1dbf73;opacity:.2;animation:floatY 6s ease-in-out infinite"></div>
+      <div style="position:absolute;top:25%;right:8%;width:5px;height:5px;border-radius:50%;background:#1e3a8a;opacity:.18;animation:floatY 5.2s 1.2s ease-in-out infinite"></div>
+      <div style="position:absolute;top:60%;left:4%;width:6px;height:6px;border-radius:50%;background:#c9a227;opacity:.2;animation:floatY 7s 0.7s ease-in-out infinite"></div>
+      <div style="position:absolute;top:40%;right:5%;width:4px;height:4px;border-radius:50%;background:#1dbf73;opacity:.15;animation:floatY 8s 2s ease-in-out infinite"></div>
+    </div>
+    <div style="position:relative;z-index:1">
     <div class="hero-kicker">
       ⚠ Most logos are costing brands clients — is yours?
     </div>
@@ -455,10 +462,12 @@
       <div class="htrust"><span class="htrust-dot"></span>Fiverr Pro Verified Top 1%</div>
       <div class="htrust"><span class="htrust-dot"></span>From €23 · No Hidden Fees</div>
       <div class="htrust"><span class="htrust-dot"></span>24hr Express Available</div>
+      <div class="htrust"><span class="htrust-dot" style="background:#ef4444"></span><span id="slots-left">3</span> slots left this week</div>
     </div>
     <div class="hero-live">
       <span class="live-dot"></span>
       <span id="live-count">47</span>&nbsp;people browsing designer portfolios right now
+    </div>
     </div>
   </header>
 
@@ -721,8 +730,8 @@
             </tr>
           </thead>
           <tbody>
-            <tr><td>Best for</td><td>Corporations, agencies</td><td>Startups, SaaS, tech</td><td>Luxury, boutique</td></tr>
-            <tr><td>Starting price</td><td>From €112</td><td>From €23</td><td>From €175</td></tr>
+            <tr><td>Best for</td><td>Corporations, agencies</td><td style="color:var(--g2);font-weight:700">Startups, SaaS, tech</td><td>Luxury, boutique</td></tr>
+            <tr><td>Starting price</td><td>From €112</td><td style="color:var(--g2);font-weight:700">From €23 ✓ Best Value</td><td>From €175</td></tr>
             <tr><td>Star rating</td><td>★ 4.9</td><td>★ 4.8</td><td>★ 4.8</td></tr>
             <tr><td>Verified reviews</td><td>31,034</td><td>9,319</td><td>8,045</td></tr>
             <tr><td>Full brand system</td><td><span class="cchk">✔</span></td><td><span class="cchk">✔</span></td><td><span class="cchk">✔</span></td></tr>
@@ -1140,6 +1149,20 @@
         setTimeout(() => { btn.textContent = 'Get Free Guide →'; btn.style.background = ''; btn.disabled = false; }, 4000);
       }
     }
+
+    // DYNAMIC SLOTS COUNTER
+    (function() {
+      const base = 3, min = 1, max = 5;
+      let v = base;
+      setInterval(() => {
+        if (Math.random() < .25) {
+          v = Math.max(min, Math.min(max, v + (Math.random() < .4 ? -1 : 0)));
+          const el = document.getElementById('slots-left');
+          if (el) el.textContent = v;
+        }
+      }, 18000);
+    })();
+
   </script>
 </body>
 </html>
