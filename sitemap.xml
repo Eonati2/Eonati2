@@ -53,4 +53,25 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://eonati2.github.io/Eonati2/what-makes-a-good-logo.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://eonati2.github.io/Eonati2/logo-design-brief-template.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://eonati2.github.io/Eonati2/brand-identity-vs-logo.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
