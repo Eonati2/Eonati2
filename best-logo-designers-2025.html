@@ -855,5 +855,35 @@
     <p class="footer-disc">This page contains affiliate links. Eonati earns a commission if you purchase through these links — at no extra cost to you. All designers are independently Fiverr Pro verified. Prices shown are indicative; visit each designer's profile for current live rates.</p>
   </footer>
 
+
+<!-- Pinterest Save Button -->
+<style>
+#pin-save-btn{position:fixed;bottom:24px;right:24px;z-index:9998;display:flex;align-items:center;gap:8px;background:#e60023;color:#fff;font-family:'Inter','Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:700;text-decoration:none;padding:11px 18px 11px 14px;border-radius:28px;box-shadow:0 4px 20px rgba(230,0,35,.45);transition:transform .2s cubic-bezier(.4,0,.2,1),box-shadow .2s cubic-bezier(.4,0,.2,1),opacity .2s;opacity:0;pointer-events:none}
+#pin-save-btn.visible{opacity:1;pointer-events:auto}
+#pin-save-btn:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(230,0,35,.55)}
+#pin-save-btn svg{width:18px;height:18px;fill:#fff;flex-shrink:0}
+@media(max-width:500px){#pin-save-btn{bottom:14px;right:14px;padding:9px 14px 9px 11px;font-size:12px;gap:6px}}
+</style>
+<a id="pin-save-btn" target="_blank" rel="noopener noreferrer" aria-label="Save to Pinterest">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+  Save to Pinterest
+</a>
+<script>
+(function(){
+  var btn=document.getElementById('pin-save-btn');
+  if(!btn)return;
+  var getMeta=function(sel){var el=document.querySelector(sel);return el?el.content||el.href:'';};
+  var pageUrl=getMeta('link[rel="canonical"]')||location.href;
+  var imgUrl=getMeta('meta[property="og:image"]');
+  var desc=getMeta('meta[name="pinterest:description"]')||getMeta('meta[property="og:description"]');
+  btn.href='https://pinterest.com/pin/create/button/?url='+encodeURIComponent(pageUrl)+'&media='+encodeURIComponent(imgUrl)+'&description='+encodeURIComponent(desc);
+  // Show after 3 seconds (non-intrusive)
+  setTimeout(function(){btn.classList.add('visible');},3000);
+  // Track clicks in GA4
+  btn.addEventListener('click',function(){
+    if(typeof gtag!=='undefined')gtag('event','pinterest_save_click',{event_category:'social',event_label:pageUrl});
+  });
+})();
+</script>
 </body>
 </html>
