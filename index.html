@@ -52,11 +52,11 @@
  --r1: 8px; --r2: 14px; --r3: 20px; --r4: 28px;
  --ease: .22s cubic-bezier(.4,0,.2,1);
  }
- html { scroll-behavior: smooth; }
- body { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; background: var(--bg); color: var(--t1); -webkit-font-smoothing: antialiased; line-height: 1.6; }
+ html { scroll-behavior: smooth; background-color: #f8fafc; }
+ body { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; background-color: #f8fafc; background: var(--bg); color: #0f172a; color: var(--t1); -webkit-font-smoothing: antialiased; line-height: 1.6; }
 
  /* ── STICKY NAV ── */
- .nav { background: rgba(255,255,255,.97); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 62px; position: sticky; top: 0; z-index: 200; box-shadow: 0 1px 8px rgba(0,0,0,.07); }
+ .nav { background: rgba(255,255,255,.97); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 62px; position: sticky; top: 0; z-index: 200; box-shadow: 0 1px 8px rgba(0,0,0,.07); }
  .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
  .nav-logo { width: 32px; height: 32px; background: linear-gradient(135deg, var(--g1), var(--g2)); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 900; color: #fff; letter-spacing: -.04em; }
  .nav-name { font-size: 17px; font-weight: 800; color: var(--t1); letter-spacing: -.04em; }
