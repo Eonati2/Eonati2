@@ -1,0 +1,5 @@
+minimax/.env
+minimax/docs/raw-*.html
+minimax/out/
+*.mp4
+__pycache__/
