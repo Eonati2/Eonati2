@@ -227,25 +227,86 @@ This is a lottery ticket that paid once. It is exactly what you must avoid mista
 
 ---
 
-### #5 — Pixel DIY Crafts · high views, weakest economics
+### #5 — Pixel DIY Crafts · the one the user picked · FULL BREAKDOWN
 `@pixeldiycrafts` · UCFIUntRM6pdzPYZiMLtoGHg · GB · English · faceless
 
-| Metric | Value |
+| Metric | Value (2026-09-07) |
 |---|---|
-| Created | 2026-07-13 (**7.5 weeks old**) |
-| Videos | 35 |
-| Subscribers | 26,000 |
-| Total views | 35,742,958 |
-| Avg views/video | 1,021,227 |
-| 30-day subscriber growth | +202.0% |
-| Format | Paper/DIY craft Shorts, **19.5s average** |
-| Monetized? | Yes — 35.7M Shorts views in <90 days |
+| Created | 2026-07-13 (**8 weeks old**) |
+| Videos | 37 |
+| Subscribers | 27,400 |
+| Total views | **38,214,505** |
+| Avg views/video | 1,032,824 |
+| 7-day subscriber growth | **+12.3%** (still climbing — not a collapsed channel) |
+| 30-day view growth | +252.4% |
+| Duration | 12–33s, **~19.5s average** |
+| Upload rate | 21 Shorts in 30 days |
+| Monetized? | Yes — 38.2M Shorts views inside 90 days |
 
-**Why it goes viral:** sub-20-second satisfying-transformation loops with no dialogue. Zero language barrier means the algorithm can serve it to every geography simultaneously. Extremely high rewatch/loop rate, which Shorts counts as retention. Broad age appeal (kids + adults).
+**Top performers:**
 
-**Why I rank it last:** look at the conversion. **35.7M views produced only 26,000 subscribers — 0.07%.** That is the worst ratio of the five, 5x worse than Life Tales. Combined with DIY/Hobby being a low-RPM category, mixed global geography, and 19-second runtime (the worst-monetizing Shorts length), this channel is generating enormous traffic that turns into very little money and very little owned audience.
+| Title | Views | Len | Comments | Breakout |
+|---|---|---|---|---|
+| It really Worked 🎀😱 Bandana Bow | **9,924,910** | 17s | 282 | 60.7x |
+| I made a Light Box out of CARDBOARD?! 🤯 (Wait for it) | 6,662,691 | 15s | 309 | 17.4x |
+| Don't Squish this Minecraft Creeper… or else! 💥😳 | 4,940,392 | 24s | 859 | 8.3x |
+| This is So Adorable 💛💜 | 4,331,065 | 28s | 229 | **69.4x** |
+| You Won't Believe What I Made With Just a Ribbon! 😱🎀 | 3,080,580 | 16s | 97 | 3.3x |
+| DIY Minecraft Paper Squishy... you HAVE to try this! 💥 | 2,581,338 | 24s | 221 | 20.7x |
+| Wait... This Isn't A Video Game?! DIY 3D Minecraft Flower 🤯 | 2,129,462 | 30s | 105 | 1.8x |
+| I Mixed Flour & Water To Make THIS! 😱🧈 | 1,619,606 | 16s | 358 | 1.4x |
 
----
+**Bottom performers:**
+
+| Title | Views | Len |
+|---|---|---|
+| 🖊️ Cute DIY Touch pen?! 😲 #cutecraft #craft #crafts #diy #diycrafts #cute | 27,267 | 21s |
+| How To Make bubble Gun 🔫🫧 Easy & Cool Craft Idea | 33,272 | 22s |
+| I Made a REAL Butter Squishy?! 🧈😱 DIY Hello Kitty Paper Squishy | 39,947 | 23s |
+| Perfect Gift Idea for Demon Slayer FANS 👀 Tanjiro Earrings | 45,396 | 20s |
+| DIY Bow Pixel Art 🎀✨ Easy Drawing Craft Idea #diy #craft #pixelcraft #pixelart | 47,123 | 15s |
+| 📦 DIY Package Paper! #papercrafts #cutecrafts #diycrafts #diy | 56,979 | 12s |
+
+### The three controlled experiments hiding in this channel
+
+The channel accidentally ran the same craft twice with different titles, three times over. The results are the clearest evidence in this entire report.
+
+**1. The bow — 211x apart**
+- "**It really Worked** 🎀😱 Bandana Bow" → **9,924,910**
+- "**DIY Bow Pixel Art** 🎀✨ Easy Drawing Craft Idea #diy #craft #pixelcraft #pixelart" → **47,123**
+
+**2. The butter squishy — 40x apart**
+- "**I Mixed Flour & Water To Make THIS!** 😱🧈" → **1,619,606** *(hides the object)*
+- "**I Made a REAL Butter Squishy?!** 🧈😱 DIY Hello Kitty Paper Squishy" → **39,947** *(names it twice)*
+
+**3. The light box, reposted 13 days later — 134x apart**
+- Aug 20: "I made a Light Box out of CARDBOARD?! 🤯 (Wait for it)" → **6,662,691**
+- Sep 2: "I Made A LIGHT BOX Out Of CARDBOARD... Wait For The End! 🤯" → **49,686**
+
+Same craft, same channel, same production. **The title is doing essentially all the work, and re-posting a proven craft does not work.**
+
+### The rule the data gives you
+
+**Whatever word comes FIRST in the title decides the video.**
+
+| Winners lead with | Losers lead with |
+|---|---|
+| "It really Worked" | "How To Make" |
+| "I Mixed…" / "I made…" | "DIY [object name]" |
+| "Don't Squish this…" | "Cute DIY [object]" |
+| "Wait... This Isn't…" | "Perfect Gift Idea for…" |
+| "You Won't Believe…" | "Easy Craft Idea" |
+| "This is So Adorable" | any title starting with a hashtag or emoji-object |
+
+All three hashtag-stuffed titles sit in the bottom five. Naming the object in the title is what kills these videos; withholding it is what multiplies them.
+
+### Two more findings
+
+**Minecraft is a 2.6x multiplier.** Five Minecraft-themed videos: 4.94M, 2.58M, 2.13M, 728K, 552K = **2.19M average**, against ~852K for everything else. The Sept 4 "Don't EVER Craft This Minecraft Sword... (REAL or FAKE?)" still pulled 552K at 8,324 VPH, so it is not exhausted.
+
+**The channel is healthy, unlike Charlie Editz.** Recent uploads oscillate 40K–550K with periodic millions; 7-day subscriber growth is **+12.3%**. This is a working channel, not a spent one.
+
+**The real weakness is unchanged: 38.2M views → 27,400 subscribers = 0.07% conversion.** Five times worse than Life Tales. Enormous reach, almost no owned audience.
 
 ## 4. Revenue and CPM — the finding that should change your plan
 
@@ -253,26 +314,38 @@ This is a lottery ticket that paid once. It is exactly what you must avoid mista
 > **10M monthly Shorts views · Entertainment · US → $300 / $500 / $800 per month**
 > → Shorts RPM **$0.03–$0.08 per 1,000 views**
 
-### Modeled (my estimate — verify before acting)
-Long-form RPM by category/geography, applied to each channel's current run rate:
+### Measured (vidIQ, 2026-09-07) — this CORRECTS the first version of this report
 
-| Channel | Format | Views/month (est. from run rate) | RPM used | Est. monthly revenue | Confidence |
-|---|---|---|---|---|---|
-| **Lemon Lenny** | Long-form, Autos, US | ~650,000 | $8–15 | **$5,000–10,000** | Modeled |
-| **Peaceplay Movie** | Long-form film, African/diaspora geo | ~1,800,000 | $1.50–3.50 | **$2,700–6,300** | Modeled |
-| **Life Tales 2026** | Shorts, US | ~10–14M | $0.05 | **$500–900** | Anchored |
-| **Pixel DIY Crafts** | Shorts, DIY, global | ~8–12M | $0.03 | **$250–450** | Anchored |
-| **Charlie Editz** | Shorts, global | ~1–2M (collapsed) | $0.05 | **under $100** | Anchored |
+Two more anchors were pulled once credits reset. **Both moved against my original estimates, in opposite directions:**
 
-### The headline
+> **10M monthly Shorts views · Lifestyle · GB · 26K subs → $486 / $810 / $1,296 per month**
+> → Shorts RPM **$0.049–$0.130** (mid $0.081)
 
-> **Lemon Lenny — 935,920 total views — very likely out-earns Charlie Editz — 66,386,506 total views.**
->
-> A **71x view disadvantage**, and the small channel almost certainly wins on revenue.
+> **1M monthly long-form views · Autos & Vehicles · US · 10K subs → $3,000 / $5,000 / $8,000 per month**
+> → Long-form RPM **$3.00–$8.00** (mid $5.00)
 
-Views are not the product. **Watch-minutes × audience value** is the product. A US car owner watching 22 minutes with four ad breaks is worth several hundred times a global scroller watching 35 seconds of a bunker timelapse.
+| What I originally said | What vidIQ actually returned | Error |
+|---|---|---|
+| Long-form Autos US: $8–15 RPM | **$3–8 RPM** | I was ~2x too high |
+| DIY Shorts: $0.03 RPM | **$0.049–0.130 RPM** | I was ~2.5x too low |
 
-If you take one thing from this research, take that.
+**Consequence:** the long-form-vs-Shorts RPM gap is about **62x**, not the 200–300x the first version implied.
+
+### Revenue by channel (recomputed on measured RPM)
+
+| Channel | Format | Views/month | RPM (measured) | Est. monthly revenue |
+|---|---|---|---|---|
+| **Pixel DIY Crafts** | Shorts, Lifestyle, GB | ~27,400,000 | $0.049–0.130 | **$1,340–3,560** |
+| **Lemon Lenny** | Long-form, Autos, US | ~650,000 | $3–8 | **$1,950–5,200** |
+| **Peaceplay Movie** | Long-form film, African geo | ~1,800,000 | $1.50–3.50 (still modeled) | $2,700–6,300 |
+| **Life Tales 2026** | Shorts, US | ~10–14M | $0.03–0.08 | $500–900 |
+| **Charlie Editz** | Shorts, collapsed | ~1–2M | $0.03–0.08 | under $150 |
+
+### The headline, revised
+
+The original claim — a 936K-view channel out-earning a 66.4M-view channel — still holds directionally, but **the margin is far narrower than I stated**, and it holds mainly because Charlie Editz has collapsed rather than because Shorts are worthless.
+
+The more accurate statement: **Pixel DIY Crafts and Lemon Lenny are in the same revenue bracket.** Pixel DIY does ~42x the traffic at ~1/62nd the RPM, and the two effects very nearly cancel. Shorts volume is a legitimate path to the same money, not a consolation prize.
 
 ### TikTok
 
@@ -365,10 +438,74 @@ Channel B's 2–3 minute format is the reason this pairing works: it is the one 
 
 ---
 
-## 8. Verification still needed
+## 8. Verification status — RESOLVED 2026-09-07
 
-I lost vidIQ credits before completing the long-form RPM anchor. **Before committing money or months to niche #1, run this one call:**
+Both outstanding anchors were pulled once credits reset. Section 4 now carries measured RPM for Shorts (Lifestyle/GB) and long-form (Autos/US), and the modeled figures they replaced are shown alongside so the correction is auditable. The only still-modeled RPM is Peaceplay's African/diaspora long-form.
 
-`vidiq_earnings_calculate` — subject `channel`, monthlyViews `1000000`, category `Autos-&-Vehicles`, country `US`, language `en`, shortsShare `0`, subscriberCount `10000`
+Credits: 150/month, next reset **2026-10-07**. 30 spent on this pass, 120 remaining.
 
-That single call converts the most important number in this report from modeled to measured. `vidiq_video_earnings_estimate` on video `zynQiIx4Qz4` (Lemon Lenny's 256K-view top performer) would confirm it against a real video.
+---
+
+## 9. DIY Crafts playbook (the chosen niche)
+
+### Is the niche real, or was Pixel DIY one lucky channel?
+
+Real. A search for DIY/craft channels created since 2026-05-01 with under 60 videos returned **10,000 matches**, with these all created June–July 2026:
+
+| Channel | Country | Subs | Views | Videos | 30-day sub growth |
+|---|---|---|---|---|---|
+| NiKa Roblox | IN | 121,000 | 17.4M | 47 | **+490%** |
+| Growth&Lapse | PK | 12,500 | 15.9M | 36 | **+400%** |
+| Zarqunix | — (ES) | 30,900 | 1.5M | 57 | +371% |
+| ANVESH FACTS MAX | IN | 97,000 | 33.4M | 41 | +339% |
+| ABHI YT STORY 15 | IN | 87,900 | 15.2M | 24 | +335% |
+| Black Wings 🪽 | — | 396,000 | 30.9M | 45 | +236% |
+| **Root & Rise** | — | 50,800 | **60.7M** | 39 | +50% |
+| Pixel DIY Crafts | GB | 27,400 | 38.2M | 37 | +174% |
+
+**Root & Rise averages 1.56M views per video across 39 videos** — a better per-video average than Pixel DIY, on AI-generated 3D wall art.
+
+Two cautions:
+- **Most of these are IN/PK-based.** Pixel DIY earns roughly 2.6x their RPM purely by being GB. Geography is worth more than view count here — target US/UK/CA/AU audiences.
+- The niche is filling fast. Eight-plus new entrants in two months means the title-craft edge below is temporary.
+
+### What craft subjects are actually breaking out (Sept 2026)
+
+From the outlier scan (`keyword: diy paper craft`, this month, 500K+ views):
+
+| Subject | Example | Views | Breakout |
+|---|---|---|---|
+| **Metal/keychain crafts** | Motorcycle Keychain Craft | 3,233,228 | **965x** |
+| **Seasonal cards** | Teacher's Day Card Making | 967,098 | **637x** |
+| **Paper squishies** | Paper squishy Needoh | 2,595,116 | 239x |
+| **Paper soap kits** | DIY Paper Soap Making Kit | 4,702,191 | 81x |
+| **Butter squishies** | World's Tiniest Rainbow Butter Squishy (11s) | 4,084,615 | 49x |
+| Paper dolls | Cute Paper Doll Rescue (**6 seconds**) | 1,147,812 | 81x |
+| IP crossovers | Spiderman Brand New Day paper craft | 2,194,904 | 29x |
+| Oddity/survival | DIY Pigeon Trap Using Paper | 1,137,770 | 199x |
+
+**Squishies dominate.** Butter, needoh, BTS Oreo, cat, Hello Kitty, Minecraft — six separate squishy breakouts across six unrelated channels. Pixel DIY's own best squishy did 2.58M.
+
+**Seasonal timing is a huge multiplier.** Both Teacher's Day cards scored 637x and 56x breakouts by landing on the date. Build a calendar.
+
+### The playbook
+
+**Titles — the single highest-leverage thing**
+1. Lead with a first-person claim or a command: *"It really Worked"*, *"I Mixed X To Make THIS"*, *"Don't ____ this…"*
+2. **Never** name the finished object. Say "THIS."
+3. **Never** start with "DIY", "How To Make", or "Easy Craft Idea".
+4. **Never** put hashtags in the visible title.
+5. One or two reaction emoji at the end (😱 🤯 🎀), never leading.
+
+**Format**
+- 15–30 seconds. Duration is not the lever — 17s got 9.9M and 30s got 2.1M. Titles are.
+- Payoff must land by ~70% of runtime so the clip loops.
+- Piggyback recognizable IP (Minecraft, Spider-Man, Sanrio) — 2.6x on this channel.
+- Do **not** repost a proven craft with a reworded title. It returns <1% (134x drop, measured).
+
+**Fix the 0.07% subscriber problem from video one** — this is the actual difference between a traffic spike and a business:
+- One recurring visual signature (same hands, mat, palette) in every video
+- A numbered series, so there is a reason to return
+- Shoot at **60+ seconds** where the craft allows: at 19.5s this format earns **nothing** on TikTok Creator Rewards (needs >1 min). One longer render monetizes on YouTube *and* TikTok, and TikTok pays roughly $0.40–1.00 per 1,000 — **5–20x the YouTube Shorts RPM measured above.**
+
+**The long-form option worth testing.** Two channels in the scan are doing paper crafts as *long-form*: PAPERY (KR, 34 videos, ~17 min avg) and Sticker Story (US, 28 videos, ~13.5 min avg, 16 uploads in 30 days). At long-form RPM they clear monetization on a fraction of the traffic. A hybrid — Shorts for reach, one 12-minute compilation per week for revenue — is the highest-expected-value structure in this niche.
