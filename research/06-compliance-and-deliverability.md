@@ -88,7 +88,41 @@ prospects; going international buys risk and no revenue.
 
 ---
 
-## 3. What the product must teach (this is a selling point, not a disclaimer)
+## 3. TCPA — the phone channel (added in v2)
+
+Adding phone as a channel moves you under a second, stricter regime. CAN-SPAM compliance buys you
+nothing here.
+
+| Rule | Detail |
+|---|---|
+| **B2B calls to a verified business landline** | Generally exempt from the federal DNC registry |
+| **Calls to a decision-maker's personal cell** | **Not exempt.** Treated as residential under the TCPA regardless of how the number is labelled in your CRM |
+| **Autodialer / prerecorded / AI voice to a cell** | Requires prior express written consent — B2B included. Assume you do not have it. |
+| **Calling window** | 8am–9pm recipient-local; applies to cell numbers in a B2B context |
+| **Penalty** | **$500–$1,500 per call**, private right of action, plus state mini-TCPA statutes |
+| **TSR B2B carve-out** | The exemption does not cover sellers of *nondurable office or cleaning supplies*. A system sold to cleaning companies is not a cleaning-supply sale, but the adjacency is close enough to be worth a lawyer's 30 minutes. |
+
+### Why this bites this plan specifically
+Google Maps listings for small local businesses are overwhelmingly **mobile numbers**. Owner-operated
+cleaning companies list a cell as the business line as a matter of course. The channel being added
+is aimed at precisely the number type that carries the exposure, sourced from precisely the dataset
+that produces it.
+
+### The five rules
+1. **Manual dialling only.** No autodialer, power dialer, prerecorded drop, or AI voice agent.
+2. **Line-type lookup on every number before it reaches a dial list.** Costs fractions of a cent;
+   prevents $500–$1,500 per call. Highest return-on-effort control in the build.
+3. **Wireless and unknown numbers get the strict treatment** — manual, 8am–9pm local, no exceptions.
+4. **One suppression list across email and phone.** A "don't call me" suppresses the email too, and
+   permanently.
+5. **Ship the TCPA module in the product.** You are selling a calling system to people who will
+   point it at their own prospects. A phone playbook without this section hands your customer
+   per-call exposure with your name on the box — and including it is a differentiator, exactly as
+   the CAN-SPAM module is.
+
+---
+
+## 4. What the product must teach (this is a selling point, not a disclaimer)
 
 You are selling an outbound system to people who will use it on *their* prospects. If they blow up
 their domains using your product, your refund rate and your reputation go with them.
@@ -111,7 +145,7 @@ at the same time.
 
 ---
 
-## 4. Position on the ethics, stated plainly
+## 5. Position on the ethics, stated plainly
 
 Everything here is public business data — Google Maps listings, company websites, Secretary of State
 filings, building permits, public job posts, public reviews. All of it is lawful to collect and

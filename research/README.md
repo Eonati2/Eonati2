@@ -17,6 +17,8 @@ target reachable.
 | `06-compliance-and-deliverability.md` | CAN-SPAM, 2026 bulk-sender rules, domain architecture |
 | `07-60-day-execution-plan.md` | Week by week, with a pass/fail gate on each week |
 | `08-risks-and-alternatives.md` | Ranked risks, Plan B, Plan C, and the most likely failure mode |
+| `09-decision-record-v2.md` | **Locked decisions, and four corrections where the revised plan and the math still disagree** |
+| `10-dfw-pilot-pack-spec.md` | **The first buildable thing: 150 DFW accounts, schema, queries, scoring, ~27 hours** |
 
 ---
 
@@ -31,7 +33,29 @@ target reachable.
 3. **About half the revenue will come from 4–6 people paying $497–$1,497**, not from sixty people
    paying $197. Build the whole funnel around those few.
 
+## v2 — what changed
+
+Timeline locked at **90 days**. Product renamed **Commercial Cleaning Client Acquisition OS** and
+recategorised from lead generation to **contract acquisition**. Architecture flipped to
+**accounts-first, people second**. **Phone added** alongside email. Pilot geography **Dallas–Fort
+Worth**. Modelling assumption tightened to **1–3% positive response**.
+
+Four corrections carried in `09`:
+
+1. **Phone brings the TCPA** — $500–$1,500 per call, and Maps data is mostly mobile numbers, which
+   are not DNC-exempt. Manual dialling and line-type classification become mandatory.
+2. **A 100–200 prospect validation sample cannot distinguish a 1% offer from a 3% one** — the exact
+   question it exists to answer. Raise it to 500–750.
+3. **The $49 tier converts your scarcest resource (a positive reply) into $43.** Move it to Gumroad
+   Discover; keep it out of the outbound funnel.
+4. **DFW cannot be both the account geography and the sales territory.** It's the pilot pack and the
+   demo; sell into 10–15 metros and build each buyer a pack for their own city.
+
+And the conclusion the conservative assumption forces: **the five done-for-you clients are ~70–75%
+of the $10,000**, not a side experiment. Price them at $2,000 and sell them deliberately.
+
 ## Status
 
-Research complete. Nothing has been built, bought, or sent. Next decision is whether to proceed on
-the 60-day timeline or the (recommended) 90-day one.
+Research complete, decisions locked. Nothing built, bought, or sent. Next action is the DFW pilot
+pack in `10` — three days and about $20, and it tests the trigger thesis before a single domain is
+warmed.
