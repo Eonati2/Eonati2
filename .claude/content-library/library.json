@@ -412,6 +412,79 @@
       "kind": "rule",
       "id": "rule-30579527",
       "added": "2026-09-10T08:56:19.527618+00:00"
+    },
+    {
+      "experiment": "EXP-01 opening-mode",
+      "arm": "A",
+      "title": "Hard interruption",
+      "premise": "Ground-level hold then a fast tilt-up reveal",
+      "target_hook_energy": ">9.0",
+      "evidence_tier": 3,
+      "basis": "Ice Tilt 9.95, Hemu Ridge 21.16, Rain Walk 9.93 — the only 3 of 13 references with strong 0s energy",
+      "hypothesis": "A reveal buys the 1s decision and lifts avg watch above the 1.4s baseline",
+      "kind": "idea",
+      "id": "idea-32005694",
+      "added": "2026-09-10T09:20:05.694044+00:00"
+    },
+    {
+      "experiment": "EXP-01 opening-mode",
+      "arm": "B",
+      "title": "Extreme stillness, violent subject",
+      "premise": "Locked camera, subject moving hard",
+      "target_hook_energy": "<0.2",
+      "evidence_tier": 3,
+      "basis": "Blue Willow measured 0.03 hook energy — a dead-still tripod carried entirely by wind in a tree",
+      "hypothesis": "Camera motion is optional when the subject moves; may outperform A by feeling less like an ad",
+      "kind": "idea",
+      "id": "idea-32005724",
+      "added": "2026-09-10T09:20:05.724705+00:00"
+    },
+    {
+      "experiment": "EXP-01 opening-mode",
+      "arm": "C",
+      "title": "Cinematic emotional",
+      "premise": "Slow continuous move, high-saturation sky, human anchor in lower third",
+      "target_hook_energy": "0.5-1.5",
+      "evidence_tier": 3,
+      "basis": "fire-sky cluster, saturation 0.44-0.90",
+      "hypothesis": "Beauty alone holds attention; this is the control arm closest to the reference median",
+      "kind": "idea",
+      "id": "idea-32005755",
+      "added": "2026-09-10T09:20:05.755049+00:00"
+    },
+    {
+      "experiment": "EXP-01 opening-mode",
+      "arm": "D",
+      "title": "Curiosity withheld",
+      "premise": "Open on something unresolved and answer it late",
+      "target_hook_energy": "0.5-2.0",
+      "evidence_tier": 5,
+      "basis": "No reference in the library uses a withheld answer — this arm tests an untested mechanism",
+      "hypothesis": "An open loop outperforms pure aesthetics; highest risk, highest information value",
+      "kind": "idea",
+      "id": "idea-32005784",
+      "added": "2026-09-10T09:20:05.784649+00:00"
+    },
+    {
+      "experiment": "EXP-01 opening-mode",
+      "arm": "E",
+      "title": "Visual shock / unparseable frame",
+      "premise": "90-degree rotated horizon, extreme saturation",
+      "target_hook_energy": "any",
+      "evidence_tier": 3,
+      "basis": "Rotated Sunset: horizon vertical, saturation 0.90, cumulative roll only -2deg so the rotation is a post edit",
+      "hypothesis": "Momentary confusion buys the first 2s better than motion does",
+      "kind": "idea",
+      "id": "idea-32005824",
+      "added": "2026-09-10T09:20:05.824932+00:00"
+    },
+    {
+      "rule": "EXP-01 design: hold duration ~9s, no captions, no narration, single continuous take, comparable posting times. Vary ONLY the opening mode. Primary metric is average watch time; secondary are retention at 1s and 3s.",
+      "evidence": "Baseline to beat is the accounts own only datapoint: 189 views, 1.4s avg watch, 18 percent retention on an 8s clip.",
+      "confidence": "high",
+      "kind": "rule",
+      "id": "rule-32005856",
+      "added": "2026-09-10T09:20:05.856625+00:00"
     }
   ]
 }

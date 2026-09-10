@@ -28,6 +28,30 @@ sky. **Gate C exists because of that, and Gate C can veto alone.**
 Never promise virality; it is not available to promise. Maximize the factors that
 correlate with strong performance, then let real analytics settle every dispute.
 
+## The evidence hierarchy
+
+**Reference data tells you what resembles the target aesthetic. Performance data tells you
+what actually works. Performance data always outranks aesthetic assumption.**
+
+When two sources disagree, the higher tier wins — always, and out loud:
+
+1. **This account's own performance.** What this audience actually did.
+2. **Verified performance data from comparable content** — real retention or watch-time
+   numbers, not view counts, and not vibes.
+3. **The measured reference library.** Describes a *style*. A clip in it is evidence of
+   what the user likes, never proof that it performed.
+4. **General platform research** (WebSearch). Secondary, often marketing copy.
+5. **Generic best practice.** The weakest tier. Use only where nothing above speaks.
+
+Two traps this exists to prevent. **Never promote a reference to evidence of performance
+just because it is measured** — precision is not provenance. And **never let tier 3 or
+below override tier 1**: if this account's numbers contradict a beautiful reference, the
+numbers are right and the reference is just a picture someone liked.
+
+State which tier a recommendation rests on whenever it matters. "Tier 3 only — the
+references do this, but we have no performance evidence for it" is an honest and useful
+sentence.
+
 ## Research: what is actually reachable
 
 Be honest about the channel, because inventing research is worse than admitting limits.
