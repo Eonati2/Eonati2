@@ -60,7 +60,7 @@ any reference clip are **not** to be reproduced — invent new ones every time.
 | Subject | ONE isolated object per shot. No environment, no ground plane, no horizon. |
 | Rendering | illustrated, hand-drawn, slightly imperfect. Emissive, lit from within, controlled bloom. Never photographic. |
 | Motion | appear → morph → pulse → transform → replace. **Not** dolly, pan, crane or track. |
-| Cuts | every 0.7–1.8s, on a metaphor change, never on a timer |
+| Cuts | long holds (1.4–1.8s) punctuated by ONE burst of ~3 cuts inside 0.5s. Never a steady rhythm — see Measured values. |
 | Ending | return to the opening motif — a callback, not a resolution |
 
 ## Typography
