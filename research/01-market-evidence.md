@@ -11,27 +11,36 @@ should carry their provenance.
 
 | Fact | Value | Conf. | Source |
 |---|---|---|---|
-| Janitorial services businesses in the US | **1,264,367** | ⬤⬤ | IBISWorld 2026 |
+| Janitorial **employer establishments**, NAICS 561720 | **~67,799** (2023) | ⬤⬤ | US Census. A secondary source puts it near 66,471 — consistent in magnitude. |
+| Broader janitorial/cleaning business universe | 1.2M+ | ⬤ | IBISWorld 2026. **Counts a different universe** — includes non-employer and dormant entities. |
 | Growth in business count, 2021–2026 | **+4.3%/yr** | ⬤⬤ | IBISWorld 2026 |
 
-**Reading it correctly:** that 1.26M includes an enormous tail of solo residential cleaners. Your
-addressable slice — commercial/janitorial, has a website, 3+ employees, an owner findable by name —
-is realistically **40,000–80,000 companies**. That is still 400× more than you need. *List supply
-is not a constraint on this business.* Do not spend a minute optimizing for volume.
+**Reading it correctly:** the two figures measure different things and must never be used
+interchangeably. Census counts establishments **with employees**; the 1.2M+ figure counts a far
+broader registered universe. **Use the Census number**, and treat even that as an upper bound —
+your addressable slice (commercial focus, has a website, 3+ employees, owner findable by name) sits
+somewhere inside it.
+
+**The honest position: the addressable market is whatever the actual ICP scrape returns.** The DFW
+scrape-and-qualify pass in `10` settles it empirically in an afternoon, which is worth more than any
+headline industry count. List supply is still not the constraint on this business — but say so from
+measurement, not from a citation.
 
 ## B. The buyer's economics (why they can afford you)
 
 | Fact | Value | Conf. | Source |
 |---|---|---|---|
-| Google Ads cost per lead, commercial cleaning, first 7 months of 2026 | **$197–$230** | ⬤⬤ | 99Calls 2026 campaign data |
+| Google Ads cost per lead, commercial cleaning | $197–$230 | **⬤** | One vendor's own campaign data — **not an industry benchmark**. Compare: another 2026 source reports **$46.41** average on Local Services Ads. Channel spread is 4–5×. |
 | Pay-per-appointment, janitorial | **$200–$500 / qualified meeting** | ⬤⬤ | Abstrakt, Upwork market rates |
 | Exclusive lead cost | **$50–$150** | ⬤⬤ | Multiple lead-gen vendors |
 | Monthly retainer, email-led outbound program | **$600–$1,500/mo** | ⬤⬤ | Agency pricing surveys 2026 |
 | Monthly retainer, outbound + human calling | **$2,500–$5,000+/mo** | ⬤⬤ | Same |
 | Local SEO/PPC retainer | **$3,000–$10,000/mo** | ⬤⬤ | Same |
 
-**This is the most important table in the dossier.** A $197 product priced against a $197–$230
-*single lead* is not a purchase decision, it's an obvious yes. Put this comparison above the fold.
+**Use the contract-value anchor, not the ad-spend anchor.** The CPL figure is a single vendor's
+self-reported data and the channel spread around it is 4–5×; it does not belong above the fold.
+Section C below is ⬤⬤⬤ across independent sources and makes a stronger argument anyway: one small
+office account is $4,800–$9,600 a year.
 
 ## C. What a won contract is worth (the buyer's upside)
 

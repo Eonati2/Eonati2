@@ -1,4 +1,23 @@
-# 07 — 60-Day Execution Plan
+# 07 — Execution Plan
+
+> **Superseded in part.** Timeline is now **90 days** and validation is staged
+> **100 → 300–500 → 1,000+** (see `11 §C2`). The weekly gates and the seven metrics below still
+> apply; the calendar does not.
+
+### Staged validation
+
+| Test | Size | Question it answers |
+|---|---|---|
+| 1 | **100**, hand-picked | Qualitative only. Do owners understand the offer? Which trigger draws attention? What objection recurs? Do they ask *"can you just do this for me?"* |
+| 2 | **300–500**, after the message is revised | Directional response rate, first conversions |
+| 3 | **1,000+** | Only once downstream conversion data exists |
+
+**Test 1 will produce roughly 2 positive replies at base case. That is a listening exercise, not a
+measurement** — label it as such, or a thin result gets misread as failure.
+
+---
+
+## Original 60-day schedule (retained for the gates)
 
 Each week has one theme, a short task list, and **one gate**. If the gate fails, you fix that before
 adding volume. Adding volume to a broken funnel is the most expensive mistake available to you.

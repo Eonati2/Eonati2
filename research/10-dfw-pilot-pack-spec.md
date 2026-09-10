@@ -4,7 +4,9 @@ The first thing to build, by hand, before any automation. It is simultaneously t
 **public demo**, the **product's first deliverable**, and the **thing that proves the method works**.
 
 **Target:** 150 qualified DFW commercial accounts, trigger-scored, with decision-maker role
-identified. Build time by hand: 2–3 days. Do not automate until this exists.
+identified — from which **each delivered pack is 25–50 accounts, not 150+**. Perceived value comes
+from *"31 companies with something happening right now,"* not from row count. Build time by hand:
+2–3 days. Do not automate until this exists.
 
 ---
 
@@ -117,13 +119,19 @@ return-on-effort step in the entire build. See `06 §3`.
 ## 6. Scoring
 
 ```
-score = base_trigger_score              (7–10, from the trigger board in `04`)
+score = base_trigger_score              (7-10, from the trigger board in `04`)
       + 2   if a second trigger fires
       + 2   if freshness_days <= 30
+      + 2   if a cleaning-related review complaint stacks on a Tier-10 event
       + 1   if decision_maker_name is known
       + 1   if est_monthly_value >= $800
-      − 3   if freshness_days > trigger's window
+      - 3   if freshness_days > trigger's window
 ```
+
+**Tier-10 events** (new location, move, occupancy, new property-management assignment) outrank
+**Tier-9** (facilities hiring, expansion, acquisition), which outrank **Tier-7** (review
+complaints, headcount growth, funding). Review complaints are a *modifier stacked on an event*, not
+a primary trigger — see `11 §B4`.
 
 **Include at 9+. Nurture 6–8. Cut below 6.**
 

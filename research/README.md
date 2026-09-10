@@ -18,7 +18,8 @@ target reachable.
 | `07-60-day-execution-plan.md` | Week by week, with a pass/fail gate on each week |
 | `08-risks-and-alternatives.md` | Ranked risks, Plan B, Plan C, and the most likely failure mode |
 | `09-decision-record-v2.md` | **Locked decisions, and four corrections where the revised plan and the math still disagree** |
-| `10-dfw-pilot-pack-spec.md` | **The first buildable thing: 150 DFW accounts, schema, queries, scoring, ~27 hours** |
+| `10-dfw-pilot-pack-spec.md` | The first buildable thing: DFW accounts, schema, queries, scoring, ~27 hours |
+| `11-corrections-log.md` | **Audit response — three real errors fixed, calibration accepted, legal section rewritten, business model inverted** |
 
 ---
 
@@ -54,8 +55,34 @@ Four corrections carried in `09`:
 And the conclusion the conservative assumption forces: **the five done-for-you clients are ~70–75%
 of the $10,000**, not a side experiment. Price them at $2,000 and sell them deliberately.
 
+## v3 — audit response (2026-09-10)
+
+**Status changed from "decisions locked" to "provisional."** `11-corrections-log.md` takes
+precedence over anything earlier that conflicts with it.
+
+Three real errors found and fixed:
+
+1. **"1.6 million sends" was wrong** — the correct figure from Model A is **~240,000**. Conclusion
+   unchanged (still ~13× capacity), number inflated ~6.6×.
+2. **"Three-quarters of the target" contradicted the price.** 5 × $2,000 = **$10,000 gross — 100%**.
+   The 75% was carried over from the earlier $1,500 price and never re-run.
+3. **"$0.20 per proof pack" ignored enrichment.** Realistic: **$1.50–$4.00** per 25–50 account pack.
+
+Accepted calibration: the 1.26M market figure replaced with **~67,800 Census employer
+establishments**; 12% reply demoted to "exceptional" with a **2% base case**; the unsupported
+*"they don't have a cleaner yet"* line removed from the copy; **T5 review complaints demoted 10 → 7**
+and reclassified as a modifier; the Google Ads price anchor downgraded to ⬤ and replaced by
+contract value.
+
+Legal section rewritten — the **FTC's March 2024 TSR amendment extends to B2B telemarketing** and
+adds recordkeeping. "Landline safe / mobile illegal" was too categorical and is gone.
+
+**The business model inverted, and this is the important one:** not a $197 product that outbound
+sells, but a **$2,000 Managed Pilot sold first**, whose first five customers manufacture the $197
+product. Five pilots clear the gross target alone.
+
 ## Status
 
-Research complete, decisions locked. Nothing built, bought, or sent. Next action is the DFW pilot
-pack in `10` — three days and about $20, and it tests the trigger thesis before a single domain is
-warmed.
+Provisional. Nothing built, bought, or sent. Blocking: counsel review of the phone workstream, a
+spreadsheet-level audit of `03`, and the DFW scrape-and-qualify pass that settles the addressable
+market empirically.

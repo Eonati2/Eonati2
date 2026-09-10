@@ -84,7 +84,7 @@ Eleven triggers. For each: the source, how you get it, freshness window, score, 
 | **T2** | **New location opened** | 2nd/3rd branch | GBP new listing at same brand; "now open" site banners; local press | 0–120d | **10** |
 | **T3** | **Certificate of Occupancy / tenant-improvement permit** | Buildout finishing → cleaning needed at handover | County/municipal permit portals; Shovels/BuildZoom/PermitPub for coverage | 0–60d | **9** |
 | **T4** | **Facilities/office manager hired** | Someone now owns the vendor relationship — and reviews vendors | Indeed/LinkedIn job posts: "Facilities Manager," "Office Manager," "Operations Manager" | 0–90d | **9** |
-| **T5** | **Cleaning complaint in reviews** | Incumbent failing, in writing | Google reviews containing "dirty," "restroom," "not clean," "cleaning crew," "trash" | 0–60d | **10** |
+| **T5** | **Cleaning complaint in reviews** | Dissatisfaction, inferred | Google reviews containing "dirty," "restroom," "not clean," "cleaning crew," "trash" | 0–60d | **7** *(was 10 — see `11 §B4`)* |
 | **T6** | **New business registration** | New entity, no vendors yet | Secretary of State filings (most states publish; several have bulk downloads) | 0–120d | **8** |
 | **T7** | **Property manager acquires/lists a property** | One relationship → many buildings | CRE listing sites; property-manager site "our portfolio" page diffs | 0–90d | **9** |
 | **T8** | **Headcount growth** | More people → more mess → more frequency | Multiple open roles at one location on Indeed/LinkedIn | 0–60d | **7** |
@@ -96,9 +96,14 @@ Eleven triggers. For each: the source, how you get it, freshness window, score, 
 cleaning company, +1 for a named decision-maker. **Contact at 9+. Nurture at 6–8. Ignore below 6.**
 
 ### The two that matter most, and why
-**T5 (cleaning complaints in reviews)** is the strongest and the most underused. It is a business
-telling you, in public and in writing, that its current cleaner is failing. It is free to collect
-via Google reviews, and it converts because the pain is present-tense.
+**Events that open a purchasing window outrank inferred dissatisfaction.** A review saying "the
+bathrooms were filthy" does not establish that the business controls the cleaning contract, that
+the reviewer is an employee, that the issue is current, or that anyone is shopping. T5 is scored 7,
+not 10.
+
+**T5's real use is as a modifier, not a primary trigger.** It is free and abundant, so stack it: a
+business that just moved *and* has restroom complaints is a materially stronger row than either
+signal alone.
 
 **T1 + T3 together (new lease + occupancy permit)** identify a business that will need a cleaner on
 a known date and doesn't have one yet. That's not a switch — it's a first purchase, with no
@@ -107,12 +112,20 @@ incumbent to displace. Structurally the easiest win in the industry.
 ### Cost of a Proof Pack
 | Item | Cost |
 |---|---|
-| 25 places, one metro slice | $0.10 |
-| Review scrape for T5 | $0.05 |
-| Permit/registry lookups | free |
-| Job-post scrape for T4 | $0.05 |
-| **Per pack** | **≈ $0.20** |
-| **200 packs across the campaign** | **≈ $40** |
+| Maps extraction, 50 places with filters | $0.20–$0.40 |
+| Website / contact extraction | $0.25–$0.60 |
+| Review mining for T5 | $0.10–$0.30 |
+| Permit / SoS lookups | free–$0.25 |
+| Job-post scrape for T4 | $0.10–$0.30 |
+| Email enrichment | $0.30–$1.00 |
+| Email verification | $0.05–$0.15 |
+| AI classification & angle drafting | $0.15–$0.60 |
+| Platform compute overhead | $0.10–$0.30 |
+| **Per pack (25–50 accounts, fully enriched)** | **$1.50–$4.00** |
+| **200 packs across the campaign** | **$300–$800** |
+
+> *Correction (2026-09-10): an earlier version said "$0.20 per pack / $40 for 200." That covered a
+> narrow Maps pull only and ignored enrichment, verification and compute. See `11 §A3`.*
 
 **Build packs only for people who reply.** That single rule is what makes the economics absurd:
 your most impressive sales asset costs twenty cents and is only produced for people who asked.

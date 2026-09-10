@@ -12,6 +12,9 @@
    than none — this buyer sees twenty agency emails a week and can spot a template.
 6. **Plain text. No images, no HTML signature, no tracking pixel.** Open tracking inflates numbers
    with bot clicks and hurts placement. Track replies.
+7. **Never assert a fact about a third party you cannot evidence.** Not *"they don't have a cleaner
+   yet"* — you don't know that. Describe the signal you actually observed and its date. CAN-SPAM's
+   one non-preempted area is falsity, and California attaches $1,000 per email to it.
 7. **Compliance footer on every send** — see `06`.
 
 **Merge fields:** `{{first_name}}` `{{company}}` `{{city}}` `{{metro}}` `{{trigger_count}}`
@@ -26,16 +29,14 @@
 **Subject:** `23 in {{city}}`
 
 ```
-{{first_name}} — I track businesses in {{city}} that just signed a new lease,
-opened a second location, or posted a facilities manager job.
+{{first_name}} — I track commercial signals in {{city}}: new leases, second
+locations, occupancy permits, facilities-manager job posts.
 
-Right now there are {{trigger_count}}. One of them is a {{facility_type}} that
-moved into a new building three weeks ago.
-
-They don't have a cleaner locked in yet.
+Right now there are {{trigger_count}}. The most recent is a {{facility_type}}
+that moved into a new building three weeks ago.
 
 Want the list? Reply "send it" and I'll put it together for {{city}} — names,
-addresses, what changed, and who signs.
+addresses, what changed and when, and the title of whoever signs.
 
 No charge, no call.
 ```

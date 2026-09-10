@@ -18,7 +18,7 @@ you can physically send in 60 days.
 | Sending inboxes | 24 (6 domains × 4 inboxes) | |
 | Sends per inbox per day | 28 | Safe 2026 practice under the 0.3% complaint regime |
 | Daily capacity | 672 | |
-| **Total sends in the window** | **≈ 18,000** | |
+| **Total sends in the window** | **≈ 18,000** | 27 business days × 672/day = 18,144. **Business days, not calendar days** — 60 calendar − 21 warmup = 39 calendar ≈ 27 business. |
 | Average touches per contact (sequence halts on reply) | 2.8 | |
 | **Contacts you can actually reach** | **≈ 6,400** | |
 
@@ -40,9 +40,20 @@ you can physically send in 60 days.
 | Gross @ $149 | | **$745** |
 | Net after Gumroad | −12.9% −$0.80 | **$645** |
 
-**Against $10,000: it delivers 7%.** And this isn't a tuning problem. To reach $10,000 this way you
-would need roughly **1.6 million sends** — about 90× your capacity, and a volume that would destroy
-your domains and your compliance posture long before it produced revenue.
+**Against $10,000: it delivers 7%.** And this isn't a tuning problem:
+
+```
+$10,000 ÷ $149  = 67 sales
+67 ÷ 5          = 13.4×
+13.4 × 18,000   ≈ 241,000 sends
+```
+
+**~240,000 sends — about 13× your capacity**, at a volume that would destroy your domains and your
+compliance posture long before it produced revenue.
+
+> *Correction (2026-09-10): an earlier version of this file said "roughly 1.6 million sends." That
+> figure did not follow from the model above and was inflated by about 6.6×. The conclusion is
+> unchanged — the funnel cannot reach the target — but the number was wrong. See `11`.*
 
 **Root cause:** the funnel asks a stranger to click a link and hand a credit card to an unknown
 brand, with no human contact anywhere. Both conversion steps are the weakest-converting steps in
@@ -122,7 +133,7 @@ Base case $7,243 (Model B), one variable at a time:
 
 | Change | New gross | Δ |
 |---|---|---|
-| Trigger reply rate 12% → 20% *(the benchmark's midpoint)* | $10,400 | **+$3,200** |
+| Trigger reply rate 12% → 20% *(exceptional case — do not plan on it)* | $10,400 | **+$3,200** |
 | Trigger reply rate 12% → 6% *(triggers don't work)* | $5,300 | −$1,900 |
 | Pack→purchase 22% → 30% | $9,900 | **+$2,700** |
 | AOV: mix shifts to 50/30/20 | $9,800 | **+$2,600** |

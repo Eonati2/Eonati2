@@ -93,14 +93,21 @@ prospects; going international buys risk and no revenue.
 Adding phone as a channel moves you under a second, stricter regime. CAN-SPAM compliance buys you
 nothing here.
 
-| Rule | Detail |
+**This is a layered regime, not a rule of thumb.** An earlier version of this file reduced it to
+"landline safe / mobile illegal." That framing was too categorical, and it also predated a change
+that matters.
+
+| Layer | What it does |
 |---|---|
-| **B2B calls to a verified business landline** | Generally exempt from the federal DNC registry |
-| **Calls to a decision-maker's personal cell** | **Not exempt.** Treated as residential under the TCPA regardless of how the number is labelled in your CRM |
-| **Autodialer / prerecorded / AI voice to a cell** | Requires prior express written consent — B2B included. Assume you do not have it. |
-| **Calling window** | 8am–9pm recipient-local; applies to cell numbers in a B2B context |
-| **Penalty** | **$500–$1,500 per call**, private right of action, plus state mini-TCPA statutes |
-| **TSR B2B carve-out** | The exemption does not cover sellers of *nondurable office or cleaning supplies*. A system sold to cleaning companies is not a cleaning-supply sale, but the adjacency is close enough to be worth a lawyer's 30 minutes. |
+| **FTC DNC provisions** | Most B2B solicitation calls remain exempt — *except* sellers of nondurable office or **cleaning supplies** |
+| **FTC TSR, as amended March 2024** (effective 16 May 2024; recordkeeping from 15 Oct 2024) | **Now reaches B2B telemarketing.** Prohibits material misrepresentations and false or misleading statements made to induce payment, and **expands recordkeeping** — call detail records, seller-relationship records, DNC-compliance records |
+| **TCPA / FCC** | Separate regime. Restricts autodialed and artificial/prerecorded calls to **wireless** numbers absent required consent. Private right of action, **$500–$1,500 per call** |
+| **State mini-TCPA statutes** | Stack on top, with their own consent rules and calling windows |
+
+**What this means in practice:** the 2024 TSR amendment removed the assumption that B2B calling sits
+largely outside the FTC's reach. Misrepresentation rules and recordkeeping duties now apply to
+business-to-business calls, and the recordkeeping obligation is operational — it requires you to
+*keep records*, which is a system, not a policy.
 
 ### Why this bites this plan specifically
 Google Maps listings for small local businesses are overwhelmingly **mobile numbers**. Owner-operated
@@ -108,17 +115,26 @@ cleaning companies list a cell as the business line as a matter of course. The c
 is aimed at precisely the number type that carries the exposure, sourced from precisely the dataset
 that produces it.
 
-### The five rules
-1. **Manual dialling only.** No autodialer, power dialer, prerecorded drop, or AI voice agent.
-2. **Line-type lookup on every number before it reaches a dial list.** Costs fractions of a cent;
-   prevents $500–$1,500 per call. Highest return-on-effort control in the build.
-3. **Wireless and unknown numbers get the strict treatment** — manual, 8am–9pm local, no exceptions.
-4. **One suppression list across email and phone.** A "don't call me" suppresses the email too, and
-   permanently.
-5. **Ship the TCPA module in the product.** You are selling a calling system to people who will
-   point it at their own prospects. A phone playbook without this section hands your customer
-   per-call exposure with your name on the box — and including it is a differentiator, exactly as
-   the CAN-SPAM module is.
+### The operating position
+**Phone outreach is a separate legal workstream, not a setting.** Before dialling: classify the
+number, determine which federal and state rules apply, keep suppression *and call* records, and
+prohibit automated or prerecorded outreach unless counsel has confirmed the legal basis.
+
+Concretely:
+1. **Manual dialling only** until counsel says otherwise. No autodialer, power dialer, prerecorded
+   drop, or AI voice agent.
+2. **Line-type lookup on every number before it reaches a dial list.** Fractions of a cent, and it
+   is what lets you apply the right rules to the right number.
+3. **Wireless and unknown numbers get the strict treatment** — manual, business hours local.
+4. **Records, not just suppression.** The 2024 TSR recordkeeping duty means call detail and
+   DNC-compliance records are part of the build from day one, not a later clean-up.
+5. **One suppression list across email and phone**, permanent, shared across all domains.
+6. **Ship this in the product — as a workstream, not a bright line.** Teaching customers "landline
+   safe / mobile illegal" would hand them false confidence in a line that does not exist. The
+   honest version is a differentiator; the crisp version is a liability.
+
+**Counsel review is a prerequisite for the phone channel**, including the TSR nondurable
+cleaning-supplies carve-out, which sits uncomfortably close to this industry.
 
 ---
 

@@ -1,5 +1,10 @@
 # 09 — Decision Record v2
-**Date:** 2026-09-09 · Supersedes conflicting guidance in `00`–`08` where noted.
+**Date:** 2026-09-09 · Amended 2026-09-10 · Supersedes conflicting guidance in `00`–`08` where noted.
+
+> **Status: provisional, not locked.** An audit on 2026-09-10 found three arithmetic/logic errors
+> in this document and its artifact. All are corrected in `11-corrections-log.md`, which takes
+> precedence over anything below that conflicts with it. The largest: **5 × $2,000 = $10,000 gross
+> — 100% of the target, not "three-quarters."**
 
 This records the locked decisions, what changed from v1, and four corrections where the revised
 plan and the funnel math still disagree.
@@ -162,13 +167,18 @@ Using the plan's own **2% positive response** and a generous **25%** positive-re
 | **DFY-led** — 5 implementations @ $1,500 = $7,500, plus ~14 product sales | 19 buyers | **~3,500–4,000** |
 
 **The conclusion the revision has not yet drawn from its own assumption:** under a 1–3% positive
-response, **the five done-for-you clients are not a research laboratory that happens to earn money.
-They are 70–75% of the $10,000.** The product-only route needs roughly three times the prospect
-volume, which is three times the scraping, enrichment, sending, dialling and compliance surface.
+response, **five managed pilots at $2,000 clear the entire gross target on their own** —
+$10,000 gross, ~$8,700 net after Gumroad. Not 70–75%; 100% of gross. The product-only route needs
+roughly three times the prospect volume, which is three times the scraping, enrichment, sending,
+dialling and compliance surface.
 
-They are still research laboratories — that framing is right and worth keeping. But they should be
-**priced at the top of the stated range ($2,000, not $1,000), sold deliberately from day one, and
-staffed for**, rather than treated as a by-product of a product launch.
+**Which forces the business-model inversion:** this is not a $197 product that outbound sells. It is
+a **$2,000 managed service sold first**, whose first five customers manufacture the $197 product.
+See `11 §E`.
+
+They are still research laboratories — that framing is right and worth keeping. But they are
+**simultaneously the revenue, the case studies and the product research**, and should be priced at
+$2,000, sold deliberately from day one, and staffed for.
 
 **Corollary:** the most important sentence on the sales page is not the one that sells a $149
 download. It is the one that makes a cleaning company owner ask *"could you just do this for me?"*
