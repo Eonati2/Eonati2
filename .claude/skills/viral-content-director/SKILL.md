@@ -121,6 +121,43 @@ CTA from the objective, never a reflex "like and subscribe".
 
 **11 · Learn.** Analytics → `content-autopsy` → earned rules into the library.
 
+## Generation engine preflight — all six, before any spend
+
+Run every time before authorizing paid generation. **Check 6 is a hard prerequisite, not
+a warning.** If it fails, do not generate — no exceptions, however good the other five look.
+
+1. **Balance** — read the account's actual credit balance.
+2. **Model and config** — confirm model id, duration, resolution, aspect ratio are all
+   supported. Read the parameter list; do not assume a flag exists.
+3. **Live unit cost** — preflight it (`get_cost` or equivalent). Never estimate from a
+   pricing page. Note that a preflight may report the *unit* price and ignore a `count`
+   multiplier — multiply it yourself and say so.
+4. **Affordability** — planned generations × unit cost ≤ balance. State the shortfall in
+   credits if it fails, and the number actually affordable.
+5. **Candidate count** — enough per arm to reject one. A single generation per arm is a
+   coin flip, not a candidate pool, and it silently voids the creative gate.
+6. **DELIVERY PATH — can the output actually be retrieved into this environment?**
+   Fetch one real artifact URL from the provider's CDN, or a URL of the same host shape,
+   *before* spending. Providers deliver from a CDN that is often a different host from
+   the API, and an egress policy can allow the API while blocking the CDN. Generation
+   succeeding proves nothing about retrieval.
+
+### Engine classification
+
+An engine only counts as usable by the director if the whole chain works:
+
+**generate → retrieve → inspect → edit → publish**
+
+| Class | Meaning |
+|---|---|
+| **Autonomous engine** | every link works unattended; the director can use it in a loop |
+| **Manually recoverable generator** | generates, but a human must ferry files in; usable, never autonomous |
+| **Unavailable** | cannot generate from here at all |
+
+Say which class an engine is in before proposing it, and never describe a manually
+recoverable generator as if it were autonomous. A pipeline is only as autonomous as its
+weakest link, and retrieval is the link everyone forgets to test.
+
 ## The three gates
 
 Run all three on every final render. **Gate C has veto power over A and B.**

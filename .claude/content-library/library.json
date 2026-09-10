@@ -485,6 +485,40 @@
       "kind": "rule",
       "id": "rule-32005856",
       "added": "2026-09-10T09:20:05.856625+00:00"
+    },
+    {
+      "rule": "Generation availability is not autonomous generation availability. Before any paid generation, verify the DELIVERY PATH: fetch a real artifact URL from the provider CDN. Hard prerequisite, not a warning.",
+      "evidence": "EXP-01 Arm A: 40.5 credits spent, 3 candidates generated successfully at 720x1280/9s, then all 3 were unretrievable — d8j0ntlcm91z4.cloudfront.net returned connect_rejected (organization policy). API host was allowed, CDN host was not. Balance 44.18 -> 3.68.",
+      "confidence": "high",
+      "kind": "rule",
+      "id": "rule-59834702",
+      "added": "2026-09-10T17:03:54.702958+00:00"
+    },
+    {
+      "rule": "Classify every generation engine as autonomous engine, manually recoverable generator, or unavailable. Higgsfield is currently a manually recoverable generator in this environment: it generates but a human must ferry files in.",
+      "evidence": "generate succeeded; retrieve failed at the CDN. A pipeline is only as autonomous as its weakest link.",
+      "confidence": "high",
+      "kind": "rule",
+      "id": "rule-59834735",
+      "added": "2026-09-10T17:03:54.735781+00:00"
+    },
+    {
+      "experiment": "EXP-01 opening-mode",
+      "arm": "A",
+      "status": "generated, awaiting retrieval",
+      "generator": "kling3_0_turbo 720p 9s 9:16",
+      "candidates": 3,
+      "credits_spent": 40.5,
+      "job_ids": [
+        "5ed593e6-2020-4666-a5fe-bbcbc9862f7f",
+        "07d8553a-8a67-4dd0-9a15-f6a54757e286",
+        "a785b9ac-7dec-4fb2-b105-7553f5ed705f"
+      ],
+      "prompt_subject": "black volcanic sand beach, boots then fast tilt-up reveal to storm cloud at dusk",
+      "blocker": "CDN egress-blocked; gates A/B/C not yet run",
+      "kind": "idea",
+      "id": "idea-59834766",
+      "added": "2026-09-10T17:03:54.766650+00:00"
     }
   ]
 }
