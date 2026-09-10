@@ -61,7 +61,8 @@ gate and say why.
 | Compliance and send-safety gates | `email-marketing-bible` | Use its compliance + send-gate chapters |
 | Sales page, landing page copy | `copywriting` → `cro` | |
 | Copy editing | `copy-editing` | |
-| Sales collateral, objection docs, proposals | `sales-enablement` | |
+| **Any sales-motion work** — qualification, discovery, walkthrough, objections, proposal conversation, negotiation, closing, follow-up | **`commercial-cleaning-sales`** | **Project-specific. Outranks all generic sales guidance.** Behavioural layer; pairs with `commercial-cleaning-os/sales/` for measurable detail |
+| Sales collateral — decks, one-pagers, leave-behinds | `sales-enablement` | Collateral only, not the motion |
 | CRM, lifecycle stages, handoff | `revops` | |
 | CRM duplicates | `crm-duplicate-detector` | |
 | Reply classification and response | `reply-handler` | |
@@ -73,10 +74,12 @@ gate and say why.
 | Automation build | `n8n-workflow-builder` | |
 | Automation debugging | `n8n-debugger` | |
 
-**Unresolved gap — the sales layer.** `sales-skills/sales` (the `sales-do` router) **could not be
-verified to exist**. Until it is, route sales-motion work — discovery, objection handling,
-walkthrough, proposal, closing, cadence — to `sales-enablement` + `revops` + this skill's own
-workflows under `commercial-cleaning-os/`.
+**Sales layer — resolved.** `sales-skills/sales` could not be verified to exist, and it is no longer
+needed. `commercial-cleaning-sales` (project-authored, installed 2026-09-10) is the entry point for
+the whole sales motion, paired with the operational workflows in `commercial-cleaning-os/sales/`.
+Both are project-specific, so both outrank generic sales guidance under the conflict priority in §2.
+Where the two disagree, the override table at the foot of `commercial-cleaning-sales/SKILL.md`
+decides.
 
 ### Conflict note: four skills claim cold email
 

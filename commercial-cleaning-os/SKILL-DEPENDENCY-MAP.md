@@ -15,6 +15,7 @@ Which skill owns what, where they overlap, and where they must not be trusted bl
 | `bcharleson/claude-code-cold-email-skills` ★6 | git clone + copy | 3 | `.claude/skills/` |
 | `CosmoBlk/email-marketing-bible` ★291 | git clone | 1 | `.claude/skills/` |
 | **This project** | authored | 1 (`revenue-engine`) | `.claude/skills/` |
+| **This project** | user-supplied, installed 2026-09-10 | 1 (`commercial-cleaning-sales`) | `.claude/skills/` |
 
 `sales-skills/sales` — **not installed. Could not be verified to exist** (404 on every raw path
 tried; org search returns no such resource). See "Open gap" below.
@@ -102,13 +103,19 @@ counsel review; `website-scraper` (l3mpire) for account research.
 
 ---
 
-## Open gap — the sales layer
+## Sales layer — closed
 
-`sales-skills/sales` and its `sales-do` router were specified as the entry point for discovery,
-objection handling, follow-up, proposal, closing, pipeline, CRM and cadence. **The repository could
-not be verified to exist.**
+`sales-skills/sales` could not be verified to exist. It is no longer needed: **`commercial-cleaning-sales`**
+(project-authored, installed 2026-09-10) is now the sales entry point, and it knows this business in
+a way a generic router would not.
 
-**Interim coverage:**
+**Two project-specific sources now cover sales, and they are layered, not duplicated:**
+`commercial-cleaning-sales` is the **behavioural** layer — conversation, questions, listening, the
+cold-call/discovery distinction. `commercial-cleaning-os/sales/` is the **operational** layer —
+measurement, the two-method pricing model, closed reason codes, SLAs, and the Instance B content
+that ships inside the product. The override table at the foot of the skill decides any disagreement.
+
+**Coverage:**
 
 | Need | Covered by | Adequate? |
 |---|---|---|
