@@ -144,6 +144,11 @@ a warning.** If it fails, do not generate — no exceptions, however good the ot
 
 ### Engine classification
 
+> **Artifact retrieval is part of generation capability.** An engine that produces an
+> asset it cannot deliver into the production pipeline has not generated anything usable.
+> Retrieval is not logistics downstream of generation — it is one of generation's
+> requirements, and it is tested before spending, not after.
+
 An engine only counts as usable by the director if the whole chain works:
 
 **generate → retrieve → inspect → edit → publish**

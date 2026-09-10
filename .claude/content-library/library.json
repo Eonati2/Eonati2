@@ -567,6 +567,14 @@
       "kind": "rule",
       "id": "rule-61082916",
       "added": "2026-09-10T17:24:42.916289+00:00"
+    },
+    {
+      "rule": "Artifact retrieval is part of generation capability, not logistics downstream of it. An engine that produces an asset it cannot deliver into the pipeline has generated nothing usable.",
+      "evidence": "EXP-01 Arm A: three candidates generated successfully for 40.5 credits and none could be evaluated, because the delivery CDN was egress-blocked while the API host was allowed.",
+      "confidence": "high",
+      "kind": "rule",
+      "id": "rule-61208025",
+      "added": "2026-09-10T17:26:48.025650+00:00"
     }
   ]
 }
