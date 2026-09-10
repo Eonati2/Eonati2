@@ -519,6 +519,30 @@
       "kind": "idea",
       "id": "idea-59834766",
       "added": "2026-09-10T17:03:54.766650+00:00"
+    },
+    {
+      "rule": "Higgsfield bills by duration, not by clip: 1.5 credits/second on kling3_0_turbo 720p. Minimum generation is 3s. So a 9-shot micro-shot edit costs 40.5 credits versus 13.5 for one 9s take — 3x more for the same finished runtime. Micro-shots buy edit control, never savings. Say so.",
+      "evidence": "Verified get_cost probes: 3s = 4.5 credits, 9s = 13.5 credits, both 720p 9:16 kling3_0_turbo.",
+      "confidence": "high",
+      "kind": "rule",
+      "id": "rule-60196196",
+      "added": "2026-09-10T17:09:56.196318+00:00"
+    },
+    {
+      "rule": "A described reference is not a measured reference. Never write a measured block from a description, and never let reference_match compare against design targets. Tier 4, not tier 3.",
+      "evidence": "A neon-poetic-micro-story spec was supplied as prose analysis with runtime, fps and palette figures for a clip that was never uploaded to this session. Storing those as measured values would have silently corrupted every future candidate comparison.",
+      "confidence": "high",
+      "kind": "rule",
+      "id": "rule-60196229",
+      "added": "2026-09-10T17:09:56.229234+00:00"
+    },
+    {
+      "rule": "Graphic neon-on-black formats are a far easier generation problem than photoreal camera moves: simple primitives on a black field, and the black hides the artifacts that usually fail Gate C. Prefer them when generator quality is the constraint.",
+      "evidence": "EXP-01 Arm A asked Kling for a fast tilt-up inside a realistic beach scene — the hardest class of request. The neon format asks only for one isolated object morphing in a void.",
+      "confidence": "medium",
+      "kind": "rule",
+      "id": "rule-60196264",
+      "added": "2026-09-10T17:09:56.264475+00:00"
     }
   ]
 }
