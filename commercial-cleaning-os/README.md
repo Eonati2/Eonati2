@@ -18,10 +18,11 @@ project rules that override specialist skill guidance.
 | 6. Dependency map | done |
 | 7. Master orchestration layer | done — `revenue-engine` |
 | 8. Routing validated | done — 32/32 routes resolve, 0 orphans, 0 broken symlinks |
-| 9. CRM and automation | **not started** |
+| 9a. CRM foundation | **done** — `crm/`, 5 specs |
+| 9b. Automation, offers, analytics, policies | not started |
 
-Directories below `crm/`, `outbound/`, `automation/`, `offers/`, `analytics/` and `policies/` are
-scaffolded and empty by design. Step 9 fills them.
+`crm/` is specified. `outbound/`, `automation/`, `offers/`, `analytics/` and `policies/` remain
+scaffolded and empty.
 
 ## Prior research
 
