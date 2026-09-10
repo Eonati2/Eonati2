@@ -61,7 +61,7 @@ copy-paste that leaves them in ships our targeting of the buyer to the buyer.
 | Item | Status |
 |---|---|
 | Rewrite from spec-voice to owner-voice | **Not started.** These were written for us |
-| Consistent formatting across nine docs | Not started |
+| Consistent formatting across ten docs | Not started |
 | Assemble as PDF and editable copies | Not started |
 | ZIP for Gumroad upload | Not started |
 | Cover image / thumbnail | Not started |
