@@ -158,6 +158,51 @@ Say which class an engine is in before proposing it, and never describe a manual
 recoverable generator as if it were autonomous. A pipeline is only as autonomous as its
 weakest link, and retrieval is the link everyone forgets to test.
 
+## Generation router — measured-cost version
+
+Route selection optimises **total production cost subject to Gate C**, never the cost of
+one generation type. Run this before the six-check preflight.
+
+1. Classify every shot **HOLD / SLOW / BURST** from the measured format grammar.
+2. **HOLD** → prefer still generation.
+3. **SLOW** → prefer still + post-production motion, unless native animation is
+   materially necessary.
+4. **BURST** → video generation.
+5. **Never generate motion merely because the deliverable is video.** Generate motion only
+   where the measured grammar shows motion contributes to the effect. In a format whose
+   reference holds still for 7 of 13 seconds, adding motion damages it.
+6. Before spending, compute **TOTAL route cost** for: all-video · still-first at a quality
+   that can pass Gate C · low-quality-still→upscale hybrid · any other viable mix.
+   Compare totals, not per-asset prices.
+7. Reject any route whose expected output will fail Gate C. Cheap and rejected is not cheap.
+8. Among routes that can plausibly pass, rank by: (a) expected Gate C quality,
+   (b) total credits, (c) compositional control, (d) retry cost, (e) delivery reliability.
+9. **Never call a cheaper route better until its quality is independently verified.**
+10. The measured grammar outranks generic video-generation convention.
+
+### Worked example — why rule 6 says *totals*
+
+For a 9-shot neon piece, per-asset intuition says stills are cheaper than video. Totals say
+otherwise:
+
+| Route | Credits |
+|---|---|
+| All nine as 3s clips | 40.5 |
+| Still-first at high quality (7 x 6.5 + 6s video) | **54.5** |
+| Low-quality still + upscale hybrid | unpriced — see below |
+
+Still-first at a usable quality costs **more** than all-video. It is still usually the right
+call, but on control and retry cost, not price. Verified rates: video 1.5 credits/s with a
+3s floor; `gpt_image_2` 0.5 credits at 1k/low, 6.5 at 2k/high — a 13x spread, and low
+quality will not survive a format built on clean neon edges.
+
+### Pricing an upscale needs a real asset
+
+`upscale_image` cannot be preflighted: it requires a resolvable `image_id`, so the hybrid
+route cannot be costed without first generating an image. Treat the hybrid as **unpriced
+and unverified** until someone spends on one still and inspects the upscaled result. Do not
+enter its number into a comparison table as though it were known.
+
 ## The three gates
 
 Run all three on every final render. **Gate C has veto power over A and B.**

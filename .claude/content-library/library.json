@@ -551,6 +551,22 @@
       "kind": "rule",
       "id": "rule-60746310",
       "added": "2026-09-10T17:19:06.310219+00:00"
+    },
+    {
+      "rule": "Route selection must compare TOTAL route cost subject to Gate C, not the unit price of a generation type. Still-first is chosen for control and retry cost, not for being cheaper.",
+      "evidence": "Signal 9-shot neon piece: all-video 40.5 credits vs still-first at 2k/high 54.5 credits. Verified rates: video 1.5 credits/s with 3s floor; gpt_image_2 0.5 at 1k/low, 6.5 at 2k/high.",
+      "confidence": "high",
+      "kind": "rule",
+      "id": "rule-61082882",
+      "added": "2026-09-10T17:24:42.882454+00:00"
+    },
+    {
+      "rule": "The low-still-to-upscale hybrid is UNPRICED and UNVERIFIED. upscale_image cannot be preflighted — it requires a resolvable image_id — so the route cannot be costed without spending, and its output cannot be inspected here because image results come from the same egress-blocked CDN as video.",
+      "evidence": "upscale_image get_cost with a nil UUID returned: Image upscale requires a resolvable image_id. Video CDN d8j0ntlcm91z4.cloudfront.net is connect_rejected by org policy.",
+      "confidence": "high",
+      "kind": "rule",
+      "id": "rule-61082916",
+      "added": "2026-09-10T17:24:42.916289+00:00"
     }
   ]
 }
