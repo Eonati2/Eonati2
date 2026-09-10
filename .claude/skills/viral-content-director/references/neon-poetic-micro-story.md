@@ -4,12 +4,42 @@ A second template alongside the atmospheric-shortform family. Where that one is
 photoreal footage with a slow camera, this is **graphic, illustrated and
 transformation-driven** — and it asks a generator for a far easier problem.
 
-> **Evidence tier 4 — described, not measured.** This spec was written from a
-> description of a reference clip, not from `analyze_video.py` output. Every number
-> below is a *design target*, not an observed value. Do not treat it as a measured
-> reference, do not add it to the library with a `measured` block, and do not let
-> `reference_match.py` compare against it until a real example has been analyzed.
-> If the user uploads one, measure it and replace these targets with observations.
+> **Evidence tier 3 — MEASURED.** Observed from one reference clip via
+> `analyze_video.py`. Source was **576x576 square**, 24.87fps, 15.07s container with
+> ~13.0s of content before the platform end card. Figures below are observations.
+> Note the source aspect: these compositions were built for a square frame, so a 9:16
+> version must be **recomposed, not cropped** — cropping a square destroys the lateral
+> negative space the typography sits in.
+
+## Measured values
+
+| | Observed | Note |
+|---|---|---|
+| Mean exposure | **4.9%** | darkest clip measured in this project by a wide margin |
+| Black point | 0.0% | true black background, not dark grey |
+| White ceiling | 51.3% | glow never approaches clipping |
+| Saturation | 0.43 | moderate — the colour is concentrated in small emissive areas |
+| Highlight RGB | 131, 70, 158 | violet/magenta |
+| First-second energy | **0.00** | nothing moves at 0s |
+| Dead seconds | **7 of 13** | sec 0,2,3,4,7,9,11 |
+| Strict cuts | 3, at 8.92 / 9.12 / 9.32 | all inside one 0.4s burst |
+| Loose cut events | 18 | most are morphs, not cuts |
+| Loop | does NOT loop | |
+
+## The correction that matters
+
+**This is not a continuously-moving edit.** Over half its seconds have no measurable
+change at all. The real structure is **long held images punctuated by short bursts** —
+motion concentrates at sec 8 (zoom +21.6%/s, roll -17.2 deg/s) and sec 10 (+30.7%/s),
+with near-total stillness between.
+
+Two consequences:
+
+1. **The described "cut every 0.7-1.8s" is wrong.** Do not build to that rhythm. Build
+   long holds, then one flurry of 3 cuts inside half a second.
+2. **Most shots do not need video generation.** A held image with a glow pulse is a
+   still plus a slow zoom. Generate video only for the burst and the morphs; that is a
+   large cost saving over generating every shot as a clip.
 
 ## The system
 

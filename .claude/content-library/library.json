@@ -543,6 +543,14 @@
       "kind": "rule",
       "id": "rule-60196264",
       "added": "2026-09-10T17:09:56.264475+00:00"
+    },
+    {
+      "rule": "The neon poetic format is a held-image slideshow with punctuated bursts, not a continuously-moving edit. 7 of 13 seconds had zero measurable change; all 3 strict cuts fell inside one 0.4s flurry. Build long holds plus one burst — and generate stills for the holds, video only for the morphs.",
+      "evidence": "Measured reference 576x576 24.87fps: dead seconds 0,2,3,4,7,9,11; motion spikes only at sec 8 (zoom +21.6%/s, roll -17.2deg/s) and sec 10 (+30.7%/s); mean exposure 4.9%, black 0.0%, white 51.3%, sat 0.43.",
+      "confidence": "high",
+      "kind": "rule",
+      "id": "rule-60746310",
+      "added": "2026-09-10T17:19:06.310219+00:00"
     }
   ]
 }
