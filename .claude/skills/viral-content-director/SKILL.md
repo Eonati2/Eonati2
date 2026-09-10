@@ -40,6 +40,28 @@ with performance, measure what shipped, and let real analytics settle disputes.
 | Pipeline broken | `studio-setup` |
 | Handoff to a human editor | `edit-handoff` |
 
+### OpenClip (hosted MCP — needs the user signed in)
+
+Reaches for these only when the job is **operating on an existing media file**. They are a
+remote service, so prefer local ffmpeg for anything trivial; the value here is the work
+ffmpeg cannot do.
+
+| Need | Skill | Cost |
+|---|---|---|
+| Long video → ranked short clips | `openclip-clipping` | subscription |
+| Full long-form → multi-platform batch | `openclip-repurpose` | subscription |
+| Burned-in styled captions | `openclip-captions` | subscription |
+| UGC-style talking-head ad | `openclip-ugc-ads` | subscription |
+| Transcribe + diarize → SRT/VTT/JSON | `openclip-transcription` | **free** |
+| Trim, crop, reframe 9:16, compress, mute | `openclip-video-editing` | **free** |
+| Format/codec conversion, gif | `openclip-convert` | **free** |
+| Extract frames as thumbnails | `openclip-thumbnails` | **free** |
+| Cut-out to transparent PNG | `openclip-remove-background` | **free** |
+| Entry point / routing | `openclip` | — |
+
+Transcription is the one to reach for by default: it unlocks word-level caption timing for
+`remotion-captions` and `caption-animation`, and it costs nothing.
+
 ## Workflow
 
 Run in order. Skip a phase only with a stated reason.

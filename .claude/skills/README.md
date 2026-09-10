@@ -11,5 +11,6 @@ Installed 2026-09-10. Sources and rationale are in the session that created this
 - `remotion-*` — github.com/remotion-dev/skills
 - `short-form-video`, `caption-animation` — github.com/iart-ai/tiktok-video-skills
 - `watch-video` — github.com/alexlarcheveque/claude-watch
+- `openclip*` (10) — github.com/OpenClip-App/agent-skills (MIT), hosted MCP at https://openclip.app/mcp
 
 Requires on PATH: ffmpeg, ffprobe. Python: numpy.
