@@ -85,12 +85,21 @@ and the call that follows it.
 | 6 | **Pack Delivered** | Pack sent by a human (never automated) | They respond to it, or go quiet | Us |
 | 7 | **Conversation** | Substantive reply after the pack | Offer made, or deferred | Us |
 | 8 | **Offer Made** | A specific tier proposed with a price | Purchase, decline, or deferral | Us |
-| 9 | **Won — Core OS** | $197 purchase confirmed | — terminal (may re-enter at 8 for upgrade) | Us |
-| 10 | **Won — Setup** | $497 purchase confirmed | — terminal | Us |
-| 11 | **Won — Managed Pilot** | $2,000 purchase confirmed **and** a delivery slot is free | — terminal | Us |
+| 9 | **Won — Core OS** | $197 purchase confirmed via Gumroad | — terminal (may re-enter at 8 for upgrade) | Us |
+| 10 | **Won — Setup** | $497 payment confirmed. **No Gumroad listing — closed manually** | — terminal | Us |
+| 11 | **Won — Managed Pilot** | $2,000 payment confirmed **and** a delivery slot is free. **No Gumroad listing — closed manually** | — terminal | Us |
 | 12 | **Lost** | Explicit no. `loss_reason` required | — terminal | Us |
 | 13 | **Nurture** | Interested, wrong timing | Review date arrives | Us |
 | 14 | **Disqualified** | Not ICP, opted out, unreachable | — terminal | Us |
+
+### Stages 10 and 11 have no purchase path yet
+
+**Only the $197 Core OS is listed on Gumroad.** Setup and Managed Pilot currently have no way for a
+buyer to pay. Since five pilots at $2,000 are the entire gross target, **the tier carrying the
+target is the one that cannot be bought** — see `../sales/06-selling-the-managed-pilot.md` §1.
+
+Until a payment path exists, both are closed by conversation and invoice, and the stage is set by
+hand once payment clears.
 
 ### Stage 11 has a capacity gate, and it is real
 

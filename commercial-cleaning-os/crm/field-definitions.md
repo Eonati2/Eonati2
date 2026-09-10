@@ -75,7 +75,7 @@ we permitted to use it" — and what stops the CRM filling with data of unknown 
 | Field | Type | Set by | Notes |
 |---|---|---|---|
 | `purchase_email` | email | auto | From Gumroad |
-| `product` | `core_os \| setup \| managed_pilot` | auto | |
+| `product` | `core_os \| setup \| managed_pilot` | auto | **Only `core_os` is currently purchasable.** Setup and Managed Pilot have no Gumroad listing — they are closed manually and recorded here after payment by another route |
 | `order_id` | text | auto | Gumroad order reference |
 | `purchase_date` | date | auto | |
 | `amount` | currency | auto | Actual paid, not list price |

@@ -19,10 +19,14 @@ project rules that override specialist skill guidance.
 | 7. Master orchestration layer | done — `revenue-engine` |
 | 8. Routing validated | done — 32/32 routes resolve, 0 orphans, 0 broken symlinks |
 | 9a. CRM foundation | **done** — `crm/`, 5 specs |
-| 9b. Automation, offers, analytics, policies | not started |
+| 9b. Sales workflows | **done** — `sales/`, 6 docs |
+| 9c. Automation, offers, analytics, policies | not started |
 
-`crm/` is specified. `outbound/`, `automation/`, `offers/`, `analytics/` and `policies/` remain
-scaffolded and empty.
+`crm/` and `sales/` are specified. `outbound/`, `automation/`, `offers/`, `analytics/` and
+`policies/` remain scaffolded and empty.
+
+**Blocking:** only the $197 Core OS has a purchase path. The $2,000 Managed Pilot — five of which
+are the entire gross target — cannot currently be bought. See `sales/06-selling-the-managed-pilot.md` §1.
 
 ## Prior research
 

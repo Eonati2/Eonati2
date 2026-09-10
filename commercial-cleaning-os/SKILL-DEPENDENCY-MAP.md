@@ -116,12 +116,16 @@ not be verified to exist.**
 | Outreach | `cold-email` + `outbound-campaign-architect` | Yes |
 | Reply handling | `reply-handler` | Yes |
 | Pipeline / CRM | `revops` + `pipeline-analysis` | Yes |
-| Objection handling | `sales-enablement` | Partly — generic, not cleaning-specific |
-| **Discovery call** | — | **No** |
-| **Walkthrough** | — | **No — and it is the central event in this business** |
-| **Proposal / bid** | `sales-enablement` | Partly |
-| **Closing, cadence** | — | **No** |
+| Objection handling | `sales/04` | **Closed** |
+| Discovery call | `sales/01` | **Closed** |
+| Walkthrough | `sales/02` | **Closed** |
+| Proposal / bid | `sales/03` + `sales-enablement` for collateral | **Closed** |
+| Closing, cadence | `sales/04`, `sales/05` | **Closed** |
+| Our own pilot sale | `sales/06` | **Closed** |
 
-The four gaps are cleaning-industry-specific and would need project-authored workflows regardless of
-whether a generic sales skill were installed — a generic closing skill does not know what happens on
-a janitorial walkthrough. Build them under `commercial-cleaning-os/`.
+**Resolved by authoring, not by installing.** All four were cleaning-industry-specific and would
+have needed project-authored workflows regardless — a generic closing skill does not know what
+happens on a janitorial walkthrough, what destroys margin on a site visit, or why a per-square-foot
+sanity check must never govern a bid. The missing repository cost less than it appeared to.
+
+`sales-enablement` remains routed for collateral: pitch decks, one-pagers, leave-behinds.
