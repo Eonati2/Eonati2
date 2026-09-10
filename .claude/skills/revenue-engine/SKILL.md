@@ -59,8 +59,11 @@ gate and say why.
 | Deliverability, DNS, warmup, inbox placement | `cold-email-deliverability` → `email-marketing-bible` | |
 | Lifecycle / post-purchase / customer email | `emails` | |
 | Compliance and send-safety gates | `email-marketing-bible` | Use its compliance + send-gate chapters |
-| Sales page, landing page copy | `copywriting` → `cro` | |
-| Copy editing | `copy-editing` | |
+| **Any customer-facing copy** — Gumroad, sales page, emails, sequences, follow-ups, ads, proposals, product docs | **`cleaning-os-voice` — MANDATORY, before drafting and again before sending** | Routes the chain below and has final say on voice |
+| Copy chain, in order | `copywriting` → `copywriting-concrete` → `cleaning-os-voice` → `anti-ai-writing-slop` → `copy-editing` | Run once, in order. Never let five skills rewrite each other |
+| Sales / landing page structure | `copywriting` → `cro` | Then run the chain |
+| Cold email copy specifically | `cold-email-copywriting` replaces steps 2 and 4 of the chain | Scoped to that format |
+| Named-human byline voice | `tone-of-voice` | Only when a human byline is needed. **Do not let it invent a persona for the product** |
 | **Any sales-motion work** — qualification, discovery, walkthrough, objections, proposal conversation, negotiation, closing, follow-up | **`commercial-cleaning-sales`** | **Project-specific. Outranks all generic sales guidance.** Behavioural layer; pairs with `commercial-cleaning-os/sales/` for measurable detail |
 | Sales collateral — decks, one-pagers, leave-behinds | `sales-enablement` | Collateral only, not the motion |
 | CRM, lifecycle stages, handoff | `revops` | |

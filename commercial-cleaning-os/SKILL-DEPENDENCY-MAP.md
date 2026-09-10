@@ -16,6 +16,9 @@ Which skill owns what, where they overlap, and where they must not be trusted bl
 | `CosmoBlk/email-marketing-bible` ★291 | git clone | 1 | `.claude/skills/` |
 | **This project** | authored | 1 (`revenue-engine`) | `.claude/skills/` |
 | **This project** | user-supplied, installed 2026-09-10 | 1 (`commercial-cleaning-sales`) | `.claude/skills/` |
+| `entpnomad/copywriting` + `entpnomad/tone-of-voice` | git clone | 2 (`copywriting-concrete`, `tone-of-voice`) | `.claude/skills/` |
+| `thomasmeijer92/anti-ai-writing-slop` | git clone | 1 | `.claude/skills/` |
+| **This project** | authored 2026-09-10 | 1 (`cleaning-os-voice`) | `.claude/skills/` |
 
 `sales-skills/sales` — **not installed. Could not be verified to exist** (404 on every raw path
 tried; org search returns no such resource). See "Open gap" below.
@@ -81,7 +84,20 @@ be used as a planning assumption or presented as our expected performance.
 Persuasion frameworks can pull toward urgency and scarcity language. The no-hype / no-fake-scarcity
 standard in `revenue-engine` §7 **overrides** it every time.
 
-### C6 — Symlinks are not duplicates
+### C6 — Six skills now claim copy work
+`copywriting`, `copy-editing`, `copywriting-concrete`, `tone-of-voice`, `anti-ai-writing-slop` and
+`cold-email-copywriting` all trigger on copy tasks.
+
+**Resolution — one chain, run once, in order:** `copywriting` (argument) → `copywriting-concrete`
+(concrete / falsifiable / ownable) → **`cleaning-os-voice`** (our reader, final say on voice) →
+`anti-ai-writing-slop` (evidence-aware de-slop) → `copy-editing` (tighten). For cold email,
+`cold-email-copywriting` replaces steps 2 and 4. `tone-of-voice` runs only when a named human
+byline is needed — it must not invent a persona for the product.
+
+`cleaning-os-voice` is **mandatory** for anything a prospect or customer reads, and it decides any
+disagreement in the chain.
+
+### C7 — Symlinks are not duplicates
 The 16 marketingskills entries in `.claude/skills/` are symlinks into `.agents/skills/`. That is the
 installer's normal cross-agent layout. **Both directories must be committed** — deleting `.agents/`
 breaks every symlink.
@@ -96,6 +112,8 @@ breaks every symlink.
 | `list-builder`, `company-finder` | l3mpire | Same — lemlist search-filter guides |
 | `copywriting-ic/manager/vp-sequence` | l3mpire | Tuned to SaaS org charts. Our buyer is an owner-operator. |
 | ~34 remaining marketingskills | coreyhaines31 | SEO, ASO, ads, social, video, PR, community, events — not in the outbound motion |
+| `anti-ai-slop-writing` | jalaalrd | Aggressive banned-word list aimed at defeating AI detectors. Our goal is truth and specificity, not evasion; a blocklist flattens voice and checks nothing about whether a claim is supported |
+| `direct-response-copy`, `ad-copy`, `landing-page-copy`, `compliance-checker` | robpalmer99 | Strong craft in a register this project bans — VSL urgency mechanics and manufactured scarcity. It would fight `cleaning-os-voice` on every draft. `copychief` alone is a reasonable later add for a line-by-line sales-page review |
 
 **Optional adds, if a need appears:** `cta-designer` and `copywriting-analyzer` (l3mpire) —
 CTA quality is a named quality gate; `cold-call-script` (l3mpire) if the phone workstream clears
