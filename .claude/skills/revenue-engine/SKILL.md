@@ -1,0 +1,186 @@
+---
+name: revenue-engine
+description: Master orchestrator for the Commercial Cleaning Client Acquisition OS. Use at the START of any task touching this project — ICP, offers, prospecting, account research, triggers, scoring, outreach copy, email sending, reply handling, CRM, sales, analytics, automation, or product/Gumroad assets. Routes work to the correct specialist skill, applies project rules that override specialist guidance, and enforces safety gates. Also use when the user mentions "revenue engine", "commercial cleaning OS", "acquisition OS", "proof pack", "managed pilot", or asks which skill to use.
+---
+
+# Revenue Engine — Master Orchestrator
+
+You are operating inside the **Commercial Cleaning Client Acquisition OS** project. This skill is the
+router and the rule layer. Read it before invoking any specialist skill.
+
+## 1. What this project is
+
+We build and sell a contract-acquisition operating system to **US commercial cleaning / janitorial
+companies** with the operational capacity to service recurring B2B accounts.
+
+**Ladder:** Core OS **$197** · Done-with-you Setup **$497** · Managed 30-day Pilot **$2,000** (capped at 5).
+
+**Target:** $10,000 gross in 90 days. This is a **target, not a promise or forecast.** Never present
+it as either, internally or externally.
+
+**Core conceptual model — every deliverable maps to a stage of it:**
+
+```
+ACCOUNT → DECISION MAKER → TRIGGER → OUTREACH → CONVERSATION
+        → WALKTHROUGH → PROPOSAL → WIN/LOSS → LEARN
+```
+
+**Primary principle:** sell the contract-acquisition *system*, not the lead.
+**Secondary principle:** account first → person second → trigger third.
+
+## 2. Conflict priority
+
+When a specialist skill's guidance conflicts with something else, resolve in this order:
+
+1. **Project-specific rules** (this file, and files under `commercial-cleaning-os/`)
+2. **Safety and compliance rules** (§4 below)
+3. **Master revenue-engine routing** (§3)
+4. **Specialist skill guidance**
+5. **Generic skill guidance**
+
+A specialist skill never overrides §4. If a skill's advice would breach a safety gate, follow the
+gate and say why.
+
+## 3. Routing table
+
+| Task | Route to | Notes |
+|---|---|---|
+| Product positioning, context doc | `product-marketing` | **Read first** — other marketing skills expect its context document to exist |
+| ICP definition | `icp-definer` → cross-check `customer-research` | |
+| Buyer personas | `persona-definer` | |
+| Offer design | `offers` → `pricing` | |
+| Account research (our buyers) | `deep-company-analyser` | |
+| Prospect list building | `prospecting` | |
+| Buying triggers | `trigger-finder` | **Apply our trigger hierarchy (§5), not the skill's default weighting** |
+| Campaign architecture | `outbound-campaign-architect` + `gtm-outreach` | |
+| Campaign angles | `campaign-angle-finder` | |
+| Cold email copy — **write** | `cold-email` | |
+| Cold email copy — **review / de-slop / CTA** | `cold-email-copywriting` | Specialist reviewer. See conflict note below. |
+| Deliverability, DNS, warmup, inbox placement | `cold-email-deliverability` → `email-marketing-bible` | |
+| Lifecycle / post-purchase / customer email | `emails` | |
+| Compliance and send-safety gates | `email-marketing-bible` | Use its compliance + send-gate chapters |
+| Sales page, landing page copy | `copywriting` → `cro` | |
+| Copy editing | `copy-editing` | |
+| Sales collateral, objection docs, proposals | `sales-enablement` | |
+| CRM, lifecycle stages, handoff | `revops` | |
+| CRM duplicates | `crm-duplicate-detector` | |
+| Reply classification and response | `reply-handler` | |
+| Pipeline analysis | `pipeline-analysis` | |
+| Campaign metrics | `analytics`; `outbound-analyst` **for reference only** (see §6) | |
+| Experiments | `ab-testing` | |
+| Lead magnets / proof pack design | `lead-magnets` | The proof pack is our primary lead magnet |
+| Persuasion framing | `marketing-psychology` | Subordinate to the no-hype standard in §7 |
+| Automation build | `n8n-workflow-builder` | |
+| Automation debugging | `n8n-debugger` | |
+
+**Unresolved gap — the sales layer.** `sales-skills/sales` (the `sales-do` router) **could not be
+verified to exist**. Until it is, route sales-motion work — discovery, objection handling,
+walkthrough, proposal, closing, cadence — to `sales-enablement` + `revops` + this skill's own
+workflows under `commercial-cleaning-os/`.
+
+### Conflict note: four skills claim cold email
+
+`cold-email`, `cold-email-copywriting`, `gtm-outreach` and `email-marketing-bible` all trigger on
+cold-email tasks. Division of labour, in this order:
+
+1. `gtm-outreach` — frame the outreach task
+2. `cold-email` — write the draft
+3. `cold-email-copywriting` — review it, strip AI-slop, fix the CTA
+4. `cold-email-deliverability` / `email-marketing-bible` — infrastructure and pre-send gates
+
+Never run all four on one email and merge the output; it produces mush.
+
+## 4. Safety gates — non-negotiable
+
+**No autonomous sending. Ever.** Every sending workflow must carry: suppression check · duplicate
+check · contact verification · compliance check · deliverability check · campaign attribution ·
+**human approval for live sends** · kill switch · error logging · retry logic · audit trail.
+
+**Human keeps judgment on:** targeting · claims · pricing · final copy approval · consequential
+customer communication · compliance decisions. Automate administration and the movement of
+information — not judgment.
+
+**Phone is a separate, higher-risk workstream.** Default to manual human calls. No autodialing,
+prerecorded, or AI voice unless counsel has confirmed the legal basis for that specific use.
+
+**Opt-outs suppress immediately and permanently**, across every domain and campaign. Never re-enroll.
+
+**Compliance is guidance, not legal advice.** Build around CAN-SPAM, applicable TCPA/FCC/FTC and
+state rules, privacy obligations, and platform terms. Never claim the project *is* compliant —
+say what was built and what still needs review.
+
+**Data:** only data we are permitted to use. Keep source and verification metadata on every record.
+Never scrape behind authentication. Never imply private access. Never fabricate a missing field —
+leave it empty and mark it unknown.
+
+## 5. Trigger hierarchy — ours, and it overrides the specialist default
+
+**High** — new location / new facility · expansion · move or new occupancy · relevant
+property-management change
+**Medium** — facilities or operations hiring · renovation or reopening · acquisition
+**Low** — generic growth · funding · generic hiring · weak review signals
+
+**A trigger is an event, not a conclusion.** Never write or imply, without direct evidence:
+"they don't have a cleaner" · "their cleaner is failing" · "they're unhappy" · "they're looking for
+a provider". State the observed event and its date. Nothing beyond it.
+
+**Never assume:** every account is a fit · every company has a current need · a trigger means they
+are shopping · a public review proves an incumbent is being replaced · a CRM title means
+decision-maker.
+
+## 6. Evidence standard
+
+**Do not manufacture** numbers, testimonials, case studies, conversion rates, ROI claims, or market
+evidence. Label every assumption as an assumption.
+
+**Vendor benchmarks are not evidence.** `outbound-analyst` benchmarks against lemlist's own campaign
+data; `email-marketing-bible` carries vendor-published industry figures. Both are useful as
+reference and neither is neutral. Cite them as vendor-published, and never plan against them as if
+they were measured outcomes of *our* system.
+
+**Vendor bias to watch:** the `l3mpire/*` skills are lemlist's — `outbound-campaign-architect` and
+`outbound-analyst` are shaped by lemlist's product and data. `email-marketing-bible` is
+ecommerce/lifecycle-ESP oriented (Klaviyo, cart abandonment, DTC); use it for **deliverability,
+compliance and send-safety**, not for B2B outbound copy.
+
+## 7. Voice standard for everything customer-facing
+
+Write like an experienced business operator: practical, direct, specific, calm, commercially
+literate. The reader is an owner who is busy running a cleaning company.
+
+**Never:** hype · AI filler · excessive emoji · fake scarcity · fake proof · guaranteed income,
+clients, replies, or ROI.
+
+**The $2,000 pilot cap is real capacity, not a scarcity tactic** — describe it that way.
+
+**Internal ≠ public.** Revenue plans, model assumptions, internal research and implementation doubts
+never appear on the Gumroad page or in customer-facing material.
+
+## 8. Validation discipline
+
+Phase 1 — **100** tightly qualified prospects. Qualitative: offer comprehension, response quality,
+objections, trigger usefulness, proof-pack interest. **This is a listening exercise, not a
+measurement** — it will not produce a reliable rate.
+Phase 2 — **300–500**, only if Phase 1 produced meaningful signal.
+Phase 3 — scale only after repeatable positive signal exists.
+
+Test one major variable at a time. Never declare a winner on a small or noisy sample; state sample
+size and uncertainty every time you report a result.
+
+**Build order:** proof packs → targeting → triggers → outreach → talk to prospects → sell one →
+learn → improve → *then* automate. Do not spend weeks automating an unvalidated process.
+
+## 9. Working files
+
+| Path | Contents |
+|---|---|
+| `commercial-cleaning-os/crm/` | schema, lifecycle stages, scoring, routing, field definitions |
+| `commercial-cleaning-os/outbound/` | ICP, personas, triggers, campaigns, sequences, reply routing |
+| `commercial-cleaning-os/automation/` | workflows, n8n, error handling, kill switches |
+| `commercial-cleaning-os/offers/` | core-os, setup, managed-pilot |
+| `commercial-cleaning-os/analytics/` | funnel, campaign metrics, experiments |
+| `commercial-cleaning-os/policies/` | agent policy, sending policy, compliance |
+| `commercial-cleaning-os/SKILL-DEPENDENCY-MAP.md` | which skill owns what |
+
+**The CRM is the single source of truth.** Every active opportunity carries an owner, a next action,
+and a next-action date.
