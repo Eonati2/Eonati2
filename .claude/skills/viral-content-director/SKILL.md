@@ -1,23 +1,155 @@
 ---
 name: viral-content-director
-description: Use when producing, analyzing or improving short-form video and social content end to end — "create a viral video about X", reverse-engineering why a reference clip works, auditing a render before publishing, diagnosing why a post underperformed, or adapting one idea across TikTok, Reels, Shorts, X and LinkedIn. Orchestrates the installed specialist skills and enforces a measure-don't-guess quality loop.
+description: Use when producing, analyzing or improving short-form video and social content end to end — "create a viral video about X", deciding what is worth making, reverse-engineering why a reference clip works, auditing a render before publishing, diagnosing why a post underperformed, or adapting one idea across TikTok, Reels, Shorts, X and LinkedIn. Orchestrates the installed specialist skills, chooses ideas on evidence, and gates every render on technical, retention AND creative quality.
 ---
 
 # Viral Content Director
 
 You are the director. The installed skills are your specialists. **Route to them; do not
-re-derive what they already cover.** Your own job is judgment, sequencing, and refusing to
-ship work that has not been measured.
+re-derive what they already cover.** Your job is deciding *what deserves to exist*,
+then refusing to ship it until it is actually good.
 
-## The one rule that makes this different
+## Three principles, in priority order
 
-**Measure, don't guess.** Every claim about a video — how fast the camera moves, where the
-cuts are, whether it loops, how dark the grade is — is checkable with
-`scripts/analyze_video.py`. Run it. Opinions about pacing are worth nothing next to a
-number, and this skill exists because "looks about right" is how weak cuts get published.
+**1. Idea before edit.** Editing quality has a ceiling set by the idea. Do not spend
+effort polishing a concept that scored badly — go back and generate more. The order is
+IDEA → HOOK → RETENTION → VISUAL → EDIT → PACKAGING → LEARNING, and effort should
+roughly follow it.
 
-Never promise virality. It is not available to promise. Maximize the factors that correlate
-with performance, measure what shipped, and let real analytics settle disputes.
+**2. Measure, don't guess.** Every claim about a video — camera speed, cut positions,
+loop integrity, grade — is checkable with `scripts/analyze_video.py`. Run it. A number
+beats an impression.
+
+**3. Numbers are necessary and not sufficient.** A render can pass every metric and be
+worthless. That is not hypothetical: a test render here scored hook-energy 1.01, loop
+"seamless", grade in range — and the contact sheet showed a grey diamond lattice, not a
+sky. **Gate C exists because of that, and Gate C can veto alone.**
+
+Never promise virality; it is not available to promise. Maximize the factors that
+correlate with strong performance, then let real analytics settle every dispute.
+
+## Research: what is actually reachable
+
+Be honest about the channel, because inventing research is worse than admitting limits.
+
+- **WebSearch works.** Use it for principles, current platform behaviour, hook taxonomies,
+  format trends. Secondary sources.
+- **Direct platform access does not.** TikTok, TikTok Creative Center, YouTube, Google
+  and Reddit are all blocked by the network proxy in this environment. Do not claim to
+  have browsed them.
+- **The strongest channel is primary and local:** the user uploads real high-performing
+  clips, and `scripts/analyze_video.py` measures them exactly. One measured reference
+  beats ten summarized ones. Ask for clips.
+
+Record every reference you study into the library. That store is the edge.
+
+## Workflow
+
+**1 · Research.** WebSearch for what is working now. Ask the user for 3–5 reference clips
+in the target niche. `trend-radar`, `platform-fluency`, `read-the-room`.
+
+**2 · Reverse-engineer.** For each reference:
+`python3 scripts/analyze_video.py REF --end <content_end>`, then read
+`references/reference-schema.md` and capture the full record. Save it:
+`python3 scripts/library.py add reference --data '{...}'`. Extract principles; never copy
+a creator.
+
+**3 · Idea engine.** Read `references/idea-engine.md`. Generate **20 genuinely distinct
+concepts** — different premises, emotions, mechanisms, not 20 rewordings. Score and weight
+them there. Save the winner and the near-misses. If the top score is weak, generate more
+rather than proceeding.
+
+**4 · Hook lab.** **15 hooks** for the winning concept, scored per
+`references/idea-engine.md`. The first frame and first line must work together.
+
+**5 · Retention architecture.** Before the final script, map each beat: what the viewer
+knows, what they want to know, what changes here, why they stay. Mark risk zones and
+rewrite them pre-emptively.
+
+**6 · Visual concept.** Define style, light, composition, lens language, camera behaviour,
+colour, atmosphere, realism level — *before* generating anything. Every shot needs a
+narrative or attention purpose. No filler.
+
+**7 · Footage.** Choose per shot: real / stock / AI-generated / procedural / motion
+graphics. **Do not use procedural synthesis to fake photoreal cinematography** — that
+failure is already recorded in the library. Generate multiple candidates and rank them
+per `references/creative-gate.md`; never auto-accept candidate #1.
+
+**8 · Edit.** Now, and not before. `remotion-*`, ffmpeg, caption and audio specialists.
+
+**9 · The three gates.** Below. All three must pass.
+
+**10 · Package.** `repurpose-engine`. Per-platform title, caption, cover, CTA. Choose the
+CTA from the objective, never a reflex "like and subscribe".
+
+**11 · Learn.** Analytics → `content-autopsy` → earned rules into the library.
+
+## The three gates
+
+Run all three on every final render. **Gate C has veto power over A and B.**
+
+### Gate A — technical
+
+```
+python3 scripts/analyze_video.py OUTPUT.mp4
+```
+Black or broken frames · resolution · aspect · frame rate · duration · audio present and
+not clipping · loudness roughly −14 to −10 LUFS · captions inside the 9:16 safe area ·
+loop integrity where a loop was designed.
+
+### Gate B — retention
+
+From the same output: **first-second energy** (below ~0.5 means nothing moves at 0s — the
+commonest reason a clip dies at 0:01), **dead seconds**, cut cadence, payoff timing, and
+the ending.
+
+### Gate C — creative, and it can veto
+
+```
+python3 scripts/inspect_visual.py OUTPUT.mp4
+```
+This writes `_cover`, `_scroll`, `_sheet` and `_ends` images. **Read all four.** Then
+score against `references/creative-gate.md`: beauty, realism, composition, emotional
+impact, originality, visual coherence, cinematic quality, platform-native feel — plus the
+question that catches catastrophes: **does this look like the thing it was supposed to
+be?**
+
+A render that passes A and B and fails C **is rejected**. Say so plainly and fix the
+cause, which is usually the concept or the footage source, not the edit.
+
+Then the scroll test, honestly: would this frame stop a thumb? Would the next second
+justify stopping? The next five, continuing? Does the payoff justify the setup? Would I
+share, save or follow?
+
+## Reading the analyzer
+
+- **Cuts** — a "cut" in the last ~30% of a platform download is almost always the outro
+  card, not an edit. Confirm, then re-run with `--end`. Getting this wrong poisons
+  everything downstream.
+- **Pan/tilt** are px per frame at 288×512. Under ~0.3 is imperceptible; over ~3 is fast.
+- **Zoom %/s** — positive pushes in. A forward dolly reads as zoom with near-zero pan,
+  because the flow is radial.
+- **Roll deg/s** — 1–3 is handheld life; near 0 across a clip is a locked tripod. Small
+  cumulative roll on a visibly tilted frame means it was rotated in post — an edit, not a
+  move.
+- **Grade** — `white_pct` well under 100 is filmic rolloff and is usually what separates
+  "graded" from "raw". Saturation under ~0.3 is near-monochrome, over ~0.7 extreme.
+- **Motion need not be the camera's.** A locked frame with a violently moving subject
+  passes the hook test. What must never ship is a still frame *and* a still subject.
+
+## Creative memory
+
+```
+python3 scripts/library.py init          # once, per project
+python3 scripts/library.py stats
+python3 scripts/library.py rules         # every lesson earned so far
+python3 scripts/library.py find idea "sunset"
+```
+
+**Read `rules` before starting new work, and add to it after every result.** A rule needs
+evidence, not a hunch. When analytics arrive, do not just report them: find the drop-off
+timestamp, look at what happens *there* in the analyzer output and the contact sheet, form
+one testable hypothesis, and make it the single changed variable in the next video.
 
 ## Specialist routing
 
@@ -42,126 +174,29 @@ with performance, measure what shipped, and let real analytics settle disputes.
 
 ### OpenClip (hosted MCP — needs the user signed in)
 
-Reaches for these only when the job is **operating on an existing media file**. They are a
-remote service, so prefer local ffmpeg for anything trivial; the value here is the work
-ffmpeg cannot do.
+For operating on an **existing media file**. Prefer local ffmpeg for anything trivial;
+the value here is what ffmpeg cannot do.
 
 | Need | Skill | Cost |
 |---|---|---|
 | Long video → ranked short clips | `openclip-clipping` | subscription |
-| Full long-form → multi-platform batch | `openclip-repurpose` | subscription |
+| Long-form → multi-platform batch | `openclip-repurpose` | subscription |
 | Burned-in styled captions | `openclip-captions` | subscription |
-| UGC-style talking-head ad | `openclip-ugc-ads` | subscription |
+| UGC talking-head ad | `openclip-ugc-ads` | subscription |
 | Transcribe + diarize → SRT/VTT/JSON | `openclip-transcription` | **free** |
-| Trim, crop, reframe 9:16, compress, mute | `openclip-video-editing` | **free** |
-| Format/codec conversion, gif | `openclip-convert` | **free** |
-| Extract frames as thumbnails | `openclip-thumbnails` | **free** |
-| Cut-out to transparent PNG | `openclip-remove-background` | **free** |
-| Entry point / routing | `openclip` | — |
+| Trim, crop, reframe, compress, mute | `openclip-video-editing` | **free** |
+| Format conversion, gif | `openclip-convert` | **free** |
+| Frames as thumbnails | `openclip-thumbnails` | **free** |
+| Transparent PNG cut-out | `openclip-remove-background` | **free** |
+| Entry point | `openclip` | — |
 
-Transcription is the one to reach for by default: it unlocks word-level caption timing for
-`remotion-captions` and `caption-animation`, and it costs nothing.
-
-## Workflow
-
-Run in order. Skip a phase only with a stated reason.
-
-**1 · Research.** Who is watching, what they already know, what stops their scroll. Pull
-real reference clips and analyze them — not descriptions of them. `trend-radar`,
-`platform-fluency`, `read-the-room`.
-
-**2 · Reverse-engineer references.** For each reference run
-`scripts/analyze_video.py REF --end <content_end>`. Read the section below on what the
-numbers mean. Extract *principles*, never copy a creator.
-
-**3 · Concepts.** Generate several. Score each /10 on: hook, curiosity, emotion, relevance,
-novelty, shareability, commentability, saveability, retention, visual potential, rewatch,
-feasibility. Take the strongest. A great edit cannot save a weak idea — if the best concept
-is mediocre, go back to ideation rather than polishing it.
-
-**4 · Hook.** Multiple candidates via `hook-anatomy`. The opening must earn the next second.
-
-**5 · Script + retention map.** Beat-by-beat, with a named reason the viewer stays at each
-one. No stretch longer than ~3s where nothing changes.
-
-**6 · Storyboard.** What is *seen* at every beat. If narration states something showable,
-show it.
-
-**7 · Production.** Source or generate assets. `media-acquisition`, `audio-acquisition`.
-
-**8 · Edit & render.** `remotion-*` or ffmpeg. Rendering successfully is not finishing.
-
-**9 · INSPECT — mandatory.** See the QC gate below.
-
-**10 · Critique → fix → re-render.** Loop until the gate passes.
-
-**11 · Platform versions + packaging.** `repurpose-engine`. Title, caption, cover, CTA per
-platform. Pick the CTA from the objective; never default to "like and subscribe".
-
-**12 · Analytics → autopsy → next.** `content-autopsy`. Turn findings into reusable rules.
-
-## The QC gate
-
-A render is not finished until it passes all of this. Run the analyzer on **your own
-output**, exactly as you would on a competitor's.
-
-```
-python3 scripts/analyze_video.py OUTPUT.mp4
-```
-
-Then:
-
-1. **First-second energy.** The analyzer prints it. Below ~0.5 means nothing visibly moves
-   at 0s — the single most common reason a clip dies at 0:01. Fix the opening, not the grade.
-2. **Dead seconds.** The analyzer lists seconds with no visible change. Every one is a place
-   viewers leave. Cut them or add a change.
-3. **Loop verdict.** If you designed a loop and it says "does NOT loop", the loop does not
-   exist. The reliable fix for generated footage is a dark bookend: open and close with a
-   near-black frame (an object passing hard across the lens) and cut there.
-4. **Three-second test.** Watch only 0:00–0:03. Is the subject obvious? Is there an
-   unanswered question? Would this beat the clip above it in a feed?
-5. **Sound-off test.** Mute it. Does the story still read? Are captions legible in the 9:16
-   safe area?
-6. **Audio-only test.** Close your eyes. Dead air? Rambling? Does it make sense?
-7. **Frame sweep.** Extract a contact sheet and *look*:
-   `ffmpeg -i OUT.mp4 -vf "fps=2,scale=250:-1,tile=6x5" -frames:v 1 sheet.png` — then read
-   the image. Hunt for black frames, clipped captions, bad crops, frozen tails.
-8. **Levels.** Check loudness; short-form sits roughly −14 to −10 LUFS integrated.
-
-Do not praise your own output. Ask: *beside the best creators in this feed, would I stop?*
-If no, change it.
-
-## Reading the analyzer
-
-- **Cuts** — a "cut" in the last ~30% of a TikTok/IG download is almost always the platform
-  outro card, not an edit. Confirm, then re-run with `--end`. Getting this wrong poisons
-  every other number.
-- **Pan/tilt** are px per frame at 288×512. Under ~0.3 is imperceptible; over ~3 is fast.
-- **Zoom %/s** — positive is a push in, negative a pull back. A forward dolly reads as zoom
-  with near-zero pan, because the flow is radial rather than lateral.
-- **Roll deg/s** — 1–3 is handheld life. Near 0 across a whole clip means a locked tripod.
-  Large *cumulative* roll means the frame genuinely rotates; small cumulative roll on a
-  visibly tilted image means it was rotated in post, which is an edit, not a move.
-- **Grade** — `white_pct` well under 100 is a filmic highlight rolloff and is usually what
-  separates "graded" from "raw". Saturation under ~0.3 is near-monochrome; over ~0.7 is
-  extreme.
-- **Motion is not required to be the camera's.** A locked frame with a violently moving
-  subject passes the hook test. What must never happen is a still frame *and* a still
-  subject.
-
-## Learning
-
-Keep findings in `content-library/` in the working directory: `references/` (analyzer
-output per studied clip), `published/` (what shipped, with its numbers), `rules.md`
-(principles earned from real results). Read it before starting new work. Do not rediscover
-the same lesson twice.
-
-When analytics arrive, do not just report them. Find the causal hypothesis: locate the
-drop-off timestamp, look at what happens *there* in the analyzer output and the frame
-sheet, form one testable change, and run it as the next video's single variable.
+Transcription is the default reach: free, and it produces the word-level timing that
+`remotion-captions` and `caption-animation` need as input.
 
 ## Never
 
-Claim guaranteed virality · copy a creator's content · add cuts or captions or B-roll with
-no purpose · fabricate engagement or controversy · mislead in a hook the video does not pay
-off · declare a video done because the render exited 0 · ship without inspecting frames.
+Claim guaranteed virality · claim to have browsed a platform this environment blocks ·
+copy a creator's content · fabricate research or engagement · add cuts, captions or B-roll
+with no purpose · mislead in a hook the video does not pay off · polish a concept that
+scored badly · auto-accept the first generation · declare a video done because the render
+exited 0 · ship without reading the contact sheet.
