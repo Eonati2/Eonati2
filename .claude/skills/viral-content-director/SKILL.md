@@ -59,6 +59,19 @@ concepts** — different premises, emotions, mechanisms, not 20 rewordings. Scor
 them there. Save the winner and the near-misses. If the top score is weak, generate more
 rather than proceeding.
 
+**3b · Three creative directions — mandatory before committing.** From the top-scoring
+concepts, develop **three separate directions**, not three versions of one:
+
+| | Direction | Leads with |
+|---|---|---|
+| **A** | Cinematic / emotional | beauty, atmosphere, feeling |
+| **B** | Curiosity / mysterious | a withheld answer, an open loop |
+| **C** | Visually shocking / pattern interrupt | something the eye cannot immediately parse |
+
+Score all three, state which wins and *why the other two lose*. This exists to stop the
+first plausible idea from becoming the only idea — the commonest failure in the whole
+pipeline, and the one no amount of editing craft recovers from.
+
 **4 · Hook lab.** **15 hooks** for the winning concept, scored per
 `references/idea-engine.md`. The first frame and first line must work together.
 
@@ -102,6 +115,20 @@ loop integrity where a loop was designed.
 From the same output: **first-second energy** (below ~0.5 means nothing moves at 0s — the
 commonest reason a clip dies at 0:01), **dead seconds**, cut cadence, payoff timing, and
 the ending.
+
+### Gate B2 — reference match
+
+```
+python3 scripts/reference_match.py OUTPUT.mp4 --tag <niche>
+```
+Compares the candidate against the measured reference set on hook energy, motion, dead
+seconds, duration, exposure and saturation, and names every dimension where it is weaker.
+
+Then answer the question the tool cannot: **why is this better than the references?**
+Not "it matches the format" — *better*. A sharper hook, a stronger idea, a cleaner loop,
+a payoff they lack. If you cannot name what it does better, it is a competent copy, and a
+competent copy has no reason to be watched instead of the original. Keep improving it or
+change the idea.
 
 ### Gate C — creative, and it can veto
 
