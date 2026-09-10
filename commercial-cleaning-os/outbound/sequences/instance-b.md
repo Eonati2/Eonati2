@@ -46,8 +46,8 @@ Would a short call this week be useful?
 ```
 {{first_name}} — following up briefly.
 
-Most managers I work with want two things from a cleaning vendor: someone who
-answers the phone, and no tenant complaints reaching the owner.
+Two things I'd want to know if I were you: how fast the vendor picks up the
+phone, and whether tenant complaints ever reach the owner.
 
 Happy to walk the building and put a scoped proposal together, whether or not
 anything changes today.
@@ -90,11 +90,10 @@ does not claim they have no cleaner.
 
 **E2 · day 4 — subject: `re: the new {{street}} office`**
 ```
-{{first_name}} — one thing worth asking whoever you use: whether they document
-what was cleaned, room by room.
+{{first_name}} — one thing worth asking whoever you use: whether they
+document what was cleaned, room by room.
 
-For medical spaces it matters when someone asks, and most janitorial
-companies don't do it.
+For a medical space it's useful to have that on file if anyone ever asks.
 
 Happy to show you what our reporting looks like, no obligation.
 ```
@@ -112,25 +111,27 @@ Hi {{first_name}} — noticed {{company}} moved into {{street}} recently.
 
 We handle nightly and weekly cleaning for offices around {{area}}.
 
-Moves usually mean sorting out a dozen vendors at once. If cleaning is still
-on that list, I can walk the space and have a scoped proposal to you in two
+A move means sorting out a lot of vendors at once. If cleaning is still on
+that list, I can walk the space and have a scoped proposal to you in two
 days.
 
 Would a quick call this week help?
 ```
 
-*"Moves usually mean sorting out a dozen vendors at once"* is an observation about moves in
-general, not a claim about them. That distinction is the whole rule.
+*"A move means sorting out a lot of vendors at once"* is an observation about moves in general,
+not a claim about this company. That distinction is the whole rule. An earlier draft said
+*"a dozen vendors"* — invented specificity, and the kind of small false note that costs credibility
+with someone who has actually done it.
 
 **E2 · day 4 — subject: `re: your move to {{street}}`**
 ```
 {{first_name}} — briefly.
 
-The thing offices most often want fixed is consistency — the same crew, the
-same standard, and someone who picks up the phone.
+If you're comparing providers, two questions worth asking each one: will it
+be the same crew every time, and what response time will they put in
+writing.
 
-If you're comparing providers, worth asking each one what their response time
-is in writing.
+Those are usually where the differences show up.
 
 Happy to walk the space either way.
 ```
@@ -192,8 +193,10 @@ Hi {{first_name}} — I work with schools and childcare centres around
 
 I noticed {{school}} {{observation}}.
 
-Most centres I work with care about two things: consistency, and staff who've
-been background-checked. Happy to walk the site and put a scope together.
+Two things I'd expect matter here: the same crew each time, and staff who've
+been background-checked. Both are things I can put in writing.
+
+Happy to walk the site and put a scope together.
 
 Would a short call before term suits?
 ```

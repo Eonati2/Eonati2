@@ -7,12 +7,22 @@ Selling the Core OS and Managed Pilot to cleaning company owners.
 1. **CTA is a reply, never a link.** No link in the first two emails of any sequence.
 2. **The first ask is a give** — a pack of trigger-matched accounts in their own city.
 3. **Under 90 words.** Read on a phone, between jobs.
-4. `{{first_name}}` `{{city}}` `{{metro}}` `{{trigger_count}}` only. Fake personalization is worse
-   than none — this audience sees twenty agency emails a week.
-5. **Plain text.** No images, no HTML signature, **no tracking pixel** — open tracking inflates
+4. **Merge fields only:** `{{first_name}}` `{{city}}` `{{metro}}` `{{trigger_count}}`
+   `{{example_1}}` `{{example_1_event}}` `{{example_1_days}}`. Fake personalization is worse than
+   none; this audience sees twenty agency emails a week.
+
+   **⚠ Tag casing is unverified.** These are written snake_case (Smartlead convention). Instantly
+   and several others use camelCase (`{{firstName}}`). **Confirm against the actual sequencer
+   before the first send** — wrong casing means prospects receive the literal `{{first_name}}`.
+   No sequencer has been chosen yet, so this is an open item, not a decision.
+
+5. **Every `{{example_*}}` field must be populated from a `Trigger_Event` row** — its `evidence`,
+   its `trigger_date`. If the pack has no qualifying example, the email does not send. A named
+   example is the most checkable sentence in the message and the most damaging one to get wrong.
+6. **Plain text.** No images, no HTML signature, **no tracking pixel** — open tracking inflates
    numbers with bot activity and hurts placement.
-6. **Never assert anything about a third party you cannot evidence.**
-7. Compliance footer on every send.
+7. **Never assert anything about a third party you cannot evidence.**
+8. Compliance footer on every send.
 
 ---
 
@@ -20,13 +30,13 @@ Selling the Core OS and Managed Pilot to cleaning company owners.
 *Campaign `A-TRIG-OWNER`. The priority sequence.*
 
 ### Email 1 — day 0
-**Subject:** `23 in {{city}}`
+**Subject:** `{{trigger_count}} in {{city}}`
 ```
 {{first_name}} — I track commercial signals in {{city}}: new leases, second
 locations, occupancy permits, facilities-manager job posts.
 
-Right now there are {{trigger_count}}. The most recent is a dental group that
-moved into a new building three weeks ago.
+Right now there are {{trigger_count}}. The most recent is {{example_1}} —
+{{example_1_event}}, {{example_1_days}} days ago.
 
 Want the list? Reply "send it" and I'll put it together for {{city}} — names,
 addresses, what changed and when, and the title of whoever signs.
@@ -35,15 +45,16 @@ No charge, no call.
 ```
 
 ### Email 2 — day 3
-**Subject:** `re: 23 in {{city}}`
+**Subject:** `re: {{trigger_count}} in {{city}}`
 ```
 {{first_name}}, following up on the list.
 
-The reason I build these: an office with a cleaner they tolerate won't switch
-for a better sales email. Something has to change first — they move, they
+The reason I build these: an office that already has a cleaner won't switch
+for a better sales email. Something has to change first. They move, they
 expand, they hire someone whose job is vendors.
 
-Those windows are open for about 60 days.
+I sort the list by how recent the change is, because the older ones tend to
+be settled by the time you call.
 
 Want the {{city}} list? One word back and it's yours.
 ```
@@ -134,7 +145,7 @@ ready. If not, I'll leave you alone.
 *Campaign `A-PACK`. Where the revenue is. Never automated.*
 
 ### Delivery — same day, sent by a human
-**Subject:** `{{city}} list — {{trigger_count}} of them`
+**Subject:** `{{city}} list`
 ```
 {{first_name}} — here it is.
 
@@ -147,8 +158,8 @@ Three I'd start with:
 • {{example_2}} — posted a Facilities Manager role last week
 • {{example_3}} — opened a second location in August
 
-Sorted by how recent the signal is. The top ones go stale in about 60 days,
-so I'd work down from the top.
+Sorted by how recent the signal is. I'd work down from the top, because the
+older ones are more likely to be settled already.
 
 If it's useful, tell me how the first few calls go — I'm curious whether the
 recent ones land better than the cold ones. My guess is yes, but I'd rather
@@ -211,7 +222,7 @@ If neither — good luck with Q4.
 ## Subject-line bank
 Lowercase, short, specific. No punctuation theatre.
 
-**Use:** `23 in {{city}}` · `how I found you` · `closing the loop` · `either way` · `last one` ·
+**Use:** `{{trigger_count}} in {{city}}` · `how I found you` · `closing the loop` · `either way` · `last one` ·
 `for whoever handles new contracts` · `running it yourself`
 
 **Never:** "Quick question" · "Following up" alone · any emoji · "Increase your revenue" ·
