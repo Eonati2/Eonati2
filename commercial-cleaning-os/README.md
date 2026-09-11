@@ -33,7 +33,7 @@ project rules that override specialist skill guidance.
 once, and test-purchase the download.
 
 **Revenue blocker resolved by removing it.** The service tiers were cut on 2026-09-11
-(`../research/12-decision-record-v4.md`). One product, launch price $149, no upsell — so there is
+(`../research/12-decision-record-v4.md`). One product, price $197, no upsell — so there is
 no unbuilt purchase path left.
 
 ## Prior research
@@ -43,6 +43,6 @@ no unbuilt purchase path left.
 precedence over the files before it.
 
 Relevant carry-over, now superseded: the funnel model in `03` and the corrections in `11` remain
-the best analysis of outbound capacity. What changed is the offer. Under one product at $149,
+the best analysis of outbound capacity. What changed is the offer. Under one product at $197,
 $10,000 in 90 days is **not** a defensible target for outbound alone — see `12` for the arithmetic.
 The goal is the first 10 customers, then 25, then 50.

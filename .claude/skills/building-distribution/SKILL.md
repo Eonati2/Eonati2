@@ -45,20 +45,37 @@ Worked at current inputs — **every rate below is an assumption, not a measurem
 
 | Input | Value | Status |
 |---|---|---|
-| Outbound contact capacity, 90 days | 6,800 contacts | Derived from mailbox caps. Structural. |
+| Outbound contact capacity, 90 days | **3,000 contacts** | Bound by Instantly Growth's 1,000 uploaded contacts/month. Structural. |
 | Contact → purchase | 0.25%–0.5% | **Assumption.** Never validated by us. |
 | Free-kit subscriber → purchase | 1%–3% | **Assumption**, floor of the published 1–5% email band. |
+| Price | **$197** | Locked 2026-09-11 |
 | Window | 90 days | Set by `research/13-90-day-blueprint.md` |
 
 | Target | Price | Sales | Outbound can carry | List must carry | Subscribers needed | Per day |
 |---|---|---|---|---|---|---|
-| $10,000 | $149 | 68 | 17–34 | 34–51 | **1,100–5,100** | 13–57 |
-| $10,000 | $197 | 51 | 17–34 | 17–34 | **570–3,400** | 6–38 |
-| $12,000 | $149 | 81 | 17–34 | 47–64 | **1,570–6,400** | 17–71 |
-| $12,000 | $197 | 61 | 17–34 | 27–44 | **900–4,400** | 10–49 |
+| $10,000 | **$197** | 51 | 8–15 | 36–43 | **1,200–4,300** | 13–48 |
+| $10,000 | $149 | 68 | 8–15 | 53–60 | **1,770–6,000** | 20–67 |
+| $12,000 | **$197** | 61 | 8–15 | 46–53 | **1,530–5,300** | 17–59 |
+| $12,000 | $149 | 81 | 8–15 | 66–73 | **2,200–7,300** | 24–81 |
 
-Figures are **gross**. Platform fees reduce net by roughly a tenth; a net target needs the gross
-target raised before it enters this table.
+Figures are **gross**. Platform fees take roughly a tenth: 51 sales at $197 is $10,047 gross but
+about **$9,042 net**. A $10,000 *net* target needs **57 sales**, not 51. State which one is meant.
+
+### What the Instantly Growth decision cost
+
+Capacity fell from 6,800 contacts to 3,000 when the sending layer moved to Instantly Growth
+(`commercial-cleaning-os/automation/stack.md`). That was the right call — nothing is validated, and
+Growth covers both validation phases in `revenue-engine` §8 with room to spare — but it is not free:
+
+| | Outbound carries | Subscribers needed at $197 / $10k |
+|---|---|---|
+| Growth · 3,000 contacts · ~$125/mo | 8–15 sales | **1,200–4,300** |
+| Hypergrowth · 6,800 contacts · ~$294/mo | 17–34 sales | **570–3,400** |
+
+**$169/month buys back roughly 900 required downloads at the optimistic end.** Do not spend it
+yet — buying 2.3× the capacity of an unmeasured rate is buying 2.3× of nothing known. Spend it the
+month the Growth caps actually bind *and* the positive reply rate is measured and positive. That
+trigger is written into `stack.md`.
 
 **Three things fall straight out of this table, and all three are decisions, not observations:**
 
@@ -80,7 +97,7 @@ is in `references/channel-playbooks.md`.
 
 | # | Channel | Produces | Realistic ceiling | Lead time | Cost | Evidence status |
 |---|---|---|---|---|---|---|
-| A | Outbound email | Direct sales + downloads | 6,800 contacts / 90 days | Live now | Stack cost | Capacity structural; response rate unvalidated |
+| A | Outbound email | Direct sales + downloads | **3,000 contacts / 90 days** | Live now | ~$125/mo | Capped by Instantly Growth's contact limit; response rate unvalidated |
 | B | Free kit as the outbound CTA | Subscribers | Converts A's same capacity | Immediate | None | Mechanism sound; rate unvalidated |
 | C | Practitioner communities | Subscribers | Unknown — group sizes unverified | 2–6 weeks | Time only | Groups confirmed to exist; audience size not |
 | D | Trade media / associations | Subscribers | Unknown — rate cards not obtained | 4–12 weeks | Paid | Publications confirmed; pricing and reach unknown |
@@ -91,6 +108,8 @@ is in `references/channel-playbooks.md`.
 **Rules that bind the portfolio:**
 
 - **Only A and B are live and ours.** Everything else is a hypothesis with a cost.
+- **A got smaller, not bigger.** The Instantly Growth decision cut outbound capacity from 6,800
+  contacts to 3,000, which raises what the list must carry. Distribution matters more now, not less.
 - **B is the single highest-leverage change available**, because it converts capacity we already
   pay for into an asset that compounds. A contact who buys is worth one sale. A contact who
   subscribes is reachable for every future offer. Making the free kit the primary outbound CTA

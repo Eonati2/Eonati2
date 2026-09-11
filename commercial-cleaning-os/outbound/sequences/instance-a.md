@@ -11,7 +11,7 @@ Selling the Client Acquisition OS to cleaning company owners.
    `{{example_1}}` `{{example_1_event}}` `{{example_1_days}}`. Fake personalization is worse than
    none; this audience sees twenty agency emails a week.
 
-   **⚠ Tag casing is unverified.** These are written snake_case (Smartlead convention). Instantly
+   **⚠ Tag casing is unverified.** These are written snake_case (Instantly convention). Instantly
    and several others use camelCase (`{{firstName}}`). **Confirm against the actual sequencer
    before the first send** — wrong casing means prospects receive the literal `{{first_name}}`.
    No sequencer has been chosen yet, so this is an open item, not a decision.
@@ -196,7 +196,7 @@ I packaged the whole thing — the trigger library, the automation file, the
 sequences, the walkthrough and proposal workflows, and 500 accounts built for
 {{metro}}.
 
-$149, one time. {{link}}
+$197, one time. {{link}}
 
 If it's useful, tell me how you get on — I'm still learning what lands in
 different markets.

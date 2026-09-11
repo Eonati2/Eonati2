@@ -135,6 +135,7 @@ attaches $1,000 per email to it.
 | Apify Google Maps scrape | **$1.50–$4.00 per 1,000 places** (moved to pay-per-event in 2026; filters add per-place charges) | ⬤⬤ |
 | Apify free tier | $5/mo credit ≈ 3,000 basic places | ⬤⬤ |
 | Sequencer (Smartlead) | $39/mo entry; **$174/mo** unlimited tier (150k sends) | ⬤⬤ |
+| *Sequencer (Instantly — **chosen 2026-09-11**)* | *Growth **$47/mo** (5k emails, 1k contacts); Hypergrowth **$97/mo** (125k, 25k)* | ⬤⬤ |
 | Mailboxes | Google Workspace **$6–$18/inbox/mo**; Microsoft 365 $6–$22 | ⬤⬤⬤ |
 | Realistic single-user total cost of ownership | **$200–$600/mo** all-in | ⬤⬤ |
 | Gumroad, direct/link sale | **10% + $0.50**, plus Stripe ~2.9% + $0.30 → effectively **~12.9% + $0.80** | ⬤⬤⬤ |

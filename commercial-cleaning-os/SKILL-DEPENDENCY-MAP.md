@@ -49,7 +49,7 @@ ACCOUNT ──→ DECISION MAKER ──→ TRIGGER ──→ OUTREACH ──→ 
 | LEARN | `analytics` | `ab-testing`, `outbound-analyst` *(reference only)* |
 | **DISTRIBUTION** — traffic, audience, list growth, channels, target arithmetic | **`building-distribution`** | `lead-magnets` (the asset), `analytics` (the measurement) |
 | Product & storefront | `copywriting` | `cro`, `lead-magnets`, `marketing-psychology` |
-| Automation | `n8n-workflow-builder` | `n8n-debugger` |
+| Automation | **Project-authored** — `automation/stack.md`, `automation/make-jobs.md` | `n8n-workflow-builder`, `n8n-debugger` for workflow *design* only. Stack is Make + Attio + **Instantly** |
 | Post-purchase email | `emails` | `email-marketing-bible` |
 
 ---

@@ -57,7 +57,7 @@ Cold email  →  "want the list?"  →  reply
       →  send a real trigger-matched pack for their city
       →  plus the Starter Kit
       →  email nurture
-      →  the OS at $149
+      →  the OS at $197
 ```
 
 **The free product is not the first touch.** The first touch is still the offer of a

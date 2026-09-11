@@ -72,28 +72,61 @@ prose into it; prose goes in the Activity note beside it.
 
 ## 3. Instance A — our funnel
 
-We sell one digital product. There is no walkthrough, no proposal and no negotiation on our side —
-this is a funnel, not a sales process.
+Revised 2026-09-11. We sell one digital product. There is no walkthrough, no proposal and no
+negotiation on our side — this is a funnel, not a sales process.
+
+The previous seven stages collapsed everything before first contact into a single `Lead`, which
+hid the question that now matters most: is the bottleneck discovery, qualification, or trigger
+finding? It also had no stage for the free kit, which the distribution work made the central
+mechanism (`building-distribution`). Both are fixed below.
 
 | # | Stage | Entry criteria | Exit criteria |
 |---|---|---|---|
-| 1 | **Lead** | A qualified cleaning company in the tracker | First contact sent |
-| 2 | **Engaged** | They replied, opened a conversation, or took the free product | They express interest, or go quiet |
-| 3 | **Interested** | They asked a question, requested the sample list, or asked how it works | They look at the product, or stall |
-| 4 | **Product consideration** | They have seen the product page or been sent the link | Purchase, or no |
-| 5 | **Purchased** | Gumroad purchase confirmed | Onboarding email sequence complete |
-| 6 | **Customer** | They have the product | — |
-| 7 | **Repeat / referral** | They bought again, or referred someone | — |
+| 1 | **Prospect** | A cleaning company exists in the tracker with a domain and a location | Passes the ICP filter, or disqualified |
+| 2 | **Qualified** | Passes ICP: US, commercial/janitorial, capacity for recurring B2B accounts | A dated, sourced `Trigger_Event` is recorded |
+| 3 | **Trigger-Qualified** | ≥1 trigger with verbatim evidence, source and date | ≥1 **verified** contact, suppression clear, approved in a batch |
+| 4 | **Contacted** | First touch sent through Instantly | Any human reply, or sequence exhausted |
+| 5 | **Engaged** | A human reply that is not an opt-out, bounce or auto-reply | They ask for the kit, look at the product, or go quiet |
+| 6 | **Kit Delivered** | Free kit requested **and** delivery confirmed | They view the product page, or the nurture sequence completes |
+| 7 | **Product Consideration** | Product page visited, or the link sent and opened | Purchase, or no |
+| 8 | **Purchased** | Gumroad order confirmed (job 6) | Onboarding sequence completes without bounce or refund |
+| 9 | **Customer** | Onboarding complete, refund window passed | — |
+| 10 | **Advocate** | They referred someone, or bought a second thing when one exists | — |
 
-Plus two terminal states: **Not now** (with a review date) and **Disqualified** (with a reason).
+Plus two non-terminal exits: **Not now** (requires a review date) and **Disqualified** (requires a
+reason, from the closed list in §2).
 
-**Why seven and not fourteen.** We are not managing a sales process with site visits and bids. A
-buyer either finds the product useful enough to pay $149 or does not. Modelling that as a
-thirteen-stage enterprise pipeline would be theatre, and it would make every conversion ratio
-meaningless.
+### Three changes from the twelve stages as specified
 
-*The full 13-stage pipeline still exists — in the product, where it belongs. That is the customer's
-sales process, and it is unchanged.*
+The spec listed twelve stages (described as thirteen). Ten are implemented. What changed, and why
+— each is one edit to restore:
+
+**`Lead Magnet Requested` + `Lead Magnet Delivered` → one stage, `Kit Delivered`.** Delivery of a
+digital file is instant and automatic. Two stages separated by milliseconds produce a
+time-in-stage of zero and a conversion ratio of 100%, which measures nothing. A delivery that
+*fails* is a real event — it is a flag and an alert in job 7, not a pipeline stage.
+
+**`Engaged Customer` cut.** It had no observable entry criterion. Gumroad does not tell us whether
+someone opened the files, so the stage could only ever be set by guessing. Rule 1 of this document:
+a stage without testable entry criteria is a label, and labels produce pipelines that look healthy
+and forecast nothing. If an observable signal appears later — a reply to an onboarding email, a
+support question — the stage can come back with that as its criterion.
+
+**`Referral / Repeat` → `Advocate`, and the repeat half is currently unreachable.** There is one
+product and no second purchase to make. Referral is real, so the stage stays; `Repeat` is left in
+the definition for when a second product exists, and until then nobody should expect this stage to
+populate from purchases.
+
+### Why ten and not thirteen
+
+Instance B's thirteen stages model a real sales process with site visits, bids and negotiation.
+Ours does not have one: a buyer either finds the product worth $197 or does not. Every stage here
+earns its place by being independently observable and by answering a question we actually ask.
+Adding stages that cannot be observed does not produce a better pipeline — it produces a pipeline
+that lies.
+
+*The full 13-stage pipeline still exists — in the product, where it belongs. That is the
+customer's sales process, and it is unchanged (§2).*
 
 ## 4. Handoff SLAs
 

@@ -19,12 +19,19 @@ actually do, the cost, and the number that ends it.
 ## A — Outbound email
 
 **Status:** built, not yet running. Sequences in `commercial-cleaning-os/outbound/sequences/instance-a.md`.
+Sending layer is **Instantly Growth** (`commercial-cleaning-os/automation/stack.md`).
 
 **What it produces:** direct purchases, and — once B is in place — subscribers.
 
-**Ceiling:** 6,800 contacts across 90 days. This is mailbox arithmetic, not ambition. Raising it
-means buying domains and mailboxes and re-running warmup, which costs money, takes weeks, and needs
-confirmation before any purchase.
+**Ceiling: 3,000 contacts across 90 days.** Two caps, and the platform one binds first:
+
+- Instantly Growth allows **1,000 uploaded contacts/month** → 3,000 in the window.
+- 8 mailboxes at 28 cold/day = 224/day = ~4,928/month, just inside Growth's **5,000 campaign
+  emails/month**.
+
+This is platform and mailbox arithmetic, not ambition. Raising it means a Hypergrowth upgrade
+(+$50/mo) *and* more mailboxes (+$3–6 each) *and* new domains with three weeks of warmup — money,
+time, and confirmation before any purchase.
 
 **Operating rules:** everything in `revenue-engine` §4 and
 `research/06-compliance-and-deliverability.md`. Human approval on every live send. Complaint rate
@@ -40,7 +47,7 @@ and it routes to `revenue-engine` §8 validation discipline, not to a channel de
 
 **Status:** the highest-leverage unbuilt change. Costs nothing.
 
-**Hypothesis:** asking for a free-kit download converts more of the same 6,800 contacts than asking
+**Hypothesis:** asking for a free-kit download converts more of the same 3,000 contacts than asking
 for a $149 purchase, and every converted contact stays reachable for every future offer instead of
 being spent once.
 

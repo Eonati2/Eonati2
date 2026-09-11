@@ -13,8 +13,9 @@ router and the rule layer. Read it before invoking any specialist skill.
 We build and sell a contract-acquisition operating system to **US commercial cleaning / janitorial
 companies** with the operational capacity to service recurring B2B accounts.
 
-**One product:** the Commercial Cleaning Client Acquisition OS. Launch **$149**, standard $197
-after validation. **No service tiers.** The $497 Setup and $2,000 Managed Pilot were removed on
+**One product:** the Commercial Cleaning Client Acquisition OS. **Price locked at $197**
+(2026-09-11). The $149 launch price is retired — the distribution arithmetic in
+`building-distribution` §2 showed $197 roughly halves the audience that has to be built. **No service tiers.** The $497 Setup and $2,000 Managed Pilot were removed on
 2026-09-11 — do not mention, build, promise, or create infrastructure for them
 (`research/12-decision-record-v4.md`).
 
@@ -86,7 +87,8 @@ gate and say why.
 | Marketplace / Gumroad Discover traffic | `building-distribution` | Planning treatment is **zero**. It is a mirror, not a source |
 | Promoting the free kit — communities, trade media, partnerships | `building-distribution` → then the copy chain | Conduct rules in its `references/channel-playbooks.md` are binding |
 | Persuasion framing | `marketing-psychology` | Subordinate to the no-hype standard in §7 |
-| Automation build | **Project-authored** — `commercial-cleaning-os/automation/stack.md`. Use `n8n-workflow-builder` for workflow *design* only and translate to Make | Our stack is Make + Attio. **We are not using n8n.** No Make/Attio specialist skill exists. |
+| Sending platform, plan limits, ramp, warmup, mailboxes, domains | **Project-authored** — `commercial-cleaning-os/automation/stack.md` | **Instantly Growth.** The binding limits are 5,000 campaign emails and 1,000 uploaded contacts per month — not mailbox count |
+| Automation build | **Project-authored** — `commercial-cleaning-os/automation/stack.md`. Use `n8n-workflow-builder` for workflow *design* only and translate to Make | Our stack is Make + Attio + Instantly. **We are not using n8n.** No Make/Attio/Instantly specialist skill exists. The eight jobs are in `automation/make-jobs.md` |
 | Automation debugging | `n8n-debugger` | Same caveat — general debugging thinking, not the tool |
 
 **Sales layer — resolved.** `sales-skills/sales` could not be verified to exist, and it is no longer
@@ -120,6 +122,10 @@ information — not judgment.
 
 **Phone is a separate, higher-risk workstream.** Default to manual human calls. No autodialing,
 prerecorded, or AI voice unless counsel has confirmed the legal basis for that specific use.
+
+**The primary business domain is never used for cold outbound.** It carries the website, Gumroad
+brand, support, free-kit delivery and nurture, and post-purchase mail. Cold sending runs on
+dedicated, replaceable domains only. No exceptions, no "just this batch" (`automation/stack.md`).
 
 **Opt-outs suppress immediately and permanently**, across every domain and campaign. Never re-enroll.
 
@@ -193,7 +199,8 @@ learn → improve → *then* automate. Do not spend weeks automating an unvalida
 
 | Path | Contents |
 |---|---|
-| `commercial-cleaning-os/automation/stack.md` | **The locked tech stack** — Apollo, Make, Attio, Smartlead, Claude, Gumroad |
+| `commercial-cleaning-os/automation/stack.md` | **The locked tech stack** — Apollo, Make, Attio, **Instantly**, Claude, Gumroad. Plan limits, ramp, domain rule, upgrade triggers |
+| `commercial-cleaning-os/automation/make-jobs.md` | The eight scheduled Make jobs, and the gate in job 3 |
 | `commercial-cleaning-os/crm/` | schema, lifecycle stages, scoring, routing, field definitions |
 | `commercial-cleaning-os/outbound/` | ICP, personas, triggers, campaigns, sequences, reply routing |
 | `commercial-cleaning-os/automation/` | workflows, n8n, error handling, kill switches |

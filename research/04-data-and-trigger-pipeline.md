@@ -141,10 +141,10 @@ Apify Google Maps ─→ Google Sheets (raw)
         └→ enrichment cascade (site → GBP → SoS → LinkedIn → Apollo)
              └→ email verification ─→ Sheets (verified)
                   └→ segment split: Segment 1 (trigger) / Segment 2 (broad)
-                       └→ Smartlead campaigns
+                       └→ Instantly campaigns
 
                  ┌─ PIPELINE 2: proof packs (on demand, per reply) ─┐
-Positive reply detected (Smartlead webhook)
+Positive reply detected (Make polls the Instantly API every 15 min — Growth has no webhooks)
    └→ n8n: read city + radius from the contact record
         └→ Apify: businesses in radius, by target facility type
              └→ trigger enrichment (reviews T5, permits T3, jobs T4, GBP diffs T1/T2)

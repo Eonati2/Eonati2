@@ -5,8 +5,7 @@ One product. One price. Nothing behind it.
 | | |
 |---|---|
 | **Product** | Commercial Cleaning Client Acquisition OS |
-| **Launch price** | **$149** |
-| **Standard price** | $197, once there is real feedback and proof |
+| **Price** | **$197** — locked 2026-09-11. One price, no launch discount. |
 | **Delivery** | Gumroad, immediate download, 13 files |
 | **Upsell** | **None.** There is no tier above this. |
 | **Guarantee** | No outcome guarantee. Refund policy to be set — recommend 7 days, stated plainly. |
@@ -25,17 +24,27 @@ clients. Not a marketing ebook.
 
 ---
 
-## Why $149 at launch
+## Why $197, and why the $149 launch price is retired
 
 The market has commercial-cleaning digital products at $15, $49.99, $149, $249 and $1,941. The
-ones at the upper end are sold by people with ratings and a track record. **We have neither yet.**
+ones at the upper end are sold by people with ratings and a track record. **We have neither yet** —
+which was the original argument for launching lower.
 
-Getting the first ten real buyers is worth more than defending a launch price. The price rises
-when there is proof to justify it, not before.
+The distribution arithmetic changed the answer. Revenue target divided by price gives sales needed;
+sales needed minus what outbound can carry gives what the email list must carry. **At $197 the
+audience that has to be built is roughly half what it is at $149** — 1,200–4,300 qualified free-kit
+downloads instead of 1,770–6,000 (`.claude/skills/building-distribution/SKILL.md` §2).
 
-⚠ **Check the live listing first.** The product is already on Gumroad at $197. If it has no sales,
-moving to $149 costs nothing. **If it has sales, hold $197** — dropping the price on early buyers
-is a bad trade for a few dollars, and the free product is the better volume lever.
+Since there is no channel currently producing downloads at all, halving the number that has to be
+produced is worth more than a lower price is. Price was the largest free lever available and it has
+been pulled.
+
+Two things this does not mean. It is not evidence that $197 converts as well as $149 — that
+tradeoff is unmeasured and will only show in the data. And it is not permission to raise further:
+the same arithmetic at $297 assumes a conversion rate we have even less basis for.
+
+The product was already listed on Gumroad at $197, so this is a hold, not a change — no early buyer
+is affected.
 
 ## Why no tiers
 
@@ -89,14 +98,14 @@ repeatedly, log it. Do not improvise a service on a call.)*
 accounts and getting to walkthroughs.
 
 **"Who else uses it?"** Nobody yet — you'd be among the first. That is true, it is why the launch
-price is $149, and it survives being checked. **Never invent a customer.**
+price is $197, and it survives being checked. **Never invent a customer.**
 
 ---
 
 ## The ladder, such as it is
 
 ```
-Free product  →  email  →  the OS at $149
+Free product  →  email  →  the OS at $197
 ```
 
 That is the whole thing. No order bump, no upsell email, no second product. If the free product

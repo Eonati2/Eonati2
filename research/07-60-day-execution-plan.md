@@ -31,7 +31,8 @@ adding volume. Adding volume to a broken funnel is the most expensive mistake av
 - [ ] Buy **6 sending domains** + 1 product domain (~$85)
 - [ ] Google Workspace: **24 mailboxes**, 4 per sending domain (~$144/mo)
 - [ ] SPF, DKIM, DMARC (`p=none` + rua) on all 6
-- [ ] Smartlead account; connect all 24; **start warmup at 5 sends/inbox/day**
+- [ ] **Instantly Growth** account; connect **8** mailboxes across 3–4 dedicated domains; start warmup at 10/mailbox/day
+      *(was: Smartlead, 24 inboxes — superseded 2026-09-11, see `research/15-stack-change-instantly.md`)*
 - [ ] CMRA/PO box for the CAN-SPAM address
 - [ ] Gumroad account, verified (payouts need $100 balance + verification — do it now, not in week 6)
 - [ ] 301 each sending domain → product domain

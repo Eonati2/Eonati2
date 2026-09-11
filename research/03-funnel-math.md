@@ -37,6 +37,13 @@ staying put, not pushing through.
 > **Write this on the wall: ~6,800 contacts.** Not 100,000. Every strategy decision below is about
 > extracting maximum revenue from those, which is exactly why targeting and price beat volume.
 
+
+> **Superseded 2026-09-11 (sending layer).** Smartlead was replaced by **Instantly Growth**, and the
+> architecture resized from 24–25 mailboxes to 8. Outbound capacity is now **~3,000 contacts**, not
+> 6,800 — bound by Instantly's 1,000 uploaded contacts/month, not by mailbox arithmetic. This file is
+> kept as the dated record of the earlier reasoning. Current numbers: `research/15-stack-change-instantly.md`
+> and `commercial-cleaning-os/automation/stack.md`.
+
 > *Revision 2026-09-11: the earlier version used 24 inboxes at a flat 28 cold sends/day (672/day,
 > ~18,000 total) and did not reserve capacity for ongoing warmup traffic. Reserving it and adding a
 > proper ramp produces ~19,000 — materially the same answer. The conclusion was robust to the
@@ -171,7 +178,9 @@ harder genuinely beats sending more — which is unusual, and it is the whole re
 |---|---|---|---|
 | 10 sending domains | $120 | — | $120 |
 | 25 mailboxes @ $6 | — | $150 | $300 |
+| *8 mailboxes @ $3–6 (**revised 2026-09-11**)* | — | *$24–48* | *$48–96* |
 | Sequencer (Smartlead unlimited) | — | $174 | $348 |
+| *Sequencer (Instantly Growth — **chosen 2026-09-11**)* | — | *$47* | *$94* |
 | Apify credits | — | $25 | $50 |
 | Email verification | — | $30 | $60 |
 | Postal address (CMRA/PO box) | $20 | $15 | $50 |
