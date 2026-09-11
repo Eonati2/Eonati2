@@ -20,11 +20,11 @@ No. Commercial and janitorial only. The triggers, the decision-maker map and the
 all built around commercial buildings.
 
 **Do I need a CRM?**
-No. A spreadsheet is fine to start. The pipeline stages and fields are specified so you can set one
-up in an afternoon. Move to a CRM when the spreadsheet starts hurting.
+No. The Account & Trigger Tracker included in the package is the CRM. Move to a dedicated one when
+the spreadsheet starts hurting.
 
 **Is it a course?**
-No. No videos, no modules, no login. Ten documents you use while doing the work.
+No. No videos, no modules, no login. Eleven guides and two spreadsheets you use while working.
 
 **Does it guarantee clients?**
 No. It's a method for finding and qualifying accounts and getting to walkthroughs. What happens on
@@ -35,7 +35,7 @@ Yes. The sources are public records and business listings, which exist everywher
 choose the market.
 
 **What do I receive after purchase?**
-Immediate download of the ten documents.
+Immediate download of thirteen files — eleven PDF guides and two Excel workbooks.
 
 ---
 
@@ -48,8 +48,8 @@ refund costs more than the sale earned — but refusing them in a small industry
 that.]*
 
 **How long does it take to set up?**
-Your first account list takes an afternoon by hand. Your first outreach can go out the same week.
-The pipeline takes about an hour to set up in a spreadsheet.
+The tracker is built — you just open it. Your first account list takes an afternoon by hand, and
+your first outreach can go out the same week.
 
 **Do you do this for people?**
 Yes, separately, for a small number of companies at a time. Ask if you want details.

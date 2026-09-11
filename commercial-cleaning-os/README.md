@@ -21,13 +21,19 @@ project rules that override specialist skill guidance.
 | 9a. CRM foundation | **done** — `crm/`, 5 specs |
 | 9b. Sales workflows | **done** — `sales/`, 6 docs |
 | 9c. Outbound layer | **done** — `outbound/`, 7 docs |
-| 9d. Automation, offers, analytics, policies | not started |
+| 9d. Customer product | **done** — `../customer-product/`, 13 assets |
+| 9e. Offers, analytics, policies, internal automation | not started |
 
 `crm/`, `sales/` and `outbound/` are specified. `automation/`, `offers/`, `analytics/` and
 `policies/` remain scaffolded and empty.
 
-**Blocking:** only the $197 Core OS has a purchase path. The $2,000 Managed Pilot — five of which
-are the entire gross target — cannot currently be bought. See `sales/06-selling-the-managed-pilot.md` §1.
+**Product delivery is complete** — 13 customer assets in `../customer-product/`, audited in
+`../gumroad/FINAL-ASSET-AUDIT.md`. Two manual checks remain before publishing: open both workbooks
+once, and test-purchase the download.
+
+**Still blocking on revenue:** only the $197 Core OS has a purchase path. The $2,000 Managed Pilot
+— five of which are the entire gross target — cannot currently be bought. See
+`sales/06-selling-the-managed-pilot.md` §1.
 
 ## Prior research
 

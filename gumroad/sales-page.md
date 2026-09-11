@@ -62,29 +62,35 @@ service about a reason you made up.
 
 ## WHAT'S INSIDE
 
-Ten working documents. Written for an owner who is busy, not for someone who enjoys reading.
+Thirteen files. Eleven guides and two working spreadsheets. Written for an owner who is busy, not
+for someone who enjoys reading.
+
+**The working files**
+- **Account & Trigger Tracker** (Excel) — eleven tabs. Score accounts, track triggers, manage
+  stages, log follow-ups, and see your pipeline. Formulas, dropdowns and four worked examples.
+- **Metrics Scoreboard** (Excel) — ten minutes every Friday. Thirteen weeks, automatic ratios, and
+  definitions so you count the same way each time.
 
 **Finding accounts**
-- **Trigger Library** — 11 buying signals, each with where to find it, how fresh it stays, and what
-  you may and may not say about it
-- **Qualification framework** — segment priority, seven filters applied in order, and where to stop
-- **Decision-maker map** — who signs by facility type, who to write to, and who to skip
+- **Trigger Library** — eleven buying signals, each with where to find it, how fresh it stays, and
+  what you may and may not say about it
+- **Prospecting Guide** — building and qualifying a list from public sources
+- **Who to Target, and Who Signs** — segment priority, and the person who signs by building type
 
 **Making contact**
-- **Outreach sequences** — six templates by segment and trigger, three emails each
-- **Follow-up system** — cadence, the close-out message, and when to stop
-- **Reply-handling guide** — ten reply types, what to do with each, and which ones are not losses
+- **Outreach Sequences** — six sequences by segment and trigger, ready to adapt
+- **Reply Handling** — ten kinds of reply and what to do with each
 
 **Converting**
-- **Discovery framework** — the eight things to establish before booking a walkthrough
-- **Walkthrough checklist** — what to measure, the five things that quietly destroy margin, and a
+- **The Walkthrough** — what to measure, the five things that quietly destroy margin, and a
   two-method pricing model
-- **Proposal structure** — the seven-section format, the three-tier pricing table, and the section
-  almost nobody includes
+- **The Proposal** — the seven-section structure, the three-tier table, and nine objections
 
 **Running it**
-- **Pipeline system** — thirteen stages with entry and exit criteria, a 20-point scoring model, and
-  closed reason codes so your losses tell you something
+- **Start Here** — what to do in your first hour
+- **The Client Acquisition OS** — how the whole thing fits together
+- **30-Day Implementation** — day by day, if you want a schedule
+- **Automation Blueprint** — what to automate, what to keep human, and when to bother
 
 ---
 
@@ -136,16 +142,18 @@ If you want contracts without making calls, this will disappoint you.
 
 **$197, once.** No subscription. No upsell required to make it work.
 
-What you're paying for is that the decisions are already made. The eleven triggers are chosen and
-sourced. The seven qualification filters are in an order that eliminates the most accounts soonest.
-The decision-maker map already says practice manager, not dentist. The walkthrough checklist
-already includes the five things that quietly destroy margin on a job that priced fine.
+What you're paying for is that the decisions are already made, and the working files are already
+built. The eleven triggers are chosen and sourced. The seven qualification filters are in an order
+that eliminates the most accounts soonest. The decision-maker map already says practice manager,
+not dentist. The walkthrough checklist already includes the five things that quietly destroy margin
+on a job that priced fine. The tracker already scores, flags duplicates, and tells you what's
+overdue.
 
 You could work all of that out yourself over a few dozen walkthroughs and a few lost bids. That's
 genuinely how it was worked out. The alternative is $197 and starting from a structure.
 
-It's also reusable. It's a method, not a list — the same ten documents work in your city next
-quarter and in the next city after that.
+It's also reusable. It's a method, not a list — the same files work in your city next quarter
+and in the next city after that.
 
 ---
 
@@ -162,11 +170,11 @@ for you.
 
 **Is this for residential cleaning?** No. Commercial and janitorial only.
 
-**Do I need a CRM?** No. A spreadsheet is fine to start, and the pipeline stages and fields are
-specified so you can set one up in an afternoon. Move to a CRM when the spreadsheet hurts.
+**Do I need a CRM?** No. The Account & Trigger Tracker is the CRM, and it's included. Move to a
+dedicated one when the spreadsheet starts hurting.
 
-**Is it a course?** No. There are no videos and no modules. It's ten working documents you use
-while doing the work.
+**Is it a course?** No. There are no videos and no modules. It's eleven guides and two spreadsheets
+you use while doing the work.
 
 **Does it guarantee clients?** No. It's a method for finding and qualifying accounts and getting to
 walkthroughs. What happens on the walkthrough is your business.
@@ -174,7 +182,7 @@ walkthroughs. What happens on the walkthrough is your business.
 **Can I use it in any city?** Yes. The sources are public records and business listings, which exist
 everywhere in the US. You choose the market.
 
-**What do I receive after purchase?** Immediate download of the ten documents.
+**What do I receive after purchase?** Immediate download of thirteen files — eleven PDF guides and two Excel workbooks.
 
 ---
 
