@@ -70,54 +70,30 @@ prose into it; prose goes in the Activity note beside it.
 
 ---
 
-## 3. Instance A — Product CRM (our pipeline)
+## 3. Instance A — our funnel
 
-Accounts are cleaning companies. **There is no walkthrough** — the analogous event is the proof pack
-and the call that follows it.
+We sell one digital product. There is no walkthrough, no proposal and no negotiation on our side —
+this is a funnel, not a sales process.
 
-| # | Stage | Entry criteria | Exit criteria | Owner |
-|---|---|---|---|---|
-| 1 | **Target** | Cleaning company found; in a target metro | Passes ICP filter (§ICP: 3–25 staff, website, commercial services, not a franchise) | Us |
-| 2 | **Researching** | Assigned for enrichment | Owner or sales lead identified; email verified | Us |
-| 3 | **Contacted** | Verified contact; suppression clear; first touch sent | Reply, or sequence exhausted | Us |
-| 4 | **Follow-up** | No reply yet | Reply, or cadence complete | Us |
-| 5 | **Pack Requested** | They asked for the proof pack | Pack delivered | Us |
-| 6 | **Pack Delivered** | Pack sent by a human (never automated) | They respond to it, or go quiet | Us |
-| 7 | **Conversation** | Substantive reply after the pack | Offer made, or deferred | Us |
-| 8 | **Offer Made** | A specific tier proposed with a price | Purchase, decline, or deferral | Us |
-| 9 | **Won — Core OS** | $197 purchase confirmed via Gumroad | — terminal (may re-enter at 8 for upgrade) | Us |
-| 10 | **Won — Setup** | $497 payment confirmed. **No Gumroad listing — closed manually** | — terminal | Us |
-| 11 | **Won — Managed Pilot** | $2,000 payment confirmed **and** a delivery slot is free. **No Gumroad listing — closed manually** | — terminal | Us |
-| 12 | **Lost** | Explicit no. `loss_reason` required | — terminal | Us |
-| 13 | **Nurture** | Interested, wrong timing | Review date arrives | Us |
-| 14 | **Disqualified** | Not ICP, opted out, unreachable | — terminal | Us |
+| # | Stage | Entry criteria | Exit criteria |
+|---|---|---|---|
+| 1 | **Lead** | A qualified cleaning company in the tracker | First contact sent |
+| 2 | **Engaged** | They replied, opened a conversation, or took the free product | They express interest, or go quiet |
+| 3 | **Interested** | They asked a question, requested the sample list, or asked how it works | They look at the product, or stall |
+| 4 | **Product consideration** | They have seen the product page or been sent the link | Purchase, or no |
+| 5 | **Purchased** | Gumroad purchase confirmed | Onboarding email sequence complete |
+| 6 | **Customer** | They have the product | — |
+| 7 | **Repeat / referral** | They bought again, or referred someone | — |
 
-### Stages 10 and 11 have no purchase path yet
+Plus two terminal states: **Not now** (with a review date) and **Disqualified** (with a reason).
 
-**Only the $197 Core OS is listed on Gumroad.** Setup and Managed Pilot currently have no way for a
-buyer to pay. Since five pilots at $2,000 are the entire gross target, **the tier carrying the
-target is the one that cannot be bought** — see `../sales/06-selling-the-managed-pilot.md` §1.
+**Why seven and not fourteen.** We are not managing a sales process with site visits and bids. A
+buyer either finds the product useful enough to pay $149 or does not. Modelling that as a
+thirteen-stage enterprise pipeline would be theatre, and it would make every conversion ratio
+meaningless.
 
-Until a payment path exists, both are closed by conversation and invoice, and the stage is set by
-hand once payment clears.
-
-### Stage 11 has a capacity gate, and it is real
-
-**Managed Pilot is capped at 5 concurrent clients.** Entry requires a free delivery slot, not just a
-payment. If all five are full, the account goes to `Nurture` with a review date — never to a
-waitlist that implies a date we cannot honour.
-
-This cap is genuine delivery capacity (8–12 hours per pilot), not a scarcity tactic. Describe it
-that way to prospects, and enforce it in the CRM rather than in good intentions. **Five pilots at
-$2,000 are the whole gross target**, which also means five pilots are the whole delivery
-obligation — over-selling the cap does not accelerate revenue, it destroys it.
-
-### Stage 6 is manual by policy
-Pack delivery is never automated. It is the highest-leverage 90 seconds in the funnel — where a
-$197 sale becomes a $2,000 one — and per `revenue-engine` §4 consequential customer communication
-stays with a human.
-
----
+*The full 13-stage pipeline still exists — in the product, where it belongs. That is the customer's
+sales process, and it is unchanged.*
 
 ## 4. Handoff SLAs
 

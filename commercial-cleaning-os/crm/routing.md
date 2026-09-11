@@ -33,7 +33,7 @@ CRM is the source of truth for everything around it.
 |---|---|
 | `purchase_email`, `product`, `price`, `purchase_date`, `order_id` | Gumroad ping / webhook |
 | `account_id` | matched on email → else on domain → else **new Account, flagged for human review** |
-| Stage | `Won — Core OS` / `Won — Setup` / `Won — Managed Pilot` |
+| Stage | `Purchased` |
 | `source` | `gumroad:<product_permalink>` |
 
 Three rules:
@@ -44,10 +44,9 @@ Three rules:
 2. **A purchase is not consent to marketing.** A buyer's email enters the customer list, not the
    outbound list. If that email is on Suppression, it **stays suppressed** for outbound; transactional
    delivery of the product they paid for is separate.
-3. **`Won — Managed Pilot` still checks the capacity gate.** If all five slots are full, the
-   purchase is honoured and the record flags `over_capacity` for immediate human handling —
-   scheduling, or a refund conversation. The cap is a real delivery constraint, so the CRM must
-   surface a breach rather than absorb it.
+3. **A purchase moves the record to `Purchased` and starts the onboarding sequence.** There is no
+   capacity gate — a digital product has no delivery constraint, which is one of the reasons the
+   service tiers were removed.
 
 Set the Gumroad ping to a receiving endpoint before running any campaign that could produce a sale,
 or the first purchases will arrive with no attribution and the funnel numbers will be unrecoverable.
@@ -64,9 +63,9 @@ or the first purchases will arrive with no attribution and the funnel numbers wi
 | `Contacted` → `Follow-up` | Sequence step 2 due, no reply | Yes |
 | `Contacted`/`Follow-up` → `Conversation` | Human reply classified positive/neutral/objection | Yes (classification) |
 | any → `Disqualified` | Opt-out, bounce-invalid, out of business | Yes |
-| `Conversation` → onward | Every later stage | **No — human only** |
+| `Interested` → onward | Every later stage | **No — human only** |
 
-**Everything past `Conversation` is manual.** Once a person has replied, no automation touches the
+**Everything past `Engaged` is manual.** Once a person has replied, no automation touches the
 record's stage. Automation's job ends where the relationship begins.
 
 ---

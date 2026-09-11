@@ -31,9 +31,9 @@ project rules that override specialist skill guidance.
 `../gumroad/FINAL-ASSET-AUDIT.md`. Two manual checks remain before publishing: open both workbooks
 once, and test-purchase the download.
 
-**Still blocking on revenue:** only the $197 Core OS has a purchase path. The $2,000 Managed Pilot
-— five of which are the entire gross target — cannot currently be bought. See
-`sales/06-selling-the-managed-pilot.md` §1.
+**Revenue blocker resolved by removing it.** The service tiers were cut on 2026-09-11
+(`../research/12-decision-record-v4.md`). One product, launch price $149, no upsell — so there is
+no unbuilt purchase path left.
 
 ## Prior research
 
@@ -41,5 +41,7 @@ once, and test-purchase the download.
 `11-corrections-log.md`, which corrects three arithmetic errors in the earlier dossier and takes
 precedence over the files before it.
 
-Relevant carry-over: **5 × $2,000 = $10,000 gross.** Five managed pilots equal the target on their
-own. Product sales are upside, not the base case.
+Relevant carry-over, now superseded: the funnel model in `03` and the corrections in `11` remain
+the best analysis of outbound capacity. What changed is the offer. Under one product at $149,
+$10,000 in 90 days is **not** a defensible target for outbound alone — see `12` for the arithmetic.
+The goal is the first 10 customers, then 25, then 50.

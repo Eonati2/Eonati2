@@ -30,7 +30,7 @@ scripts. Regenerating any file is reproducible.
 
 ## 2. Contamination audit
 
-Scanned every source for: Instance A/B language · our pricing ($197 / $497 / $2,000) · our pilot
+Scanned every source for: Instance A/B language · our pricing · our former service tiers
 strategy · our own funnel · repo paths · internal filenames · agent instructions · our kill/continue
 rules.
 

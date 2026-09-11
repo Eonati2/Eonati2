@@ -1,6 +1,6 @@
 ---
 name: revenue-engine
-description: Master orchestrator for the Commercial Cleaning Client Acquisition OS. Use at the START of any task touching this project — ICP, offers, prospecting, account research, triggers, scoring, outreach copy, email sending, reply handling, CRM, sales, analytics, automation, or product/Gumroad assets. Routes work to the correct specialist skill, applies project rules that override specialist guidance, and enforces safety gates. Also use when the user mentions "revenue engine", "commercial cleaning OS", "acquisition OS", "proof pack", "managed pilot", or asks which skill to use.
+description: Master orchestrator for the Commercial Cleaning Client Acquisition OS. Use at the START of any task touching this project — ICP, offers, prospecting, account research, triggers, scoring, outreach copy, email sending, reply handling, CRM, sales, analytics, automation, or product/Gumroad assets. Routes work to the correct specialist skill, applies project rules that override specialist guidance, and enforces safety gates. Also use when the user mentions "revenue engine", "commercial cleaning OS", "acquisition OS", "proof pack", "free product", or asks which skill to use.
 ---
 
 # Revenue Engine — Master Orchestrator
@@ -13,10 +13,16 @@ router and the rule layer. Read it before invoking any specialist skill.
 We build and sell a contract-acquisition operating system to **US commercial cleaning / janitorial
 companies** with the operational capacity to service recurring B2B accounts.
 
-**Ladder:** Core OS **$197** · Done-with-you Setup **$497** · Managed 30-day Pilot **$2,000** (capped at 5).
+**One product:** the Commercial Cleaning Client Acquisition OS. Launch **$149**, standard $197
+after validation. **No service tiers.** The $497 Setup and $2,000 Managed Pilot were removed on
+2026-09-11 — do not mention, build, promise, or create infrastructure for them
+(`research/12-decision-record-v4.md`).
 
-**Target:** $10,000 gross in 90 days. This is a **target, not a promise or forecast.** Never present
-it as either, internally or externally.
+**Goal:** first 10 customers, then 25, then 50. Revenue follows.
+
+$10,000 in 90 days is **not** a defensible target for outbound alone under a single-product model —
+the arithmetic is in `research/12-decision-record-v4.md`. Never present it as a forecast, and do not
+plan against it.
 
 **Core conceptual model — every deliverable maps to a stage of it:**
 
@@ -48,7 +54,7 @@ gate and say why.
 | Product positioning, context doc | `product-marketing` | **Read first** — other marketing skills expect its context document to exist |
 | ICP definition | `icp-definer` → cross-check `customer-research` | |
 | Buyer personas | `persona-definer` | |
-| Offer design | `offers` → `pricing` | |
+| Offer design | `offers` → `pricing` | **One product.** `offers` will suggest bonus stacks, tiers and scarcity — the project rules in §7 override all three |
 | Account research (our buyers) | `deep-company-analyser` | |
 | Prospect list building | `prospecting` | |
 | Buying triggers | `trigger-finder` | **Apply our trigger hierarchy (§5), not the skill's default weighting** |
@@ -157,7 +163,8 @@ literate. The reader is an owner who is busy running a cleaning company.
 **Never:** hype · AI filler · excessive emoji · fake scarcity · fake proof · guaranteed income,
 clients, replies, or ROI.
 
-**The $2,000 pilot cap is real capacity, not a scarcity tactic** — describe it that way.
+**No scarcity of any kind.** A digital product has no capacity limit, so there is nothing to be
+scarce about. Do not invent one.
 
 **Internal ≠ public.** Revenue plans, model assumptions, internal research and implementation doubts
 never appear on the Gumroad page or in customer-facing material.
@@ -183,7 +190,7 @@ learn → improve → *then* automate. Do not spend weeks automating an unvalida
 | `commercial-cleaning-os/crm/` | schema, lifecycle stages, scoring, routing, field definitions |
 | `commercial-cleaning-os/outbound/` | ICP, personas, triggers, campaigns, sequences, reply routing |
 | `commercial-cleaning-os/automation/` | workflows, n8n, error handling, kill switches |
-| `commercial-cleaning-os/offers/` | core-os, setup, managed-pilot |
+| `commercial-cleaning-os/offers/` | the product offer, and the free lead magnet |
 | `commercial-cleaning-os/analytics/` | funnel, campaign metrics, experiments |
 | `commercial-cleaning-os/policies/` | agent policy, sending policy, compliance |
 | `commercial-cleaning-os/SKILL-DEPENDENCY-MAP.md` | which skill owns what |

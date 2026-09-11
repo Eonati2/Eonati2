@@ -75,13 +75,12 @@ we permitted to use it" — and what stops the CRM filling with data of unknown 
 | Field | Type | Set by | Notes |
 |---|---|---|---|
 | `purchase_email` | email | auto | From Gumroad |
-| `product` | `core_os \| setup \| managed_pilot` | auto | **Only `core_os` is currently purchasable.** Setup and Managed Pilot have no Gumroad listing — they are closed manually and recorded here after payment by another route |
+| `product` | `core_os` | auto | One product. The tiers above it were removed on 2026-09-11 — see `research/12-decision-record-v4.md` |
 | `order_id` | text | auto | Gumroad order reference |
 | `purchase_date` | date | auto | |
 | `amount` | currency | auto | Actual paid, not list price |
 | `unmatched_purchase` | boolean | auto | **True → human review.** Never guess the account |
-| `over_capacity` | boolean | auto | True when a pilot sells past the cap of 5 |
-| `pilot_slot` | `1-5 \| null` | human | Assigned only when a slot is genuinely free |
+
 
 ---
 
@@ -197,8 +196,8 @@ then the row is marked rather than removed.
 | `Conversation` | last_reply_date, reply_class |
 | `Walkthrough Scheduled` (B) | date, time, site address — **confirmed in writing** |
 | `Proposal Sent` (B) | proposal_ref, amount |
-| `Offer Made` (A) | tier, price quoted |
-| `Won — Managed Pilot` (A) | pilot_slot, or `over_capacity = true` |
+| `Product consideration` | product page sent or seen |
+
 | `Nurture` | nurture_review_date |
 | `Lost` | loss_reason |
 | `Disqualified` | disqualify_reason |
@@ -211,7 +210,7 @@ then the row is marked rather than removed.
 missing source on an Account or Contact · missing owner / next action / date in an active stage ·
 Trigger_Event without source or date · send to a suppressed value · send to an unverified contact ·
 send without `approved_by` · hand-typed `total_score` · edit or delete of an Activity row ·
-`Won — Managed Pilot` without a slot or an `over_capacity` flag.
+a purchase recorded without a Gumroad order id.
 
 **Warning** — logged to the hygiene report:
 `verification_date` >90 days · expired trigger still scored · account past `next_action_date` ·

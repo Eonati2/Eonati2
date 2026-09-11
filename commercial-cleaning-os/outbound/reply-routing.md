@@ -63,8 +63,8 @@ Log on every class-3 reply. Closed list; add to it deliberately rather than typi
 problem rather than an objection — this audience is heavily solicited, and if either dominates, the
 first email is reading as another agency pitch.
 
-**`wants_guarantee` is answered honestly, never by inventing one.** See
-`../sales/06-selling-the-managed-pilot.md` §5.
+**`wants_guarantee` is answered honestly, never by inventing one.** There is no guarantee; say so,
+and say what they do get.
 
 ---
 

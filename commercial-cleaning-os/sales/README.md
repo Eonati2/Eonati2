@@ -11,10 +11,10 @@ not know what happens on a janitorial walkthrough.
 | `03-proposal.md` | B | 7 → 8 |
 | `04-objections-and-closing.md` | B | 9 → Won / Lost |
 | `05-follow-up-cadence.md` | B | 8 onward |
-| `06-selling-the-managed-pilot.md` | **A — ours** | 7 → 11 |
 
-**Instance B (01–05) is product content** — it ships inside the Core OS. **Instance A (06) is
-internal** and never ships.
+
+**All five are product content** — they ship inside the OS. Our own funnel is a seven-stage
+funnel in `../crm/lifecycle-stages.md` §3, not a sales process.
 
 ## The three rules running through all of them
 
@@ -27,8 +27,8 @@ The same standard as outreach copy, enforced all the way into the proposal.
 **Ask why on every loss and record it as a code, not prose.** One loss is noise; ten coded losses
 are a diagnosis. Free-text makes the pattern invisible.
 
-## Blocking issue
+## Note
 
-`06` §1: **only the $197 Core OS has a purchase path.** Setup and Managed Pilot are unbuyable, and
-five pilots at $2,000 are the entire gross target. Two unlisted Gumroad products would close it in
-about an hour, and it should happen before the next outbound batch.
+The service tiers were removed on 2026-09-11 (`research/12-decision-record-v4.md`). These five
+documents are the customer's sales process and are unaffected — walkthroughs and proposals are
+their business, not ours.

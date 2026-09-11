@@ -1,6 +1,6 @@
 # Instance A Sequences — ours
 
-Selling the Core OS and Managed Pilot to cleaning company owners.
+Selling the Client Acquisition OS to cleaning company owners.
 **Supersedes `research/05-email-sequences.md`**, which was written against the earlier positioning.
 
 ## Rules
@@ -196,14 +196,14 @@ I packaged the whole thing — the trigger library, the automation file, the
 sequences, the walkthrough and proposal workflows, and 500 accounts built for
 {{metro}}.
 
-$197, one time. {{link}}
+$149, one time. {{link}}
 
-If you'd rather I built and ran the first 30 days for you, that's a separate
-thing — reply and I'll explain how it works.
+If it's useful, tell me how you get on — I'm still learning what lands in
+different markets.
 ```
 
-**The last line is the pilot opener.** Per `../../sales/06-selling-the-managed-pilot.md`, most of
-the target revenue comes from this door, not from the $197 link above it.
+**No upsell, because there isn't one.** One product, one price. The closing line asks for feedback
+rather than money, which is the only thing worth asking a first buyer for.
 
 ### Day 9
 **Subject:** `either way`
@@ -213,8 +213,7 @@ the target revenue comes from this door, not from the $197 link above it.
 The {{city}} list is yours to keep regardless.
 
 If you want the system that produces it: {{link}}
-If you want it run for you: reply.
-If neither — good luck with Q4.
+If not — good luck with Q4 either way.
 ```
 
 ---

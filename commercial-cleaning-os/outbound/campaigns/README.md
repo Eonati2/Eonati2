@@ -12,7 +12,7 @@ with and the experiment framework is decorative.
 
 ## Instance A — our campaigns
 
-Selling the Core OS and the Managed Pilot to cleaning companies.
+Selling the Client Acquisition OS to cleaning companies.
 
 | ID | Segment | Trigger tier | Persona | Sequence | Volume |
 |---|---|---|---|---|---|
@@ -20,6 +20,7 @@ Selling the Core OS and the Managed Pilot to cleaning companies.
 | `A-BROAD-OWNER` | Cleaning cos, 3–25 staff | None | P1 Owner | `SEQ-A2` | Volume filler |
 | `A-GENERIC` | Same, `info@` only | Any | Unknown | `SEQ-A3` | Written to be forwarded |
 | `A-PACK` | Anyone who requested a pack | — | — | `SEQ-A4` | **Manual send.** Where the revenue is |
+| `A-MAGNET` | Anyone who took the free product | — | — | nurture | Email follow-up, not outbound |
 
 **`A-TRIG-OWNER` is the campaign that matters.** Signal-referenced outreach to a named human is the
 only combination with a structural advantage. When capacity is scarce, cut `A-BROAD-OWNER` first.

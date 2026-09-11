@@ -33,7 +33,7 @@ Owns commercial growth, does not own the budget. Reports to P1.
 |---|---|
 | **Worries about** | Hitting a number · where next month's walkthroughs come from |
 | **Buys when** | It makes them look effective. Understands "system" better than P1 does |
-| **Blocker** | Cannot approve $2,000 alone — must sell it internally |
+| **Blocker** | May still need the owner's sign-off on a purchase |
 
 **Give them something forwardable.** If P2 replies, they are a champion, not a decision-maker —
 ask who else is involved before quoting.

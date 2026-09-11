@@ -1,5 +1,5 @@
 # Commercial Cleaning Client Acquisition OS
-### Gumroad sales page · $197 · production copy
+### Gumroad sales page · $149 · production copy
 
 ---
 
@@ -10,7 +10,7 @@
 **An operating system for commercial cleaning and janitorial companies that want a repeatable way
 to find accounts, reach the person who actually decides, and turn conversations into walkthroughs.**
 
-One-time, $197. You keep it.
+One-time, $149. You keep it.
 
 **[ I want this! ]**
 
@@ -140,7 +140,8 @@ If you want contracts without making calls, this will disappoint you.
 
 ## THE PRICE
 
-**$197, once.** No subscription. No upsell required to make it work.
+**$149, once.** No subscription. Nothing else to buy — there is no upgrade, no service tier, and
+no second product waiting behind this one.
 
 What you're paying for is that the decisions are already made, and the working files are already
 built. The eleven triggers are chosen and sourced. The seven qualification filters are in an order
@@ -150,7 +151,7 @@ on a job that priced fine. The tracker already scores, flags duplicates, and tel
 overdue.
 
 You could work all of that out yourself over a few dozen walkthroughs and a few lost bids. That's
-genuinely how it was worked out. The alternative is $197 and starting from a structure.
+genuinely how it was worked out. The alternative is $149 and starting from a structure.
 
 It's also reusable. It's a method, not a list — the same files work in your city next quarter
 and in the next city after that.
@@ -190,6 +191,6 @@ everywhere in the US. You choose the market.
 
 ### Get the Commercial Cleaning Client Acquisition OS.
 
-$197, one time. Download immediately.
+$149, one time. Download immediately.
 
 **[ I want this! ]**

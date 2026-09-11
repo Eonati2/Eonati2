@@ -339,6 +339,9 @@ is unhappy with one, or is shopping, without direct evidence. Store the observed
 its source and date in `Trigger_Event.evidence`.
 
 ### Instances
-Stages here describe **Instance B** — the customer selling cleaning to facilities, which is product
-content. Our own motion for selling the Managed Pilot is **Instance A**, in
-`sales/06-selling-the-managed-pilot.md`. Do not mix them; a walkthrough has no counterpart in A.
+Stages here describe the **customer's** motion — selling cleaning to facilities. That is product
+content and it is what this skill is for.
+
+**Our own motion is not a sales process.** We sell one digital product through a seven-stage funnel
+(`commercial-cleaning-os/crm/lifecycle-stages.md` §3). There is no walkthrough, proposal or
+negotiation on our side. Do not apply this skill to our own selling.

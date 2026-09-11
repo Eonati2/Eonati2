@@ -14,8 +14,8 @@ There are **two distinct pipelines** in this business, and merging them corrupts
 |---|---|---|
 | Whose | Ours | The customer's |
 | Account = | A commercial cleaning company | A building / facility / property |
-| We are selling | Core OS, Setup, Managed Pilot | *They* sell recurring cleaning |
-| Terminal win | A $197 / $497 / $2,000 purchase | A signed cleaning contract |
+| We are selling | The Client Acquisition OS, one price | *They* sell recurring cleaning |
+| Terminal win | A product purchase | A signed cleaning contract |
 | Geography | 10–15 metros (buyer supply) | The customer's own metro |
 | Ships to customer? | No — internal | **Yes — this is the product** |
 

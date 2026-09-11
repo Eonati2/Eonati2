@@ -66,7 +66,7 @@ store the input, not just the output, and mark the field `estimated`.
 
 | Pts | Est. monthly value |
 |---|---|
-| 5 | $2,000+ or a multi-building relationship |
+| 5 | $2,000+/month or a multi-building relationship |
 | 4 | $1,000–$1,999 |
 | 3 | $600–$999 |
 | 2 | $300–$599 |
