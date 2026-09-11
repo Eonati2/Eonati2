@@ -112,7 +112,21 @@ graphics. **Do not use procedural synthesis to fake photoreal cinematography** �
 failure is already recorded in the library. Generate multiple candidates and rank them
 per `references/creative-gate.md`; never auto-accept candidate #1.
 
+**7b · Triage the batch.** Before cutting anything:
+`python3 scripts/clip_dedup.py <folder>`. Generators re-serve renders and download tools
+fetch the same asset twice, so a batch is routinely 10–20% duplicates. The same pass names
+the strongest loop seam in the set — which clip's tail should hand off to which clip's
+head — so the loop is chosen from measurement rather than decided after the edit is
+already locked.
+
 **8 · Edit.** Now, and not before. `remotion-*`, ffmpeg, caption and audio specialists.
+
+**When the user supplies the music themselves**, build to a bar grid rather than to a
+waveform you have never heard: cut on multiples of one bar and put the single biggest
+change on the midpoint of the runtime, where a track's phrase change almost always lands.
+Ship with **no audio stream at all** (`-an`), not a stream of silence — an editor
+importing the file should find nothing to mute or delete. Deliver the
+grid in the handoff so they can nudge one number if their track is at an unusual tempo.
 
 **9 · The three gates.** Below. All three must pass.
 
@@ -272,8 +286,22 @@ share, save or follow?
   move.
 - **Grade** — `white_pct` well under 100 is filmic rolloff and is usually what separates
   "graded" from "raw". Saturation under ~0.3 is near-monochrome, over ~0.7 extreme.
+- **Loop and similarity scores mean nothing without their baseline.** Clips from one batch
+  share a grade, a subject and a generator, so any two of them correlate highly by
+  default. `clip_dedup.py` prints the median of all pairs for exactly this reason: read
+  the margin over that baseline, never the raw number.
 - **Motion need not be the camera's.** A locked frame with a violently moving subject
   passes the hook test. What must never ship is a still frame *and* a still subject.
+- **Saturation is not a property of the footage alone.** It is measured per pixel, so it
+  moves with the raster it is sampled at *and* with the encoder preset — downscaling
+  averages neighbouring pixels and reads lower, and chroma compression shifts it again.
+  A grade solved on small source samples can miss by 0.2 on the finished file. Solve the
+  luminance targets (mean, white point) however you like, but set saturation by rendering,
+  measuring the actual output with this analyzer, and interpolating. Two probe renders
+  settle it; modelling the filter does not, because `eq=saturation` works in YUV and
+  almost every simulation of it is written in RGB.
+- **`colorlevels` `romax` only darkens.** To lift the white point the equivalent is
+  `rimax=1/v`. Passing `romax` a value above 1 is a hard ffmpeg error, not a clamp.
 
 ## Creative memory
 
