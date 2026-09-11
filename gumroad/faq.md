@@ -24,7 +24,7 @@ No. The Account & Trigger Tracker included in the package is the CRM. Move to a 
 the spreadsheet starts hurting.
 
 **Is it a course?**
-No. No videos, no modules, no login. Eleven guides and two spreadsheets you use while working.
+No. No videos, no modules, no login. Twelve guides and two spreadsheets you use while working.
 
 **Does it guarantee clients?**
 No. It's a method for finding and qualifying accounts and getting to walkthroughs. What happens on
@@ -35,7 +35,7 @@ Yes. The sources are public records and business listings, which exist everywher
 choose the market.
 
 **What do I receive after purchase?**
-Immediate download of thirteen files — eleven PDF guides and two Excel workbooks.
+Immediate download of fourteen files — twelve PDF guides and two Excel workbooks.
 
 ---
 

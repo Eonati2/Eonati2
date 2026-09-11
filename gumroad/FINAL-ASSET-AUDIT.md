@@ -1,7 +1,7 @@
 # Final Asset Audit
-**2026-09-11** · 13 files in `customer-product/`
+**2026-09-11** · 14 files in `customer-product/` · restructured to the 00–13 package
 
-Sources in `customer-product/src/`. PDFs rendered from those sources; both workbooks built from
+Sources in `customer-product/src/`. Restructured 2026-09-11: the ICP and decision-maker material split into two documents, and the package renumbered 00–13. PDFs rendered from those sources; both workbooks built from
 scripts. Regenerating any file is reproducible.
 
 ---
@@ -14,17 +14,18 @@ scripts. Regenerating any file is reproducible.
 | 01 | `01-CLIENT-ACQUISITION-OS.pdf` | PASS | PASS | PASS | PASS | **Ready** |
 | 02 | `02-ACCOUNT-TRIGGER-TRACKER.xlsx` | PASS | PASS | PASS | PASS* | **Ready** — see §3 |
 | 03 | `03-TRIGGER-LIBRARY.pdf` | PASS | PASS | PASS | PASS | **Ready** |
-| 04 | `04-PROSPECTING-GUIDE.pdf` | PASS | PASS | PASS | PASS | **Ready** |
-| 05 | `05-ICP-AND-PERSONAS.pdf` | PASS | PASS | PASS | PASS | **Ready** |
-| 06 | `06-OUTREACH-SEQUENCES.pdf` | PASS | PASS | PASS | PASS | **Ready** |
-| 07 | `07-REPLY-HANDLING.pdf` | PASS | PASS | PASS | PASS | **Ready** |
-| 08 | `08-WALKTHROUGH-GUIDE.pdf` | PASS | PASS | PASS | PASS | **Ready** |
-| 09 | `09-PROPOSAL-GUIDE.pdf` | PASS | PASS | PASS | PASS | **Ready** |
-| 10 | `10-30-DAY-IMPLEMENTATION.pdf` | PASS | PASS | PASS | PASS | **Ready** |
-| 11 | `11-METRICS-SCOREBOARD.xlsx` | PASS | PASS | PASS | PASS* | **Ready** — see §3 |
-| 12 | `12-AUTOMATION-BLUEPRINT.pdf` | PASS | PASS | PASS | PASS | **Ready** |
+| 04 | `04-ICP-AND-TARGETING.pdf` | PASS | PASS | PASS | PASS | **Ready** |
+| 05 | `05-DECISION-MAKER-GUIDE.pdf` | PASS | PASS | PASS | PASS | **Ready** |
+| 06 | `06-PROSPECTING-WORKFLOW.pdf` | PASS | PASS | PASS | PASS | **Ready** |
+| 07 | `07-OUTREACH-SEQUENCES.pdf` | PASS | PASS | PASS | PASS | **Ready** |
+| 08 | `08-REPLY-HANDLING.pdf` | PASS | PASS | PASS | PASS | **Ready** |
+| 09 | `09-WALKTHROUGH-SYSTEM.pdf` | PASS | PASS | PASS | PASS | **Ready** |
+| 10 | `10-PROPOSAL-SYSTEM.pdf` | PASS | PASS | PASS | PASS | **Ready** |
+| 11 | `11-30-DAY-IMPLEMENTATION.pdf` | PASS | PASS | PASS | PASS | **Ready** |
+| 12 | `12-METRICS-SCOREBOARD.xlsx` | PASS | PASS | PASS | PASS* | **Ready** — see §3 |
+| 13 | `13-AUTOMATION-BLUEPRINT.pdf` | PASS | PASS | PASS | PASS | **Ready** |
 
-**13 of 13 exist. No placeholders.**
+**14 of 14 exist. No placeholders.**
 
 ---
 

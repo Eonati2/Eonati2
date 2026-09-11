@@ -37,7 +37,7 @@ someone else's padded number.
 **Do:** acknowledge, ask one clarifying question, then respond to the actual answer. Don't argue
 and don't discount.
 
-Most objections at this stage are a request for a reason to feel safe. See **09 Proposal Guide**
+Most objections at this stage are a request for a reason to feel safe. See **10 Proposal System**
 for the fuller list.
 
 ---

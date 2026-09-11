@@ -24,21 +24,21 @@ sites).
 
 ### Day 2 — Pick two segments
 **Objective:** Narrow, so your outreach can be specific.
-**Action:** Read **05 ICP and Personas**. Choose two segments. Property management plus one other
+**Action:** Read **04 ICP & Targeting** and **05 Decision-Maker Guide**. Choose two segments. Property management plus one other
 is a good default — one relationship there can expose several buildings.
 **Output:** Two segments written down.
 **Check:** Can you name the job title that signs in each one, without looking?
 
 ### Day 3 — Build your first twenty
 **Objective:** Get real accounts into the tracker.
-**Action:** Follow **04 Prospecting Guide**. Search your segments in your area. Add twenty accounts
+**Action:** Follow **06 Prospecting Workflow**. Search your segments in your area. Add twenty accounts
 to the Account Tracker. Delete the example rows.
 **Output:** Twenty rows.
 **Check:** Every row has a company, a website or phone, a city, and a segment.
 
 ### Day 4 — Qualify them
 **Objective:** Cut the list down honestly.
-**Action:** Apply the seven filters in **04**. Delete or mark as disqualified anything that fails.
+**Action:** Apply the seven filters in **06**. Delete or mark as disqualified anything that fails.
 **Output:** Probably eight to twelve accounts left.
 **Check:** You deleted at least a third. If you kept all twenty, you weren't strict enough.
 
@@ -104,7 +104,7 @@ signature. Make sure there's a clear way to reply and opt out.
 
 ### Day 12 — Write the first email
 **Objective:** One email, specific to the trigger.
-**Action:** Take the matching sequence from **06**. Replace the brackets with what you actually
+**Action:** Take the matching sequence from **07**. Replace the brackets with what you actually
 observed. Read it aloud.
 **Output:** One first-touch email.
 **Check:** Does every claim about them trace to your Trigger Tracker row? If not, cut it.
@@ -117,7 +117,7 @@ observed. Read it aloud.
 
 ### Day 14 — Handle replies
 **Objective:** Answer fast.
-**Action:** Read **07 Reply Handling**. Reply to anything human the same day. Suppress any opt-out
+**Action:** Read **08 Reply Handling**. Reply to anything human the same day. Suppress any opt-out
 immediately.
 **Output:** Replies answered, tracker updated.
 **Check:** Nothing positive is sitting unanswered overnight.
@@ -136,26 +136,26 @@ immediately.
 
 ### Day 16 — Book a walkthrough
 **Objective:** Turn a reply into a site visit.
-**Action:** For anyone interested, follow **08**. Get the date, time and address confirmed in
+**Action:** For anyone interested, follow **09**. Get the date, time and address confirmed in
 writing before you call it booked.
 **Output:** A confirmed walkthrough, or a clear next step.
 **Check:** Is it in writing? A verbal maybe is not a booking.
 
 ### Day 17 — Run it
 **Objective:** Measure properly and become the person they want to hire.
-**Action:** Follow the checklist in **08**. Take photos. Ask what would make them call you.
+**Action:** Follow the checklist in **09**. Take photos. Ask what would make them call you.
 **Output:** Measurements, photos, and their answer written down.
 **Check:** Could you price the job from your notes without going back?
 
 ### Day 18 — Price and propose
 **Objective:** A proposal within 48 hours.
-**Action:** Price both ways per **08**, then build the proposal per **09**.
+**Action:** Price both ways per **09**, then build the proposal per **10**.
 **Output:** A three-tier proposal, sent.
 **Check:** Does the "what we understood" section use their words?
 
 ### Day 19 — Fill in the scoreboard
 **Objective:** See the month honestly.
-**Action:** Open **11 Metrics Scoreboard**. Enter the last three weeks.
+**Action:** Open **12 Metrics & Scoreboard**. Enter the last three weeks.
 **Output:** Three columns filled.
 **Check:** You counted positive replies strictly — "we're covered, thanks" is not positive.
 

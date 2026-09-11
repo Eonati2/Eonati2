@@ -80,8 +80,8 @@ gate and say why.
 | Experiments | `ab-testing` | |
 | Lead magnets / proof pack design | `lead-magnets` | The proof pack is our primary lead magnet |
 | Persuasion framing | `marketing-psychology` | Subordinate to the no-hype standard in §7 |
-| Automation build | `n8n-workflow-builder` | |
-| Automation debugging | `n8n-debugger` | |
+| Automation build | **Project-authored** — `commercial-cleaning-os/automation/stack.md`. Use `n8n-workflow-builder` for workflow *design* only and translate to Make | Our stack is Make + Attio. **We are not using n8n.** No Make/Attio specialist skill exists. |
+| Automation debugging | `n8n-debugger` | Same caveat — general debugging thinking, not the tool |
 
 **Sales layer — resolved.** `sales-skills/sales` could not be verified to exist, and it is no longer
 needed. `commercial-cleaning-sales` (project-authored, installed 2026-09-10) is the entry point for
@@ -187,6 +187,7 @@ learn → improve → *then* automate. Do not spend weeks automating an unvalida
 
 | Path | Contents |
 |---|---|
+| `commercial-cleaning-os/automation/stack.md` | **The locked tech stack** — Apollo, Make, Attio, Smartlead, Claude, Gumroad |
 | `commercial-cleaning-os/crm/` | schema, lifecycle stages, scoring, routing, field definitions |
 | `commercial-cleaning-os/outbound/` | ICP, personas, triggers, campaigns, sequences, reply routing |
 | `commercial-cleaning-os/automation/` | workflows, n8n, error handling, kill switches |

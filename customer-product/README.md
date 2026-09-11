@@ -1,15 +1,15 @@
 # Customer Product
 
-What a buyer receives. Thirteen files: eleven PDF guides and two Excel workbooks.
+What a buyer receives. Fourteen files: twelve PDF guides and two Excel workbooks, numbered 00–13.
 
 `src/` holds the markdown sources for the PDFs. Both workbooks are built from scripts, so every
 file here is reproducible.
 
 | File | Source |
 |---|---|
-| `00-START-HERE.pdf` … `12-AUTOMATION-BLUEPRINT.pdf` | `src/*.md` |
+| `00-START-HERE.pdf` … `13-AUTOMATION-BLUEPRINT.pdf` | `src/*.md` |
 | `02-ACCOUNT-TRIGGER-TRACKER.xlsx` | build script |
-| `11-METRICS-SCOREBOARD.xlsx` | build script |
+| `12-METRICS-SCOREBOARD.xlsx` | build script |
 
 ## Rules for anything added here
 

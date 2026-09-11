@@ -17,12 +17,12 @@ them and acting on them in order:
 
 ACCOUNT -> PERSON -> TRIGGER -> OUTREACH -> FOLLOW-UP -> WALKTHROUGH
 
-Thirteen files. Two working Excel tools -- an eleven-tab Account & Trigger
+Fourteen files. Two working Excel tools -- an eleven-tab Account & Trigger
 Tracker with scoring, stages and follow-up flags, and a Weekly Metrics
-Scoreboard. Plus eleven guides: trigger library, prospecting, who signs by
-building type, six outreach sequences, reply handling, the walkthrough with a
-two-method pricing model, the proposal structure, a 30-day plan, and an
-automation blueprint.
+Scoreboard. Plus twelve guides: trigger library, ICP and targeting, the decision-maker
+guide, the prospecting workflow, six outreach sequences, reply handling, the
+walkthrough system with a two-method pricing model, the proposal system, a
+30-day plan, and an automation blueprint.
 
 For: commercial cleaning companies that can already service recurring B2B accounts.
 Not for: residential-only operators, or anyone wanting a lead list or guaranteed
@@ -31,4 +31,4 @@ income.
 No contacts included. No subscription. No guarantee of clients -- no system can
 offer one.
 
-$149, one time. Immediate download of all thirteen files.
+$149, one time. Immediate download of all fourteen files.

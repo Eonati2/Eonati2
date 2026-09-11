@@ -57,12 +57,12 @@ the wrong person at a building you can't service about a reason you invented.
 ### ACCOUNT — which buildings
 Define what you can actually service first: radius, building types, size floor, things you don't
 do. Then build a list from public sources and cut it hard. Expect to keep about one in four.
-→ **04 Prospecting Guide**, **05 ICP and Personas**
+→ **06 Prospecting Workflow**, **04 ICP & Targeting** and **05 Decision-Maker Guide**
 
 ### PERSON — who signs
 In a dental office the practice manager signs, not the dentist. In a 30-person office it's the
 office manager, not the managing partner. Getting this wrong wastes the account.
-→ **05 ICP and Personas**
+→ **04 ICP & Targeting** and **05 Decision-Maker Guide**
 
 ### TRIGGER — why now
 The dated, public reason this account is worth contacting this quarter. Eleven of them, with
@@ -72,21 +72,21 @@ where to find each.
 ### OUTREACH — the contact
 Say what you observed. Say what you do. Make a conditional offer. Ask an easy question. Three
 emails, then stop.
-→ **06 Outreach Sequences**
+→ **07 Outreach Sequences**
 
 ### CONVERSATION — the reply
 Answer the same day. Don't quote a price over email.
-→ **07 Reply Handling**
+→ **08 Reply Handling**
 
 ### WALKTHROUGH — the site visit
 Where the contract is won. Measure properly, watch for the five things that destroy margin, and
 become the person they want to hire.
-→ **08 Walkthrough Guide**
+→ **09 Walkthrough System**
 
 ### PROPOSAL — the document
 Their words back to them, a specific scope, three options, and what happens if something goes
 wrong.
-→ **09 Proposal Guide**
+→ **10 Proposal System**
 
 ### WIN or LOSS → LEARN
 Ask why on every loss and record it as a category. One loss is noise. Ten coded losses tell you

@@ -1,4 +1,4 @@
-# The Proposal
+# Proposal System
 
 Sent within 48 hours of the walkthrough.
 

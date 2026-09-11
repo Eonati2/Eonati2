@@ -1,4 +1,4 @@
-# Prospecting Guide
+# Prospecting Workflow
 ## Building an account list from scratch
 
 No contacts came with this package. Here's how to build a better list than one you could buy, in

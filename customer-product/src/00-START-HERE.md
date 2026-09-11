@@ -44,18 +44,17 @@ Only then write anything.
 | **00 Start Here** | This page |
 | **01 Client Acquisition OS** | The whole method in one document. Read second. |
 | **02 Account & Trigger Tracker** (Excel) | The working file. You'll live in this. |
-| **03 Trigger Library** | The eleven signals, where to find each one, and what you may say |
-| **04 Prospecting Guide** | How to build and qualify an account list from scratch |
-| **05 ICP and Personas** | Which buildings to target, and who signs at each type |
-| **06 Outreach Sequences** | Six sequences by segment and trigger, ready to adapt |
-| **07 Reply Handling** | Ten kinds of reply and what to do with each |
-| **08 Walkthrough Guide** | What to measure, what destroys margin, how to price |
-| **09 Proposal Guide** | The seven-section structure and the three-tier table |
-| **10 30-Day Implementation** | Day by day, if you want a schedule |
-| **11 Metrics Scoreboard** (Excel) | Ten minutes every Friday |
-| **12 Automation Blueprint** | Only when the manual version works |
-
----
+| **03 Trigger Library** | The eleven signals, where to find each, and what you may say |
+| **04 ICP & Targeting** | Which buildings to go after, and which to skip |
+| **05 Decision-Maker Guide** | Who signs at each building type, and how to find their name |
+| **06 Prospecting Workflow** | Building and qualifying an account list from scratch |
+| **07 Outreach Sequences** | Six sequences by segment and trigger, ready to adapt |
+| **08 Reply Handling** | Ten kinds of reply and what to do with each |
+| **09 Walkthrough System** | What to measure, what destroys margin, how to price |
+| **10 Proposal System** | The seven-section structure and the three-tier table |
+| **11 30-Day Implementation** | Day by day, if you want a schedule |
+| **12 Metrics & Scoreboard** (Excel) | Ten minutes every Friday |
+| **13 Automation Blueprint** | Only when the manual version works |
 
 ## Do this first
 
@@ -70,7 +69,7 @@ Only then write anything.
 
 5. For the accounts scoring 16 or above, find the person who signs. **05** tells you which role.
 6. Find the trigger. Log it with a date and where you found it.
-7. Pick the matching sequence from **06**. Send it.
+7. Pick the matching sequence from **07**. Send it.
 8. Log the send in the Follow-up Tracker.
 
 That's the loop. Everything else in the package makes that loop better.

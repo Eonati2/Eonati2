@@ -62,7 +62,7 @@ service about a reason you made up.
 
 ## WHAT'S INSIDE
 
-Thirteen files. Eleven guides and two working spreadsheets. Written for an owner who is busy, not
+Fourteen files. Twelve guides and two working spreadsheets. Written for an owner who is busy, not
 for someone who enjoys reading.
 
 **The working files**
@@ -74,17 +74,18 @@ for someone who enjoys reading.
 **Finding accounts**
 - **Trigger Library** — eleven buying signals, each with where to find it, how fresh it stays, and
   what you may and may not say about it
-- **Prospecting Guide** — building and qualifying a list from public sources
-- **Who to Target, and Who Signs** — segment priority, and the person who signs by building type
+- **Prospecting Workflow** — building and qualifying a list from public sources
+- **ICP & Targeting** — which buildings to go after, and which to skip
+- **Decision-Maker Guide** — who signs by building type, and how to find their name
 
 **Making contact**
 - **Outreach Sequences** — six sequences by segment and trigger, ready to adapt
 - **Reply Handling** — ten kinds of reply and what to do with each
 
 **Converting**
-- **The Walkthrough** — what to measure, the five things that quietly destroy margin, and a
+- **Walkthrough System** — what to measure, the five things that quietly destroy margin, and a
   two-method pricing model
-- **The Proposal** — the seven-section structure, the three-tier table, and nine objections
+- **Proposal System** — the seven-section structure, the three-tier table, and nine objections
 
 **Running it**
 - **Start Here** — what to do in your first hour
@@ -174,7 +175,7 @@ for you.
 **Do I need a CRM?** No. The Account & Trigger Tracker is the CRM, and it's included. Move to a
 dedicated one when the spreadsheet starts hurting.
 
-**Is it a course?** No. There are no videos and no modules. It's eleven guides and two spreadsheets
+**Is it a course?** No. There are no videos and no modules. It's twelve guides and two spreadsheets
 you use while doing the work.
 
 **Does it guarantee clients?** No. It's a method for finding and qualifying accounts and getting to
@@ -183,7 +184,7 @@ walkthroughs. What happens on the walkthrough is your business.
 **Can I use it in any city?** Yes. The sources are public records and business listings, which exist
 everywhere in the US. You choose the market.
 
-**What do I receive after purchase?** Immediate download of thirteen files — eleven PDF guides and two Excel workbooks.
+**What do I receive after purchase?** Immediate download of fourteen files — twelve PDF guides and two Excel workbooks.
 
 ---
 

@@ -21,8 +21,9 @@ project rules that override specialist skill guidance.
 | 9a. CRM foundation | **done** — `crm/`, 5 specs |
 | 9b. Sales workflows | **done** — `sales/`, 6 docs |
 | 9c. Outbound layer | **done** — `outbound/`, 7 docs |
-| 9d. Customer product | **done** — `../customer-product/`, 13 assets |
-| 9e. Offers, analytics, policies, internal automation | not started |
+| 9d. Customer product | **done** — `../customer-product/`, 14 assets |
+| 9e. Offers + stack | **done** — `offers/`, `automation/stack.md` |
+| 9f. Analytics, policies, Make/Attio build | not started |
 
 `crm/`, `sales/` and `outbound/` are specified. `automation/`, `offers/`, `analytics/` and
 `policies/` remain scaffolded and empty.
