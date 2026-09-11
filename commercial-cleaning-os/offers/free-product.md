@@ -1,5 +1,8 @@
 # The Free Product
 
+**Status: built 2026-09-11.** Files in `../../free-product/`. This document is the spec; the
+built kit is the thing.
+
 Top of the funnel, and the thing that makes outbound work without pitching.
 
 **The rule it has to pass:** a cleaning company owner who downloads it and never buys anything
@@ -101,13 +104,13 @@ piece is complete on its own terms.
 
 Roughly a day, mostly reuse.
 
-| Asset | Source | Work |
-|---|---|---|
-| 25 triggers | The 11 in the paid library, plus 14 new | Half a day — the new fourteen are the real work |
-| One-tab tracker | Cut down from the paid workbook | An hour |
-| Three templates | Already written | Adapt, half an hour |
-| Nurture emails | New | An hour |
-| Delivery | Gumroad free product | Half an hour |
+| Asset | Status |
+|---|---|
+| 25 triggers | **Done** — 11 from the paid library, 14 new |
+| One-tab tracker | **Done** — `ACCOUNT-TRACKER-LITE.xlsx` |
+| Three templates | **Done** — in the PDF |
+| Nurture emails | **Done** — `../outbound/sequences/free-product-nurture.md` |
+| Delivery | **Not done** — Gumroad free product needs creating |
 
 **Build it after the paid product is packaged, not before.** Cutting a free version out of a
 finished product is quick. Building both at once produces two half-finished things.
