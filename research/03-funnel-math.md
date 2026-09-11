@@ -19,11 +19,28 @@ you can physically send in 60 days.
 | Sends per inbox per day | 28 | Safe 2026 practice under the 0.3% complaint regime |
 | Daily capacity | 672 | |
 | **Total sends in the window** | **≈ 18,000** | 27 business days × 672/day = 18,144. **Business days, not calendar days** — 60 calendar − 21 warmup = 39 calendar ≈ 27 business. |
-| Average touches per contact (sequence halts on reply) | 2.8 | |
-| **Contacts you can actually reach** | **≈ 6,400** | |
+| Average touches per contact (sequence halts on reply) | 2.8 | **Follow-ups consume the same capacity.** The 19,000 is total sends, not first touches. |
+| **Contacts you can actually reach** | **≈ 6,800** | |
 
-> **Write this on the wall: 6,400 contacts.** Not 100,000. Every strategy decision below is about
-> extracting maximum revenue from 6,400 people, which is exactly why targeting and price beat volume.
+### The ramp
+
+| Business days | Cold per inbox | Daily total | Cumulative |
+|---|---|---|---|
+| 1–5 | 20 | 500 | 2,500 |
+| 6–10 | 25 | 625 | 5,625 |
+| 11–15 | 30 | 750 | 9,375 |
+| 16–27 | 33 | 825 | **≈ 19,300** |
+
+Hold at each step only if bounces, complaints and reply quality stay healthy. A bad week means
+staying put, not pushing through.
+
+> **Write this on the wall: ~6,800 contacts.** Not 100,000. Every strategy decision below is about
+> extracting maximum revenue from those, which is exactly why targeting and price beat volume.
+
+> *Revision 2026-09-11: the earlier version used 24 inboxes at a flat 28 cold sends/day (672/day,
+> ~18,000 total) and did not reserve capacity for ongoing warmup traffic. Reserving it and adding a
+> proper ramp produces ~19,000 — materially the same answer. The conclusion was robust to the
+> error, but the error was real.*
 
 ---
 
@@ -138,7 +155,7 @@ Base case $7,243 (Model B), one variable at a time:
 | Pack→purchase 22% → 30% | $9,900 | **+$2,700** |
 | AOV: mix shifts to 50/30/20 | $9,800 | **+$2,600** |
 | Price $197 → $149 across the board | $6,300 | −$940 |
-| Double the sends (48 inboxes, 2× infra cost) | $12,900 | +$5,700, at ~$450/mo more cost and materially more deliverability risk |
+| Double the sends (50 inboxes, 2× infra cost) | $12,900 | +$5,700, at ~$450/mo more cost and materially more deliverability risk. **The worst lever per dollar and per unit of risk.** |
 | Segment 1 grows 2,000 → 3,500 contacts *(more trigger research, no more infra)* | $9,600 | **+$2,400** |
 
 **Read the table:** the three cheapest levers are **trigger quality**, **proof-pack conversion**, and
@@ -152,14 +169,14 @@ harder genuinely beats sending more — which is unusual, and it is the whole re
 
 | Line | Setup | Monthly | 60-day total |
 |---|---|---|---|
-| 6 sending domains | $72 | — | $72 |
-| 24 mailboxes @ $6 | — | $144 | $288 |
+| 10 sending domains | $120 | — | $120 |
+| 25 mailboxes @ $6 | — | $150 | $300 |
 | Sequencer (Smartlead unlimited) | — | $174 | $348 |
 | Apify credits | — | $25 | $50 |
 | Email verification | — | $30 | $60 |
 | Postal address (CMRA/PO box) | $20 | $15 | $50 |
 | Landing page domain + host | $15 | — | $15 |
-| **Total cash out** | | | **≈ $885** |
+| **Total cash out** | | | **≈ $945** |
 
 Against a base case of ~$11,000 gross / ~$9,600 net: **~11× on cash deployed.** The scarce resource
 is your hours in weeks 1–3, not money.

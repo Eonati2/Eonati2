@@ -135,6 +135,51 @@ Send yourself a test before every new campaign.
 
 ---
 
+## How much can you actually send?
+
+Less than you'd think, and the limit is your sender reputation rather than your software.
+
+### Four rules
+
+**Your mailbox has one daily budget, and warmup spends from it.** Most guidance quotes a cap per
+mailbox per day — the number people miss is that it covers *all* traffic, including the warmup
+emails your tool keeps sending in the background. If your cap is 45 and warmup uses 12, your real
+cold-email ceiling is 33. Plan against 45 and you're running at 125% of it.
+
+**Follow-ups count too.** A three-email sequence to 100 people is up to 300 sends, not 100. When
+you're working out how many accounts you can handle a week, divide your send capacity by your
+average number of touches.
+
+**Spread mailboxes across domains.** Two or three per domain, not all of them on one. If a domain's
+reputation goes bad you lose that slice, not everything. Ten domains with two or three mailboxes
+each is a more resilient setup than three domains with eight.
+
+**Ramp, don't start at the ceiling.** A new mailbox sending at full volume on day one is the
+clearest possible signal that it isn't a person. Start low, hold each step for about a week, and
+only step up if bounces and complaints stay clean.
+
+### A workable ramp
+
+| Week | Cold emails per mailbox per day |
+|---|---|
+| 1–3 | 0 — warmup only |
+| 4 | 20 |
+| 5 | 25 |
+| 6 | 30 |
+| 7+ | 33, and don't rush past it |
+
+**Hold a step if anything looks wrong.** A bad week means staying where you are, not pushing
+through. Reputation takes weeks to build and days to lose.
+
+### For most operators, this is academic
+
+If you're working thirty well-chosen accounts a month, you'll never approach these limits and you
+don't need sending software at all. These numbers matter when you're running hundreds a week —
+and if your reply rate is poor, more volume is the wrong fix anyway. Go back to which accounts you
+picked and whether the trigger was real.
+
+---
+
 ## A worked example — the trigger watcher
 
 The one automation worth building early, even if you build nothing else.

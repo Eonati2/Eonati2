@@ -13,8 +13,8 @@ licence for the whole plan.
 |---|---|
 | **Never send from your primary domain** | Cold email burns sender reputation. Your product domain must stay clean forever — it's where buyers go and where receipts come from. |
 | **Never send from `eonati2.github.io` or the logo-design property** | Unrelated brand, shared subdomain reputation, and a confusing story for anyone who checks. |
-| Buy **6 dedicated sending domains** | Close cousins of the brand, `.com` where possible. ~$12/yr each. |
-| 4 mailboxes per domain, max | Concentration on one domain is a reputation single-point-of-failure |
+| Buy **10 dedicated sending domains** | Close cousins of the brand, `.com` where possible. ~$12/yr each, so ~$120. |
+| **2–3 mailboxes per domain** | Revised 2026-09-11 from 4. Concentration is a reputation single-point-of-failure, and at 2–3 per domain losing one costs you a tenth of capacity rather than a sixth. |
 | Each sending domain 301-redirects to the product domain | So a curious prospect who types it in lands somewhere real |
 | Warm every mailbox **21 days** before real sends | Non-negotiable. This is why week 1–3 exists in the plan. |
 
@@ -32,12 +32,26 @@ licence for the whole plan.
 |---|---|---|
 | **Spam complaint rate** | **<0.1%** target, **0.3% hard ceiling** | Above 0.3% → throttling. Above 0.5% → delivery failure. Pause everything and audit copy + list. |
 | Hard bounce rate | <2% | Above 3% → verification is broken. Stop, re-verify. |
-| Sends per inbox per day | 28, ramping from 5 over the warmup | Never spike |
-| Daily total | ~672 across 24 inboxes | |
+| **Daily cap per inbox, all traffic** | **~45**, including warmup | Warmup counts against the same cap |
+| Ongoing warmup reserve | ~12/day per inbox | Warmup continues after sending starts |
+| **Cold sends per inbox** | Ramp 20 → 25 → 30 → **33 max** | Never spike. Hold a step if signals worsen. |
+| Gap between sends | 10–15 minutes | Bursts look automated |
+| Daily cold total | 500 ramping to **~825** across 25 inboxes | |
 
-**The 0.3% number in practice:** at 672 sends/day, **two complaints in a day puts you at 0.3%.** That
-is how thin the margin is, and it is the real argument for the gift-first approach — people don't
-mark "want a free list of prospects in your city?" as spam nearly as often as they mark a pitch.
+**The 0.3% number in practice:** at 825 sends/day, **three complaints in a day puts you at 0.3%.**
+That is how thin the margin is, and it is the real argument for the gift-first approach — people
+don't mark "want a free list of prospects in your city?" as spam nearly as often as they mark a
+pitch.
+
+**Two capacity rules that are easy to get wrong:**
+
+**Warmup traffic counts.** A mailbox cap is total sends, not cold sends. Warmup does not stop when
+the campaign starts — it continues for the life of the mailbox — so the cold-send ceiling is the
+cap *minus* whatever warmup is using. Planning 45 cold sends against a 45 cap means running at
+roughly 125% of it.
+
+**Follow-ups count.** A three-email sequence to 100 contacts is up to 300 sends, not 100. The
+capacity figures above are total sends; divide by average touches to get contacts reached.
 
 ---
 
