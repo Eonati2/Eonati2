@@ -1,7 +1,7 @@
 # Skill Dependency Map
 
 Which skill owns what, where they overlap, and where they must not be trusted blindly.
-**33 skills installed** — 1 orchestrator + 32 specialists. Source of truth for routing is
+**39 skills installed** — 1 orchestrator + 38 specialists. Source of truth for routing is
 `.claude/skills/revenue-engine/SKILL.md` §3.
 
 ---
@@ -19,6 +19,7 @@ Which skill owns what, where they overlap, and where they must not be trusted bl
 | `entpnomad/copywriting` + `entpnomad/tone-of-voice` | git clone | 2 (`copywriting-concrete`, `tone-of-voice`) | `.claude/skills/` |
 | `thomasmeijer92/anti-ai-writing-slop` | git clone | 1 | `.claude/skills/` |
 | **This project** | authored 2026-09-10 | 1 (`cleaning-os-voice`) | `.claude/skills/` |
+| **This project** | authored 2026-09-11 | 1 (`building-distribution`) | `.claude/skills/` |
 
 `sales-skills/sales` — **not installed. Could not be verified to exist** (404 on every raw path
 tried; org search returns no such resource). See "Open gap" below.
@@ -46,6 +47,7 @@ ACCOUNT ──→ DECISION MAKER ──→ TRIGGER ──→ OUTREACH ──→ 
 | WALKTHROUGH · PROPOSAL | `sales-enablement` | **gap — see below** |
 | WIN/LOSS · pipeline | `revops` | `pipeline-analysis`, `crm-duplicate-detector` |
 | LEARN | `analytics` | `ab-testing`, `outbound-analyst` *(reference only)* |
+| **DISTRIBUTION** — traffic, audience, list growth, channels, target arithmetic | **`building-distribution`** | `lead-magnets` (the asset), `analytics` (the measurement) |
 | Product & storefront | `copywriting` | `cro`, `lead-magnets`, `marketing-psychology` |
 | Automation | `n8n-workflow-builder` | `n8n-debugger` |
 | Post-purchase email | `emails` | `email-marketing-bible` |
@@ -97,6 +99,19 @@ byline is needed — it must not invent a persona for the product.
 `cleaning-os-voice` is **mandatory** for anything a prospect or customer reads, and it decides any
 disagreement in the chain.
 
+### C8 — Nothing owned distribution until 2026-09-11
+Thirty-eight installed skills covered ICP, copy, outbound, CRM, sales and analytics. **None covered
+how a stranger arrives.** `lead-magnets` designs the asset; nothing said how anyone finds it. The
+`coreyhaines31` set does carry community, SEO, ads, social, video and PR skills — all
+deliberately not installed as outside the outbound motion, which was the right call for outbound
+and the wrong call for the business, because outbound has a hard capacity ceiling and cannot reach
+the revenue target alone.
+
+**Resolution:** `building-distribution` (project-authored, 2026-09-11) owns the requirement
+equation and the channel portfolio. It is upstream of every plan that assumes sales will arrive.
+Its planning treatment of marketplace traffic — **zero** — overrides any generic skill that
+suggests a storefront listing is a channel.
+
 ### C7 — Symlinks are not duplicates
 The 16 marketingskills entries in `.claude/skills/` are symlinks into `.agents/skills/`. That is the
 installer's normal cross-agent layout. **Both directories must be committed** — deleting `.agents/`
@@ -146,7 +161,6 @@ that ships inside the product. The override table at the foot of the skill decid
 | Walkthrough | `sales/02` | **Closed** |
 | Proposal / bid | `sales/03` + `sales-enablement` for collateral | **Closed** |
 | Closing, cadence | `sales/04`, `sales/05` | **Closed** |
-| Our own pilot sale | `sales/06` | **Closed** |
 
 **Resolved by authoring, not by installing.** All four were cleaning-industry-specific and would
 have needed project-authored workflows regardless — a generic closing skill does not know what

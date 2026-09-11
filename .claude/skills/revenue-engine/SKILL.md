@@ -22,7 +22,9 @@ after validation. **No service tiers.** The $497 Setup and $2,000 Managed Pilot 
 
 $10,000 in 90 days is **not** a defensible target for outbound alone under a single-product model —
 the arithmetic is in `research/12-decision-record-v4.md`. Never present it as a forecast, and do not
-plan against it.
+plan against it. Any revenue target, at any level, goes through `building-distribution` first and
+comes back as a required number of qualified free-kit downloads. A target is an input to arithmetic,
+never a statement of capability.
 
 **Core conceptual model — every deliverable maps to a stage of it:**
 
@@ -79,6 +81,10 @@ gate and say why.
 | Campaign metrics | `analytics`; `outbound-analyst` **for reference only** (see §6) | |
 | Experiments | `ab-testing` | |
 | Lead magnets / proof pack design | `lead-magnets` | The proof pack is our primary lead magnet |
+| **Distribution, traffic, audience, launch, list growth, channels, revenue-target arithmetic** | **`building-distribution`** | **Project-authored.** Owns the requirement equation and the channel portfolio. Route here before any plan that assumes sales will arrive |
+| "How do we hit $X?" / "Why aren't we getting sales?" | `building-distribution` | Resolves to a download count before anything else is diagnosed |
+| Marketplace / Gumroad Discover traffic | `building-distribution` | Planning treatment is **zero**. It is a mirror, not a source |
+| Promoting the free kit — communities, trade media, partnerships | `building-distribution` → then the copy chain | Conduct rules in its `references/channel-playbooks.md` are binding |
 | Persuasion framing | `marketing-psychology` | Subordinate to the no-hype standard in §7 |
 | Automation build | **Project-authored** — `commercial-cleaning-os/automation/stack.md`. Use `n8n-workflow-builder` for workflow *design* only and translate to Make | Our stack is Make + Attio. **We are not using n8n.** No Make/Attio specialist skill exists. |
 | Automation debugging | `n8n-debugger` | Same caveat — general debugging thinking, not the tool |
@@ -195,6 +201,7 @@ learn → improve → *then* automate. Do not spend weeks automating an unvalida
 | `commercial-cleaning-os/analytics/` | funnel, campaign metrics, experiments |
 | `commercial-cleaning-os/policies/` | agent policy, sending policy, compliance |
 | `commercial-cleaning-os/SKILL-DEPENDENCY-MAP.md` | which skill owns what |
+| `.claude/skills/building-distribution/` | the distribution equation, channel portfolio, channel gates |
 
 **The CRM is the single source of truth.** Every active opportunity carries an owner, a next action,
 and a next-action date.

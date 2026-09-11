@@ -296,3 +296,22 @@ indicator for the model that actually reaches $10,000.
    arithmetic, and there may be more where they came from.
 3. The DFW scrape-and-qualify pass, which resolves the addressable-market question empirically
    instead of by citation.
+
+---
+
+## H. Added 2026-09-11 — a conclusion of mine that did not survive research
+
+### H1. Record 12 named marketplace traffic as a possible gap-closer. It is not one.
+
+**Was** (`12`, "What this means, stated plainly"): *"It becomes reachable only if the free product,
+organic distribution and Gumroad's own marketplace traffic carry a meaningful share."*
+
+Marketplace placement follows sales history; it does not produce the first sales. For a seller with
+no history and no audience the causality runs the wrong way. **Planning treatment is now zero.**
+
+Two gap-closers remain, and they are one mechanism described twice: organic distribution's job is
+to produce free-product downloads. There is no passive route.
+
+This was not an arithmetic error — the sentence in `12` was appropriately hedged. It was an
+unresearched assumption presented alongside two others as if all three were comparable, when one of
+them was structurally unavailable to us. Recorded in full in `research/14-distribution-gap.md`.
