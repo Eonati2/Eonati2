@@ -56,7 +56,7 @@ to the Account Tracker. Delete the example rows.
 
 ### Day 6 — Learn the triggers
 **Objective:** Know what you're looking for.
-**Action:** Read **03 Trigger Library** properly. Note which of the eleven you can realistically
+**Action:** Read **03 Trigger Library** properly. Note which of the sixteen you can realistically
 check each week.
 **Output:** Three or four triggers you'll actually use.
 **Check:** For each one, can you name where you'd go to find it?

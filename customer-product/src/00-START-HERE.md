@@ -44,7 +44,7 @@ Only then write anything.
 | **00 Start Here** | This page |
 | **01 Client Acquisition OS** | The whole method in one document. Read second. |
 | **02 Account & Trigger Tracker** (Excel) | The working file. You'll live in this. |
-| **03 Trigger Library** | The eleven signals, where to find each, and what you may say |
+| **03 Trigger Library** | Sixteen signals in four tiers, where to find each, and what you may say |
 | **04 ICP & Targeting** | Which buildings to go after, and which to skip |
 | **05 Decision-Maker Guide** | Who signs at each building type, and how to find their name |
 | **06 Prospecting Workflow** | Building and qualifying an account list from scratch |
@@ -61,7 +61,7 @@ Only then write anything.
 **Today, about an hour:**
 
 1. Open **02 Account & Trigger Tracker**. Look at the Quick Start tab.
-2. Read **03 Trigger Library** once. Eleven signals. You'll come back to it.
+2. Read **03 Trigger Library** once. Sixteen signals in four tiers. You'll come back to it.
 3. Add **ten** accounts from your own city to the Account Tracker. Ten, not a hundred.
 4. Score them. The dropdowns do the arithmetic.
 

@@ -12,7 +12,7 @@ scripts. Regenerating any file is reproducible.
 |---|---|---|---|---|---|---|
 | 00 | `00-START-HERE.pdf` | PASS | PASS | PASS | PASS | **Ready** |
 | 01 | `01-CLIENT-ACQUISITION-OS.pdf` | PASS | PASS | PASS | PASS | **Ready** |
-| 02 | `02-ACCOUNT-TRIGGER-TRACKER.xlsx` | PASS | PASS | PASS | PASS* | **Ready** — see §3 |
+| 02 | `02-ACCOUNT-TRIGGER-TRACKER.xlsx` | PASS | PASS | PASS | **PASS** | **Ready** — formulas verified |
 | 03 | `03-TRIGGER-LIBRARY.pdf` | PASS | PASS | PASS | PASS | **Ready** |
 | 04 | `04-ICP-AND-TARGETING.pdf` | PASS | PASS | PASS | PASS | **Ready** |
 | 05 | `05-DECISION-MAKER-GUIDE.pdf` | PASS | PASS | PASS | PASS | **Ready** |
@@ -22,7 +22,7 @@ scripts. Regenerating any file is reproducible.
 | 09 | `09-WALKTHROUGH-SYSTEM.pdf` | PASS | PASS | PASS | PASS | **Ready** |
 | 10 | `10-PROPOSAL-SYSTEM.pdf` | PASS | PASS | PASS | PASS | **Ready** |
 | 11 | `11-30-DAY-IMPLEMENTATION.pdf` | PASS | PASS | PASS | PASS | **Ready** |
-| 12 | `12-METRICS-SCOREBOARD.xlsx` | PASS | PASS | PASS | PASS* | **Ready** — see §3 |
+| 12 | `12-METRICS-SCOREBOARD.xlsx` | PASS | PASS | PASS | **PASS** | **Ready** — formulas verified |
 | 13 | `13-AUTOMATION-BLUEPRINT.pdf` | PASS | PASS | PASS | PASS | **Ready** |
 
 **14 of 14 exist. No placeholders.**
@@ -56,25 +56,41 @@ internal copy review · the skill dependency map · anything under `research/`.
 
 ---
 
-## 3. Known limitation — read before shipping
+## 3. Formula verification — done
 
-**The workbook formulas have not been recalculated by a spreadsheet engine.** LibreOffice is
-present in this environment but cannot load any `.xlsx`, including a two-cell control file, so the
-failure is the tool and not the workbooks.
+**Both workbooks were evaluated and every formula checked against an expected value.**
 
-What was verified instead, by static audit:
-- Every cross-sheet reference points at a sheet that exists
-- Every `VLOOKUP` column index returns the intended column (this caught three off-by-one errors,
-  now fixed)
-- The trigger lookup table is fully populated across all eleven rows
-- `TOTAL` sums the five score columns that actually hold the scores
-- The Pipeline stage list matches the dropdown source exactly
-- Scoreboard ratio formulas reference the correct input rows
+LibreOffice cannot load any `.xlsx` in this environment (a two-cell control file fails too), so an
+earlier version of this audit listed recalculation as an outstanding manual check. It isn't now:
+the `formulas` library evaluates the workbooks directly.
 
-**Required before publishing:** open both workbooks once in Excel or Google Sheets, confirm no
-`#REF!` or `#N/A`, and check that the four example rows calculate. Ten minutes.
+**Result: 25 of 25 logic checks pass. No `#REF!`, `#N/A`, `#VALUE!` or `#DIV/0!` anywhere.**
 
----
+| Workbook | Checks | Result |
+|---|---|---|
+| `02-ACCOUNT-TRIGGER-TRACKER.xlsx` | 16 | All pass |
+| `12-METRICS-SCOREBOARD.xlsx` | 3 | All pass |
+| `ACCOUNT-TRACKER-LITE.xlsx` (free) | 6 | All pass |
+
+Verified by value, not just by absence of errors: score totals sum correctly · band thresholds fire
+at the right boundaries · empty rows stay blank rather than showing zero · trigger tier, score and
+window all resolve from the lookup table · freshness compares age against the right window ·
+pipeline counts match the example rows · all seven health checks return zero · scoreboard ratios
+stay blank on no data and the week dates step by seven · free-tracker scoring and banding match.
+
+### The bug this caught
+
+**The Pipeline health check "active accounts with no next action" returned 396 instead of 0.**
+
+`COUNTIFS(range,"<>")` is ambiguous across engines: it can mean "not blank" or "not equal to an
+empty string", and the second reading matches every empty row in the sheet. The check that exists
+to catch a data-quality problem was itself producing a false alarm on 396 rows — which would have
+trained the user to ignore it, making every other health check worthless too.
+
+Rewritten as `SUMPRODUCT` with explicit conditions, which is unambiguous in any engine. Now returns 0.
+
+**Still worth opening once in Excel** before publishing — evaluation libraries and Excel are not
+identical, and a visual check costs two minutes. But it is a confirmation now, not the verification.
 
 ## 4. Customer quality test
 
@@ -87,7 +103,7 @@ Read as someone who just paid $197 and has no access to the repo.
 | Can I use the tracker? | Yes — Quick Start and Instructions tabs, four worked example rows |
 | Can I find target accounts? | Yes — `04` names search terms and sources |
 | Can I score them? | Yes — dropdowns, automatic total and band |
-| Can I identify a trigger? | Yes — `03`, eleven with sources and windows |
+| Can I identify a trigger? | Yes — `03`, sixteen with sources and windows |
 | Can I contact the right person? | Yes — `05` maps role to building type |
 | Can I run the outreach? | Yes — `06`, six sequences, fill the brackets |
 | Can I handle a reply? | Yes — `07`, ten reply types |
@@ -144,15 +160,15 @@ listed four assets that did not exist. Rather than describe them, they were buil
 | 5 | Reconcile against the live Gumroad page — unreachable from this environment | You |
 | 6 | Optional: cover image | You |
 
-**Items 1 and 4 are the ones that matter.** Everything else is recoverable after launch; a broken
+**Item 4 is the one that matters now.** Everything else is recoverable after launch; a broken
 download is not.
 
 ---
 
 ## 7. Status
 
-**Product complete.** 13 of 13 assets exist, are customer-facing, are free of internal material,
-and have been reviewed.
+**Product complete and verified.** 14 of 14 assets exist, are customer-facing, are free of internal
+material, have been reviewed, and both workbooks evaluate correctly.
 
-Not yet verified: formula recalculation, and the live page. Both are ten-minute manual checks and
-both are listed above.
+Outstanding: the Gumroad purchase test, the refund policy, and reconciling against the live page
+(unreachable from this environment).

@@ -48,43 +48,43 @@ to find.
 
 ## Strong — a building may genuinely be in the market
 
-### 1. New facility or first occupancy
+### 1. Janitorial contract out to bid
+**Where:** state, county and school-district procurement portals. Most publish openly and many
+send email alerts.
+**Fresh for:** until the deadline — check it first.
+**Why almost nobody uses this:** it looks like paperwork. It is the only trigger on this list where
+the building has *told you in writing* that it is buying.
+
+### 2. New facility or first occupancy
 **Where:** occupancy and tenant-improvement permits on your county or city portal.
 **Fresh for:** 90 days.
 **Why it's the best one on this list:** there is no incumbent to displace. It's a first purchase,
 not a switch.
 
-### 2. New location opened
+### 3. New location opened
 A second or additional site under a brand that already exists.
 **Where:** a new Google Business listing under an existing name · "now open" notices · local press.
 **Fresh for:** 120 days.
 
-### 3. Move or relocation
+### 4. Move or relocation
 **Where:** address change on their Google listing · "we've moved" notices · business-journal
 "on the move" columns.
 **Fresh for:** 90 days.
 **Why it lands:** they're buying everything at once and want it off the list.
 
-### 4. New commercial lease signed
+### 5. New commercial lease signed
 A listing flips from available to leased.
 **Where:** commercial property listing sites. Check the same handful weekly and note what changed.
 **Fresh for:** 90 days.
 **Note:** often 30–60 days ahead of the occupancy permit, so you're early.
 
-### 5. Property management change
+### 6. Property management change
 A management company takes on a building.
 **Where:** portfolio pages on management company sites · listing sites · signage you notice while
 driving.
 **Fresh for:** 90 days.
 **Why it's worth the most per conversation:** new managers review inherited vendors, and one
 relationship can cover several buildings.
-
-### 6. Janitorial contract out to bid
-**Where:** state, county and school-district procurement portals. Most publish openly and many
-send email alerts.
-**Fresh for:** until the deadline — check it first.
-**Why almost nobody uses this:** it looks like paperwork. It is the only trigger on this list where
-the building has *told you in writing* that it is buying.
 
 ### 7. Building sold or changed owner
 **Where:** county property records. Searchable in most counties.
@@ -282,6 +282,21 @@ columns; the score and band calculate themselves.
 **Twenty well-chosen accounts beat four hundred bought ones.** You can research twenty properly.
 You can't research four hundred, so you'd email them all the same thing — which is what everyone
 else does, and why it doesn't work.
+
+---
+
+## When this tab stops being enough
+
+One tab and twenty rows is right for a first list. You'll know when it isn't.
+
+It happens when you're doing this weekly rather than once — when you want to see which accounts
+you contacted three weeks ago and never followed up, which triggers have gone stale, which
+campaign a reply came from, and whether this month was better than last. None of that fits in one
+tab, and working around it with coloured rows and a second sheet is how people quietly stop doing
+it at all.
+
+That's the honest reason the full version exists. Not more rows — stages, follow-up flags,
+campaign tracking, a pipeline view and a weekly scoreboard.
 
 ---
 

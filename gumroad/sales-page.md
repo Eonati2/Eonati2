@@ -72,8 +72,9 @@ for someone who enjoys reading.
   definitions so you count the same way each time.
 
 **Finding accounts**
-- **Trigger Library** — eleven buying signals, each with where to find it, how fresh it stays, and
-  what you may and may not say about it
+- **Trigger Library** — sixteen signals in four tiers, from a published contract solicitation down
+  to a weak secondary signal. Each with where to find it, how fresh it stays, and what you may and
+  may not say about it
 - **Prospecting Workflow** — building and qualifying a list from public sources
 - **ICP & Targeting** — which buildings to go after, and which to skip
 - **Decision-Maker Guide** — who signs by building type, and how to find their name
@@ -145,7 +146,7 @@ If you want contracts without making calls, this will disappoint you.
 no second product waiting behind this one.
 
 What you're paying for is that the decisions are already made, and the working files are already
-built. The eleven triggers are chosen and sourced. The seven qualification filters are in an order
+built. The sixteen triggers are chosen and sourced. The seven qualification filters are in an order
 that eliminates the most accounts soonest. The decision-maker map already says practice manager,
 not dentist. The walkthrough checklist already includes the five things that quietly destroy margin
 on a job that priced fine. The tracker already scores, flags duplicates, and tells you what's

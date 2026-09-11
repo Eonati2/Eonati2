@@ -34,8 +34,7 @@ It also works standalone for organic distribution, where there's no pack to buil
 No fabricated proof, no download counts, no urgency, no testimonials — there are no customers yet.
 No pricing, no internal references. 25 triggers, all with a source and a freshness window.
 
-## One thing to fix before sending
+## Sendable
 
-`free-product-nurture.md` day 7 contains a placeholder line — *"a couple of people have said"* —
-marked in the file. **Don't send it until a couple of people actually have.** The alternative
-wording is in the file.
+The day-7 placeholder is gone. It borrowed social proof that didn't exist; it now gives an opinion
+instead, which is stronger and true on day one.

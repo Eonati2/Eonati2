@@ -38,18 +38,20 @@ One genuinely useful thing. No ask.
 ```
 Did you get a chance to build a list?
 
-Asking because I'd like to know whether the filters are cutting too hard. A
-couple of people have said twenty accounts turns into about five, which feels
-about right to me — but you'd know better than I would.
+Twenty well-chosen accounts is enough to give you something real to work
+with. The goal isn't to build the biggest list — it's to find a small group
+worth pursuing and see what the market tells you.
+
+Curious how the filters treated yours.
 ```
 
 **This is the most important email of the four.** It asks rather than sells, and the replies tell
 you whether the kit is being *used* — which is the only thing that predicts whether the paid
 product is worth buying.
 
-⚠ **The second sentence is a placeholder.** Do not send *"a couple of people have said"* until a
-couple of people have actually said it. Until then: *"Asking because I'd like to know whether the
-filters are cutting too hard — my guess is twenty turns into about five, but you'd know better."*
+**No borrowed social proof.** An earlier draft said *"a couple of people have said twenty accounts
+turns into about five."* Nobody had said it. The replacement gives an opinion instead, which is
+stronger anyway — an opinion you can defend beats a statistic you invented.
 
 ### Day 12 — `the rest of it`
 ```
