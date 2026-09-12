@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Wedding Weekend | Guest Experience Kit</title>
+<meta name="description" content="A premium, editable wedding weekend guest guide — schedules, directions, dress code, hotels, transportation, local recommendations, FAQ and contacts in one beautiful place. Mobile and print. $24.">
+<style>
+/* ========== TOKENS ========== */
+:root{
+  --paper:#F8F5F0; --paper-2:#FFFDFA; --paper-3:#F1ECE3;
+  --ink:#1B1A17; --ink-soft:#4A4841; --ink-mute:#6A675E;
+  --rule:#DCD5C9; --rule-soft:#E8E2D8;
+  --accent:#38566F; --accent-2:#6B88A2;
+  --shadow:0 1px 2px rgba(27,26,23,.05),0 18px 40px -20px rgba(27,26,23,.22);
+  --shadow-sm:0 1px 2px rgba(27,26,23,.06),0 8px 20px -14px rgba(27,26,23,.20);
+  --close-bg:#1B1A17; --close-fg:#FFFDFA; --close-mute:rgba(255,253,250,.66); --close-accent:#9BB8D0; --close-rule:rgba(255,253,250,.18);
+  --serif:"Didot","Bodoni MT","Hoefler Text",Baskerville,Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Inter,system-ui,Arial,sans-serif;
+  --maxw:1120px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#151410; --paper-2:#1D1C18; --paper-3:#232219;
+    --ink:#F3F0E9; --ink-soft:#C5C1B6; --ink-mute:#948F85;
+    --rule:#33312A; --rule-soft:#2A2822;
+    --accent:#9BB8D0; --accent-2:#7E9CB6;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 20px 44px -22px rgba(0,0,0,.8);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.45),0 10px 22px -14px rgba(0,0,0,.7);
+    --close-bg:#0E0D0B; --close-fg:#F5F2EB; --close-mute:rgba(245,242,235,.66); --close-accent:#9BB8D0; --close-rule:rgba(245,242,235,.16);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#151410; --paper-2:#1D1C18; --paper-3:#232219;
+  --ink:#F3F0E9; --ink-soft:#C5C1B6; --ink-mute:#948F85;
+  --rule:#33312A; --rule-soft:#2A2822;
+  --accent:#9BB8D0; --accent-2:#7E9CB6;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 20px 44px -22px rgba(0,0,0,.8);
+  --shadow-sm:0 1px 2px rgba(0,0,0,.45),0 10px 22px -14px rgba(0,0,0,.7);
+  --close-bg:#0E0D0B; --close-fg:#F5F2EB; --close-mute:rgba(245,242,235,.66); --close-accent:#9BB8D0; --close-rule:rgba(245,242,235,.16);
+}
+
+/* ========== BASE ========== */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:17px; line-height:1.65;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+img,svg{max-width:100%; height:auto; display:block}
+h1,h2,h3,h4{margin:0; font-weight:400; font-family:var(--serif); line-height:1.08; letter-spacing:-.012em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
+
+.wrap{max-width:var(--maxw); margin:0 auto; padding-inline:24px}
+section{padding-block:clamp(64px,9vw,116px)}
+.rule{height:1px; background:var(--rule); border:0; margin:0}
+
+/* editorial eyebrow */
+.eyebrow{
+  font-family:var(--sans); font-size:11px; font-weight:600;
+  letter-spacing:.22em; text-transform:uppercase; color:var(--ink-mute);
+  margin:0 0 20px;
+}
+.eyebrow .num{color:var(--accent); font-variant-numeric:tabular-nums}
+
+.lede{font-size:clamp(19px,2.1vw,23px); line-height:1.5; color:var(--ink); font-family:var(--serif); letter-spacing:-.008em}
+.body{font-size:16.5px; line-height:1.7; color:var(--ink-soft)}
+.measure{max-width:62ch}
+.measure-sm{max-width:48ch}
+
+/* ========== CTA ========== */
+.cta{
+  display:inline-block; text-align:center;
+  font-family:var(--sans); font-size:15px; font-weight:600; letter-spacing:.02em;
+  line-height:1.3;
+  color:var(--paper-2); background:var(--ink);
+  border:1px solid var(--ink); border-radius:2px;
+  padding:17px 30px; cursor:pointer; text-align:center;
+  transition:background .18s ease, color .18s ease, transform .18s ease;
+  -webkit-appearance:none; appearance:none; text-decoration:none;
+}
+.cta:hover{background:var(--accent); border-color:var(--accent); transform:translateY(-1px)}
+.cta:active{transform:translateY(0)}
+.cta--ghost{background:transparent; color:var(--ink); border-color:var(--rule)}
+.cta--ghost:hover{background:transparent; color:var(--accent); border-color:var(--accent)}
+.cta--lg{padding:20px 38px; font-size:16px}
+.cta-row{display:flex; flex-wrap:wrap; gap:14px; align-items:center; margin-top:30px}
+@media (max-width:520px){
+  .cta{display:block; width:100%; padding-inline:20px}
+  .cta-row{flex-direction:column; align-items:stretch; gap:12px}
+  .value .cta-row,.close .cta-row{align-items:stretch}
+  /* two deliberate lines on phones instead of an orphaned price */
+  .cta-dash{display:none}
+  .cta-price{display:block; margin-top:4px; font-size:.94em; letter-spacing:.06em}
+}
+.micro{
+  font-size:12px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ink-mute); margin-top:18px; font-weight:500;
+}
+.micro span{white-space:nowrap}
+
+/* social proof */
+.sp{display:flex; flex-wrap:wrap; gap:8px; align-items:baseline; margin-top:22px; font-size:13px; color:var(--ink-mute); letter-spacing:.04em}
+.sp-rating{color:var(--ink-soft)}
+.sp-count:empty{display:none}
+
+/* ========== HERO ========== */
+.hero{padding-top:clamp(44px,6vw,84px); padding-bottom:clamp(56px,7vw,96px)}
+.hero-grid{display:grid; grid-template-columns:1fr; gap:clamp(40px,5vw,72px); align-items:center}
+@media (min-width:920px){ .hero-grid{grid-template-columns:1.04fr .96fr} }
+.hero h1{
+  font-size:clamp(44px,8.4vw,92px); line-height:.94; letter-spacing:-.028em;
+  margin-bottom:24px; text-wrap:balance;
+}
+.hero h1 .l2{display:block; font-style:italic; color:var(--accent)}
+.hero-sub{font-size:clamp(18px,2vw,22px); line-height:1.45; font-family:var(--serif); color:var(--ink); max-width:26ch; margin-bottom:20px; letter-spacing:-.006em}
+.hero-body{max-width:44ch}
+.pricetag{
+  display:inline-flex; align-items:baseline; gap:10px; margin-bottom:26px;
+  padding-bottom:14px; border-bottom:1px solid var(--rule);
+}
+.pricetag .amt{font-family:var(--serif); font-size:34px; line-height:1; letter-spacing:-.02em}
+.pricetag .cur{font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-mute); font-weight:600}
+
+/* ========== SECTION HEADS ========== */
+.shead{display:grid; grid-template-columns:1fr; gap:clamp(20px,3vw,56px); align-items:start; margin-bottom:clamp(38px,5vw,60px)}
+@media (min-width:820px){ .shead{grid-template-columns:1.15fr 1fr} }
+.shead h2{font-size:clamp(30px,4.4vw,52px); letter-spacing:-.022em; text-wrap:balance}
+.shead h2 em{font-style:italic; color:var(--accent)}
+
+/* ========== PROBLEM ========== */
+.band{background:var(--paper-3)}
+.scatter{list-style:none; padding:0; margin:28px 0 0; display:grid; gap:0}
+.scatter li{
+  display:grid; grid-template-columns:auto 1fr; gap:16px; align-items:baseline;
+  padding:15px 0; border-top:1px solid var(--rule-soft); color:var(--ink-soft); font-size:15.5px;
+}
+.scatter li:last-child{border-bottom:1px solid var(--rule-soft)}
+.scatter .tick{font-family:var(--serif); font-size:13px; color:var(--accent); letter-spacing:.12em; font-variant-numeric:tabular-nums}
+
+/* ========== GRID OF CONTENTS ========== */
+.idx{
+  list-style:none; padding:0; margin:0;
+  display:grid; grid-template-columns:1fr; column-gap:clamp(28px,4vw,64px);
+  border-top:1px solid var(--rule);
+}
+@media (min-width:640px){ .idx{grid-template-columns:1fr 1fr} }
+@media (min-width:1000px){ .idx{grid-template-columns:1fr 1fr 1fr} }
+.idx li{
+  display:grid; grid-template-columns:2.6em 1fr; gap:8px; align-items:baseline;
+  padding:19px 2px; border-bottom:1px solid var(--rule-soft);
+}
+.idx .n{
+  font-family:var(--serif); font-size:14px; color:var(--accent);
+  font-variant-numeric:tabular-nums; letter-spacing:.08em;
+}
+.idx .t{font-size:16px; color:var(--ink); letter-spacing:-.004em}
+.idx .d{display:block; font-size:13.5px; color:var(--ink-mute); margin-top:3px; line-height:1.5}
+
+/* ========== RECEIVE LIST ========== */
+.recv{display:grid; grid-template-columns:1fr; gap:clamp(32px,4vw,64px); align-items:start}
+@media (min-width:900px){ .recv{grid-template-columns:1fr 1fr} }
+.manifest{list-style:none; padding:0; margin:0; border-top:1px solid var(--rule)}
+.manifest li{
+  display:grid; grid-template-columns:auto 1fr auto; gap:14px; align-items:baseline;
+  padding:16px 0; border-bottom:1px solid var(--rule-soft); font-size:16px;
+}
+.manifest .mk{color:var(--accent); font-size:13px; line-height:1.5}
+.manifest .fmt{
+  font-size:10.5px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ink-mute); font-weight:600; white-space:nowrap; padding-top:.25em;
+}
+
+/* Gumroad-injected product description — hidden unless the server fills it */
+.gr-desc{margin-top:38px; padding-top:26px; border-top:1px solid var(--rule); font-size:15.5px; color:var(--ink-soft); line-height:1.7; max-width:64ch}
+.gr-desc:empty{display:none}
+.gr-desc p{margin:0 0 12px}
+.gr-desc ul,.gr-desc ol{margin:0 0 12px; padding-left:1.2em}
+.gr-desc li{margin-bottom:6px}
+.gr-desc h1,.gr-desc h2,.gr-desc h3,.gr-desc h4{font-size:19px; margin:20px 0 8px; letter-spacing:-.01em}
+.gr-desc img{margin:14px 0; border:1px solid var(--rule)}
+
+/* ========== STEPS ========== */
+.steps{list-style:none; padding:0; margin:0; display:grid; grid-template-columns:1fr; gap:0; border-top:1px solid var(--rule)}
+@media (min-width:820px){ .steps{grid-template-columns:repeat(3,1fr); gap:clamp(28px,4vw,56px); border-top:0} }
+.steps li{padding:26px 0; border-bottom:1px solid var(--rule-soft)}
+@media (min-width:820px){ .steps li{border-bottom:0; border-top:1px solid var(--rule); padding-top:24px} }
+.steps .sn{
+  font-family:var(--serif); font-size:clamp(34px,4vw,46px); line-height:1;
+  color:var(--accent); display:block; margin-bottom:14px; letter-spacing:-.02em;
+}
+.steps h3{font-size:20px; margin-bottom:9px; letter-spacing:-.01em}
+.steps p{font-size:15px; color:var(--ink-soft); line-height:1.62}
+.note{
+  margin-top:34px; padding:18px 20px; border:1px solid var(--rule);
+  background:var(--paper-2); font-size:14.5px; color:var(--ink-soft); line-height:1.6;
+}
+.note strong{color:var(--ink); font-weight:600}
+
+/* ========== WHO ========== */
+.who{list-style:none; padding:0; margin:0; display:grid; grid-template-columns:1fr; gap:0; border-top:1px solid var(--rule)}
+@media (min-width:700px){ .who{grid-template-columns:1fr 1fr} }
+.who li{padding:20px 0; border-bottom:1px solid var(--rule-soft); display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:baseline}
+.who .dot{width:5px; height:5px; border-radius:50%; background:var(--accent); transform:translateY(-3px)}
+.who b{font-weight:500; font-size:16.5px; display:block; letter-spacing:-.004em}
+.who span{font-size:14px; color:var(--ink-mute); display:block; margin-top:2px}
+
+/* ========== VALUE / CLOSE ========== */
+.center{text-align:center}
+.center .measure,.center .measure-sm{margin-inline:auto}
+.value h2{font-size:clamp(32px,5.2vw,62px); letter-spacing:-.026em; text-wrap:balance}
+.value .cta-row,.close .cta-row{justify-content:center}
+.close{background:var(--close-bg); color:var(--close-fg); padding-block:clamp(76px,10vw,132px); border-top:1px solid var(--close-rule)}
+.close h2{font-size:clamp(34px,6vw,74px); letter-spacing:-.028em; color:var(--close-fg); text-wrap:balance; line-height:1.02}
+.close h2 em{font-style:italic; color:var(--close-accent)}
+.close .cta{background:var(--close-fg); color:var(--close-bg); border-color:var(--close-fg)}
+.close .cta:hover{background:var(--close-accent); border-color:var(--close-accent); color:#0E0D0B}
+.close .cta:focus-visible{outline-color:var(--close-accent)}
+.close .micro{color:var(--close-mute)}
+.close .eyebrow{color:var(--close-mute)}
+.close .eyebrow .num{color:var(--close-accent)}
+
+/* ========== FAQ ========== */
+.faq{border-top:1px solid var(--rule); margin-top:8px}
+.faq details{border-bottom:1px solid var(--rule-soft)}
+.faq summary{
+  cursor:pointer; padding:22px 40px 22px 0; position:relative;
+  font-size:17.5px; font-family:var(--serif); letter-spacing:-.008em; color:var(--ink);
+  list-style:none;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:""; position:absolute; right:6px; top:50%; width:11px; height:1px;
+  background:var(--ink-mute); transition:transform .2s ease;
+}
+.faq summary::before{
+  content:""; position:absolute; right:11px; top:50%; width:1px; height:11px;
+  background:var(--ink-mute); transform:translateY(-50%); transition:opacity .2s ease;
+}
+.faq details[open] summary::before{opacity:0}
+.faq summary:hover{color:var(--accent)}
+.faq .a{padding:0 0 24px; font-size:15.5px; color:var(--ink-soft); line-height:1.68; max-width:64ch}
+
+/* ========== SHOWCASE ========== */
+.showcase{display:grid; grid-template-columns:1fr; gap:clamp(18px,2.4vw,30px); margin-top:clamp(34px,4vw,52px)}
+@media (min-width:760px){ .showcase{grid-template-columns:repeat(3,1fr)} }
+.card{
+  background:var(--paper-2); border:1px solid var(--rule);
+  padding:clamp(18px,2.2vw,26px); box-shadow:var(--shadow-sm);
+}
+.card figcaption{
+  margin-top:18px; padding-top:14px; border-top:1px solid var(--rule-soft);
+  font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-mute); font-weight:600;
+}
+.card figcaption b{display:block; font-size:14px; letter-spacing:-.002em; text-transform:none; color:var(--ink); font-weight:500; margin-top:5px; font-family:var(--serif)}
+
+/* ========== SVG ARTWORK TYPE ========== */
+.a-serif{font-family:var(--serif)}
+.a-sans{font-family:var(--sans)}
+.hero-art{filter:drop-shadow(0 28px 46px rgba(27,26,23,.16))}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .hero-art{filter:drop-shadow(0 28px 46px rgba(0,0,0,.62))} }
+
+/* ========== NARROW PHONES (source-ordered last so these actually win) ========== */
+/* The CTA label may only refuse to wrap where there is room; otherwise its
+   min-content width stretches every sibling in the column and forces h-scroll. */
+@media (min-width:375px){
+  .cta-label{white-space:nowrap}
+}
+@media (max-width:374px){
+  .wrap{padding-inline:18px}
+  .hero h1{font-size:clamp(32px,11.4vw,42px)}
+  .hero-sub{font-size:17px}
+  .shead h2,.value h2,.close h2{font-size:clamp(25px,8.4vw,32px)}
+  .eyebrow{letter-spacing:.14em; font-size:10.5px}
+  .cta,.cta--lg{font-size:14px; padding:16px 14px}
+  .micro{font-size:11px; letter-spacing:.07em}
+  .faq summary{font-size:16px}
+}
+
+/* ========== MOTION ========== */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important; transition:none!important; scroll-behavior:auto!important}
+  .cta:hover{transform:none}
+}
+</style>
+</head>
+<body>
+
+<main>
+
+<!-- ===================== 1 · HERO ===================== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+
+      <div>
+        <p class="eyebrow"><span class="num">01</span> &nbsp;Guest Experience Kit</p>
+
+        <h1>
+          The Wedding
+          <span class="l2">Weekend</span>
+        </h1>
+
+        <p class="hero-sub">Your guests shouldn't have to search through texts, emails and screenshots to figure out your wedding weekend.</p>
+
+        <p class="body hero-body">One beautiful, editable guide for schedules, directions, dress code, hotels, transportation, local tips, contacts and everything your guests need to know.</p>
+
+        <div class="cta-row">
+          <button class="cta cta--lg" data-gumroad-action="buy">
+            <span class="cta-label">Get the Wedding Weekend Kit</span><span class="cta-dash"> — </span><span class="cta-price" data-gumroad-field="price">$24</span>
+          </button>
+        </div>
+
+        <p class="micro">
+          <span>Editable in Canva</span> &nbsp;•&nbsp; <span>Mobile + Print</span> &nbsp;•&nbsp; <span>Instant Digital Download</span>
+        </p>
+
+        <p class="sp">
+          <span class="sp-rating" data-gumroad-field="rating">Be the first to review</span>
+          <span class="sp-count" data-gumroad-field="review-count"></span>
+        </p>
+      </div>
+
+      <!-- Editorial product mockup: phone guide + printed itinerary + QR card -->
+      <div>
+        <svg class="hero-art" viewBox="0 0 640 512" role="img" aria-labelledby="heroArtTitle heroArtDesc" width="640" height="512">
+          <title id="heroArtTitle">The Wedding Weekend guest guide shown on a phone beside a printed itinerary and a QR card</title>
+          <desc id="heroArtDesc">A mobile guest guide listing the welcome dinner, ceremony, reception and farewell brunch, next to a printed Saturday itinerary card and a small scan-to-open QR card.</desc>
+
+          <!-- paper backdrop -->
+          <rect x="16" y="16" width="608" height="480" fill="var(--paper-3)"/>
+          <line x1="16" y1="16" x2="624" y2="16" stroke="var(--rule)" stroke-width="1"/>
+          <line x1="16" y1="496" x2="624" y2="496" stroke="var(--rule)" stroke-width="1"/>
+
+          <!-- ---------- printed itinerary card ---------- -->
+          <g transform="rotate(-3.5 162 197)">
+            <rect x="44" y="52" width="236" height="290" fill="var(--paper-2)" stroke="var(--rule)" stroke-width="1"/>
+            <text class="a-sans" x="64" y="86" font-size="8" letter-spacing="2.4" fill="var(--ink-mute)" font-weight="600">THE WEDDING WEEKEND</text>
+            <line x1="64" y1="98" x2="258" y2="98" stroke="var(--rule)" stroke-width="1"/>
+            <text class="a-serif" x="64" y="138" font-size="32" fill="var(--ink)" letter-spacing="-.8">Saturday</text>
+            <text class="a-sans" x="64" y="158" font-size="8" letter-spacing="2.2" fill="var(--accent)" font-weight="600">14 SEPTEMBER</text>
+            <line x1="64" y1="172" x2="258" y2="172" stroke="var(--rule-soft)" stroke-width="1"/>
+
+            <g class="a-sans" font-size="9" fill="var(--ink-soft)">
+              <text x="64" y="194">11:00</text><text x="108" y="194" fill="var(--ink)">Welcome coffee, lobby</text>
+              <line x1="64" y1="206" x2="258" y2="206" stroke="var(--rule-soft)"/>
+              <text x="64" y="226">15:45</text><text x="108" y="226" fill="var(--ink)">Shuttles depart hotel</text>
+              <line x1="64" y1="238" x2="258" y2="238" stroke="var(--rule-soft)"/>
+              <text x="64" y="258">16:30</text><text x="108" y="258" fill="var(--ink)">Ceremony, olive grove</text>
+              <line x1="64" y1="270" x2="258" y2="270" stroke="var(--rule-soft)"/>
+              <text x="64" y="290">18:00</text><text x="108" y="290" fill="var(--ink)">Reception &amp; dinner</text>
+              <line x1="64" y1="302" x2="258" y2="302" stroke="var(--rule-soft)"/>
+            </g>
+            <text class="a-sans" x="64" y="326" font-size="7.5" letter-spacing="1.8" fill="var(--ink-mute)">DRESS: GARDEN FORMAL</text>
+          </g>
+
+          <!-- ---------- phone: mobile guest guide ---------- -->
+          <g>
+            <rect x="346" y="34" width="206" height="444" rx="28" fill="var(--ink)"/>
+            <rect x="353" y="41" width="192" height="430" rx="22" fill="var(--paper-2)"/>
+            <rect x="424" y="49" width="50" height="5" rx="2.5" fill="var(--rule)"/>
+
+            <text class="a-sans" x="373" y="84" font-size="8" letter-spacing="2.2" fill="var(--ink-mute)" font-weight="600">GUEST GUIDE</text>
+            <text class="a-serif" x="373" y="118" font-size="25" fill="var(--ink)" letter-spacing="-.6">Amara &amp; Theo</text>
+            <text class="a-sans" x="373" y="136" font-size="8" letter-spacing="1.6" fill="var(--accent)" font-weight="600">12&#8211;14 SEPT &#183; PUGLIA</text>
+            <line x1="373" y1="152" x2="525" y2="152" stroke="var(--rule)" stroke-width="1"/>
+
+            <g class="a-sans" font-size="9" fill="var(--ink)">
+              <text x="373" y="178" font-size="7.5" letter-spacing="1.8" fill="var(--ink-mute)">FRIDAY</text>
+              <text x="373" y="196">18:30 &#160;&#160;Welcome dinner</text>
+              <line x1="373" y1="208" x2="525" y2="208" stroke="var(--rule-soft)"/>
+
+              <text x="373" y="232" font-size="7.5" letter-spacing="1.8" fill="var(--ink-mute)">SATURDAY</text>
+              <text x="373" y="250">16:30 &#160;&#160;Ceremony</text>
+              <line x1="373" y1="262" x2="525" y2="262" stroke="var(--rule-soft)"/>
+              <text x="373" y="280">18:00 &#160;&#160;Reception</text>
+              <line x1="373" y1="292" x2="525" y2="292" stroke="var(--rule-soft)"/>
+
+              <text x="373" y="316" font-size="7.5" letter-spacing="1.8" fill="var(--ink-mute)">SUNDAY</text>
+              <text x="373" y="334">10:30 &#160;&#160;Farewell brunch</text>
+              <line x1="373" y1="346" x2="525" y2="346" stroke="var(--rule-soft)"/>
+            </g>
+
+            <!-- quick links -->
+            <g>
+              <rect x="373" y="364" width="46" height="34" fill="none" stroke="var(--rule)"/>
+              <path d="M388 378 h16 M396 374 v12" stroke="var(--accent)" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+              <text class="a-sans" x="396" y="393" font-size="5.5" letter-spacing=".9" fill="var(--ink-mute)" text-anchor="middle">HOTELS</text>
+
+              <rect x="426" y="364" width="46" height="34" fill="none" stroke="var(--rule)"/>
+              <circle cx="449" cy="377" r="6" fill="none" stroke="var(--accent)" stroke-width="1.1"/>
+              <text class="a-sans" x="449" y="393" font-size="5.5" letter-spacing=".9" fill="var(--ink-mute)" text-anchor="middle">TRAVEL</text>
+
+              <rect x="479" y="364" width="46" height="34" fill="none" stroke="var(--rule)"/>
+              <rect x="496" y="372" width="12" height="10" fill="none" stroke="var(--accent)" stroke-width="1.1"/>
+              <text class="a-sans" x="502" y="393" font-size="5.5" letter-spacing=".9" fill="var(--ink-mute)" text-anchor="middle">PHOTOS</text>
+            </g>
+
+            <line x1="373" y1="418" x2="525" y2="418" stroke="var(--rule)" stroke-width="1"/>
+            <text class="a-sans" x="373" y="438" font-size="7.5" letter-spacing="1.6" fill="var(--ink-mute)">DRESS CODE &#183; FAQ &#183; CONTACTS</text>
+          </g>
+
+          <!-- ---------- QR card ---------- -->
+          <g transform="rotate(4.5 153 418)">
+            <rect x="60" y="372" width="186" height="92" fill="var(--paper-2)" stroke="var(--rule)" stroke-width="1"/>
+            <g fill="var(--ink)">
+              <rect x="78" y="388" width="7" height="7"/><rect x="88" y="388" width="7" height="7"/><rect x="108" y="388" width="7" height="7"/>
+              <rect x="78" y="398" width="7" height="7"/><rect x="98" y="398" width="7" height="7"/><rect x="118" y="398" width="7" height="7"/>
+              <rect x="88" y="408" width="7" height="7"/><rect x="108" y="408" width="7" height="7"/><rect x="118" y="408" width="7" height="7"/>
+              <rect x="78" y="418" width="7" height="7"/><rect x="98" y="418" width="7" height="7"/><rect x="108" y="418" width="7" height="7"/>
+              <rect x="88" y="428" width="7" height="7"/><rect x="118" y="428" width="7" height="7"/>
+              <rect x="98" y="438" width="7" height="7"/><rect x="108" y="438" width="7" height="7"/>
+            </g>
+            <line x1="140" y1="388" x2="140" y2="446" stroke="var(--rule-soft)" stroke-width="1"/>
+            <text class="a-sans" x="154" y="400" font-size="6.5" letter-spacing="1.6" fill="var(--ink-mute)" font-weight="600">SCAN FOR</text>
+            <text class="a-serif" x="154" y="422" font-size="15" fill="var(--ink)">The Guide</text>
+            <line x1="154" y1="432" x2="228" y2="432" stroke="var(--rule-soft)" stroke-width="1"/>
+            <text class="a-sans" x="154" y="444" font-size="5.6" letter-spacing="1" fill="var(--accent)">EVERY DETAIL</text>
+          </g>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ===================== 2 · THE PROBLEM ===================== -->
+<section class="band">
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <p class="eyebrow"><span class="num">02</span> &nbsp;The Problem</p>
+        <h2>Make the weekend feel <em>effortless</em> for your guests.</h2>
+      </div>
+      <div>
+        <p class="body measure-sm">By the time the weekend arrives, the details have scattered. A group text in March. The hotel block in an email nobody kept. A screenshot of the shuttle time. A wedding website that was bookmarked once.</p>
+        <p class="body measure-sm" style="margin-top:14px">So on Friday afternoon, someone texts to ask what time the welcome dinner starts — and someone in your wedding party answers it forty times.</p>
+        <ul class="scatter">
+          <li><span class="tick">I</span><span>The group text with the original weekend plan</span></li>
+          <li><span class="tick">II</span><span>Three emails about the hotel block and the rate code</span></li>
+          <li><span class="tick">III</span><span>A screenshot of the shuttle schedule</span></li>
+          <li><span class="tick">IV</span><span>The wedding website, last opened in spring</span></li>
+          <li><span class="tick">V</span><span>A DM asking what "garden formal" actually means</span></li>
+        </ul>
+        <p class="body measure-sm" style="margin-top:26px">This kit brings all of it into one place your guests can open on their phone — and one page they can print and put in a welcome bag.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 3 · WHAT GUESTS CAN FIND ===================== -->
+<section>
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <p class="eyebrow"><span class="num">03</span> &nbsp;What Guests Can Find</p>
+        <h2>Every question, answered before it's asked.</h2>
+      </div>
+      <div><p class="body measure-sm">Twelve sections, laid out so a guest can find what they need in seconds — on the train, in the taxi, the morning of.</p></div>
+    </div>
+
+    <ul class="idx">
+      <li><span class="n">01</span><span class="t">Weekend schedule<span class="d">Every event, Friday through Sunday</span></span></li>
+      <li><span class="n">02</span><span class="t">Wedding-day itinerary<span class="d">The wedding day itinerary, hour by hour</span></span></li>
+      <li><span class="n">03</span><span class="t">Venue + directions<span class="d">Addresses, parking, arrival notes</span></span></li>
+      <li><span class="n">04</span><span class="t">Transportation<span class="d">Shuttles, pickup points, last return</span></span></li>
+      <li><span class="n">05</span><span class="t">Where to stay<span class="d">Hotel block, rate codes, booking deadline</span></span></li>
+      <li><span class="n">06</span><span class="t">Dress code<span class="d">Said plainly, so nobody has to guess</span></span></li>
+      <li><span class="n">07</span><span class="t">What to bring<span class="d">Shoes for grass, a layer for the evening</span></span></li>
+      <li><span class="n">08</span><span class="t">Local recommendations<span class="d">Coffee, dinner, a walk worth taking</span></span></li>
+      <li><span class="n">09</span><span class="t">FAQ<span class="d">Plus-ones, children, timing, weather</span></span></li>
+      <li><span class="n">10</span><span class="t">Important contacts<span class="d">Who to call, and for what</span></span></li>
+      <li><span class="n">11</span><span class="t">Website + registry<span class="d">The links, in one obvious place</span></span></li>
+      <li><span class="n">12</span><span class="t">Photo sharing<span class="d">Where the weekend's photos land</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ===================== 4 · WHAT YOU RECEIVE ===================== -->
+<section>
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <p class="eyebrow"><span class="num">04</span> &nbsp;What You Receive</p>
+        <h2>A complete, matching set.</h2>
+      </div>
+      <div><p class="body measure-sm">One download. Every page built on the same editorial grid, so the digital guide and the printed pieces look like they belong to the same wedding.</p></div>
+    </div>
+
+    <div class="recv">
+      <ul class="manifest">
+        <li><span class="mk">&#9670;</span><span>Mobile guest guide</span><span class="fmt">Digital</span></li>
+        <li><span class="mk">&#9670;</span><span>Printable wedding weekend itinerary</span><span class="fmt">Print</span></li>
+        <li><span class="mk">&#9670;</span><span>Printable guest essentials page</span><span class="fmt">Print</span></li>
+        <li><span class="mk">&#9670;</span><span>QR card</span><span class="fmt">Print</span></li>
+        <li><span class="mk">&#9670;</span><span>Wedding-day timeline pages</span><span class="fmt">Both</span></li>
+        <li><span class="mk">&#9670;</span><span>Venue + transportation pages</span><span class="fmt">Both</span></li>
+      </ul>
+      <ul class="manifest">
+        <li><span class="mk">&#9670;</span><span>Hotel / accommodation page</span><span class="fmt">Both</span></li>
+        <li><span class="mk">&#9670;</span><span>FAQ + important contacts</span><span class="fmt">Both</span></li>
+        <li><span class="mk">&#9670;</span><span>Local recommendations</span><span class="fmt">Both</span></li>
+        <li><span class="mk">&#9670;</span><span>Welcome page for arriving guests</span><span class="fmt">Both</span></li>
+        <li><span class="mk">&#9670;</span><span>START HERE instructions</span><span class="fmt">PDF</span></li>
+        <li><span class="mk">&#9670;</span><span>Personal-use license</span><span class="fmt">PDF</span></li>
+      </ul>
+    </div>
+
+    <div class="gr-desc" data-gumroad-field="description"></div>
+
+    <div class="cta-row">
+      <button class="cta" data-gumroad-action="buy"><span class="cta-label">Get the Wedding Weekend Kit</span><span class="cta-dash"> — </span><span class="cta-price" data-gumroad-field="price">$24</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 5 · DESIGNED FOR THE MODERN WEDDING ===================== -->
+<section class="band">
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <p class="eyebrow"><span class="num">05</span> &nbsp;The Design</p>
+        <h2>Designed to feel like part of the wedding — <em>not an afterthought.</em></h2>
+      </div>
+      <div><p class="body measure-sm">Sophisticated serif headings, clean supporting type, thin rules and real white space. It reads like your stationery, not like a form.</p></div>
+    </div>
+
+    <div class="showcase">
+
+      <figure class="card">
+        <svg viewBox="0 0 260 300" role="img" aria-label="Mobile guest guide screen showing the weekend schedule with serif headings and thin rules">
+          <rect x="60" y="8" width="140" height="284" rx="18" fill="var(--ink)"/>
+          <rect x="65" y="13" width="130" height="274" rx="14" fill="var(--paper-2)"/>
+          <text class="a-sans" x="82" y="48" font-size="6" letter-spacing="1.8" fill="var(--ink-mute)" font-weight="600">GUEST GUIDE</text>
+          <text class="a-serif" x="82" y="72" font-size="18" fill="var(--ink)">The Weekend</text>
+          <line x1="82" y1="84" x2="178" y2="84" stroke="var(--rule)"/>
+          <g class="a-sans" font-size="6.5" fill="var(--ink)">
+            <text x="82" y="104" fill="var(--ink-mute)" font-size="5.5" letter-spacing="1.4">FRIDAY</text>
+            <text x="82" y="118">18:30 Welcome dinner</text>
+            <line x1="82" y1="126" x2="178" y2="126" stroke="var(--rule-soft)"/>
+            <text x="82" y="142" fill="var(--ink-mute)" font-size="5.5" letter-spacing="1.4">SATURDAY</text>
+            <text x="82" y="156">16:30 Ceremony</text>
+            <line x1="82" y1="164" x2="178" y2="164" stroke="var(--rule-soft)"/>
+            <text x="82" y="178">18:00 Reception</text>
+            <line x1="82" y1="186" x2="178" y2="186" stroke="var(--rule-soft)"/>
+            <text x="82" y="202" fill="var(--ink-mute)" font-size="5.5" letter-spacing="1.4">SUNDAY</text>
+            <text x="82" y="216">10:30 Farewell brunch</text>
+          </g>
+          <line x1="82" y1="236" x2="178" y2="236" stroke="var(--rule)"/>
+          <text class="a-sans" x="82" y="252" font-size="5.5" letter-spacing="1.3" fill="var(--accent)">DRESS &#183; TRAVEL &#183; FAQ</text>
+        </svg>
+        <figcaption>Format 01<b>Mobile guest guide</b></figcaption>
+      </figure>
+
+      <figure class="card">
+        <svg viewBox="0 0 260 300" role="img" aria-label="Printable wedding weekend itinerary page with a serif heading and timed rows">
+          <rect x="42" y="14" width="176" height="272" fill="var(--paper-2)" stroke="var(--rule)"/>
+          <text class="a-sans" x="62" y="46" font-size="6" letter-spacing="1.8" fill="var(--ink-mute)" font-weight="600">ITINERARY</text>
+          <line x1="62" y1="56" x2="198" y2="56" stroke="var(--rule)"/>
+          <text class="a-serif" x="62" y="88" font-size="22" fill="var(--ink)">Saturday</text>
+          <text class="a-sans" x="62" y="102" font-size="6" letter-spacing="1.6" fill="var(--accent)" font-weight="600">14 SEPTEMBER</text>
+          <g class="a-sans" font-size="6.5" fill="var(--ink)">
+            <text x="62" y="128">11:00</text><text x="98" y="128">Welcome coffee</text>
+            <line x1="62" y1="136" x2="198" y2="136" stroke="var(--rule-soft)"/>
+            <text x="62" y="152">15:45</text><text x="98" y="152">Shuttles depart</text>
+            <line x1="62" y1="160" x2="198" y2="160" stroke="var(--rule-soft)"/>
+            <text x="62" y="176">16:30</text><text x="98" y="176">Ceremony</text>
+            <line x1="62" y1="184" x2="198" y2="184" stroke="var(--rule-soft)"/>
+            <text x="62" y="200">18:00</text><text x="98" y="200">Reception</text>
+            <line x1="62" y1="208" x2="198" y2="208" stroke="var(--rule-soft)"/>
+            <text x="62" y="224">23:30</text><text x="98" y="224">Last shuttle</text>
+            <line x1="62" y1="232" x2="198" y2="232" stroke="var(--rule-soft)"/>
+          </g>
+          <text class="a-sans" x="62" y="258" font-size="5.5" letter-spacing="1.4" fill="var(--ink-mute)">DRESS: GARDEN FORMAL</text>
+        </svg>
+        <figcaption>Format 02<b>Printable itinerary</b></figcaption>
+      </figure>
+
+      <figure class="card">
+        <svg viewBox="0 0 260 300" role="img" aria-label="Guest essentials page and QR card showing dress code, what to bring and a scannable link">
+          <rect x="30" y="14" width="164" height="212" fill="var(--paper-2)" stroke="var(--rule)"/>
+          <text class="a-sans" x="48" y="42" font-size="6" letter-spacing="1.8" fill="var(--ink-mute)" font-weight="600">GUEST ESSENTIALS</text>
+          <line x1="48" y1="52" x2="176" y2="52" stroke="var(--rule)"/>
+          <text class="a-serif" x="48" y="76" font-size="15" fill="var(--ink)">What to know</text>
+          <g class="a-sans" font-size="6.5" fill="var(--ink-soft)">
+            <text x="48" y="98" fill="var(--accent)" font-size="5.5" letter-spacing="1.4">DRESS CODE</text>
+            <text x="48" y="110" fill="var(--ink)">Garden formal</text>
+            <line x1="48" y1="119" x2="176" y2="119" stroke="var(--rule-soft)"/>
+            <text x="48" y="134" fill="var(--accent)" font-size="5.5" letter-spacing="1.4">WHAT TO BRING</text>
+            <text x="48" y="146" fill="var(--ink)">Flat shoes, a light layer</text>
+            <line x1="48" y1="155" x2="176" y2="155" stroke="var(--rule-soft)"/>
+            <text x="48" y="170" fill="var(--accent)" font-size="5.5" letter-spacing="1.4">GETTING THERE</text>
+            <text x="48" y="182" fill="var(--ink)">Shuttle from the hotel</text>
+            <line x1="48" y1="191" x2="176" y2="191" stroke="var(--rule-soft)"/>
+            <text x="48" y="206" fill="var(--accent)" font-size="5.5" letter-spacing="1.4">CONTACT</text>
+            <text x="48" y="218" fill="var(--ink)">Maya, weekend host</text>
+          </g>
+          <g transform="rotate(5 130 265)">
+            <rect x="56" y="238" width="148" height="54" fill="var(--paper-3)" stroke="var(--rule)"/>
+            <g fill="var(--ink)">
+              <rect x="68" y="246" width="5" height="5"/><rect x="76" y="246" width="5" height="5"/><rect x="92" y="246" width="5" height="5"/>
+              <rect x="68" y="254" width="5" height="5"/><rect x="84" y="254" width="5" height="5"/><rect x="100" y="254" width="5" height="5"/>
+              <rect x="76" y="262" width="5" height="5"/><rect x="92" y="262" width="5" height="5"/><rect x="100" y="262" width="5" height="5"/>
+              <rect x="68" y="270" width="5" height="5"/><rect x="84" y="270" width="5" height="5"/><rect x="92" y="270" width="5" height="5"/>
+            </g>
+            <line x1="114" y1="246" x2="114" y2="282" stroke="var(--rule-soft)"/>
+            <text class="a-sans" x="124" y="256" font-size="5.5" letter-spacing="1.4" fill="var(--ink-mute)" font-weight="600">SCAN FOR</text>
+            <text class="a-serif" x="124" y="274" font-size="11" fill="var(--ink)">The Guide</text>
+          </g>
+        </svg>
+        <figcaption>Format 03<b>Essentials + QR card</b></figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 6 · HOW IT WORKS ===================== -->
+<section>
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <p class="eyebrow"><span class="num">06</span> &nbsp;How It Works</p>
+        <h2>Three steps, one afternoon.</h2>
+      </div>
+      <div><p class="body measure-sm">You are replacing placeholder text with your own details — names, dates, times, addresses. No design work required.</p></div>
+    </div>
+
+    <ol class="steps">
+      <li>
+        <span class="sn">1</span>
+        <h3>Download</h3>
+        <p>Your files arrive immediately after purchase: the editable source, a START HERE guide, and your personal-use license.</p>
+      </li>
+      <li>
+        <span class="sn">2</span>
+        <h3>Import into Canva and customize</h3>
+        <p>The editable source is a PowerPoint file, built to be imported into Canva. Upload it, then replace the placeholder details with your own. START HERE walks you through it.</p>
+      </li>
+      <li>
+        <span class="sn">3</span>
+        <h3>Share digitally or print</h3>
+        <p>Send the guide as a link or a PDF, add the QR card to welcome bags, and print the itinerary and essentials pages for hotel rooms and tables.</p>
+      </li>
+    </ol>
+
+    <p class="note">
+      <strong>To be precise about what you get:</strong> the editable source is a PowerPoint (.pptx) file designed for import into Canva — not a one-click Canva template link. If you would rather not use Canva, you can edit the same file directly in PowerPoint, Keynote or Google Slides.
+    </p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ===================== 7 · WHO IT'S FOR ===================== -->
+<section>
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <p class="eyebrow"><span class="num">07</span> &nbsp;Who It's For</p>
+        <h2>Weddings that take more than one day.</h2>
+      </div>
+      <div><p class="body measure-sm">The more your guests have to travel, and the more events you are hosting, the more this earns its place.</p></div>
+    </div>
+
+    <ul class="who">
+      <li><span class="dot"></span><span><b>Destination weddings</b><span>Guests arriving in an unfamiliar place, needing directions and local help</span></span></li>
+      <li><span class="dot"></span><span><b>Weekend weddings</b><span>Welcome dinner, wedding day, farewell brunch — three days to explain</span></span></li>
+      <li><span class="dot"></span><span><b>Modern weddings</b><span>Couples who care how the details look, not just that they exist</span></span></li>
+      <li><span class="dot"></span><span><b>Out-of-town guests</b><span>Hotel blocks, shuttle times, what to do with a free afternoon</span></span></li>
+      <li><span class="dot"></span><span><b>Multi-venue weekends</b><span>Different addresses, different dress codes, different start times</span></span></li>
+      <li><span class="dot"></span><span><b>Anyone answering the same question twice</b><span>Put the answer somewhere your guests can find it themselves</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== 8 · VALUE / CTA ===================== -->
+<section class="band value center">
+  <div class="wrap">
+    <p class="eyebrow"><span class="num">08</span> &nbsp;The Kit</p>
+    <h2 class="measure" style="margin-inline:auto">Everything your guests need. Beautifully organized.</h2>
+
+    <div class="pricetag" style="margin-top:32px">
+      <span class="amt" data-gumroad-field="price">$24</span>
+      <span class="cur">USD · One-time</span>
+    </div>
+
+    <p class="body measure-sm">A complete guest experience system — digital and printable, every page matching — for less than one welcome-bag order. Yours to use for your wedding, and to edit as the details change.</p>
+
+    <div class="cta-row">
+      <button class="cta cta--lg" data-gumroad-action="buy"><span class="cta-label">Get the Wedding Weekend Kit</span><span class="cta-dash"> — </span><span class="cta-price" data-gumroad-field="price">$24</span></button>
+      <button class="cta cta--ghost" data-gumroad-action="buy">Create the Guest Experience</button>
+    </div>
+
+    <p class="micro"><span>Instant digital download</span> &nbsp;•&nbsp; <span>Editable source included</span> &nbsp;•&nbsp; <span>Personal-use license</span></p>
+  </div>
+</section>
+
+<!-- ===================== 9 · FAQ ===================== -->
+<section>
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <p class="eyebrow"><span class="num">09</span> &nbsp;Questions</p>
+        <h2>Before you buy.</h2>
+      </div>
+      <div><p class="body measure-sm">Straight answers about what this is, what it is not, and what you can do with it.</p></div>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>Is this a physical product?</summary>
+        <p class="a">No. It is a digital download. Nothing ships. Your files are available immediately after purchase.</p>
+      </details>
+      <details>
+        <summary>Can I edit it?</summary>
+        <p class="a">Yes. The editable source is provided as a PowerPoint file, intended for import into Canva. You can also edit it directly in PowerPoint, Keynote or Google Slides if you prefer.</p>
+      </details>
+      <details>
+        <summary>Can I customize names, dates and details?</summary>
+        <p class="a">Yes — that is the whole design. Names, dates, times, venues, addresses, hotel details, dress code, contacts, links and recommendations are all placeholder text for you to replace.</p>
+      </details>
+      <details>
+        <summary>Can I print it?</summary>
+        <p class="a">Yes. The itinerary, guest essentials page and QR card are built for print, alongside the mobile guide. Export to PDF and print at home or with a print shop.</p>
+      </details>
+      <details>
+        <summary>Is this a Canva template?</summary>
+        <p class="a">Not in the sense of a one-click Canva template link. It is a PowerPoint source file designed to be imported into Canva, where it becomes fully editable. The START HERE guide covers the import, which takes a couple of minutes.</p>
+      </details>
+      <details>
+        <summary>Can I use it for my own wedding?</summary>
+        <p class="a">Yes, subject to the included personal-use license. You can use and edit it for your own wedding. You cannot resell, redistribute or share the files themselves.</p>
+      </details>
+      <details>
+        <summary>Do I need design experience?</summary>
+        <p class="a">No. The layout, typography and spacing are already set. You are replacing text, not designing pages.</p>
+      </details>
+      <details>
+        <summary>What exactly is in the download?</summary>
+        <p class="a">The editable PowerPoint source containing the mobile guest guide, wedding weekend itinerary, wedding-day timeline, venue and transportation pages, accommodation page, dress code, what to bring, local recommendations, FAQ, important contacts, quick links, printable guest essentials page, QR card and welcome page — plus a START HERE PDF and your personal-use license.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 10 · FINAL CTA ===================== -->
+<section class="close center">
+  <div class="wrap">
+    <p class="eyebrow"><span class="num">10</span> &nbsp;<span data-gumroad-field="name">The Wedding Weekend | Guest Experience Kit</span></p>
+    <h2 class="measure" style="margin-inline:auto">Give your guests one beautiful place for <em>everything</em> they need.</h2>
+    <div class="cta-row">
+      <button class="cta cta--lg" data-gumroad-action="buy"><span class="cta-label">Get the Wedding Weekend Kit</span><span class="cta-dash"> — </span><span class="cta-price" data-gumroad-field="price">$24</span></button>
+    </div>
+    <p class="micro"><span>Instant download</span> &nbsp;•&nbsp; <span>Mobile + print</span> &nbsp;•&nbsp; <span>Editable in Canva</span></p>
+  </div>
+</section>
+
+</main>
+</body>
+</html>
