@@ -1,12 +1,16 @@
 ---
 name: building-distribution
-description: Plans and operates the distribution side of the Commercial Cleaning Client Acquisition OS — how strangers become free-kit subscribers and subscribers become buyers. Use when work touches traffic, audience, launch, list growth, lead-magnet promotion, communities, trade media, partnerships, affiliates, marketplace or Gumroad Discover traffic, content or SEO. Also use when someone asks how to reach a revenue target, how many sales or downloads are needed, why sales are not arriving, proposes a new channel, raises the revenue target, or assumes marketplace traffic will produce sales. Holds the distribution arithmetic, the ranked channel portfolio with per-channel ceilings and kill gates, and the rule that no passive channel exists.
+description: Plans and operates the distribution side of the Commercial Rent Roll Control Center — how strangers become Rent Roll Lite subscribers and subscribers become buyers. Use when work touches traffic, audience, launch, list growth, lead-magnet promotion, communities, trade associations, trade media, partnerships, affiliates, marketplace or Gumroad Discover traffic, content or SEO. Also use when someone asks how to reach a revenue target, how many sales or downloads are needed, why sales are not arriving, proposes a new channel, raises the revenue target, or assumes marketplace traffic will produce sales. Holds the distribution arithmetic, the ranked channel portfolio with per-channel ceilings and kill gates, and the rule that no passive channel exists.
 ---
 
 # Building Distribution
 
-The product is finished. Distribution is not. This skill owns the half of the business that turns
-strangers into subscribers and subscribers into buyers.
+This skill owns the half of the business that turns strangers into subscribers and subscribers
+into buyers.
+
+**Carried through the 2026-09-12 pivot from commercial cleaning to CRE
+(`research/16-pivot-to-lease-rollover.md`). The arithmetic did not change — it never depended on
+what was being sold. The channel portfolio did, and it got better.**
 
 Read `revenue-engine/SKILL.md` first — its conflict priority (§2), safety gates (§4), evidence
 standard (§6) and voice standard (§7) all apply here without exception.
@@ -23,7 +27,7 @@ Three specific consequences:
   It cannot. Two remain: the free product and organic distribution — and both are the same channel
   wearing different clothes, because organic distribution's job is to produce free-kit downloads.
 - **Outbound is capacity-capped, not effort-capped.** Working harder does not raise it. The cap is
-  mailbox arithmetic (`commercial-cleaning-os/automation/stack.md`).
+  mailbox arithmetic (`automation/stack.md`).
 - **So the binding constraint is list size, not product quality, not copy quality, not effort.**
 
 When anyone in this project asks "how do we hit the number", the answer is a download count, not a
@@ -48,23 +52,23 @@ Worked at current inputs — **every rate below is an assumption, not a measurem
 | Outbound contact capacity, 90 days | **3,000 contacts** | Bound by Instantly Growth's 1,000 uploaded contacts/month. Structural. |
 | Contact → purchase | 0.25%–0.5% | **Assumption.** Never validated by us. |
 | Free-kit subscriber → purchase | 1%–3% | **Assumption**, floor of the published 1–5% email band. |
-| Price | **$197** | Locked 2026-09-11 |
+| Price | **$199** | Locked 2026-09-12 |
 | Window | 90 days | Set by `research/13-90-day-blueprint.md` |
 
 | Target | Price | Sales | Outbound can carry | List must carry | Subscribers needed | Per day |
 |---|---|---|---|---|---|---|
-| $10,000 | **$197** | 51 | 8–15 | 36–43 | **1,200–4,300** | 13–48 |
+| $10,000 | **$199** | 51 | 8–15 | 36–43 | **1,200–4,300** | 13–48 |
 | $10,000 | $149 | 68 | 8–15 | 53–60 | **1,770–6,000** | 20–67 |
-| $12,000 | **$197** | 61 | 8–15 | 46–53 | **1,530–5,300** | 17–59 |
+| $12,000 | **$199** | 61 | 8–15 | 46–53 | **1,530–5,300** | 17–59 |
 | $12,000 | $149 | 81 | 8–15 | 66–73 | **2,200–7,300** | 24–81 |
 
-Figures are **gross**. Platform fees take roughly a tenth: 51 sales at $197 is $10,047 gross but
-about **$9,042 net**. A $10,000 *net* target needs **57 sales**, not 51. State which one is meant.
+Figures are **gross**. Platform fees take roughly a tenth: 51 sales at $199 is $10,149 gross but
+about **$9,134 net**. A $10,000 *net* target needs **56 sales**, not 51. State which one is meant.
 
 ### What the Instantly Growth decision cost
 
 Capacity fell from 6,800 contacts to 3,000 when the sending layer moved to Instantly Growth
-(`commercial-cleaning-os/automation/stack.md`). That was the right call — nothing is validated, and
+(`automation/stack.md`). That was the right call — nothing is validated, and
 Growth covers both validation phases in `revenue-engine` §8 with room to spare — but it is not free:
 
 | | Outbound carries | Subscribers needed at $197 / $10k |
@@ -99,8 +103,8 @@ is in `references/channel-playbooks.md`.
 |---|---|---|---|---|---|---|
 | A | Outbound email | Direct sales + downloads | **3,000 contacts / 90 days** | Live now | ~$125/mo | Capped by Instantly Growth's contact limit; response rate unvalidated |
 | B | Free kit as the outbound CTA | Subscribers | Converts A's same capacity | Immediate | None | Mechanism sound; rate unvalidated |
-| C | Practitioner communities | Subscribers | Unknown — group sizes unverified | 2–6 weeks | Time only | Groups confirmed to exist; audience size not |
-| D | Trade media / associations | Subscribers | Unknown — rate cards not obtained | 4–12 weeks | Paid | Publications confirmed; pricing and reach unknown |
+| C | **Trade associations — BOMA, IREM** | Subscribers | **BOMA 30,000+ members, local chapters** | 2–8 weeks | Chapter fees / time | **Membership published by the organisation.** Verify before planning against it |
+| D | Trade media / CRE newsletters | Subscribers | Unknown — rate cards not obtained | 4–12 weeks | Paid | Publications exist; pricing and reach unknown |
 | E | Partnerships / affiliates | Subscribers in blocks | Unknown | 3–8 weeks | Rev share | Untested |
 | F | Search and content | Subscribers | Will not land inside 90 days | 6–12 months | Time | Asset, not a channel for this window |
 | G | Gumroad Discover | Nothing reliable | **Treat as zero** | — | — | Researched: mirror, not source |
@@ -120,14 +124,18 @@ is in `references/channel-playbooks.md`.
   worth owning in month six. Never count it in the table in §2.
 - **Never run more than two unproven channels at once.** Three concurrent experiments produce no
   attributable signal, which is the same as running none.
+- **C improved materially in the pivot and is now the first unproven channel to test.** The
+  cleaning audience's gathering places were eight Facebook groups of unverifiable size. This
+  audience has named associations with published membership and local chapter events. That is the
+  strongest single argument the pivot produced.
 
 ## 4. The one metric
 
 **Qualified free-kit downloads.** Everything above is instrumentation for this number.
 
-Qualified means: a US commercial cleaning or janitorial operator with the capacity to service
-recurring B2B accounts. A download from a residential cleaner, a student, or a competitor is a
-download, not a qualified download. Track both; plan against the qualified count.
+Qualified means: someone at a US firm managing roughly 5–150 commercial leases, who tracks lease
+dates in a spreadsheet. A download from a residential landlord, a student, a broker with no
+management arm, or a firm already on lease-admin software is a download, not a qualified one. Track both; plan against the qualified count.
 
 Secondary, in order: subscriber → purchase rate · cost per qualified download · reply quality from
 outbound · channel attribution.
@@ -191,7 +199,7 @@ Monthly: re-rank the portfolio. A channel that produced nothing twice does not s
   same message, before anything else.
 - Recommend paid acquisition as the answer to a distribution gap while the free channels are
   unmeasured. Paying for traffic before knowing what traffic converts is buying an unknown.
-- Write customer-facing copy. Route that through `cleaning-os-voice` and the copy chain in
+- Write customer-facing copy. Route that through the copy chain in
   `revenue-engine` §3.
 
 ## 9. Reference files

@@ -1,6 +1,6 @@
 ---
 name: revenue-engine
-description: Master orchestrator for the Commercial Cleaning Client Acquisition OS. Use at the START of any task touching this project — ICP, offers, prospecting, account research, triggers, scoring, outreach copy, email sending, reply handling, CRM, sales, analytics, automation, or product/Gumroad assets. Routes work to the correct specialist skill, applies project rules that override specialist guidance, and enforces safety gates. Also use when the user mentions "revenue engine", "commercial cleaning OS", "acquisition OS", "proof pack", "free product", or asks which skill to use.
+description: Master orchestrator for the Commercial Rent Roll Control Center — a spreadsheet product sold one-time to US commercial property and asset managers. Use at the START of any task touching this project — ICP, offers, pricing, prospecting, account research, qualification, outreach copy, email sending, reply handling, CRM, analytics, automation, distribution, or product/Gumroad assets. Routes work to the correct specialist skill, applies project rules that override specialist guidance, and enforces safety gates. Also use when the user mentions "revenue engine", "rent roll", "lease rollover", "Rent Roll Lite", "the OS", "free product", or asks which skill to use. The commercial cleaning product was retired 2026-09-12 and is archived.
 ---
 
 # Revenue Engine — Master Orchestrator
@@ -30,12 +30,18 @@ never a statement of capability.
 **Core conceptual model — every deliverable maps to a stage of it:**
 
 ```
-ACCOUNT → DECISION MAKER → TRIGGER → OUTREACH → CONVERSATION
-        → WALKTHROUGH → PROPOSAL → WIN/LOSS → LEARN
+ACCOUNT → DECISION MAKER → QUALIFYING SIGNAL → OUTREACH → FREE TOOL
+        → SUBSCRIBER → PURCHASE → LEARN
 ```
 
-**Primary principle:** sell the contract-acquisition *system*, not the lead.
-**Secondary principle:** account first → person second → trigger third.
+**Primary principle:** we sell the *arrangement* of information the buyer already owns. The rent
+roll exists; the dates exist. We are not selling data.
+**Secondary principle:** account first → person second → signal third.
+
+**The claim boundary, and it is absolute.** We organise dates and figures the user enters. We do
+not interpret leases. Never claim the product prevents a missed deadline, protects anyone legally,
+or guarantees a renewal or a dollar outcome. Every surface carries the disclaimer: confirm all
+terms against the executed lease and qualified counsel.
 
 ## 2. Conflict priority
 
@@ -59,8 +65,8 @@ gate and say why.
 | Buyer personas | `persona-definer` | |
 | Offer design | `offers` → `pricing` | **One product.** `offers` will suggest bonus stacks, tiers and scarcity — the project rules in §7 override all three |
 | Account research (our buyers) | `deep-company-analyser` | |
-| Prospect list building | `prospecting` | |
-| Buying triggers | `trigger-finder` | **Apply our trigger hierarchy (§5), not the skill's default weighting** |
+| Prospect list building | `prospecting` | Apollo for firms and titles; Apify for public company-site collection |
+| Qualifying signals | `trigger-finder` | **Apply our signal hierarchy (§5), not the skill's default weighting.** Our signals are firmographic and tooling-based, not event-based |
 | Campaign architecture | `outbound-campaign-architect` + `gtm-outreach` | |
 | Campaign angles | `campaign-angle-finder` | |
 | Cold email copy — **write** | `cold-email` | |
@@ -68,20 +74,19 @@ gate and say why.
 | Deliverability, DNS, warmup, inbox placement | `cold-email-deliverability` → `email-marketing-bible` | |
 | Lifecycle / post-purchase / customer email | `emails` | |
 | Compliance and send-safety gates | `email-marketing-bible` | Use its compliance + send-gate chapters |
-| **Any customer-facing copy** — Gumroad, sales page, emails, sequences, follow-ups, ads, proposals, product docs | **`cleaning-os-voice` — MANDATORY, before drafting and again before sending** | Routes the chain below and has final say on voice |
-| Copy chain, in order | `copywriting` → `copywriting-concrete` → `cleaning-os-voice` → `anti-ai-writing-slop` → `copy-editing` | Run once, in order. Never let five skills rewrite each other |
+| **Any customer-facing copy** — Gumroad, sales page, emails, sequences, follow-ups, product docs | Copy chain below, **and §7 has final say on voice** | `cleaning-os-voice` is **retired** — its reader was a cleaning owner-operator. A replacement voice skill should be authored once the CRE buyer's language is observed from real replies, not invented in advance. |
+| Copy chain, in order | `copywriting` → `copywriting-concrete` → `anti-ai-writing-slop` → `copy-editing` | Run once, in order. Never let four skills rewrite each other |
 | Sales / landing page structure | `copywriting` → `cro` | Then run the chain |
 | Cold email copy specifically | `cold-email-copywriting` replaces steps 2 and 4 of the chain | Scoped to that format |
 | Named-human byline voice | `tone-of-voice` | Only when a human byline is needed. **Do not let it invent a persona for the product** |
-| **Any sales-motion work** — qualification, discovery, walkthrough, objections, proposal conversation, negotiation, closing, follow-up | **`commercial-cleaning-sales`** | **Project-specific. Outranks all generic sales guidance.** Behavioural layer; pairs with `commercial-cleaning-os/sales/` for measurable detail |
-| Sales collateral — decks, one-pagers, leave-behinds | `sales-enablement` | Collateral only, not the motion |
+| Sales conversation, objections, follow-up | `sales-enablement` + `reply-handler` | **`commercial-cleaning-sales` is retired** — it is a services-sales skill for a product we no longer sell. There is no walkthrough, no proposal and no negotiation on a $199 download. |
 | CRM, lifecycle stages, handoff | `revops` | |
 | CRM duplicates | `crm-duplicate-detector` | |
 | Reply classification and response | `reply-handler` | |
 | Pipeline analysis | `pipeline-analysis` | |
 | Campaign metrics | `analytics`; `outbound-analyst` **for reference only** (see §6) | |
 | Experiments | `ab-testing` | |
-| Lead magnets / proof pack design | `lead-magnets` | The proof pack is our primary lead magnet |
+| Lead magnets | `lead-magnets` | **Rent Roll Lite is the primary lead magnet and the first thing built** (`rent-roll-os/offers/lite.md`) |
 | **Distribution, traffic, audience, launch, list growth, channels, revenue-target arithmetic** | **`building-distribution`** | **Project-authored.** Owns the requirement equation and the channel portfolio. Route here before any plan that assumes sales will arrive |
 | "How do we hit $X?" / "Why aren't we getting sales?" | `building-distribution` | Resolves to a download count before anything else is diagnosed |
 | Marketplace / Gumroad Discover traffic | `building-distribution` | Planning treatment is **zero**. It is a mirror, not a source |
@@ -91,12 +96,17 @@ gate and say why.
 | Automation build | **Project-authored** — `commercial-cleaning-os/automation/stack.md`. Use `n8n-workflow-builder` for workflow *design* only and translate to Make | Our stack is Make + Attio + Instantly. **We are not using n8n.** No Make/Attio/Instantly specialist skill exists. The eight jobs are in `automation/make-jobs.md` |
 | Automation debugging | `n8n-debugger` | Same caveat — general debugging thinking, not the tool |
 
-**Sales layer — resolved.** `sales-skills/sales` could not be verified to exist, and it is no longer
-needed. `commercial-cleaning-sales` (project-authored, installed 2026-09-10) is the entry point for
-the whole sales motion, paired with the operational workflows in `commercial-cleaning-os/sales/`.
-Both are project-specific, so both outrank generic sales guidance under the conflict priority in §2.
-Where the two disagree, the override table at the foot of `commercial-cleaning-sales/SKILL.md`
-decides.
+**Sales layer — retired with the product.** `commercial-cleaning-sales` and `cleaning-os-voice`
+were both project-authored for a buyer we no longer sell to, and both were **deleted on
+2026-09-12**. There is no walkthrough, no proposal and no negotiation on a $199 download, so the
+behavioural sales layer has nothing to do. `reply-handler` and `sales-enablement` cover what
+remains.
+
+**Open gap — deliberate.** There is no project voice skill. `cleaning-os-voice` had one because we
+had studied that reader; we have not studied this one. **Author a replacement only once real
+replies from property managers exist to draw the language from** — inventing a voice for a buyer
+we have never spoken to is how the last one would have gone wrong if it had been written first.
+Until then, §7 below is the voice standard and it has final say.
 
 ### Conflict note: four skills claim cold email
 
@@ -137,20 +147,30 @@ say what was built and what still needs review.
 Never scrape behind authentication. Never imply private access. Never fabricate a missing field —
 leave it empty and mark it unknown.
 
-## 5. Trigger hierarchy — ours, and it overrides the specialist default
+## 5. Qualifying signals — ours, and they override the specialist default
 
-**High** — new location / new facility · expansion · move or new occupancy · relevant
-property-management change
-**Medium** — facilities or operations hiring · renovation or reopening · acquisition
-**Low** — generic growth · funding · generic hiring · weak review signals
+`trigger-finder` weights funding, hiring and tool changes highly. **Our signals are different in
+kind**: this is not an event-driven purchase. Nobody buys a rent roll tracker because something
+happened last week. They buy it because of what their portfolio and their tooling already are.
 
-**A trigger is an event, not a conclusion.** Never write or imply, without direct evidence:
-"they don't have a cleaner" · "their cleaner is failing" · "they're unhappy" · "they're looking for
-a provider". State the observed event and its date. Nothing beyond it.
+**Strong** — evidence they track lease dates in Excel or Google Sheets · portfolio in the 5–150
+lease band · a named role that owns the renewal calendar
+**Medium** — multi-tenant commercial assets listed publicly · recent portfolio growth · a
+property-manager job opening describing lease administration by spreadsheet
+**Weak** — generic CRE firm · company growth · funding
+**Disqualifying** — Visual Lease, MRI, Yardi Voyager, Prophia or equivalent in use · a dedicated
+Lease Administrator on staff · residential-only · single-tenant NNN only
 
-**Never assume:** every account is a fit · every company has a current need · a trigger means they
-are shopping · a public review proves an incumbent is being replaced · a CRM title means
-decision-maker.
+**An observation is not a conclusion.** Never write or imply, without direct evidence: "you're
+tracking this in a spreadsheet" · "you've missed deadlines" · "your process is broken" · "you're
+exposed". State what was observed and its date. Nothing beyond it.
+
+**Portfolio size is usually not published.** It is the most important qualifier and the hardest to
+find. `unknown` is the correct value — and the first email is allowed to ask, which is better than
+guessing and being wrong in the opening line.
+
+**Never assume:** every CRE firm is a fit · every firm has this problem · a title means
+decision-maker · a spreadsheet mention means dissatisfaction.
 
 ## 6. Evidence standard
 
@@ -199,15 +219,13 @@ learn → improve → *then* automate. Do not spend weeks automating an unvalida
 
 | Path | Contents |
 |---|---|
-| `commercial-cleaning-os/automation/stack.md` | **The locked tech stack** — Apollo, Make, Attio, **Instantly**, Claude, Gumroad. Plan limits, ramp, domain rule, upgrade triggers |
-| `commercial-cleaning-os/automation/make-jobs.md` | The eight scheduled Make jobs, and the gate in job 3 |
-| `commercial-cleaning-os/crm/` | schema, lifecycle stages, scoring, routing, field definitions |
-| `commercial-cleaning-os/outbound/` | ICP, personas, triggers, campaigns, sequences, reply routing |
-| `commercial-cleaning-os/automation/` | workflows, n8n, error handling, kill switches |
-| `commercial-cleaning-os/offers/` | the product offer, and the free lead magnet |
-| `commercial-cleaning-os/analytics/` | funnel, campaign metrics, experiments |
-| `commercial-cleaning-os/policies/` | agent policy, sending policy, compliance |
-| `commercial-cleaning-os/SKILL-DEPENDENCY-MAP.md` | which skill owns what |
+| `automation/stack.md` | **The locked tech stack** — Apollo, Apify, Make, Attio, **Instantly**, Claude, Gumroad. Plan limits, ramp, domain rule, upgrade triggers |
+| `automation/make-jobs.md` | The eight scheduled Make jobs, and the gate in job 3 |
+| `crm/lifecycle-stages.md` | The 10-stage funnel, SLAs, health checks |
+| `rent-roll-os/product/spec.md` | The six tabs, fields, logic, and the quality gates before it sells |
+| `rent-roll-os/offers/` | `core.md` (the $199 offer) · `lite.md` (the free front-end, **built first**) |
+| `rent-roll-os/outbound/` | ICP and personas |
+| `archive/` | The retired cleaning product. **Never cite as current.** |
 | `.claude/skills/building-distribution/` | the distribution equation, channel portfolio, channel gates |
 
 **The CRM is the single source of truth.** Every active opportunity carries an owner, a next action,

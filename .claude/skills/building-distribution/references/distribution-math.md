@@ -34,7 +34,7 @@ unmeasured rates is a false precision.
 |---|---|---|---|
 | `revenue_target` | $10,000 | User-set | Decision |
 | `price` | **$197** | Locked 2026-09-11 | Decision, **resolved** |
-| `outbound_capacity` | **3,000 contacts / 90 days** | Instantly Growth's 1,000 uploaded contacts/month, in `commercial-cleaning-os/automation/stack.md` | **Structural** — effort cannot raise it; only a plan upgrade can |
+| `outbound_capacity` | **3,000 contacts / 90 days** | Instantly Growth's 1,000 uploaded contacts/month, in `automation/stack.md` | **Structural** — effort cannot raise it; only a plan upgrade can |
 | `contact_purchase_rate` | 0.25%–0.5% | Nothing. We have never run a campaign. | **Assumption** |
 | `list_purchase_rate` | 1%–3% | Floor of the 1–5% published email conversion band; discounted because our list will be cold-sourced, not audience-grown | **Assumption** |
 | `days_in_window` | 90 | `research/13-90-day-blueprint.md` | Decision |
