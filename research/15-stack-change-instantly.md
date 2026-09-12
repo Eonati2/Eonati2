@@ -1,5 +1,11 @@
 # 15 — Sending Layer: Smartlead → Instantly
-**Date:** 2026-09-11 · Status: **decided.** Stack locked. Price locked at $197.
+**Date:** 2026-09-11 · **Confirmed 2026-09-12** · Status: **decided.** Stack locked. Price locked
+at $197.
+
+Both open questions from this record were put back to the owner with the full trade-offs and
+resolved: **Instantly Growth + 8 mailboxes** (over Hypergrowth + 25, and over Growth + 25 as
+originally specified), and **10 CRM stages** (over the 12 specified). Neither is an outstanding
+deviation.
 
 ---
 

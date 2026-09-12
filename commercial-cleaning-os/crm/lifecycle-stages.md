@@ -98,8 +98,9 @@ reason, from the closed list in §2).
 
 ### Three changes from the twelve stages as specified
 
-The spec listed twelve stages (described as thirteen). Ten are implemented. What changed, and why
-— each is one edit to restore:
+**Confirmed 2026-09-12.** The spec listed twelve stages (described as thirteen); ten were
+implemented, the three changes below were put back to the owner alongside the full twelve, and ten
+was chosen. This is a decision, not an outstanding deviation.
 
 **`Lead Magnet Requested` + `Lead Magnet Delivered` → one stage, `Kit Delivered`.** Delivery of a
 digital file is instant and automatic. Two stages separated by milliseconds produce a

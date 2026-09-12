@@ -41,6 +41,10 @@ to achieve it.
 Growth's cap sizes the architecture to **8 mailboxes at 28 cold/day = 224/day = 4,928/month**. That
 is a 98% fit, and it is not a coincidence worth ignoring.
 
+**Confirmed 2026-09-12.** Growth + 8 was chosen over both Hypergrowth + 25 (~$294/mo, 6,800
+contacts) and the originally specified Growth + 25 (which sends 227/day regardless, at ~$244/mo).
+The upgrade path out of it is the trigger table below — not a revisit.
+
 Warmup traffic is separate and unlimited, so it does not consume the 5,000.
 
 ---
