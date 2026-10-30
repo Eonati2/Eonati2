@@ -24,7 +24,8 @@ Only after all of these fail, say exactly what's blocked and the single step the
 - Back up the current state (save a JSON copy of the record) so it can be restored.
 - Test a write with one small, harmless change first, read the value back, and only then do the bulk change.
 - Respect the platform's limits (for example, Gumroad tags must be under 20 characters).
-- Ask first before anything that spends money (starting or raising ads), deletes things, or messages other people. Everything else in the user's request: just do it.
+- **The user alone turns ads ON.** Build campaigns, ad groups and ads in PAUSED status and leave them paused. Never set a campaign, ad group or ad to ACTIVE, even if it was active earlier or the user mentioned a budget. If you find something paused, assume the user paused it on purpose: report it, never re-activate it. Scheduled check-ins must be read-only for ad status.
+- Ask first before anything else that spends money, deletes things, or messages other people. Everything else in the user's request: just do it.
 
 ## 3. Verify before reporting
 
