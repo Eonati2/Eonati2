@@ -21,7 +21,8 @@ Only after all of these fail, say exactly what's blocked and the single step the
 
 ## 2. Before changing anything
 
-- Back up the current state (save a JSON copy of the record) so it can be restored.
+- Back up the current state (save a JSON copy of the record) so it can be restored. Save it somewhere that lasts (a file in the repo or the user's scratchpad, not a temporary sandbox), **re-open the file to confirm it exists**, and also write the key values (prices, names, statuses) into the conversation so they survive even if the file is lost.
+- **Record a baseline** of every critical value before editing: prices, currency, pay-what-you-want, published status, ad status, budgets. Never send a field you weren't asked to change (for example, never include `price` in an update unless the user asked for a new price).
 - Test a write with one small, harmless change first, read the value back, and only then do the bulk change.
 - Respect the platform's limits (for example, Gumroad tags must be under 20 characters).
 - **The user alone turns ads ON.** Build campaigns, ad groups and ads in PAUSED status and leave them paused. Never set a campaign, ad group or ad to ACTIVE, even if it was active earlier or the user mentioned a budget. If you find something paused, assume the user paused it on purpose: report it, never re-activate it. Scheduled check-ins must be read-only for ad status.
@@ -35,6 +36,16 @@ Every change must be checked after it is made:
 - **Check the public result**: load the live page or pin, confirm the new text is there and the links work.
 - **Check the visuals**: if you made images, look at them (or measure the layout) before publishing.
 - If any check fails, fix it and check again. Do not report until it passes.
+
+### Cross-check before every report
+
+A report is a list of facts you just verified, not a summary from memory. Before sending one:
+
+1. **Re-read every value you are about to state** from its source *in this turn* (API and live page), even if you checked it earlier. Things change: the user edits settings, platforms pause items, sandboxes lose files.
+2. **Compare against the baseline** you recorded before editing. For every critical value (price, currency, publish status, ad status, budget, links), state whether it matches the baseline, and if not, what changed it and when.
+3. **Cross-check two sources** where possible: the API value and what a shopper sees on the live page. If they differ, say so and explain why (for example, a discount link, the buyer's local currency, installments).
+4. **Don't report what you didn't check.** If something can't be verified from here, say "not verified" plainly, give the reason, and give the one step that verifies it.
+5. **When the user says something looks wrong, investigate before answering.** Show the evidence (before vs. now, with the source of each), never just reassure.
 
 ## 4. How to report
 
