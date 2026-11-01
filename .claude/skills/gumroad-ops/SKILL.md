@@ -22,8 +22,11 @@ All calls go through `proxy_execute(method, url, 'gumroad', ...)` in `COMPOSIO_R
 | Offer codes | `GET/POST/PUT/DELETE /v2/products/{id}/offer_codes[/{code_id}]`; `valid_at` must be before `expires_at`; `expires_at: ''` clears expiry |
 | Sales | `GET /v2/sales` |
 
+| Add a cover/gallery image | `POST /v2/products/{id}/covers` with body `{"url": <publicly fetchable image URL>}` (e.g. the `s3_url` from the workbench `upload_local_file`). It is appended at the END; verify with SSIM against your file. Record cover IDs first so you can undo. |
+
 ## What does NOT work via the API (user does it in the dashboard)
-- Thumbnail and cover images (upload in Edit → Thumbnail / Cover). Build the image, save it to Drive, give the user steps, then verify the new `thumbnail_url`.
+- Reordering covers (no endpoint — `PUT .../covers` is 404). Ask the user to drag, or (only with permission) delete + re-add the others.
+- Thumbnail (square store image) — user uploads in Edit → Thumbnail. Build the image, save it to Drive, give the user steps, then verify the new `thumbnail_url`.
 - Store SEO/profile settings (403).
 - Third-party analytics (Pinterest Tag) settings.
 - Upsells.
