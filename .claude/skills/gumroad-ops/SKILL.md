@@ -22,7 +22,7 @@ All calls go through `proxy_execute(method, url, 'gumroad', ...)` in `COMPOSIO_R
 | Offer codes | `GET/POST/PUT/DELETE /v2/products/{id}/offer_codes[/{code_id}]`; `valid_at` must be before `expires_at`; `expires_at: ''` clears expiry |
 | Sales | `GET /v2/sales` |
 
-| Add a cover/gallery image | `POST /v2/products/{id}/covers` with body `{"url": <publicly fetchable image URL>}` (e.g. the `s3_url` from the workbench `upload_local_file`). It is appended at the END; verify with SSIM against your file. Record cover IDs first so you can undo. |
+| Add a cover/gallery image | `POST /v2/products/{id}/covers` with body `{"url": <publicly fetchable image URL>}` (e.g. the `s3_url` from the workbench `upload_local_file`). It is appended at the END; verify with SSIM against your file. Record cover IDs first so you can undo. **Max 8 covers per product** — the POST fails with "limit of 8 previews"; ask the user which one to delete (`DELETE /v2/products/{id}/covers/{cover_id}`) before adding. Covers keep their native aspect ratio, so a tall 4:5 (1080×1350) cover shows much larger on phones than a 16:9 one. |
 
 ## What does NOT work via the API (user does it in the dashboard)
 - Reordering covers (no endpoint — `PUT .../covers` is 404). Ask the user to drag, or (only with permission) delete + re-add the others.
