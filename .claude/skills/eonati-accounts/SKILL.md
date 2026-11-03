@@ -47,6 +47,12 @@ Read this first, then verify any value you are about to change by reading it fre
 - Drive folder "Eonati Kit - Google Slides Templates": `1mg1KgLcwdh8pbK2YivLahNiUcbZXm-s6` — holds the source .pptx (private) and 6 Google Slides copies (shared "anyone with link: reader", not discoverable).
 - Use this folder (or a `backups/` subfolder) for anything that must survive — see `backup-to-drive`.
 
+## Store visits (Google Analytics, read-only)
+
+- Gumroad's API has no page-view data — use GA4. Composio `google_analytics`, account `google_analytics_cleche-resend`, property **`properties/558431808`** ("Eonati Gumroad Store."; a near-duplicate `558436368` also exists). Timezone America/Los_Angeles; data lags ~1 day.
+- Useful: `GOOGLE_ANALYTICS_RUN_REPORT` by date / deviceCategory / sessionSource+pagePath / eventName (view_item, add_to_cart, begin_checkout, purchase). GA `purchase` events can be the user's $0 test orders — Gumroad sales are the truth.
+- Baseline 2026-11-02: mobile visitors bounce ~95% (1 of 22 engaged) vs desktop 6 of 18 — mobile first screen is the main leak.
+
 ## Other connections
 
 - Canva: Composio `canva` (account `canva_bully-voting`) and the Canva MCP point at the same Canva Free account. Template links are a paid feature — don't plan on them.
