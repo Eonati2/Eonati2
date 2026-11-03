@@ -8,9 +8,10 @@ description: Rules, metrics and decision table for running Eonati's Pinterest ad
 IDs are in `eonati-accounts`. Toolkit: `pinterest_ads`, base `https://api.pinterest.com/v5`.
 
 ## Hard rules
+- **Touch the ads account only on the user's direct instruction.** Never create, edit, pause, delete or turn on any campaign, ad group or ad unless the user asked for that exact action in their own words. Making pins or images is NOT permission to create ads (the user objected on 2026-11-03 when 10 paused ads were created from new pins). Default for checks is read-only.
 - **Only the user turns things ON.** Never set a campaign, ad group or ad to ACTIVE unless the user explicitly says so in their own words for that launch. Anything paused was paused on purpose — report it, don't re-enable it.
 - Don't change running ads, budget or targeting during an agreed test window. Changes reset Pinterest's learning.
-- Build new ads as PAUSED, let them pass review, then ask the user before switching.
+- Only when the user asks for new ads: build them as PAUSED, let them pass review, then ask the user before switching.
 - The budget is the user's money and they have little of it — always state the money at risk and offer the cheaper option.
 - Ad copy and images must be truthful: no fake deadlines ("first 7 days" when the code doesn't expire), no fictitious "was" prices, no claims the product doesn't support. If a running pin's image/text promises something that's no longer true, flag it before changing the offer.
 
