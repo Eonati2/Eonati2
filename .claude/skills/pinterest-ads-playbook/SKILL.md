@@ -24,6 +24,16 @@ IDs are in `eonati-accounts`. Toolkit: `pinterest_ads`, base `https://api.pinter
 - Ad previews: `POST /ad_accounts/{id}/ad_previews {pin_id}` (JS page — read pin text via the `pinterest` toolkit on `pinterest_erie-audit` instead).
 - Tracking links use `utm_source=pinterest&utm_medium=paid_social&utm_campaign=<campaign>&utm_content=<ad>`.
 
+## Creative and copy rules (research 2026-11-04)
+- Image is 1000×1500 (2:3). Put a 5–8 word benefit headline at the top. Keep the product large in the centre.
+- Keep the bottom ~15% free of important text, because the Shop button covers it.
+- Use a high-contrast background. Merlot/plum suits the brand and Pinterest's 2026 wedding colours; cream-on-cream pins disappear in the feed.
+- The title's first 40 characters must hold the keyword (e.g. "Wedding Welcome Sign Template…"). Descriptions are about 220 characters: what it is, what it matches, "edit free in Google Slides", "Instant download".
+- UTM for paid ads is `utm_medium=paid_social`. The first SP01–04 sales ads wrongly used `organic`.
+- Top Pinterest search volumes (US): wedding welcome sign 4–5M, wedding table numbers 2–3M, table numbers wedding 1–2M, wedding decor signs / wedding signs ideas 100–500K. "Wedding seating chart" is 1–2M, but we don't sell one, so it is set as a negative keyword.
+- With fewer than ~50 conversions a week, a sales goal stays in learning mode. Don't change budget, creative or targeting for 10–14 days. Scale by 20–30% at a time.
+- BlogToPin AI generation spends paid credits, so ask first.
+
 ## What to report (every check)
 Status of campaign / groups / ads (status, review_status, summary_status); spend vs cap; impressions; outbound clicks; CTR; cost per outbound click — by ad group and by ad; Pinterest Tag last fired; tag page visits/checkouts; real Gumroad sales (exclude $0 tests); offer-code uses; prices still at baseline.
 
