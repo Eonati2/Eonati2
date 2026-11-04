@@ -24,6 +24,12 @@ All calls go through `proxy_execute(method, url, 'gumroad', ...)` in `COMPOSIO_R
 
 | Add a cover/gallery image | `POST /v2/products/{id}/covers` with body `{"url": <publicly fetchable image URL>}` (e.g. the `s3_url` from the workbench `upload_local_file`). It is appended at the END; verify with SSIM against your file. Record cover IDs first so you can undo. **Max 8 covers per product** — the POST fails with "limit of 8 previews"; ask the user which one to delete (`DELETE /v2/products/{id}/covers/{cover_id}`) before adding. Covers keep their native aspect ratio, so a tall 4:5 (1080×1350) cover shows much larger on phones than a 16:9 one. |
 
+## Gumroad MCP (connected 2026-11-04)
+- `update_product` handles summary, description, `additional_details` rows, category, tags (**max 10**, 2–20 chars) and the receipt message/button. Pass only the fields you change.
+- The MCP's `custom_receipt_text` is a **different field** from the v2 API `custom_receipt`, which holds the Google Slides links. Editing one does not change the other. Never blank the API field; after any MCP edit, check that it still has its `docs.google.com` links.
+- The MCP has no tool to delete files or to set the Pinterest Tag. Old draft files are still attached to each product. Buyers only see the `fileEmbed` file on the download page.
+- Reorder covers: add the new cover, then DELETE the old ones and re-add them from fresh uploads. Check each with a pixel diff (done for the Collection on 2026-11-04).
+
 ## What does NOT work via the API (user does it in the dashboard)
 - Reordering covers (no endpoint — `PUT .../covers` is 404). Ask the user to drag, or (only with permission) delete + re-add the others.
 - Thumbnail (square store image) — user uploads in Edit → Thumbnail. Build the image, save it to Drive, give the user steps, then verify the new `thumbnail_url`.
