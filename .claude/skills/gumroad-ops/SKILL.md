@@ -41,6 +41,6 @@ All calls go through `proxy_execute(method, url, 'gumroad', ...)` in `COMPOSIO_R
 - Tags must be under 20 characters each.
 - Gumroad image URLs (`public-files.gumroad.com`) are blocked from the local machine — download them inside the Composio workbench.
 - Check the Pinterest Tag with the **short** permalink: `https://gumroad-analytics.com/{short_permalink}?location=product|receipt` and count `pintrk`. Using the custom permalink gives a 404 (that is NOT a missing tag). The product page also exposes `"has_third_party_analytics":true`.
-- Status as of 2026-11-01: tag on the Kit only; Stationery and Collection need the user to set the tag to "All products".
+- Status as of 2026-11-04: the tag is live on all 3 products (product and receipt pages; tag id 2613086207584 found). If one product loses it, the dashboard dropdown was probably set to a single product instead of "All products".
 - Prices on the live page can look different to the user because of the discount link (`/l/{permalink}/LAUNCH15`), local currency, or installments — investigate before assuming a price changed.
 - Never invent "was" prices or fake countdowns; only real, honestly-described discounts.
