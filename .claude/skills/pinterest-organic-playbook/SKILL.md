@@ -71,3 +71,12 @@ Account: Composio `pinterest_erie-audit` (Eonati8). Organic only — see `pinter
 - **Pace:** my scheduled task posts 5 pins a day (13, 15, 17, 19 and 21:17 UTC) from `manifest_v5.json` (1KWNGvrkgf3Vkjwf-BYg9jBVuKIx333_K, 58 items). BlogToPin posts 2 a day (16:05 and 20:05 UTC).
 - **New layouts (om##):** before/after, POV, price stack, search bar, big word, checklist over a photo. The design code is saved as `pinlib.py` in Drive (1TUePKPgld0LPCJ8kooju067k8O9iBJ16). Reload it after a workbench crash: download it plus the fonts, the src crops and the AI backgrounds (BlogToPin jobs 189633–189652).
 - **Weekly review:** `trig_01MKCmgF9P7HsRjWXEUKpfzA` runs Mondays at 16:43 UTC. It ranks pins by layout and hook, then builds the next batch from the winners.
+- **2026-11-05: the Stationery Suite is now 12 signs (V3).** Added a seating chart, an unplugged ceremony sign and a cards & gifts sign, at the user's request.
+  - Google Slides decks: US 1A7TPd…, A4 1PR-dM… (both are linked in the receipt). They now have 12 slides.
+  - PDFs: the original 9 pages are unchanged, with the 3 new pages appended.
+  - PPTX: the 3 slides were duplicated with python-pptx.
+  - Gumroad files: Stationery embed is now `-xCHHC5C2DW1yQ_VchJvwA==`; Collection embed is `wrF8LHKTGtaNtKcZN86_YA==`.
+  - Backups of the V2 zips and decks are in the Drive backups folder.
+  - Name: "Wedding Sign Templates: Welcome Sign, Seating Chart, Table Numbers & Menu Set". Price is still $12.
+  - The pin queue is `manifest_v6.json` (1R6wNCtOTvZmQzcmDXy5yAEW2x9jBaU-A), with seating-chart pins first.
+
