@@ -79,4 +79,10 @@ Account: Composio `pinterest_erie-audit` (Eonati8). Organic only — see `pinter
   - Backups of the V2 zips and decks are in the Drive backups folder.
   - Name: "Wedding Sign Templates: Welcome Sign, Seating Chart, Table Numbers & Menu Set". Price is still $12.
   - The pin queue is `manifest_v6.json` (1R6wNCtOTvZmQzcmDXy5yAEW2x9jBaU-A), with seating-chart pins first.
+- **Pace from 2026-11-05 (user):** 12–15 pins a day.
+  - The posting task `trig_01CVyDZEmkM2P2KbwwzERnpB` runs hourly from 09:17 to 21:17 UTC (13 a day) and always reads the newest `manifest_v*.json`.
+  - BlogToPin adds 2 a day.
+  - The refill task `trig_01PSAzq6z1betudCwHrDPaWc` runs every 3 days and builds 40 pins when fewer than 40 are queued.
+  - The design code is `pinlib_v2.py` (1fDiQgqMT-gYmfjV34EPxj1jxvgSRQWTB), which adds L_price, L_top and an auto-fitting L_word.
+  - `manifest_v7` holds 88 items: seating-chart pins S01–S04 first, then R01–R26 mixed in (12-sign messaging and a "$1 per sign" price anchor).
 
