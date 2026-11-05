@@ -56,5 +56,7 @@ Account: Composio `pinterest_erie-audit` (Eonati8). Organic only — see `pinter
 - Drive folder `organic-pin-bank` 1swx71RZUmqbYeixdKNtsq6C6RKP5Wcj7 holds 25 PNGs (O01–O25) and `manifest.json` (1MLtrUAKENPwoTLwkANGPtNJcgM_oMAr5). The manifest lists queue order, title, description, link, board and drive_id.
 - 3 were posted on 2026-11-05 (queue 0–2).
 - Scheduled task `trig_01CVyDZEmkM2P2KbwwzERnpB` posts 1 pin at 14:17, 18:17 and 22:17 UTC (US morning, afternoon and evening). It finds what's already posted by matching `utm_content=oNN` in pin links.
+- 2026-11-05: added 17 pins (N01–N17) with AI wedding-scene backgrounds from BlogToPin (website rxrg42oldavvkbxbiikqkzwa, gpt-image-2, no text overlay, 14 credits). The user's real templates are composited on top, so the product shown is exactly what buyers get. Layouts: full-bleed photo, photo-top with a cream panel, real-scene mockup (sign on an easel or on a marble table), photo-top with a big number. Queue is now `manifest_v2.json` (1xVasc7IXfTCeqNkqgFBEt8UsKUK20Hpe), 42 items, with new pins first.
+- BlogToPin credits are shared with the logo-pin task, which uses about 10 a day. Ask the user before spending more.
 - When the bank is low, build the next batch with the same templates and new hooks. Ideas: welcome bag, destination wedding, winter wedding, minimalist, "no Canva", price anchor, out-of-town guests, engaged-this-Christmas.
 - Old organic Kit pins link to `/LAUNCH15`, which expires Nov 7. Their links can't be edited because the pins were promoted, so new pins replace them.
