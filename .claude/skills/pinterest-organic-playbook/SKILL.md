@@ -17,6 +17,7 @@ Account: Composio `pinterest_erie-audit` (Eonati8). Organic only — see `pinter
 - Flat cream-on-cream pins with no people performed worst.
 
 ## Pin rules
+- **WEDDING RULE (user, 2026-11-05: "Always add wedding on the title image so buyers can know and not scroll… never forget this").** The big headline on EVERY pin image must contain the word "Wedding". This applies to my pins, refills, weekly batches and BlogToPin `titleToUse` text. A label pill alone doesn't count. The posting task skips any manifest item whose `headline` lacks it.
 - Size 1000×1500.
 - Top label in a gold pill saying what the product is.
 - Headline of 5–8 words in bold Lato Black. The hook is one of: a problem ("No more 'where do I go?' texts"), an outcome ("Your whole weekend in one link"), a list ("9 signs every wedding needs") or a season ("Just engaged? Save this").
@@ -90,4 +91,14 @@ Account: Composio `pinterest_erie-audit` (Eonati8). Organic only — see `pinter
   - Redoing failures on gpt-image-2 (0.7 each) fixed all 10 I redid. Pins still misspelled were dropped, never posted.
   - Credits: 79.9 → 62.5.
   - Links use `utm_campaign=blogtopin_*&utm_content=c##`. Copy was overwritten with UPDATE_PIN.
+- **2026-11-05 wedding-headline fix:**
+  - 43 queued pins had no "Wedding" in their image headline. They were rebuilt as W01–W43 (`utm_content=ow##`, same queue slots, copy fixed from "9 signs" to "12 signs").
+  - Queue is now `manifest_v9.json` (11mXZgYya3tsVYXpn8dQlNz84yGsdVyHT), 88 items, all compliant.
+  - Build assets live in Drive so a workbench reset can't lose them:
+    - fonts and product crops: `pin_assets_fonts_src.zip` 1FQ8cXYYlA-Z_WWhTNBgIiCUemIcPJp65
+    - AI backgrounds: `pin_assets_ai_bg.zip` 1ZZOtz4TF5Qa_KvgehKoa3YoB8kbMcp1o
+    - build script: `wspecs_wedding_headlines.py` 14yEXqZgtQJlnpcJl6MVrTpEDY_AurGMC (loads pinlib_v2 and adds L_full, plain and footer)
+  - The workbench resets every few calls. Keep cells small, save to Drive right away, and work under `/home/user/eon`.
+  - BlogToPin: 37 of the 54 scheduled pins had no "Wedding" in their baked-in image text. They were set to PIN_REJECTED (reversible with APPROVE_PINS). The 17 compliant ones stay scheduled.
+  - Replacing the 37 would cost about 26 credits on gpt-image-2. Ask the user first.
 
