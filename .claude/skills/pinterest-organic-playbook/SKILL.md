@@ -85,4 +85,9 @@ Account: Composio `pinterest_erie-audit` (Eonati8). Organic only — see `pinter
   - The refill task `trig_01PSAzq6z1betudCwHrDPaWc` runs every 3 days and builds 40 pins when fewer than 40 are queued.
   - The design code is `pinlib_v2.py` (1fDiQgqMT-gYmfjV34EPxj1jxvgSRQWTB), which adds L_price, L_top and an auto-fitting L_word.
   - `manifest_v7` holds 88 items: seating-chart pins S01–S04 first, then R01–R26 mixed in (12-sign messaging and a "$1 per sign" price anchor).
+- **2026-11-05 BlogToPin 30-day schedule:** 54 pins scheduled at 16:05 and 20:05 UTC, Nov 6 – Dec 3 (9 b## pins plus 45 c## pins).
+  - z-image-turbo (0.2 credits each) misspelled 16 of 51 headlines. Always check a contact sheet before scheduling.
+  - Redoing failures on gpt-image-2 (0.7 each) fixed all 10 I redid. Pins still misspelled were dropped, never posted.
+  - Credits: 79.9 → 62.5.
+  - Links use `utm_campaign=blogtopin_*&utm_content=c##`. Copy was overwritten with UPDATE_PIN.
 
