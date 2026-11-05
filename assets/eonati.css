@@ -1,0 +1,181 @@
+/* Eonati conversion system.
+   body.eo  = full landing/hub pages.
+   .eo-*    = blocks that are also injected into long-form guide pages. */
+:root{
+  --eo-ink:#0f1e3d; --eo-ink-2:#3b4763; --eo-mute:#6b7690;
+  --eo-paper:#f2f4f8; --eo-card:#ffffff; --eo-line:#dfe3ec;
+  --eo-gold:#b8901f; --eo-go:#1dbf73; --eo-go-dark:#159a5c;
+  --eo-font:'Bricolage Grotesque',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+
+/* ---------- page base (landing pages only) ---------- */
+body.eo{margin:0;font-family:var(--eo-font);font-size:17px;line-height:1.55;color:var(--eo-ink);background:var(--eo-paper);padding-bottom:84px;-webkit-text-size-adjust:100%}
+body.eo *{box-sizing:border-box}
+body.eo h1,body.eo h2,body.eo h3,body.eo p,body.eo ul,body.eo ol{margin:0;padding:0}
+body.eo a{color:inherit}
+.eo-wrap{max-width:720px;margin:0 auto;padding:0 18px}
+.eo-disclose{font-size:12.5px;color:var(--eo-mute);text-align:center;padding:8px 18px;border-bottom:1px solid var(--eo-line);background:var(--eo-card);margin:0}
+.eo-top{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+.eo-brand{font-weight:800;font-size:19px;letter-spacing:-.02em;text-decoration:none}
+.eo-brand b{color:var(--eo-gold)}
+.eo-top nav{display:flex;gap:16px;font-size:14px;color:var(--eo-ink-2)}
+
+.eo-hero{padding:14px 0 8px}
+.eo-hero h1{font-size:clamp(31px,8vw,52px);line-height:1.04;letter-spacing:-.035em;font-weight:800}
+.eo-hero .eo-sub{margin-top:10px;color:var(--eo-ink-2);font-size:17px;max-width:38ch}
+.eo-facts{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:14px;font-size:14px;color:var(--eo-ink-2)}
+.eo-facts span{display:flex;align-items:center;gap:6px}
+.eo-facts svg{width:16px;height:16px;flex:none}
+.eo-hero .eo-btn{margin-top:18px}
+.eo-jump{display:flex;gap:6px 8px;margin-top:10px;font-size:14.5px;color:var(--eo-ink-2);flex-wrap:wrap}
+.eo-jump a{color:var(--eo-ink);font-weight:600}
+
+/* ---------- buttons ---------- */
+.eo-btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:54px;margin-top:16px;padding:12px 18px;border-radius:12px;background:var(--eo-go);color:#fff!important;font-family:var(--eo-font);font-weight:700;font-size:17px;line-height:1.25;text-decoration:none!important;text-align:center;transition:background .15s;border:0}
+.eo-btn:hover{background:var(--eo-go-dark)}
+.eo-btn.eo-sm{min-height:44px;font-size:14.5px;padding:9px 10px;border-radius:10px;margin-top:10px}
+.eo-btn.eo-ghost{background:transparent;color:var(--eo-ink)!important;border:1.5px solid var(--eo-line)}
+.eo-btn.eo-ghost:hover{background:var(--eo-card)}
+.eo-btn:focus-visible,.eo-sticky a:focus-visible,.eo-faq summary:focus-visible,.eo-q button:focus-visible{outline:3px solid var(--eo-ink);outline-offset:3px}
+.eo-note{font-size:12.5px;color:var(--eo-mute);text-align:center;margin-top:7px}
+
+/* ---------- pick card ---------- */
+.eo-pick{background:var(--eo-card);border:2px solid var(--eo-ink);border-radius:18px;overflow:hidden;margin:24px 0 0;font-family:var(--eo-font);color:var(--eo-ink)}
+.eo-spec{height:118px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.eo-spec small{position:absolute;right:12px;bottom:8px;font-size:11px;opacity:.55;font-family:var(--eo-font)}
+.eo-spec-juhi{background:#e8f0ff;color:#1b2ff0}
+.eo-spec-juhi .m{font-family:var(--eo-font);font-weight:800;font-size:40px;letter-spacing:-.06em;display:flex;align-items:center;gap:10px}
+.eo-spec-juhi .d{width:28px;height:28px;border-radius:50%;background:#1b2ff0;box-shadow:13px 0 0 #7d8bff}
+.eo-spec-alestra{background:#0f1e3d;color:#fff}
+.eo-spec-alestra .m{font-family:'Libre Caslon Text',Georgia,serif;font-weight:700;font-size:27px;letter-spacing:.14em;text-align:center;line-height:1.1}
+.eo-spec-alestra .m i{display:block;font-style:normal;font-family:var(--eo-font);font-size:10.5px;letter-spacing:.4em;opacity:.7;margin-top:8px}
+.eo-spec-valeriia{background:#1a1512;color:#e3c98d}
+.eo-spec-valeriia .m{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:500;font-size:42px;text-align:center;line-height:1}
+.eo-spec-valeriia .m i{display:block;font-style:normal;font-family:var(--eo-font);font-size:10px;letter-spacing:.5em;margin-top:10px;opacity:.8}
+.eo-pick-body{padding:18px 18px 20px}
+.eo-badge{display:inline-block;background:var(--eo-ink);color:#fff;font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px;margin-bottom:8px}
+.eo-for{font-size:14px;font-weight:600;color:var(--eo-gold)}
+.eo-pick h2,.eo-pick h3{font-family:var(--eo-font);font-size:25px;line-height:1.15;letter-spacing:-.02em;margin:2px 0 0;color:var(--eo-ink)}
+.eo-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:14.5px;color:var(--eo-ink-2)}
+.eo-meta strong{color:var(--eo-ink)}
+.eo-ticks{list-style:none!important;margin:12px 0 0!important;padding:0!important;display:grid;gap:5px;font-size:15.5px}
+.eo-ticks li{padding-left:22px!important;position:relative;margin:0!important;list-style:none!important}
+.eo-ticks li:before{content:"";position:absolute;left:2px;top:.55em;width:10px;height:6px;border-left:2px solid var(--eo-go-dark);border-bottom:2px solid var(--eo-go-dark);transform:rotate(-45deg)}
+
+/* ---------- 3-pick compare table ---------- */
+.eo-compare{margin:28px 0 0;font-family:var(--eo-font);color:var(--eo-ink)}
+.eo-compare h2{font-family:var(--eo-font);font-size:25px;letter-spacing:-.02em;line-height:1.15;margin:0 0 22px;color:var(--eo-ink)}
+.eo-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;align-items:stretch}
+.eo-col{background:var(--eo-card);border:1px solid var(--eo-line);border-radius:14px;padding:12px 10px 12px;display:flex;flex-direction:column;text-align:center;position:relative}
+.eo-col.eo-top-pick{border:2px solid var(--eo-ink);box-shadow:0 6px 20px rgba(15,30,61,.12)}
+.eo-col .eo-lbl{font-size:11.5px;font-weight:700;line-height:1.2;color:var(--eo-gold);min-height:2.4em}
+.eo-col.eo-top-pick .eo-lbl{color:var(--eo-ink)}
+.eo-col.eo-top-pick:before{content:"Top pick";position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--eo-ink);color:#fff;font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.eo-col b{display:block;font-size:15.5px;line-height:1.2;margin-top:6px}
+.eo-col .eo-c-row{font-size:13px;color:var(--eo-ink-2);margin-top:6px;line-height:1.3}
+.eo-col .eo-c-row strong{color:var(--eo-ink);font-size:14.5px}
+.eo-col .eo-btn{margin-top:auto}
+.eo-col .eo-c-sp{flex:1;min-height:8px}
+
+/* ---------- sections ---------- */
+.eo-block{padding:34px 0 4px}
+.eo-block h2{font-size:26px;letter-spacing:-.025em;line-height:1.15}
+.eo-block > p{margin-top:10px;color:var(--eo-ink-2)}
+.eo-needs{display:grid;gap:12px;margin-top:16px}
+.eo-needs div{background:var(--eo-card);border-left:4px solid var(--eo-gold);padding:13px 16px;border-radius:0 12px 12px 0}
+.eo-needs b{display:block;font-size:16.5px}
+.eo-needs p{font-size:15px;color:var(--eo-ink-2)}
+.eo-fit{display:grid;gap:12px;margin-top:16px}
+.eo-fit > div{background:var(--eo-card);border:1px solid var(--eo-line);border-radius:14px;padding:16px}
+.eo-fit h3{font-size:17px;margin-bottom:6px}
+.eo-fit ul{list-style:none;display:grid;gap:5px;font-size:15.5px;color:var(--eo-ink-2)}
+.eo-fit li{padding-left:20px;position:relative}
+.eo-fit .yes li:before{content:"✓";position:absolute;left:0;color:var(--eo-go-dark);font-weight:700}
+.eo-fit .no li:before{content:"✕";position:absolute;left:1px;color:#b4232c;font-weight:700}
+.eo-fit .no a{color:var(--eo-ink);font-weight:600}
+.eo-steps{list-style:none;counter-reset:s;margin-top:16px;display:grid;gap:12px}
+.eo-steps li{counter-increment:s;display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start;font-size:16px}
+.eo-steps li:before{content:counter(s);width:36px;height:36px;border-radius:50%;background:var(--eo-ink);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.eo-steps b{display:block}
+.eo-steps span{color:var(--eo-ink-2)}
+.eo-faq details{background:var(--eo-card);border:1px solid var(--eo-line);border-radius:12px;margin-top:10px}
+.eo-faq summary{cursor:pointer;padding:15px 16px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.eo-faq summary::-webkit-details-marker{display:none}
+.eo-faq summary:after{content:"+";font-weight:400;font-size:22px;line-height:1}
+.eo-faq details[open] summary:after{content:"–"}
+.eo-faq .eo-a{padding:0 16px 16px;color:var(--eo-ink-2);font-size:15.5px}
+.eo-final{background:var(--eo-ink);color:#fff;border-radius:20px;padding:26px 20px;margin:34px 0 10px;text-align:center}
+.eo-final h2{font-size:25px;letter-spacing:-.02em;line-height:1.15}
+.eo-final p{color:#c4cbe0;margin-top:8px;font-size:16px}
+.eo-final .eo-row{display:grid;gap:10px;margin-top:16px}
+.eo-final .eo-btn{margin-top:0}
+.eo-final .eo-btn.eo-ghost{color:#fff!important;border-color:#5b6886}
+.eo-final .eo-btn.eo-ghost:hover{background:#1c2c52}
+.eo-links{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
+.eo-links a{background:var(--eo-card);border:1px solid var(--eo-line);border-radius:12px;padding:12px 14px;text-decoration:none;font-weight:600;font-size:15px;line-height:1.25}
+.eo-links a span{display:block;font-weight:400;font-size:13px;color:var(--eo-mute);margin-top:2px}
+.eo-links a:hover{border-color:var(--eo-ink)}
+body.eo footer{padding:26px 0 10px;font-size:13.5px;color:var(--eo-mute)}
+body.eo footer nav{display:flex;flex-wrap:wrap;gap:8px 16px;margin-bottom:12px}
+
+/* ---------- homepage tiles ---------- */
+.eo-tiles{display:grid;gap:12px;margin-top:20px}
+.eo-tile{background:var(--eo-card);border:1px solid var(--eo-line);border-radius:16px;padding:16px;display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:center}
+.eo-tile.eo-top-pick{border:2px solid var(--eo-ink)}
+.eo-tile .eo-for{grid-column:1/-1}
+.eo-tile b{font-size:19px;letter-spacing:-.01em}
+.eo-tile .eo-meta{margin-top:0;grid-column:1/-1}
+.eo-tile .eo-btn{grid-column:1/-1;margin-top:8px}
+
+/* ---------- quiz ---------- */
+.eo-quiz{background:var(--eo-card);border:2px solid var(--eo-ink);border-radius:18px;padding:18px;margin-top:20px}
+.eo-qhead{display:flex;justify-content:space-between;font-size:13.5px;color:var(--eo-mute);font-weight:600}
+.eo-bar{height:6px;background:var(--eo-line);border-radius:3px;margin-top:8px;overflow:hidden}
+.eo-bar i{display:block;height:100%;width:0;background:var(--eo-go);transition:width .25s}
+.eo-q h2{font-size:22px;letter-spacing:-.02em;line-height:1.2;margin:16px 0 12px}
+.eo-q{display:none}
+.eo-q.on{display:block}
+.eo-q button{display:block;width:100%;text-align:left;font:inherit;font-size:16px;font-weight:600;color:var(--eo-ink);background:var(--eo-paper);border:1.5px solid var(--eo-line);border-radius:12px;padding:14px 16px;margin-top:8px;cursor:pointer}
+.eo-q button span{display:block;font-weight:400;font-size:14px;color:var(--eo-ink-2)}
+.eo-q button:hover{border-color:var(--eo-ink)}
+.eo-result{display:none}
+.eo-result.on{display:block}
+.eo-result .eo-pick{margin-top:12px}
+.eo-restart{background:none;border:0;font:inherit;font-size:14.5px;color:var(--eo-ink-2);text-decoration:underline;margin-top:12px;cursor:pointer;display:block;margin-left:auto;margin-right:auto}
+
+/* ---------- sticky mobile bar ---------- */
+.eo-sticky{position:fixed;left:0;right:0;bottom:0;z-index:9990;background:rgba(255,255,255,.97);border-top:1px solid var(--eo-line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:12px;transform:translateY(110%);transition:transform .25s;font-family:var(--eo-font)}
+.eo-sticky.show{transform:none}
+.eo-sticky div{flex:1;font-size:13.5px;line-height:1.3;color:var(--eo-ink-2)}
+.eo-sticky div b{display:block;color:var(--eo-ink);font-size:15px}
+.eo-sticky a{flex:none;background:var(--eo-go);color:#fff!important;font-weight:700;text-decoration:none!important;padding:13px 18px;border-radius:10px;font-size:15.5px}
+
+/* ---------- blocks injected into guide pages ---------- */
+.eo-answer{font-family:var(--eo-font);color:var(--eo-ink);background:#fff;border:2px solid var(--eo-ink);border-radius:16px;padding:18px;margin:18px 0 22px}
+.eo-answer .eo-q-lbl{font-size:13.5px;font-weight:700;color:var(--eo-gold)}
+.eo-answer > p{font-size:16.5px;line-height:1.5;margin:4px 0 0;color:var(--eo-ink)}
+.eo-answer .eo-mini{display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:center;margin-top:14px;padding-top:14px;border-top:1px solid var(--eo-line)}
+.eo-answer .eo-mini b{font-size:17px}
+.eo-answer .eo-mini span{font-size:14px;color:var(--eo-ink-2)}
+.eo-answer .eo-mini .eo-btn{grid-column:1/-1;margin-top:10px}
+.eo-answer .eo-alt{font-size:14px;color:var(--eo-ink-2);margin:10px 0 0;text-align:center}
+.eo-answer .eo-alt a{color:var(--eo-ink);font-weight:600}
+.eo-inline{margin:30px 0}
+
+@media (min-width:760px){
+  body.eo{padding-bottom:0}
+  .eo-sticky{display:none}
+  .eo-final .eo-row{grid-template-columns:1fr 1fr}
+  .eo-fit{grid-template-columns:1fr 1fr}
+  .eo-tiles{grid-template-columns:repeat(3,1fr)}
+  .eo-tile{grid-template-columns:1fr}
+  .eo-links{grid-template-columns:repeat(3,1fr)}
+  .eo-col{padding:16px 14px}
+  .eo-col .eo-lbl{font-size:13px}
+}
+@media (max-width:370px){
+  .eo-cols{gap:6px}
+  .eo-col{padding:12px 6px}
+  .eo-col .eo-btn.eo-sm{font-size:13.5px}
+}
+@media (prefers-reduced-motion:reduce){.eo-sticky,.eo-bar i{transition:none}}
