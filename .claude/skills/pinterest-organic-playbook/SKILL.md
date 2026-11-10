@@ -16,6 +16,8 @@ Account: Composio `pinterest_erie-audit` (Eonati8). Organic only — see `pinter
   - a large CTA button that includes the price
 - Flat cream-on-cream pins with no people performed worst.
 
+Before writing or approving any pin copy, image or product page, run the "Will this work?" check in `sell-anything`, and read its LESSONS LOG. After each weekly review, add what worked or failed to that log.
+
 ## Pin rules
 - **WEDDING RULE (user, 2026-11-05: "Always add wedding on the title image so buyers can know and not scroll… never forget this").** The big headline on EVERY pin image must contain the word "Wedding". This applies to my pins, refills, weekly batches and BlogToPin `titleToUse` text. A label pill alone doesn't count. The posting task skips any manifest item whose `headline` lacks it.
 - Size 1000×1500.
