@@ -126,6 +126,10 @@ Fix what you find before posting. If you can't fix something, say so plainly.
 - 2026-11-10: The expired LAUNCH15 sentence ("15% off until Nov 7") stayed on all 3 Gumroad pages for 3 days after it ended.
   - Rule: every dated offer gets a removal reminder on the day it is created.
   - Rule: the truth check scans for any date that has passed.
+- 2026-11-10: The same expired offer was also live in 5 Pinterest pins.
+  - These were the old ad-creative pins: titles say "15% Off Launch" and links end in `/LAUNCH15`.
+  - 12 store visits landed on the dead-code URL.
+  - Rule: when an offer ends, search pins, links, images and pages for its code and wording, not just the product pages.
 - 2026-11-08/09: 14 queued pins still said "9 signs" after the Suite grew to 12. Old creative goes stale when the product changes.
   - When a product changes, re-scan the whole pin bank and Gumroad copy for the old facts.
 - 2026-11-09/10: About 15 hourly pin runs were missed because of worker restarts and plan mode. The daily volume goal (12–15 a day) was missed.
