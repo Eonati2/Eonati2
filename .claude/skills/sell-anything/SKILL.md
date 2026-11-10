@@ -140,6 +140,12 @@ Fix what you find before posting. If you can't fix something, say so plainly.
   - It shows the true product, not an AI fake. Previews: marketing/previews/premium_*.jpg.
 
 ### Failed / fix
+- 2026-11-10: The Gumroad IMAGES still said "9 signs" or "All 9 Pieces" on the Stationery and Collection pages, while the text said 12. That had gone on since the suite grew.
+  - Fix: replaced the images, deleted the 6 wrong ones, and replaced the square thumbnails.
+  - Rule: the truth check reads the text inside every image (covers, thumbnail, pins), not just the copy.
+  - The Gumroad API (proxy_execute) has POST/DELETE `/v2/products/{id}/covers[/{cover_id}]` and POST `/v2/products/{id}/thumbnail` with {url}.
+  - The main cover is the first one in the list. To reorder, re-add a cover from its original_url, then delete the old copy.
+- 2026-11-10: Deleted the 5 dead LAUNCH15 pins (PINTEREST_DELETE_PIN works; the backup is in Drive). The "9 Matching Signs" pin 1099511696565944961 is still live.
 - 2026-11-10: The expired LAUNCH15 sentence ("15% off until Nov 7") stayed on all 3 Gumroad pages for 3 days after it ended.
   - Rule: every dated offer gets a removal reminder on the day it is created.
   - Rule: the truth check scans for any date that has passed.
