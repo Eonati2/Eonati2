@@ -133,6 +133,12 @@ Fix what you find before posting. If you can't fix something, say so plainly.
   - Rising year on year: "wedding signage ideas" +90%, "wedding bar menu" +60%, "seating chart" +40%.
   - Nov–Dec is seasonally lower (-30% month on month), while engagement-season searches (winter proposal, Christmas engagement party) grow. January is the peak, so plan the bigger push then.
 
+- 2026-11-10: Premium creative pipeline that works:
+  - ElevenLabs `creative_generate_image` (gpt-image-2.5-sunburst, about 2¢ an image) made a marble flat lay with a blank gold frame. Higgsfield is blocked on the free plan.
+  - Composite the REAL filled sample design into the frame, multiplied by the paper's light map so the window shadows fall on the sign.
+  - Crop to 2:3, add a cream headline band and a plum CTA pill.
+  - It shows the true product, not an AI fake. Previews: marketing/previews/premium_*.jpg.
+
 ### Failed / fix
 - 2026-11-10: The expired LAUNCH15 sentence ("15% off until Nov 7") stayed on all 3 Gumroad pages for 3 days after it ended.
   - Rule: every dated offer gets a removal reminder on the day it is created.
