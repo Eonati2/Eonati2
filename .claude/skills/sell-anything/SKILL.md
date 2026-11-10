@@ -122,6 +122,17 @@ Fix what you find before posting. If you can't fix something, say so plainly.
 - Bundle anchoring: "$27.99, $4 less than buying both" is true and simple. Keep it.
 - Concrete objection-busters on product pages work as reassurance: "Not a Canva template", "edit free in Google Slides", "print one proof first".
 
+- 2026-11-10: The user asked for urgency on a discount that never expires. I declined the fake version and offered honest options; the user picked a real holiday sale. How it was set up:
+  - Code HOLIDAY25: 25% off the Stationery Suite only, so $9, ending Nov 30 at 11:59pm ET.
+  - The page and ads state the real end date.
+  - The ad campaign's end_time matches the sale end, so the ads stop on their own.
+  - A removal reminder is scheduled for Dec 1.
+  - Gumroad auto-applies only all-product codes, so the ad links carry `/HOLIDAY25` instead. Use this pattern for every future sale.
+- 2026-11-10 keyword data (Pinterest Trends, US):
+  - Top searches for our product: "seating chart wedding", "wedding welcome sign", "wedding seating chart".
+  - Rising year on year: "wedding signage ideas" +90%, "wedding bar menu" +60%, "seating chart" +40%.
+  - Nov–Dec is seasonally lower (-30% month on month), while engagement-season searches (winter proposal, Christmas engagement party) grow. January is the peak, so plan the bigger push then.
+
 ### Failed / fix
 - 2026-11-10: The expired LAUNCH15 sentence ("15% off until Nov 7") stayed on all 3 Gumroad pages for 3 days after it ended.
   - Rule: every dated offer gets a removal reminder on the day it is created.
