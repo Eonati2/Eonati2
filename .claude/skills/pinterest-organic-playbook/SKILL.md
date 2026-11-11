@@ -104,3 +104,15 @@ Before writing or approving any pin copy, image or product page, run the "Will t
   - BlogToPin: 37 of the 54 scheduled pins had no "Wedding" in their baked-in image text. They were set to PIN_REJECTED (reversible with APPROVE_PINS). The 17 compliant ones stay scheduled.
   - Replacing the 37 would cost about 26 credits on gpt-image-2. Ask the user first.
 
+
+## BOLD FORMAT RULE (user, 2026-11-11: "use the bold format for all new pins")
+- Every new Eonati8 pin uses the bold format:
+  - a Playfair Display Black ALL-CAPS headline in burgundy on cream, including WEDDING;
+  - a real wedding photo with people (zip 1ZZOtz4TF5Qa_KvgehKoa3YoB8kbMcp1o);
+  - the real filled designs shown large and top-cropped so they're readable;
+  - a round burgundy and gold price badge;
+  - a wide burgundy CTA;
+  - the "shown with sample details" footer.
+- Builder: Drive boldpin.py (1PNotc_QEcNDykWtNUlIZGwmQb2qcdKzF). References: Bold_Pin_bold1-3.png in folder 1swx71RZUmqbYeixdKNtsq6C6RKP5Wcj7.
+- Filled sample deck (Emma & James): 1GcjgnrT3Kh5yhlqx007LI3JD9mb705bNLNDnLB2dEPc. Export it to PDF and render.
+- The refill task (trig_01PSAzq6z1betudCwHrDPaWc) and the weekly review (trig_01MKCmgF9P7HsRjWXEUKpfzA) carry this rule.
