@@ -184,3 +184,10 @@ Fix what you find before posting. If you can't fix something, say so plainly.
 - FTC fake reviews rule (16 CFR 465, effective Oct 2024): searchengineland.com/ftc-fake-reviews-testimonials-445209
 - Ally Bank, Real Cost of "I Do" (2025): ally.com/content/dam/pdf/corporate/cost-of-i-do-report.pdf
 - Zola, First Look Report 2025: zola.com/expert-advice/the-first-look-report-2025
+
+- 2026-11-11: Pin design review (Eonati8):
+  - The top-impression pins (1099511696564833472, 1099511696564833600) were PAID ad pins with images showing the old Kit price of $19.99. Never resume those ads; rebuild them at $14.99 first.
+  - What worked in those ads: a heavy ALL-CAPS serif headline, real people (a couple), a burgundy and blush palette, the product shown large, a round price badge and a wide CTA button.
+  - Recent organic pins were weak: pale cream on cream, near-blank sign cards with tiny text, no people, small CTA.
+  - New "bold" format: Playfair Display Black caps headline in burgundy (110,20,40) on cream, a couple or bride photo from the bg library, real filled signs cropped to their top part so titles are readable, a $12 badge, and a Montserrat ExtraBold CTA. Posted as utm_content bold1–bold3.
+  - OCR misses stylised price badges. Check old-price pins by eye with a contact sheet.
