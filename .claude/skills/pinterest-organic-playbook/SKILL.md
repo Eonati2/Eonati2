@@ -68,7 +68,7 @@ Before writing or approving any pin copy, image or product page, run the "Will t
 - Old organic Kit pins link to `/LAUNCH15`, which expires Nov 7. Their links can't be edited because the pins were promoted, so new pins replace them.
 
 ## Goal and pace (user, 2026-11-05)
-- **Goal:** 2M monthly views, then sales. Rough math: 2M views × 0.6% click-through ≈ 12k visits ≈ 120–360 sales at 1–3% conversion. $10k a month needs about 1,000 Stationery sales, or bigger orders through the $27.99 bundle.
+- **Goal:** 2M monthly views, then sales. Rough math: 2M views × 0.6% click-through ≈ 12k visits ≈ 120–360 sales at 1–3% conversion. $10k a month needs about 1,000 Stationery sales, or bigger orders through the $22.99 bundle.
 - **Biggest missing product: "wedding seating chart" (1–2M searches a month).** Also check unplugged, cards & gifts and guest book signs. Adding these to the Stationery Suite is the strongest lever. It's a product change, so ask the user first.
 - **Trending wedding searches** (yearly): "future wedding plans", "fun natural table settings".
 - **Pace:** my scheduled task posts 5 pins a day (13, 15, 17, 19 and 21:17 UTC) from `manifest_v5.json` (1KWNGvrkgf3Vkjwf-BYg9jBVuKIx333_K, 58 items). BlogToPin posts 2 a day (16:05 and 20:05 UTC).

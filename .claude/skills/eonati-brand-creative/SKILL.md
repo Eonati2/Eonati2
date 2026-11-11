@@ -35,7 +35,7 @@ Fonts download freely from `github.com/google/fonts/raw/main/ofl/...` (Lora, Lat
 - The image does ~90% of the work; CTA button matters little.
 - A big 5-8-word hook naming the bride's pain, readable on a phone: "Guests texting you 'where do I go?' 50 times?", "Send guests ONE link for the whole weekend", "The card every welcome bag needs".
 - Show the real product filled with a sample wedding ("Saturday 4:00 PM — Ceremony, Rosewood Garden"), not placeholders.
-- Small reason-to-click line: "Edit free in Google Slides • Instant download • $19.99".
+- Small reason-to-click line: "Edit free in Google Slides • Instant download • $14.99".
 - Test 4-6 different hooks; keep the cheapest per click, refresh weekly.
 
 ## Truthfulness

@@ -27,14 +27,14 @@ Use at most one or two per asset, and only if true.
 | Lever | Honest use for us | Never |
 |---|---|---|
 | **Clarity (the #1 lever)** | Product name, what's in it, price, how it's delivered | Vague "elevate your day" lines |
-| **Anchoring** | A real comparison: "$27.99, $4 less than buying both" and "12 signs for $12, about $1 a sign" | Inventing a "was" price the item never sold at |
+| **Anchoring** | A real comparison: "$22.99, $4 less than buying both" and "12 signs for $12, about $1 a sign" | Inventing a "was" price the item never sold at |
 | **Social proof** | Real sales or review counts, but only once they exist | Fake reviews, invented "1,000+ couples love it" |
 | **Scarcity / urgency** | A real seasonal deadline ("print 2 weeks before"), or a real sale with a real end date | Fake countdowns, or leaving an expired offer on the page (we did this; see the log) |
 | **Authority** | Specifics show expertise: sizes, fonts, print tips | Claims we can't back |
 | **Reciprocity** | Useful free tips in pins (seating chart how-to) | Bait-and-switch |
 | **Commitment** | A small first yes: the Stationery Suite at $12, then an upsell to the Collection | Pressure |
 | **Loss / pain** | Name the real pain ("guests texting 'where do I go?' all weekend") | Shaming |
-| **Decoy / good-better-best** | Kit $19.99 / Suite $12 / Collection $27.99, with the bundle as the obvious value | Fake tiers nobody can buy |
+| **Decoy / good-better-best** | Kit $14.99 / Suite $12 / Collection $22.99, with the bundle as the obvious value | Fake tiers nobody can buy |
 
 ## 3. Copy formulas
 
@@ -70,7 +70,7 @@ Act like a picky human buyer, then like a QA tester.
 **Five-second test:** at thumbnail size, can you tell *what it is, who it's for and what it costs*? If not, rewrite the headline.
 
 **Truth check:**
-- Does every number match the live product (12 signs, $12 / $19.99 / $27.99)?
+- Does every number match the live product (12 signs, $12 / $14.99 / $22.99)?
 - Are there any expired dates, discounts or "new" labels older than about 30 days?
 
 **Wording check:**
@@ -119,7 +119,7 @@ Fix what you find before posting. If you can't fix something, say so plainly.
   - "Wedding" in every image headline;
   - one pin per workbench cell, which avoided the 60s timeout.
 - 2026-11-05: The user's WEDDING RULE ("Wedding" in every image headline) makes it clear in the feed who the pin is for. Keep it.
-- Bundle anchoring: "$27.99, $4 less than buying both" is true and simple. Keep it.
+- Bundle anchoring: "$22.99, $4 less than buying both" is true and simple. Keep it.
 - Concrete objection-busters on product pages work as reassurance: "Not a Canva template", "edit free in Google Slides", "print one proof first".
 
 - 2026-11-10: The user asked for urgency on a discount that never expires. I declined the fake version and offered honest options; the user picked a real holiday sale. How it was set up:
@@ -139,7 +139,17 @@ Fix what you find before posting. If you can't fix something, say so plainly.
   - Crop to 2:3, add a cream headline band and a plum CTA pill.
   - It shows the true product, not an AI fake. Previews: marketing/previews/premium_*.jpg.
 
+- 2026-11-11: Market check and repricing, on the user's request ("based on the market").
+  - Stationery stays $12: similar sets sell for about $10–25.
+  - Kit lowered from $19.99 to $14.99: itinerary templates mostly sell for $5–15.
+  - Collection lowered from $27.99 to $22.99, so it is still $4 less than buying both ($26.99).
+  - Updated: the Gumroad pages, the Collection cover and thumbnail, 20 reposted pins (the old ones deleted), and the queue (manifest_v11).
+  - Price patches on images: tesseract finds the price on zoomed strips; then paint the background colour over it and draw the new price in Lato Bold.
+  - Light-cream buttons need a measured box, because the automatic box swallowed the separator dot.
+
 ### Failed / fix
+- 2026-11-11: The queue still held 13 images saying "9 signs" or showing the price inside a headline. They were removed from the queue (manifest_v11).
+  - Rule: when a product or price changes, scan the IMAGES in the queue too, not just the live pins.
 - 2026-11-10: The Gumroad IMAGES still said "9 signs" or "All 9 Pieces" on the Stationery and Collection pages, while the text said 12. That had gone on since the suite grew.
   - Fix: replaced the images, deleted the 6 wrong ones, and replaced the square thumbnails.
   - Rule: the truth check reads the text inside every image (covers, thumbnail, pins), not just the copy.

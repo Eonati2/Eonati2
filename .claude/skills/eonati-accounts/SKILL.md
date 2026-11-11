@@ -34,9 +34,9 @@ Read this first, then verify any value you are about to change by reading it fre
 
 | Product | ID | Short permalink | Custom permalink | Price |
 |---|---|---|---|---|
-| Wedding Guest Guide & Itinerary Kit | `vy5Qfs2a4lrW8g3-KsT1kA==` | qwnfee | wedding-weekend-guest-experience-kit | $19.99 |
+| Wedding Guest Guide & Itinerary Kit | `vy5Qfs2a4lrW8g3-KsT1kA==` | qwnfee | wedding-weekend-guest-experience-kit | $14.99 |
 | Editorial Stationery Suite (12 signs incl. seating chart, V3 2026-11-05) | `iI0VCAGoselKwSpiVYtqoA==` | lnjotg | wedding-weekend-editorial-stationery | $12 |
-| Complete Collection (Kit + Stationery) | `dcdJi_w8pzkmR-amy-xpQQ==` | dpesmn | wedding-weekend-complete-collection | $27.99 |
+| Complete Collection (Kit + Stationery) | `dcdJi_w8pzkmR-amy-xpQQ==` | dpesmn | wedding-weekend-complete-collection | $22.99 |
 | Dropshipping guide (old, unpublished) | `zI6m38V0cMPXYXsYeB0Njg==` | — | — | $15 |
 
 - Offer code LAUNCH15 (15%, universal) id `QfgUJjT0vXSEOOmXBBHyAA==`.

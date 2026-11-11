@@ -39,7 +39,7 @@ IDs are in `eonati-accounts`. Toolkit: `pinterest_ads`, base `https://api.pinter
 ## What to report (every check)
 Status of campaign / groups / ads (status, review_status, summary_status); spend vs cap; impressions; outbound clicks; CTR; cost per outbound click — by ad group and by ad; Pinterest Tag last fired; tag page visits/checkouts; real Gumroad sales (exclude $0 tests); offer-code uses; prices still at baseline.
 
-## How to judge (Guest Kit, $19.99, ~ $14-15 kept per sale after discount + fees — approximate)
+## How to judge (Guest Kit, $14.99, ~ $11-12 kept per sale after fees — approximate)
 Day-1 baseline: CPM ~$12, outbound CTR 0.37%, $3.33 per click.
 
 | Result after the test window | Decision to recommend |
