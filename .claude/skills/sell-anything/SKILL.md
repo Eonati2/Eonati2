@@ -191,3 +191,7 @@ Fix what you find before posting. If you can't fix something, say so plainly.
   - Recent organic pins were weak: pale cream on cream, near-blank sign cards with tiny text, no people, small CTA.
   - New "bold" format: Playfair Display Black caps headline in burgundy (110,20,40) on cream, a couple or bride photo from the bg library, real filled signs cropped to their top part so titles are readable, a $12 badge, and a Montserrat ExtraBold CTA. Posted as utm_content bold1–bold3.
   - OCR misses stylised price badges. Check old-price pins by eye with a contact sheet.
+- 2026-11-11 user decisions:
+  - No Etsy: we do not sell on Etsy, so don't suggest it again.
+  - BlogToPin wedding stream stopped: all 21 approved future pins on website rxrg42oldavvkbxbiikqkzwa are now PIN_REJECTED (backup in Drive: backup_blogtopin_rejected_2026-11-11.json). Credits are 0.
+  - Only our own bold pins post to Eonati8. Don't approve or generate BlogToPin wedding pins unless the user asks.
