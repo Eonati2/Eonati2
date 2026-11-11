@@ -44,3 +44,6 @@ All calls go through `proxy_execute(method, url, 'gumroad', ...)` in `COMPOSIO_R
 - Status as of 2026-11-04: the tag is live on all 3 products (product and receipt pages; tag id 2613086207584 found). If one product loses it, the dashboard dropdown was probably set to a single product instead of "All products".
 - Prices on the live page can look different to the user because of the discount link (`/l/{permalink}/LAUNCH15`), local currency, or installments — investigate before assuming a price changed.
 - Never invent "was" prices or fake countdowns; only real, honestly-described discounts.
+- Swap a buyer file (done for the Kit, 2026-11-11): build the new zip, upload it with `upload_local_file`, call the MCP `add_file` with that URL and a clean `display_name`, then PUT the ORIGINAL `rich_content` with only the old file id replaced by the new one. Rebuilding the node list yourself leaves the file at the bottom of the download page.
+- Before launch, scan the PDFs inside each buyer zip for old prices (PyMuPDF `get_text`). The Kit Quick Start said "$19.99 product"; it now reads "Customer Quick Start · Version 2".
+- `/copy` Google Slides links always redirect to sign-in. To check that sharing is public, load `/preview` instead.
