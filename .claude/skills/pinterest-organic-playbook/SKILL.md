@@ -116,3 +116,5 @@ Before writing or approving any pin copy, image or product page, run the "Will t
 - Builder: Drive boldpin.py (1PNotc_QEcNDykWtNUlIZGwmQb2qcdKzF). References: Bold_Pin_bold1-3.png in folder 1swx71RZUmqbYeixdKNtsq6C6RKP5Wcj7.
 - Filled sample deck (Emma & James): 1GcjgnrT3Kh5yhlqx007LI3JD9mb705bNLNDnLB2dEPc. Export it to PDF and render.
 - The refill task (trig_01PSAzq6z1betudCwHrDPaWc) and the weekly review (trig_01MKCmgF9P7HsRjWXEUKpfzA) carry this rule.
+- 2026-11-11: first bold batch R27–R66 (28 st / 6 kit / 6 col) built and checked by eye. The queue is now manifest_v12.json (1cY18LF6I4EIRpcP5dTgrlb6kc0Z4e1zI): 40 bold pins first, then the 38 remaining older pins.
+- Workbench gotcha: never use contextlib.redirect_stdout inside ThreadPoolExecutor. It leaves stdout broken; restore it by finding the ipykernel OutStream named 'stdout'.
