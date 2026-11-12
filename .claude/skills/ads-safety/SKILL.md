@@ -46,3 +46,7 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
   - Ad group 2680093000850: US, ages 18-44, 68 broad keywords, interests and auto-targeting.
   - 3 ads: 687324054364/65/66 on pins 1099511696566486470/73/77 (bold images R61/R64/R66 → Complete Collection $22.99). Their links carry utm_medium=paid&utm_campaign=ads_col_bold.
   - The user decides on/off. Suggested stop rules: stop if CPC is over $0.60, or if there is no sale after $100 spent.
+- 2026-11-12 22:37 UTC: built 626760301150 "Signs $12 | Bold | Traffic | $10/day | TEST", PAUSED, on the user's request to set up ads for the $12 signs.
+  - Ad group 2680093013450: US, ages 18-44, all genders, 6 wedding interests, auto-targeting, 47 BROAD sign keywords and 10 PHRASE_NEGATIVE (svg, cricut, acrylic, neon, mirror sign, rental, wood sign, wooden sign, laser, etsy).
+  - 5 ads, 687324133979-83, on pins as1-as5 = R28 welcome, R30 table numbers, R33 seating chart, R27 all-match, BW1 black & ivory. Links use utm_medium=paid_social&utm_campaign=ads_signs12.
+  - Suggested stop rules: pause if cost per click is over $0.60 after 3 days, or if there is no sale after $50 spent.
