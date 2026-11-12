@@ -47,3 +47,11 @@ All calls go through `proxy_execute(method, url, 'gumroad', ...)` in `COMPOSIO_R
 - Swap a buyer file (done for the Kit, 2026-11-11): build the new zip, upload it with `upload_local_file`, call the MCP `add_file` with that URL and a clean `display_name`, then PUT the ORIGINAL `rich_content` with only the old file id replaced by the new one. Rebuilding the node list yourself leaves the file at the bottom of the download page.
 - Before launch, scan the PDFs inside each buyer zip for old prices (PyMuPDF `get_text`). The Kit Quick Start said "$19.99 product"; it now reads "Customer Quick Start · Version 2".
 - `/copy` Google Slides links always redirect to sign-in. To check that sharing is public, load `/preview` instead.
+
+## 2026-11-12 updates
+- Signs = main product (user decision). Organic pins go to the $12 Stationery Suite; paid ads go to the Collection.
+- Upsell workaround (no upsell API): offer code SIGNSBUYER4 ($4 off, Kit only, id FRX1W1YUClWJa4yuVYawLQ==), so Kit costs $10.99 and signs + Kit = $22.99, the same as the Collection. It is linked in the Stationery receipt and as a download-page button.
+- Download page: `PUT rich_content` silently did nothing this time. The MCP `add_content_link` worked; it appends a button after the files.
+- Black & ivory style: DRAFT product 4-R0zRFv2UAYf-BIsrWh8w== (/l/modern-black-ivory-wedding-signs), $12, 3 tall covers, Weddings category, 10 tags. NOT published; it waits for the user's OK. The renderer lives in the workbench at /mnt/files/bw/bw_core.py; the Drive folder is 1HAkAc6mjTcKDt6yTTaBiUWKJr1Kh8mlB.
+- Lesson: when a workbench cell fails part-way, variables from earlier cells stay set. I once saved the Stationery receipt onto the new draft this way. Always build receipt text in the same cell as the PUT, then read it back and check that the links belong to that product.
+- The Pinterest tag shows last_fired_time_ms via `GET /ad_accounts/{id}/conversion_tags`. A $0 test checkout can't run from the cloud (gumroad.com and ct.pinterest.com are blocked here), so the user must do it.
