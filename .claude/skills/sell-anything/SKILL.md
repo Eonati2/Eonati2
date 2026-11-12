@@ -195,3 +195,9 @@ Fix what you find before posting. If you can't fix something, say so plainly.
   - No Etsy: we do not sell on Etsy, so don't suggest it again.
   - BlogToPin wedding stream stopped: all 21 approved future pins on website rxrg42oldavvkbxbiikqkzwa are now PIN_REJECTED (backup in Drive: backup_blogtopin_rejected_2026-11-11.json). Credits are 0.
   - Only our own bold pins post to Eonati8. Don't approve or generate BlogToPin wedding pins unless the user asks.
+- 2026-11-12 ($10k plan, the user said "do everything"):
+  - Recommended ad product: the Complete Collection ($22.99).
+  - Built the paused bold Collection campaign (see ads-safety).
+  - manifest_v13 (105O2QEwD_eEMRC3knhALHYp7YCDeIrb9) drops R61/R64/R66, which are now ad pins.
+  - Published a FREE lead magnet, "Free Wedding Signs Checklist + Sign Timeline" (id 7TRAxs5hch2jYjyB99oygA==, /l/free-wedding-signs-checklist). It's a 2-page PDF whose call to action links to the $12 set.
+  - Single-use 100%-off code TAGTEST3A5F on the Stationery Suite, for the user to test whether Pinterest records a checkout. Delete it after use.

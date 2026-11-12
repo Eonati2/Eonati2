@@ -41,3 +41,8 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
 - **All campaigns PAUSED as of 2026-11-10 17:45 UTC:**
   - 626760279235: "Stationery | Holiday Sale $9 | Traffic | $20/day", built and paused, ends Dec 1.
   - 626760224480, 626760192422 and 626760134071: older campaigns.
+  - Their ads use OLD images. The 2 Kit ads (pins 1099511696564833472 and 1099511696564833600) show $19.99, so NEVER resume those.
+- 2026-11-12: built 626760293198 "Collection | Bold | Traffic | $15/day | TEST", PAUSED.
+  - Ad group 2680093000850: US, ages 18-44, 68 broad keywords, interests and auto-targeting.
+  - 3 ads: 687324054364/65/66 on pins 1099511696566486470/73/77 (bold images R61/R64/R66 → Complete Collection $22.99). Their links carry utm_medium=paid&utm_campaign=ads_col_bold.
+  - The user decides on/off. Suggested stop rules: stop if CPC is over $0.60, or if there is no sale after $100 spent.
