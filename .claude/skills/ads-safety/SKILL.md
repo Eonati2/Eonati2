@@ -51,3 +51,13 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
   - 5 ads, 687324133979-83, on pins as1-as5 = R28 welcome, R30 table numbers, R33 seating chart, R27 all-match, BW1 black & ivory. Links use utm_medium=paid_social&utm_campaign=ads_signs12.
   - Suggested stop rules: pause if cost per click is over $0.60 after 3 days, or if there is no sale after $50 spent.
 - 2026-11-12 22:50 UTC: on the user's feedback ("Edit Free" reads like the product is free; we promote ONE product), I ARCHIVED ads 687324133979-83 and deleted their pins (as1-as5, including the black & ivory one). I replaced them with 4 price-first ads, 687324134400-03, on pins sp1-sp4 (1099511696566543679/81/84/86): R28 welcome, R30 table numbers, R33 seating chart, R27 all-12, all linking to the $12 Signs. Rule for ad copy: show the price ($12) up front, never use the word "free" in ad titles or descriptions, and promote only the $12 Signs. All still PAUSED.
+- 2026-11-13 readiness audit:
+  - Pinterest approved all 4 ads (687324134400-03).
+  - All 6 campaigns are PAUSED, with $0 spent since Nov 5.
+  - Old campaigns spent about $134 for 76 clicks (about $1.76/click) and made 0 sales.
+  - Stop rules are now in the daily check task (trig_01GtHFrPzcHcweZ3frKsBdNX). Once the user turns 626760301150 on, pause it if:
+    - it has spent $50 or more with no sale; or
+    - after 3 days, cost per click is above $0.60.
+  - Before that change, the daily check's rule "pause anything ACTIVE" would have paused the user's own launch. It now allows 626760301150 when the user explicitly turned it on.
+  - The Signs page no longer says "edit free" anywhere. It now says "Edit in Google Slides, no paid software needed". Backup: Drive 18LwBHgIyeQb8YDSfDEiYuQsgRi7THHT9.
+  - The real Gumroad receipt (API field custom_receipt) already holds the Slides links and the SIGNSBUYER4 offer. The MCP field custom_receipt_text shows an older text, so never overwrite the receipt via MCP.
