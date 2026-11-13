@@ -66,3 +66,9 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
       - It DOES work through proxy_execute PUT /v2/products/<permalink> with body {'rich_content': <list object, not a JSON string>}.
       - Verify with a GET afterwards: only updated_at should change.
   - 2026-11-13 18:44 UTC: the user made a test purchase while logged in as the creator, so Gumroad marked it "test purchase": no sale was recorded and the code was not used. The Pinterest tag fired at 18:44:37 UTC, the same minute. TAGTESTMUF9 is now deleted. The tracking test is DONE.
+- 2026-11-13: removed "edit free" from the Collection, Kit and Black & Ivory pages, on the user's request ("pick the best choice to help sell").
+  - Changed on each: description, summary, download page (rich_content) and receipt (custom_receipt_text).
+  - Added a "Price" row at the top of each details box.
+  - Black & Ivory had NO receipt text; it now has one, with the button "Download Your Signs".
+  - Backup: Drive 1FnTQ2ILokAHzSXDfZvKrPAF_c8vhLIkq.
+  - "Free" now appears only where it is accurate: the fonts (Lato, DM Serif Display) and the free checklist.
