@@ -62,5 +62,7 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
   - The Signs page no longer says "edit free" anywhere. It now says "Edit in Google Slides, no paid software needed". Backup: Drive 18LwBHgIyeQb8YDSfDEiYuQsgRi7THHT9.
   - CORRECTION after the user's test purchase: buyers SEE the MCP field custom_receipt_text in the receipt email and on the thank-you page. The API field custom_receipt holds Slides links but is not what shows.
     - On 2026-11-13 I rewrote custom_receipt_text: "edit free" is gone, and it now has the SIGNSBUYER4 $10.99 Guest Guide line.
-    - The download page (rich content) still says "Edit free in Google Slides". The API can't edit it; only the user can, in the Gumroad editor.
+    - On 2026-11-13 I changed the download page (rich content) line to "Edit in Google Slides: open a link…". Backup: Drive 1xYaz4Obs2rAC_VqZSDzxPuJ9kqquw_Yl.
+      - It DOES work through proxy_execute PUT /v2/products/<permalink> with body {'rich_content': <list object, not a JSON string>}.
+      - Verify with a GET afterwards: only updated_at should change.
   - 2026-11-13 18:44 UTC: the user made a test purchase while logged in as the creator, so Gumroad marked it "test purchase": no sale was recorded and the code was not used. The Pinterest tag fired at 18:44:37 UTC, the same minute. TAGTESTMUF9 is now deleted. The tracking test is DONE.
