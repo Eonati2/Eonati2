@@ -60,4 +60,7 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
     - after 3 days, cost per click is above $0.60.
   - Before that change, the daily check's rule "pause anything ACTIVE" would have paused the user's own launch. It now allows 626760301150 when the user explicitly turned it on.
   - The Signs page no longer says "edit free" anywhere. It now says "Edit in Google Slides, no paid software needed". Backup: Drive 18LwBHgIyeQb8YDSfDEiYuQsgRi7THHT9.
-  - The real Gumroad receipt (API field custom_receipt) already holds the Slides links and the SIGNSBUYER4 offer. The MCP field custom_receipt_text shows an older text, so never overwrite the receipt via MCP.
+  - CORRECTION after the user's test purchase: buyers SEE the MCP field custom_receipt_text in the receipt email and on the thank-you page. The API field custom_receipt holds Slides links but is not what shows.
+    - On 2026-11-13 I rewrote custom_receipt_text: "edit free" is gone, and it now has the SIGNSBUYER4 $10.99 Guest Guide line.
+    - The download page (rich content) still says "Edit free in Google Slides". The API can't edit it; only the user can, in the Gumroad editor.
+  - 2026-11-13 18:44 UTC: the user made a test purchase while logged in as the creator, so Gumroad marked it "test purchase": no sale was recorded and the code was not used. The Pinterest tag fired at 18:44:37 UTC, the same minute. TAGTESTMUF9 is now deleted. The tracking test is DONE.
