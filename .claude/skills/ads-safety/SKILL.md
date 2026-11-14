@@ -72,3 +72,7 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
   - Black & Ivory had NO receipt text; it now has one, with the button "Download Your Signs".
   - Backup: Drive 1FnTQ2ILokAHzSXDfZvKrPAF_c8vhLIkq.
   - "Free" now appears only where it is accurate: the fonts (Lato, DM Serif Display) and the free checklist.
+- 2026-11-14: the user asked to clean up the ad account and picked "archive all 5 old ones". I ARCHIVED 626760134071, 626760192422, 626760224480, 626760279235 and 626760293198.
+  - Archiving is permanent, and their spend history ($134) is kept.
+  - The ONLY campaign left is 626760301150 "Signs $12", PAUSED, waiting for the user's yes.
+  - Pinterest cannot delete campaigns; it can only archive them.
