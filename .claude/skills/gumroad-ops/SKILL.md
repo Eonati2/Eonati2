@@ -63,3 +63,11 @@ All calls go through `proxy_execute(method, url, 'gumroad', ...)` in `COMPOSIO_R
 - 2026-11-12 late: the user deleted LAUNCH15, TAGTEST3A5F and SIGNSBUYER4. On the user's "A" I recreated SIGNSBUYER4 (Kit, $4 off, id s11T0uqTMhL9ZubT6lcx0g==) and a test code TAGTESTMUF9 (Stationery, 100%, single use, id nzpV57MLnFL6mxllxJEC_A==). Delete the test code after the tag test.
 - The user keeps putting checkout upsells on the wrong product. Read `props.checkout.add_products[i].product.cross_sells` from the data-page JSON, matched by permalink, and ask for a screenshot of the form.
 - 2026-11-12 user decision: NO SALE, ever. The Signs stay $12 with no codes and no deadlines. I removed the "Holiday sale / HOLIDAY25 / Ends Nov 30" paragraph from the Stationery description, deleted the HOLIDAY25 code, and deleted the 3 promoted holiday pins (1099511696566374058/60/63; backup in Drive backups). Never add a permanent "was $12, now $9" or auto-applied discount: a fake reference price is not allowed. To lower a price, change the real price, and only when the user asks.
+
+## Reviews (2026-11-14)
+- Ratings are ON for the products: the page data has props.product.ratings with count 0.
+- Buyers rate with Gumroad's stars, on the download page or in their Gumroad Library.
+- I added a bold "Love how your … turned out? Please leave a quick star rating…" paragraph at the end of the download page (rich_content) for Signs, Collection, Kit and Black & Ivory. Backup: Drive 1-STsiRTtWUG2mwRra2I4_mVVXbHNf9bd.
+- I added a rating line to the Signs receipt (custom_receipt_text; still includes SIGNSBUYER4).
+- The best remaining lever is something only the user can set up: a Gumroad Workflow (Emails > Workflows, trigger "Purchase") that sends a review request email about 5 days after purchase. The API cannot create it.
+- Never write or post fake reviews, and never offer rewards for positive reviews only.
