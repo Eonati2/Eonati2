@@ -84,3 +84,11 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
     - sc1 = R28 rebuilt as "Instant download · print up to 18x24" (no "free"); Drive 1nKcTN_785tPnBwpspNoPgCpUdJJPUnyH.
     - sc3 description no longer says "9 more".
   - The old traffic campaign 626760301150 is still PAUSED; I recommended the user archive it.
+- 2026-11-14: the user approved the 4 BUYERS ad images and asked to archive the traffic campaign 626760301150 (now ARCHIVED). The ONLY non-archived campaign is 626760313243, PAUSED.
+  - Ads 25 and 27 were APPROVED; 24 and 26 were PENDING.
+  - The user plans to launch Monday Nov 16. A reminder is set: trig_01XTu2DRP8amZnkVFNwi9UVy, 13:30 UTC. It only ASKS; turn the campaign on only on the user's new "yes".
+  - Keyword volumes validated with Pinterest keywords/metrics (US):
+    - wedding welcome sign 4-5M; wedding table numbers 2-3M; wedding seating chart 1-2M; table numbers wedding 1-2M; budget wedding ideas 1-2M;
+    - welcome sign wedding and seating chart wedding 500K-1M each; wedding sign ideas, wedding signs ideas, wedding bar sign, modern wedding signs and wedding decor signs 100K-500K each.
+    - All of these are in the ad group.
+  - Interests: Wedding Invitations, Wedding Timeline, Wedding Planning, Wedding Rehearsal, Hotel Wedding, Destination Wedding.
