@@ -76,3 +76,11 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
   - Archiving is permanent, and their spend history ($134) is kept.
   - The ONLY campaign left is 626760301150 "Signs $12", PAUSED, waiting for the user's yes.
   - Pinterest cannot delete campaigns; it can only archive them.
+- 2026-11-14: the user asked to optimize for BUYERS, not clicks. I built a new campaign, 626760313243 "Signs $12 | BUYERS | Conversions-Checkout | $10/day | Women 25-44", PAUSED.
+  - Objective WEB_CONVERSION, optimizing for CHECKOUT on tag 2613086207584, with automatic bid. Attribution windows are not allowed with auto bid.
+  - Ad group 2680093030772: US, women, ages 25-44, the same 6 interests, auto-targeting, and the same 47 keywords + 10 negatives.
+  - 4 ads, 687324246724-27, PAUSED, Pinterest review PENDING.
+  - The ads run on new pins sc1-sc4 (1099511696566656147/49/51/52), with utm_campaign=ads_signs12_conv.
+    - sc1 = R28 rebuilt as "Instant download · print up to 18x24" (no "free"); Drive 1nKcTN_785tPnBwpspNoPgCpUdJJPUnyH.
+    - sc3 description no longer says "9 more".
+  - The old traffic campaign 626760301150 is still PAUSED; I recommended the user archive it.
