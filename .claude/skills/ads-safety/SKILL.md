@@ -92,3 +92,10 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
     - welcome sign wedding and seating chart wedding 500K-1M each; wedding sign ideas, wedding signs ideas, wedding bar sign, modern wedding signs and wedding decor signs 100K-500K each.
     - All of these are in the ad group.
   - Interests: Wedding Invitations, Wedding Timeline, Wedding Planning, Wedding Rehearsal, Hotel Wedding, Destination Wedding.
+- 2026-11-15: the user explicitly ordered: "Yes It sets the ad to automatically on at the time on Monday,12am to start running". For the time zone they said "Pick the best time frame for our target audience", so I chose Mon Nov 16 12:00am US Eastern (05:00 UTC), when the US day starts.
+  - All 4 ads (687324246724-27) were APPROVED on 2026-11-15.
+  - Pinterest cannot schedule this campaign itself: start_time can't be changed after creation (error 1511), and a CBO ad group can't have a start_time (error 2919). Nothing was changed by those failed attempts.
+  - So a one-time task, trig_01LeNR2oUEG2CqqGeWoKRbrJ (fires 2026-11-16 05:00 UTC), turns on the ads, the ad group and the campaign, then verifies them. This is the user's own explicit turn-on for this ONE campaign only.
+  - Until then, everything stays PAUSED.
+  - trig_01XTu2DRP8amZnkVFNwi9UVy (13:30 UTC Mon) is now a report-only launch check.
+  - The daily check (trig_01GtHFrPzcHcweZ3frKsBdNX) now treats 626760313243 as allowed from 05:00 UTC Mon. Stop rule: pause it at $50 spent with 0 real sales.
