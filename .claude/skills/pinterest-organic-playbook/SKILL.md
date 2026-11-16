@@ -118,3 +118,11 @@ Before writing or approving any pin copy, image or product page, run the "Will t
 - The refill task (trig_01PSAzq6z1betudCwHrDPaWc) and the weekly review (trig_01MKCmgF9P7HsRjWXEUKpfzA) carry this rule.
 - 2026-11-11: first bold batch R27–R66 (28 st / 6 kit / 6 col) built and checked by eye. The queue is now manifest_v12.json (1cY18LF6I4EIRpcP5dTgrlb6kc0Z4e1zI): 40 bold pins first, then the 38 remaining older pins.
 - Workbench gotcha: never use contextlib.redirect_stdout inside ThreadPoolExecutor. It leaves stdout broken; restore it by finding the ipykernel OutStream named 'stdout'.
+
+## "9 signs" cleanup (2026-11-16)
+- The set has 12 signs. The old "9 signs" filter `\b9 (matching )?signs` missed "9 Matching Wedding Signs" and "9 editable matching designs".
+- Use this check on title, description, alt_text and headline instead: `\b9\b[^.|]{0,25}(signs|designs)|\bnine\b`.
+- Pinterest won't let this account edit pins (`pin_edit` is a restricted feature), so the only fix for a live pin is deleting it.
+- On 2026-11-16 I deleted 18 pins that said "9": o18, om12, om10 and o16, plus 14 older pins after the user said "Yes". Backup of the 14: Drive 1lZZyaBh8SNJXOF6j-Eg-oRoIYI8L4Zsm.
+- manifest_v16 (Drive 1IRoAAJ7gPt5ysYhzGpB84e7JozJ-GrVE) has every "9" changed to "12", and o18 and om12 removed because their images show "9".
+- After the cleanup a fresh scan found 0 pins with "9 signs" text.
