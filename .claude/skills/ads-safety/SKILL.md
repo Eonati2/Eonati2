@@ -99,3 +99,7 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
   - Until then, everything stays PAUSED.
   - trig_01XTu2DRP8amZnkVFNwi9UVy (13:30 UTC Mon) is now a report-only launch check.
   - The daily check (trig_01GtHFrPzcHcweZ3frKsBdNX) now treats 626760313243 as allowed from 05:00 UTC Mon. Stop rule: pause it at $50 spent with 0 real sales.
+- 2026-11-16 ~04:20 UTC: on the user's "yes, change it to Shop now", I set customizable_cta_type=SHOP_NOW on ads 687324246724-27. The default had been "Visit site" (the field was empty).
+  - Afterwards all 4 were still APPROVED and PAUSED; campaign and ad group still PAUSED.
+  - Correction: ads DO have a settable button field (customizable_cta_type). I had wrongly told the user regular image ads can't change it.
+  - The scheduled 05:00 UTC turn-on (trig_01LeNR2oUEG2CqqGeWoKRbrJ) is unchanged.
