@@ -103,3 +103,8 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
   - Afterwards all 4 were still APPROVED and PAUSED; campaign and ad group still PAUSED.
   - Correction: ads DO have a settable button field (customizable_cta_type). I had wrongly told the user regular image ads can't change it.
   - The scheduled 05:00 UTC turn-on (trig_01LeNR2oUEG2CqqGeWoKRbrJ) is unchanged.
+- 2026-11-16 05:01 UTC (12:01am ET, 7:01am Cyprus): the scheduled launch ran, as the user ordered. Since 2026-11-15 they had confirmed several times: "OK, let it turn on at 7am".
+  - Campaign 626760313243 is now ACTIVE and running, renamed "Signs $12 | BUYERS | Conversions-Checkout | $10/day | Women 25-44".
+  - Ad group 2680093030772 and all 4 ads (687324246724-27) are ACTIVE and APPROVED, with the SHOP_NOW button. Daily cap is $10.
+  - No other campaign is non-archived.
+  - Stop rule: pause it if $50 is spent with 0 real sales. This campaign is ALLOWED to run; do not pause it just for being active.
