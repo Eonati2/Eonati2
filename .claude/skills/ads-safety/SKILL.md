@@ -119,3 +119,4 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
   - The images use AI photo bases (ElevenLabs Seedream) with the real guide pages composited onto green screens; "wedding" is in every headline; no "free".
   - The user has seen them. Campaign 626760338310 now has 8 paused image ads (K1-K4 + P1-P4). Still PAUSED. Turn on only on an explicit "turn it on".
   - Signs pricing decision (user, 2026-11-17): keep $12 and sell mainly through the Collection.
+- 2026-11-17 ~20:45 UTC: on the user's "make all text bold and readable", rebuilt P1-P4 with larger bold text and made new pins 1099511696566930930/32/37/39. The new ads are **687324510599-602** (P1b-P4b), SHOP_NOW, **PAUSED**. The old P ads 687324509620-23 are ARCHIVED. The campaign still has 8 paused ads (K1-K4, P1b-P4b). Nothing is on.
