@@ -114,3 +114,4 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
   - 4 ads, **687324506404-07** (K1-K4), SHOP_NOW, **PAUSED**, review PENDING. Pins 1099511696566927045/48/51/56 (images or57, ow32, or98, or23), links utm_campaign=ads_kit_traffic&utm_content=k1..k4.
   - The user has seen the 4 images. NOTHING is on. Turn on only on a new, explicit "turn it on".
   - Suggested stop rules: pause if cost per click is over $1 after 3 days, or after $50 spent with no sale.
+  - 2026-11-17 20:00 UTC: added video ad **687324507353** "K5 | VIDEO phone guide scroll" (12 s, 2:3, video pin 1099511696566927581, utm_content=k5video) to ad group 2680093069045, **PAUSED**. The user has seen the video. Campaign 626760338310 is still PAUSED; turn on only on an explicit "turn it on".
