@@ -115,3 +115,7 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
   - The user has seen the 4 images. NOTHING is on. Turn on only on a new, explicit "turn it on".
   - Suggested stop rules: pause if cost per click is over $1 after 3 days, or after $50 spent with no sale.
   - 2026-11-17 20:00 UTC: added video ad **687324507353** "K5 | VIDEO phone guide scroll" (12 s, 2:3, video pin 1099511696566927581, utm_content=k5video) to ad group 2680093069045, **PAUSED**. The user has seen the video. Campaign 626760338310 is still PAUSED; turn on only on an explicit "turn it on".
+- 2026-11-17 ~20:20 UTC: on the user's "only image for the ads", ARCHIVED the video ad 687324507353. Added 4 premium image ads to ad group 2680093069045, all **PAUSED**: **687324509620-23** (P1 "answer every question once", P2 "welcome bag card", P3 "destination: right place", P4 "texts answered before asked"), pins 1099511696566929509/12/15/16, utm_content p1..p4.
+  - The images use AI photo bases (ElevenLabs Seedream) with the real guide pages composited onto green screens; "wedding" is in every headline; no "free".
+  - The user has seen them. Campaign 626760338310 now has 8 paused image ads (K1-K4 + P1-P4). Still PAUSED. Turn on only on an explicit "turn it on".
+  - Signs pricing decision (user, 2026-11-17): keep $12 and sell mainly through the Collection.
