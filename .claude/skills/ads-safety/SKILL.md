@@ -108,3 +108,9 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
   - Ad group 2680093030772 and all 4 ads (687324246724-27) are ACTIVE and APPROVED, with the SHOP_NOW button. Daily cap is $10.
   - No other campaign is non-archived.
   - Stop rule: pause it if $50 is spent with 0 real sales. This campaign is ALLOWED to run; do not pause it just for being active.
+- 2026-11-17: the user paused BUYERS 626760313243 (spent $16.32 since Nov 16, 0 sales). After a full review (Kit ads got 2-5x the click rate of Signs ads; a checkout campaign can't learn with 0 sales), the user said "yes, build it paused". Built:
+  - Campaign **626760338310** "Kit $14.99 | Traffic | $12/day | Women 25-44 | US CA UK AU", CONSIDERATION, CBO, $12/day, **PAUSED**.
+  - Ad group **2680093069045**: women 25-44, US/CA/GB/AU, en, the same 6 wedding interests, auto-targeting on, billed per click, 28 BROAD guest-guide/itinerary/welcome-bag keywords + 17 PHRASE_NEGATIVE (dress, hair, makeup, gift, svg, etsy, free…). **PAUSED**.
+  - 4 ads, **687324506404-07** (K1-K4), SHOP_NOW, **PAUSED**, review PENDING. Pins 1099511696566927045/48/51/56 (images or57, ow32, or98, or23), links utm_campaign=ads_kit_traffic&utm_content=k1..k4.
+  - The user has seen the 4 images. NOTHING is on. Turn on only on a new, explicit "turn it on".
+  - Suggested stop rules: pause if cost per click is over $1 after 3 days, or after $50 spent with no sale.
