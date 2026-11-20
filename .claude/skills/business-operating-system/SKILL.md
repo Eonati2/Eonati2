@@ -1,6 +1,6 @@
 ---
 name: business-operating-system
-description: Owner's AI business organization. Use whenever the user introduces, plans, evaluates, launches, fixes or grows a business, company, product, brand, store, service, project or commercial opportunity in any industry (food, digital products, e-commerce, services, retail, manufacturing, hospitality, SaaS, agencies and more), or asks for a business plan, strategy, pricing, budget, market research, launch plan, marketing, sales, operations, hiring, legal/compliance, supply chain or growth advice. Automatically recognizes the project type and stage, activates only the specialist roles needed (CEO, GM, CFO, CMO, COO, food scientist, HACCP, e-commerce, SEO, etc.), coordinates them through a defined hierarchy and returns one unified recommendation, execution plan and list of decisions that need the owner's approval.
+description: Owner's AI business organization and growth/revenue engine. Use whenever the user introduces, plans, evaluates, launches, fixes or grows a business, company, product, brand, store, service, project or commercial opportunity in any industry, or asks for a business plan, market or competitor research, pricing, offers, revenue targets (e.g. $1M), financial models, funnels, landing pages, conversion, copywriting, paid ads (Pinterest, Meta, Google, TikTok), ad performance, scaling, attribution, email marketing, operations, hiring, legal/compliance or supply chain. Automatically recognizes the project type and stage, activates only the needed specialists (CEO, CFO, CMO, Growth Director, ad specialists, CRO, copywriter, food scientist, etc.), and returns one unified recommendation, revenue model, execution plan and list of decisions needing the owner's approval.
 ---
 
 # Business Operating System
@@ -38,6 +38,21 @@ Read only the reference files you need:
 | `references/industry-specialists.md` | Food, e-commerce, logistics, SEO, social, PR, risk, partnerships or production work |
 | `references/reporting-and-approval-rules.md` | Writing the report, sizing the answer, approvals and fact labeling |
 | `references/business-workflows.md` | Running a standard process (new idea, launch, pricing, budget, campaign, hiring, supplier, incident, review) |
+| `references/growth-specialists.md` | Growth, CRO, copy, funnels, creative strategy, Pinterest/Meta/Google/TikTok ads, attribution, email, pricing and monetization |
+| `references/growth-revenue-engine.md` | New businesses, revenue targets, market and competitor intelligence, sales/conversion work, financial models, scaling decisions |
+| `references/integrations-and-tools.md` | Before using or recommending any external account, API or data source; tool audits |
+
+## Growth and revenue engine (always on for new businesses and growth goals)
+
+For every new business or growth goal, in addition to the routing procedure:
+1. **Clarify money targets.** If the owner names a target like "$1,000,000", ask whether it means annual revenue, cumulative revenue, profit or company valuation, and by when, whenever that changes the plan. Until answered, plan for annual revenue and label it an assumption.
+2. **Run market and competitor intelligence** (real competitors, offers, prices, reviews, gaps, channels) with cited sources.
+3. **Build the revenue model** backward from the target: orders, AOV, conversion rate, CAC, contribution margin, break-even, working capital, milestones; three scenarios with labeled inputs.
+4. **Choose channels by evidence** and assign the matching specialists (Growth Director coordinates).
+5. **Scale only on profit:** never on clicks or impressions alone. Require confirmed purchases, CPA below break-even, reliable attribution, cash flow and owner approval.
+6. **Audit tools** before relying on any account data; state Verified / Available / Missing.
+
+Claude Code subagents for the 12 growth specialists live in `.claude/agents/` when this skill is installed in a project (for example `pinterest-ads-specialist`). Use them for deep single-specialist work; they analyze and draft, and they never launch, spend or publish.
 
 ## Operating rules (always apply)
 

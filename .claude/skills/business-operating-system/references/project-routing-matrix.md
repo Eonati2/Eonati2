@@ -56,11 +56,13 @@ Legend: **L** = usual lead, **S** = usual support, (s) = only if relevant to the
 - **L:** Chief Product Officer (build) or CMO (growth)
 - **S:** Market Research Analyst, Content and Creative Director, Advertising and Growth, E-commerce Manager, CFO, Customer Service
 - (s): SEO Specialist, Social Media Manager, Legal (IP, refunds, licensing), Data and BI
+- Growth (s): Growth Director, CRO Specialist, Direct-Response Copywriter, Sales Funnel Architect, Pricing and Monetization, Email Marketing, platform ad specialists (Pinterest/Meta/Google/TikTok by where buyers are), Attribution Analyst
 
 ### E-commerce (physical goods)
 - **L:** E-commerce Manager
 - **S:** Market Research Analyst, Chief Product Officer, Procurement, Inventory and Supply Chain, CFO, Advertising and Growth, Logistics, Customer Service
 - (s): Quality Assurance, Legal (product safety, import), SEO, Social Media, Data and BI
+- Growth (s): Growth Director, CRO, Copywriter, Creative Strategist, Meta/Google/TikTok/Pinterest ad specialists, Attribution Analyst, Email Marketing, Pricing and Monetization
 
 ### Service business
 - **L:** CEO (new) or COO (operations)
@@ -129,6 +131,20 @@ Map it to the closest model(s) above by revenue model, then adjust. State the ma
 | Media, reputation, crisis | Public Relations | CEO, Legal, Risk |
 | Many tasks, deadlines, coordination | PMO | GM, Secretary |
 | Meeting notes, follow-ups, records | Executive Assistant / Secretary | GM |
+| Reach a revenue target (e.g. $1M) | Growth Director + CFO | Pricing Specialist, Attribution Analyst, CEO (clarify target type first) |
+| Grow revenue / growth plan | Growth Director | CRO, Funnel Architect, relevant ad specialists, Email Specialist |
+| Low conversion, no sales despite traffic | CRO Specialist | Copywriter, Funnel Architect, Pricing Specialist |
+| Write sales page, ad copy, emails | Direct-Response Copywriter | Creative Strategist, CRO |
+| Build or fix a funnel, upsells, lead magnet | Sales Funnel Architect | Copywriter, Email Specialist, Pricing |
+| New ad creatives / creative testing | Creative Strategist | Copywriter, Content and Creative Director, platform ad specialist |
+| Pinterest ads | Pinterest Advertising Specialist | Creative Strategist, Attribution Analyst, CFO |
+| Facebook / Instagram ads | Meta Advertising Specialist | Creative Strategist, Attribution Analyst, CFO |
+| Google search / Shopping / YouTube ads | Google Advertising Specialist | SEO Specialist, Attribution Analyst, CFO |
+| TikTok ads | TikTok Advertising Specialist | Creative Strategist, Attribution Analyst, CFO |
+| Which channel works, tracking, ROAS truth | Marketing Attribution Analyst | Data and BI, Growth Director |
+| Email list, flows, newsletters | Email Marketing Specialist | Copywriter, Customer Service and CRM |
+| Packages, bundles, subscriptions, upsell pricing | Pricing and Monetization Specialist | CFO, Chief Sales Officer |
+| Scale an ad campaign | Growth Director + CFO | Platform ad specialist, Attribution Analyst (scaling rules in growth-revenue-engine.md) |
 
 ## Step 5: Do-not-activate checks
 
