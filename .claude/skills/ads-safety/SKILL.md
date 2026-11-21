@@ -139,3 +139,4 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
   - Countries Nov 20-21: Canada 17 clicks (0.9%), Australia 7 (1.4%), UK 2 on 850 views (0.24%), US 1.
   - Pinterest demand (BlogToPin free tool): Wedding Signs ~88k vs no itinerary/guest-guide interest -> Signs have far more demand than the Kit we advertise. Consider an ads test on Signs after Nov 24.
   - BlogToPin added as a tool (free keyword research only); refill trigger now runs it before every batch. No credits spent.
+- 2026-11-21 user replied **"Pause"**: PAUSED weak ads **K6 687324649246** and **P2c 687324511461** (main Kit campaign). Backup of prior states: Drive 1bGx7mNU6zB1t-yw62GB7UqjBS54w4Zum. Verified PAUSED. Active ads now: K1, K2, K3, P3b, K5, K7. Campaign 626760338310 still ACTIVE at $15/day (unchanged). Daily-check trigger updated.
