@@ -126,3 +126,6 @@ Before writing or approving any pin copy, image or product page, run the "Will t
 - On 2026-11-16 I deleted 18 pins that said "9": o18, om12, om10 and o16, plus 14 older pins after the user said "Yes". Backup of the 14: Drive 1lZZyaBh8SNJXOF6j-Eg-oRoIYI8L4Zsm.
 - manifest_v16 (Drive 1IRoAAJ7gPt5ysYhzGpB84e7JozJ-GrVE) has every "9" changed to "12", and o18 and om12 removed because their images show "9".
 - After the cleanup a fresh scan found 0 pins with "9 signs" text.
+
+## Learning log
+- 2026-11-21: Organic views fell from 1,754/week (Oct 23-29) to 119 (Nov 7-13) to 25 (Nov 14-20) while posting ~13 similar pins/day (plus replacing 65 old pins). Likely cause (unconfirmed): high-volume near-duplicate posting reads as spam and reset reach. User approved "Slow pins": hourly task cut to 6/day (09,11,13,15,17,19 :17 UTC), preferring Signs pins (Pinterest "Wedding Signs" interest ~88k vs no itinerary interest). Judge after 2 weeks with weekly organic views (PINTEREST_GET_ACCOUNT_ANALYTICS content_type=ORGANIC).
