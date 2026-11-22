@@ -2,13 +2,15 @@
 
 Standing order from the owner (2026-11-22): in EVERY report, check the data, list EVERY open problem below (never skip one), say what the data shows, and the fix. Fixes that touch ads, budgets, keywords, prices, discount codes or publishing still need the owner's explicit yes. Lead with what is closest to getting the first sale. Learn from winning history (what worked before).
 
+STANDING DECISION (owner, 2026-11-22, verbatim): "we are only launching for the high-ticket product. That's what we are running ads on. Don't forget this, but you learn from their past ads." => Paid ads ONLY for the $34 Complete Wedding Suite (wcgxzj) once it is published and the owner says turn on. No ads for the $12 Signs, $14.99 Kit or $22.99 Collection (those stay organic only). Every ad plan must use the past-ad lessons in .claude/skills/ads-safety/SKILL.md.
+
 Last full check: 2026-11-22 ~19:00 UTC (owner: "fix all"): all 4 campaigns PAUSED; 0 sales on all products (Gumroad API); organic Nov 15-21: 58 views, 0 pin clicks, 0 outbound clicks, 0 saves
 
 | # | Problem | Data | Fix | Who / status |
 |---|---|---|---|---|
 | 1 | 0 paid sales ever on wedding products | Gumroad: 0 sales on all 6 products | Items 2-6 below | Open |
 | 2 | Kit ad visitors don't engage | 75 clicks, $58.02 spent (Nov 22 09:52); GA 54 visits, 11% engaged, ~9s average; 0 add-to-cart from Kit ads | Cleaned keywords/age/placement, paused K1/K5/K7, new pages | Done 2026-11-21/22; judge Nov 23 |
-| 3 | Kit may be the wrong product to advertise | Pinterest: "Wedding Signs" ~88k searchers vs no itinerary topic; past Signs ad visitors 50% engaged, ~149s | Signs test built PAUSED (campaign 626760374427); Pinterest approved SG1, SG3, SG4 (SG2 still in review) | Ready. Waiting: owner "turn on Signs" |
+| 3 | (Superseded 2026-11-22: ads only for the $34 suite) Kit may be the wrong product to advertise | Pinterest: "Wedding Signs" ~88k searchers vs no itinerary topic; past Signs ad visitors 50% engaged, ~149s | Signs test built PAUSED (campaign 626760374427); Pinterest approved SG1, SG3, SG4 (SG2 still in review) | Ready. Waiting: owner "turn on Signs" |
 | 4 | No reviews / social proof | 0 sales, 0 ratings | Refund promise added; ask first buyers for a rating (receipt already asks) | Partly done |
 | 5 | Price above competitors | Kit $14.99 vs ~$4-12 competitors | Optional price test | Owner decision |
 | 6 | Organic Pinterest reach collapsed | Organic views/week: 1,754 (Oct 23-29) -> 108 -> 58 (Nov 15-21) | Cut to 6/day (Nov 21), then 3/day with a variety rule (Nov 22, see #15) | Judge ~Dec 6 |

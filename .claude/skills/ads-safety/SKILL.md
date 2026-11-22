@@ -150,3 +150,18 @@ They also said, earlier: "Don't turn on any ads" (2026-11-05), and "Don't go and
 - Every report (manual or scheduled) must: re-check the data, read and update marketing/PROBLEMS.md, list EVERY open problem with its data and fix (none skipped), lead with the step closest to the first sale, and use what worked before (winning history) to choose fixes.
 - Fixes on ads, budgets, keywords, prices, codes or publishing still need the owner's explicit yes; everything else (checks, drafts, tracking fixes, logs) Claude does without being asked.
 - 2026-11-22 ~13:30 UTC owner said **"Pause all ads"** (limited budget; moving to a higher-priced ~$34 Complete Wedding Suite). PAUSED Kit campaign 626760338310 (the only ACTIVE one). Verified ALL 4 non-archived campaigns PAUSED: 626760313243 Signs BUYERS, 626760338310 Kit, 626760351373 Kit US test, 626760374427 Signs Traffic (never turned on). Backup: Drive 1YzOyR_VVf2rcCxxgFihgnar3OOgbSHRv. Final Kit test (Nov 18-22): $59.12, 12,090 views, 77 clicks (0.64%), ~$0.77/click, 0 checkouts, 0 sales. Nothing may run until the owner explicitly turns something on.
+
+
+## STANDING DECISION 2026-11-22: ads only for the high-ticket suite
+Owner (verbatim): "we are only launching for the high-ticket product. That's what we are running ads on. Don't forget this, but you learn from their past ads: how it's working, data, information, and everything that we are doing. And always assist me to fix it."
+- Paid ads ONLY for the $34 Complete Wedding Suite (Gumroad wcgxzj). $12 Signs, $14.99 Kit, $22.99 Collection: organic pins only, no ads.
+- This is NOT permission to turn anything on: build PAUSED, show creatives, wait for an explicit "turn on".
+- Signs test campaign 626760374427 stays paused (not to be used).
+
+### Past-ad lessons to apply to every suite ad (data Nov 2026)
+1. Kit ads: $59.12, 12,090 views, 77 clicks (~$0.77/click), 0 checkouts, 0 sales. GA: 11% engaged, ~9s on page. => Clicks were cheap but visitors left; the ad promise must match the page above the fold.
+2. Creative: K3 (real product filled, clear) held visitors ~29s; K1/K5/K7 ~1-2s. Signs-ad visitors 50% engaged, ~149s. => Show the REAL product large and readable; no vague lifestyle-only images.
+3. Audience: women 25-34 clicked best; Canada and Australia beat US/UK on engagement; UK removed. Search placement and the "welcome bag" keyword wasted spend => browse placement, tight keywords.
+4. Conversion-objective campaign with 0 past sales could not optimise => start with a traffic/consideration test at a small budget, judge on GA engaged time + add-to-cart, not views.
+5. Economics: $34 nets ~$30 => break-even at ~$0.77/click needs 1 sale per ~39 clicks (~2.6%). Stop rule: 0 add-to-cart after ~60 clicks => pause and fix page/creative.
+6. Organic lesson: near-duplicate pins get filtered => ad creatives must be clearly different from each other.
