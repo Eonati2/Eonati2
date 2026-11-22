@@ -2,7 +2,7 @@
 
 Standing order from the owner (2026-11-22): in EVERY report, check the data, list EVERY open problem below (never skip one), say what the data shows, and the fix. Fixes that touch ads, budgets, keywords, prices, discount codes or publishing still need the owner's explicit yes. Lead with what is closest to getting the first sale. Learn from winning history (what worked before).
 
-Last full check: 2026-11-22 ~09:55 UTC
+Last full check: 2026-11-22 ~13:30 UTC (ALL ADS PAUSED by owner)
 
 | # | Problem | Data | Fix | Who / status |
 |---|---|---|---|---|
