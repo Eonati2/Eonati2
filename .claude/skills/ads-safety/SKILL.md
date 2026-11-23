@@ -167,3 +167,5 @@ Owner (verbatim): "we are only launching for the high-ticket product. That's wha
 6. Organic lesson: near-duplicate pins get filtered => ad creatives must be clearly different from each other.
 
 - 2026-11-22 ~20:35 UTC: built suite ads PAUSED: campaign 626760377248 "Suite $34 | Traffic test | Women 25-34 | US CA AU | PAUSED" (account requires CBO: is_campaign_budget_optimization True, daily_spend_cap 10,000,000 micro), ad group 2680093128686 (copy of Kit targeting, auto_targeting False, browse), 12 PHRASE keywords, ads SU1-SU4 687324918808-11 from pins 1099511696567327252/53/56/60 (links utm_medium=paid utm_campaign=suite34 utm_content=su1-4). NOT turned on: waiting for the owner's explicit "turn on".
+
+- 2026-11-23 owner said "add canva keywords": added PHRASE keywords 'canva wedding invitation', 'wedding invitation template canva', 'editable wedding invitation' to paused suite ad group 2680093128686 (20 active keywords). Campaign 626760377248 still PAUSED.
