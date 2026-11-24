@@ -205,3 +205,8 @@ Owner (verbatim): "we are only launching for the high-ticket product. That's wha
 - Built v8 (marketing/suite/lux/v8 p1-p5): ivory top panel (gold label, Playfair Bold headline, hairline, one line with $34), photo below.
 - Pins su30 1099511696567478522, su31 ...525, su32 ...526, su33 ...530, su34 ...533; ads SU30-SU34 PAUSED in SEARCH group (review PENDING). SU25-SU29 (headline at bottom, never ran) ARCHIVED.
 - Launch set: SU30-SU34 + SU20 + SU24 + SU17.
+
+### 2026-11-24 Final ads v9: price badge + CTA (owner asked for CTA + price tag; decided no new AI photos yet)
+- v9 (marketing/suite/lux/v9 p1-p5) = v8 top-hook layout + round burgundy "$34 FULL SUITE" badge (gold ring) + "SHOP THE SUITE →" pill button on the photo.
+- Pins su35 1099511696567478687, su36 ...689, su37 ...690, su38 ...692, su39 ...695; ads SU35-SU39 PAUSED in SEARCH group (review PENDING). SU30-SU34 ARCHIVED (never ran).
+- Launch set: SU35-SU39 + SU20 + SU24 + SU17. New AI photos: only after ~100 clicks show the winning hook.
