@@ -71,5 +71,5 @@ Cite sources in the report, and act on the findings (or say why not).
 2. What I found and fixed (verified).
 3. Every open problem from PROBLEMS.md; none skipped.
 4. Research used, with sources.
-5. "Your to-do list (reminder)", with exact steps.
+5. "Your to-do list (reminder)", with exact steps. ALWAYS include the suite ads line AND a retargeting line (audience status, size, next step) — owner 2026-11-24.
 6. "🍽 Food test: on hold".

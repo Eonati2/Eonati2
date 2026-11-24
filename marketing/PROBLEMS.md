@@ -6,7 +6,9 @@ STANDING DECISION (owner, 2026-11-22, verbatim): "we are only launching for the 
 
 STANDING ORDER 2 (owner, 2026-11-24, verbatim): "always remind me problem to fix. Always check, always see, always check, fix, or tell me the one. Try to fix it when I tell you, or you know how to fix it based on how it works correctly, based on what we are doing. Always check if it matches correctly. If I'm wrong, correct me. Always tell what's true. Do not tell lies about things you have not done to improve. Instead, always improve it for us to hit millions of dollars if possible with this one product."
 
-Last full check: 2026-11-24 ~15:30 UTC (daily check): all 5 campaigns PAUSED, $0 spent Nov 23-24; 0 real Gumroad sales since Oct 30 (GA shows 5 "purchases" Nov 17-23: not real, Gumroad shows none); prices OK, only code SIGNSBUYER4; no banned text; 6 description images load; tag on all 7 pages; organic Nov 17-23: 157 impressions vs 90 week before (up 74%), 0 outbound clicks, 0 saves; GA: 100 Pinterest sessions, 13 engaged; suite still 8 covers + 6 files (owner deletions pending)
+RETARGETING REMINDER (owner, 2026-11-24: "You are not reminding me again for retargeting. Always remind me for that."): EVERY report's to-do list must include a retargeting line (audience 2542623659761 status + size + next step).
+
+Last full check: 2026-11-24 ~19:00 UTC (full setup): Gumroad suite $34 live, title/summary/10 buyer tags OK, 6 covers + thumbnail, 4 files, 2 buttons, description image + demo link load, refund + $530 anchor; START HERE doc: all 20 Slides links open; Notion + demo open; all 6 other pages link to suite; prices unchanged; Pinterest tag on suite page + ACTIVE; all 5 campaigns PAUSED, $0; SEARCH group 13 buyer keywords + 7 negatives, BROWSE paused; ads SU17/SU11 approved, SU20-24 + SU35-39 PENDING review; retargeting audience INITIALIZING size 0; organic queue 43 incl 6 suite; daily-check task state updated
 
 | # | Problem | Data | Fix | Who / status |
 |---|---|---|---|---|
