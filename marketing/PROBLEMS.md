@@ -12,7 +12,7 @@ Last full check: 2026-11-24 ~15:30 UTC (daily check): all 5 campaigns PAUSED, $0
 | 2 | Kit ad visitors don't engage | 75 clicks, $58.02 spent (Nov 22 09:52); GA 54 visits, 11% engaged, ~9s average; 0 add-to-cart from Kit ads | Cleaned keywords/age/placement, paused K1/K5/K7, new pages | Done 2026-11-21/22; judge Nov 23 |
 | 3 | (Superseded 2026-11-22: ads only for the $34 suite) Kit may be the wrong product to advertise | Pinterest: "Wedding Signs" ~88k searchers vs no itinerary topic; past Signs ad visitors 50% engaged, ~149s | Signs test built PAUSED (campaign 626760374427); Pinterest approved SG1, SG3, SG4 (SG2 still in review) | Ready. Waiting: owner "turn on Signs" |
 | 4 | No reviews / social proof | 0 sales, 0 ratings | Refund promise added; ask first buyers for a rating (receipt already asks) | Partly done |
-| 5 | Price above competitors | Kit $14.99 vs ~$4-12 competitors | Optional price test | Owner decision |
+| 5 | Price above competitors | Kit $14.99 vs Etsy itinerary templates $3.59-12 (research 2026-11-24); suite $34 vs comparable invitation+signs bundles $29-85 (mid-range) | Recommended Kit $9.99 | ✅ Closed: owner decision 2026-11-24 'Keep the kit' at $14.99; suite stays $34 (judge after ~60 ad clicks). Do not raise again unless data or owner asks |
 | 6 | Organic Pinterest reach collapsed | Organic views/week: 1,754 (Oct 23-29) -> 108 -> 58 (Nov 15-21) | Cut to 6/day (Nov 21), then 3/day with a variety rule (Nov 22, see #15) | Judge ~Dec 6 |
 | 7 | Refund setting | Owner confirmed 2026-11-23 the Gumroad refund setting is done (suite inherits account policy) | — | ✅ Done 2026-11-23 |
 | 8 | Kit first picture | — | Owner moved the new cover to 1st place (verified 2026-11-23: main_cover 29cb1af7...) | ✅ Done |
