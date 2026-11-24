@@ -4,7 +4,7 @@ Standing order from the owner (2026-11-22): in EVERY report, check the data, lis
 
 STANDING DECISION (owner, 2026-11-22, verbatim): "we are only launching for the high-ticket product. That's what we are running ads on. Don't forget this, but you learn from their past ads." => Paid ads ONLY for the $34 Complete Wedding Suite (wcgxzj) once it is published and the owner says turn on. No ads for the $12 Signs, $14.99 Kit or $22.99 Collection (those stay organic only). Every ad plan must use the past-ad lessons in .claude/skills/ads-safety/SKILL.md.
 
-Last full check: 2026-11-24 ~10:15 UTC (full-setup-check skill): all 5 campaigns PAUSED; 7-day ad spend $67.11 (Kit, before pause), 82 clicks, 21 page visits; Gumroad Nov 17-24: Kit 82 views, Suite 17, Signs 5, Blush 3, Black&Ivory 1; 0 sales; prices unchanged; suite 12 ads approved, 6 warm pending; suite now 8 covers (max)
+Last full check: 2026-11-24 ~15:30 UTC (daily check): all 5 campaigns PAUSED, $0 spent Nov 23-24; 0 real Gumroad sales since Oct 30 (GA shows 5 "purchases" Nov 17-23: not real, Gumroad shows none); prices OK, only code SIGNSBUYER4; no banned text; 6 description images load; tag on all 7 pages; organic Nov 17-23: 157 impressions vs 90 week before (up 74%), 0 outbound clicks, 0 saves; GA: 100 Pinterest sessions, 13 engaged; suite still 8 covers + 6 files (owner deletions pending)
 
 | # | Problem | Data | Fix | Who / status |
 |---|---|---|---|---|
