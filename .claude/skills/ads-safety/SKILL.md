@@ -180,3 +180,10 @@ Owner (verbatim): "we are only launching for the high-ticket product. That's wha
 - Created VISITOR audience 2542623659761 "Suite $34 page visitors 180d (retargeting)": tag 2613086207584, pagevisit, url contains wcgxzj, 180 days, prefill on. Status INITIALIZING, size 0 at creation. No ad group uses it. $0.
 - Existing store-wide audience 2542623646065 "Store visitors (Pinterest Tag) 30d": size 49, TOO_SMALL.
 - Next: when size >= 100 (expected ~1 week after suite ads start), build a retargeting ad group PAUSED (~$5/day) and ask owner "turn on retargeting". Never turn on without those words.
+
+### 2026-11-24 Buyer-intent targeting applied (owner: "apply buyer targeting")
+- SEARCH group 2680093142504: archived 12 idea keywords (wedding invitations, wedding stationery, wedding signs, wedding seating chart, wedding welcome sign, navy and gold wedding, watercolor wedding invitations, elegant wedding invitations, unique wedding invitations, wedding invitation cards elegant, wedding invitations black, wedding save the date).
+- Active PHRASE keywords (13): wedding invitation suite, wedding invitation template(s), wedding invitation suite template, editable wedding invitation, canva wedding invitation, wedding invitation template canva, diy wedding invitations, printable wedding invitations, wedding invitation bundle, digital wedding invitation, budget wedding invitations, cheap wedding invitations.
+- PHRASE_NEGATIVE: free, svg, cricut, birthday, baby shower, dress, cake. (API enum is PHRASE_NEGATIVE, not NEGATIVE_PHRASE.)
+- PLAN: launch SEARCH ONLY. When owner says "turn on suite ads": set campaign 626760377248 + SEARCH group 2680093142504 + its 9 ads ACTIVE. BROWSE group 2680093128686 STAYS PAUSED (idea-browsers) unless owner asks.
+- All campaigns, both groups, all ads verified PAUSED after the change.
