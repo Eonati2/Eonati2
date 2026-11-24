@@ -199,3 +199,9 @@ Owner (verbatim): "we are only launching for the high-ticket product. That's wha
 - Built v7 (marketing/suite/lux/v7 p1-p5): photo fills top 77%, ivory panel with gold label, Playfair Bold mixed-case headline, gold hairline, one readable line with $34. Same buyer headlines.
 - Pins su25 1099511696567478443, su26 ...445, su27 ...447, su28 ...452, su29 ...455; ads SU25-SU29 PAUSED in SEARCH group, review PENDING.
 - Recommended launch set: SU25-SU29 (premium) + SU20 + SU24 (bold) + SU17 (control) = 8 creatives (guides: 4-8 per ad group).
+
+### 2026-11-24 Headline moved to top (owner: "It should be on top so it catches the buyer's eyes. Hook.")
+- OWNER RULE: ad/pin headline (the hook) goes at the TOP of the image, never at the bottom.
+- Built v8 (marketing/suite/lux/v8 p1-p5): ivory top panel (gold label, Playfair Bold headline, hairline, one line with $34), photo below.
+- Pins su30 1099511696567478522, su31 ...525, su32 ...526, su33 ...530, su34 ...533; ads SU30-SU34 PAUSED in SEARCH group (review PENDING). SU25-SU29 (headline at bottom, never ran) ARCHIVED.
+- Launch set: SU30-SU34 + SU20 + SU24 + SU17.
