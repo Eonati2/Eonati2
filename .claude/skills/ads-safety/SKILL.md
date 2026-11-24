@@ -187,3 +187,9 @@ Owner (verbatim): "we are only launching for the high-ticket product. That's wha
 - PHRASE_NEGATIVE: free, svg, cricut, birthday, baby shower, dress, cake. (API enum is PHRASE_NEGATIVE, not NEGATIVE_PHRASE.)
 - PLAN: launch SEARCH ONLY. When owner says "turn on suite ads": set campaign 626760377248 + SEARCH group 2680093142504 + its 9 ads ACTIVE. BROWSE group 2680093128686 STAYS PAUSED (idea-browsers) unless owner asks.
 - All campaigns, both groups, all ads verified PAUSED after the change.
+
+### 2026-11-24 Buyer-intent ad creatives (owner: "Even the image that you created target buyers?")
+- Audit: old 9 designs had buyer cues (Editable template, Instant download, $34 CTA) but headlines did not match buyer searches (no DIY/Printable/Canva/Bundle; "Navy & Gold", "Signs that match", "Just engaged?" are inspiration hooks), 0 mention Canva, 6 of 9 navy.
+- Built 5 warm buyer ads (marketing/suite/lux/v6 b1-b5), headline = buyer keyword: DIY WEDDING INVITATIONS / PRINTABLE WEDDING INVITATION SUITE / WEDDING INVITATION TEMPLATE BUNDLE / CANVA WEDDING INVITATION TEMPLATE / YOUR WHOLE WEDDING SUITE FOR $34 (The Knot $530 anchor). Footer: EDITABLE · PRINTABLE · CANVA & GOOGLE SLIDES + SHOP THE SUITE · $34.
+- Pins (board 1099511765217892863, utm_campaign=suite34): su20 1099511696567476438, su21 ...443, su22 ...448, su23 ...451, su24 ...455. Ads SU20-SU24 created PAUSED in SEARCH group 2680093142504, review PENDING.
+- Recommended launch set: SEARCH group with SU20-SU24 (buyer) + SU17/SU11 kept as control; owner decides.
