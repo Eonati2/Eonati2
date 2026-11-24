@@ -193,3 +193,9 @@ Owner (verbatim): "we are only launching for the high-ticket product. That's wha
 - Built 5 warm buyer ads (marketing/suite/lux/v6 b1-b5), headline = buyer keyword: DIY WEDDING INVITATIONS / PRINTABLE WEDDING INVITATION SUITE / WEDDING INVITATION TEMPLATE BUNDLE / CANVA WEDDING INVITATION TEMPLATE / YOUR WHOLE WEDDING SUITE FOR $34 (The Knot $530 anchor). Footer: EDITABLE · PRINTABLE · CANVA & GOOGLE SLIDES + SHOP THE SUITE · $34.
 - Pins (board 1099511765217892863, utm_campaign=suite34): su20 1099511696567476438, su21 ...443, su22 ...448, su23 ...451, su24 ...455. Ads SU20-SU24 created PAUSED in SEARCH group 2680093142504, review PENDING.
 - Recommended launch set: SEARCH group with SU20-SU24 (buyer) + SU17/SU11 kept as control; owner decides.
+
+### 2026-11-24 Premium editorial ads SU25-SU29 (owner: "Do these images look premium?")
+- Honest critique of SU20-24: shouting all-caps headline bars, photo only ~2/3 of pin, footer microtext unreadable in feed, same flat-lay photo in 3 of 7 launch ads, 2 composited-looking photos.
+- Built v7 (marketing/suite/lux/v7 p1-p5): photo fills top 77%, ivory panel with gold label, Playfair Bold mixed-case headline, gold hairline, one readable line with $34. Same buyer headlines.
+- Pins su25 1099511696567478443, su26 ...445, su27 ...447, su28 ...452, su29 ...455; ads SU25-SU29 PAUSED in SEARCH group, review PENDING.
+- Recommended launch set: SU25-SU29 (premium) + SU20 + SU24 (bold) + SU17 (control) = 8 creatives (guides: 4-8 per ad group).
