@@ -7,6 +7,8 @@ description: Use whenever the owner says "check deep", "check again", "check eve
 
 The owner's rule (2026-11-24, verbatim): "When I ask you to check deep, I need you to always check the full setup ... not just what we're talking about right now, all our full setup and our conversation and everything to understand what we are doing always."
 
+Owner rule 2 (2026-11-24, verbatim): "always remind me problem to fix ... Always check if it matches correctly. If I'm wrong, correct me. Always tell what's true. Do not tell lies about things you have not done to improve. Instead, always improve it for us to hit millions of dollars if possible with this one product." (STANDING ORDER 2 in marketing/PROBLEMS.md). Every report: list every open problem, say plainly what was NOT done, and correct the owner when the data says they are wrong.
+
 A deep check is NEVER only the topic of the last message. Run every section below, every time. Do not skip a section without writing "skipped: <reason>" in the report.
 
 ## 0. Load context first (do not skip)
