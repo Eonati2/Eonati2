@@ -210,3 +210,10 @@ Owner (verbatim): "we are only launching for the high-ticket product. That's wha
 - v9 (marketing/suite/lux/v9 p1-p5) = v8 top-hook layout + round burgundy "$34 FULL SUITE" badge (gold ring) + "SHOP THE SUITE →" pill button on the photo.
 - Pins su35 1099511696567478687, su36 ...689, su37 ...690, su38 ...692, su39 ...695; ads SU35-SU39 PAUSED in SEARCH group (review PENDING). SU30-SU34 ARCHIVED (never ran).
 - Launch set: SU35-SU39 + SU20 + SU24 + SU17. New AI photos: only after ~100 clicks show the winning hook.
+
+### 2026-11-25 YouTube research (vidIQ search + transcripts; 20 vidIQ credits)
+- Simple Pin Media (g1L8RZATbb4): Pinterest buyers are in discovery mode; $7-27 digital products convert best as impulse buys; higher prices need trust (lead magnet + email, or retargeting); show the actual product in the pin; specific problem; seamless delivery; link straight to the product page; several pin designs; keyword titles.
+- Side Hustle Mastery (o8c_t9byuf0, Gumroad example): Consideration objective for beginners; let ads run 3-5 days before judging; good Pinterest CTR = 0.5-1%+; 1000x1500, bold readable text, warm soft colors; test 2-3 variations, kill losers, scale winners.
+- Luc Bermond (CMiMz6ZddFE, e-com agency): separate keyword vs interest campaigns; profile branding (boards) matters before ads; 2:3; test angles.
+- Our setup already matches most points. Gaps: $34 is above the $7-27 impulse range (trust: demo, refund, retargeting; consider price test only if 0 add-to-cart after ~60 clicks); profile bio does not mention invitation templates (owner must edit; API cannot); judge CTR against 0.5-1%.
+- Caveat: these are self-reported creator/agency results, not verified data.
