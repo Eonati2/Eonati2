@@ -229,3 +229,8 @@ Owner (verbatim): "we are only launching for the high-ticket product. That's wha
 - When owner says "turn on suite ads": set ACTIVE only campaign 626760377248 + SEARCH group 2680093142504 + ads SU40, SU41, SU42, SU35, SU37, SU39. Everything else stays PAUSED (SU36, SU20, SU24, SU17 = backups; SIGNS group 2680093172005; BROWSE group).
 - Reason: $20/day ~ 25 clicks/day; 10 ads would split too thin; guides 4-8 ads per group; SU36/SU20/SU24 repeated hooks.
 - No change made to any ad today; all still PAUSED.
+
+### 2026-11-25 CTA button set to "Shop now" (owner: ads showed "Visit site"; asked for the best purchase CTA)
+- Pinterest Consideration ads default CTA = "Learn more"/"Visit site" (help.pinterest.com/en/business/article/calls-to-action-ctas). API field customizable_cta_type works on paused ads.
+- Set customizable_cta_type=SHOP_NOW on SU35, SU36, SU37, SU39, SU40, SU41, SU42, SU20, SU24, SU17 (search + browse copies), SU43, SU39b. Read back: all SHOP_NOW; approvals kept (SU35/36/37/39/20/24/17/39b APPROVED; SU40-43 PENDING). All still PAUSED. Old unused ads (SU11-16, SU18-19, SU21-23) left as they were.
+- Why one CTA, not dynamic multi-CTA: matches the image button "SHOP THE SUITE" and the $34 badge (one clear purchase message); "Learn more/Visit site" invite browsers; "Buy now/Get offer/On sale" would be either a bigger jump or untrue (no offer/sale). Test a second CTA only after ~1,000 impressions per ad.
