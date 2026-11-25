@@ -224,3 +224,8 @@ Owner (verbatim): "we are only launching for the high-ticket product. That's wha
 - New v10 Canva buyer ads (repo marketing/suite/lux/v10 a1-a4, hook on top, $34 badge, SHOP THE SUITE): pins su40 1099511696567546782 (Wedding Invitation Set with RSVP), su41 ...784 (Printable Wedding Invitation Templates), su42 ...786 (Wedding Invitation Templates for Canva), su43 ...787 (Welcome Sign + Seating Chart). Ads SU40-SU42 PAUSED in SEARCH (review PENDING). SU38 ARCHIVED (copy said "import the included files into Canva").
 - NEW ad group 2680093172005 "Suite | SEARCH | sign needs" PAUSED: PHRASE wedding welcome sign, seating chart wedding, wedding seating chart, wedding table numbers, wedding signs, wedding signage; negatives acrylic, neon, mirror, wood, wooden, chalkboard, rental, free, ideas, diy, cricut, svg, wording, led, stand; ads SU43 + SU39b PAUSED. Test only when owner asks.
 - Launch set (owner words "turn on suite ads"): campaign + SEARCH group + SU40, SU41, SU42, SU35, SU36, SU37, SU39, SU20, SU24, SU17. Verified all 5 campaigns, 3 suite groups, all ads PAUSED after changes. $0 spent.
+
+### 2026-11-25 Owner chose the 6-ad launch set (owner: "6")
+- When owner says "turn on suite ads": set ACTIVE only campaign 626760377248 + SEARCH group 2680093142504 + ads SU40, SU41, SU42, SU35, SU37, SU39. Everything else stays PAUSED (SU36, SU20, SU24, SU17 = backups; SIGNS group 2680093172005; BROWSE group).
+- Reason: $20/day ~ 25 clicks/day; 10 ads would split too thin; guides 4-8 ads per group; SU36/SU20/SU24 repeated hooks.
+- No change made to any ad today; all still PAUSED.
