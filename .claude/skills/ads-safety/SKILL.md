@@ -234,3 +234,8 @@ Owner (verbatim): "we are only launching for the high-ticket product. That's wha
 - Pinterest Consideration ads default CTA = "Learn more"/"Visit site" (help.pinterest.com/en/business/article/calls-to-action-ctas). API field customizable_cta_type works on paused ads.
 - Set customizable_cta_type=SHOP_NOW on SU35, SU36, SU37, SU39, SU40, SU41, SU42, SU20, SU24, SU17 (search + browse copies), SU43, SU39b. Read back: all SHOP_NOW; approvals kept (SU35/36/37/39/20/24/17/39b APPROVED; SU40-43 PENDING). All still PAUSED. Old unused ads (SU11-16, SU18-19, SU21-23) left as they were.
 - Why one CTA, not dynamic multi-CTA: matches the image button "SHOP THE SUITE" and the $34 badge (one clear purchase message); "Learn more/Visit site" invite browsers; "Buy now/Get offer/On sale" would be either a bigger jump or untrue (no offer/sale). Test a second CTA only after ~1,000 impressions per ad.
+
+### 2026-11-26 OWNER APPROVAL: "turn on suite ads" (owner's exact words, after asking for a final checkout check)
+- Pre-check: product page + checkout (?wanted=true) load, $34, card + PayPal shown, not unavailable; tracked su40 link loads; Pinterest tag on page.
+- Turned ON only: campaign 626760377248 ($20/day cap), SEARCH group 2680093142504, ads SU40, SU41, SU42, SU35, SU37, SU39 (all CTA Shop now). Everything else stays PAUSED (BROWSE group, SIGNS group, backups SU36/SU20/SU24/SU17, other campaigns).
+- Rules from now: no budget/targeting changes for ~7 days (learning); allowed earlier: pause an ad under 0.5% CTR after ~1,000 impressions; stop rule 0 add-to-cart after ~60 clicks = recommend pause.
