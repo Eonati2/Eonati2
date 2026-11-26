@@ -8,7 +8,7 @@ STANDING ORDER 2 (owner, 2026-11-24, verbatim): "always remind me problem to fix
 
 RETARGETING REMINDER (owner, 2026-11-24: "You are not reminding me again for retargeting. Always remind me for that."): EVERY report's to-do list must include a retargeting line (audience 2542623659761 status + size + next step).
 
-Last full check: 2026-11-25 ~17:25 UTC (deep check, owner asked): 0 sales; suite 43 views Nov 19-25 (live since Nov 22); all 5 campaigns PAUSED, $0; tag ACTIVE + on all 7 pages; demo, Notion, START HERE, Canva links doc all load; suite 7 covers, 4 files, 3 buttons; organic Nov 18-24 146 impressions vs 69, 0 saves, 0 outbound; retargeting audience INITIALIZING, 0; ads + keywords rebuilt for buyers (#37)
+Last full check: 2026-11-26 ~06:45 UTC: SUITE ADS LIVE (owner "turn on suite ads"): campaign 626760377248 + SEARCH group + SU35, SU37, SU39, SU40, SU41, SU42 ACTIVE (all APPROVED, CTA Shop now), $20/day cap; all else PAUSED. Checkout verified (page + checkout load, $34, card + PayPal). Learning period to ~Dec 3: no budget/targeting changes. 0 sales so far; retargeting audience 0.
 
 | # | Problem | Data | Fix | Who / status |
 |---|---|---|---|---|
