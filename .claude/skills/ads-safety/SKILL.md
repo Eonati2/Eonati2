@@ -239,3 +239,8 @@ Owner (verbatim): "we are only launching for the high-ticket product. That's wha
 - Pre-check: product page + checkout (?wanted=true) load, $34, card + PayPal shown, not unavailable; tracked su40 link loads; Pinterest tag on page.
 - Turned ON only: campaign 626760377248 ($20/day cap), SEARCH group 2680093142504, ads SU40, SU41, SU42, SU35, SU37, SU39 (all CTA Shop now). Everything else stays PAUSED (BROWSE group, SIGNS group, backups SU36/SU20/SU24/SU17, other campaigns).
 - Rules from now: no budget/targeting changes for ~7 days (learning); allowed earlier: pause an ad under 0.5% CTR after ~1,000 impressions; stop rule 0 add-to-cart after ~60 clicks = recommend pause.
+
+### 2026-11-27 OWNER APPROVAL: "apply keyword fix"
+- Reason: 22h live, only 7 impressions, 0 clicks, $0 (search-only + phrase match too tight; Thanksgiving).
+- Change in SEARCH group 2680093142504 only: 8 top buyer keywords PHRASE -> BROAD (archive phrase copy, add broad): wedding invitation templates, wedding invitation template, printable wedding invitations, wedding invitation set, wedding invitation sets, cheap wedding invitations, wedding invitation bundle, wedding invitation suite. Add PHRASE: printable wedding invitations with rsvp, printable wedding invitations templates, wedding invitation bundle canva, wedding invitation templates etsy. Add PHRASE_NEGATIVE: reddit, vellum, envelope, envelopes, sizes, what to include, set up.
+- Unchanged: placement SEARCH only, $20/day cap, 6 ads, statuses.
