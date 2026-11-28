@@ -246,3 +246,5 @@ Owner (verbatim): "we are only launching for the high-ticket product. That's wha
 - Unchanged: placement SEARCH only, $20/day cap, 6 ads, statuses.
 
 - 2026-11-28 ~04:25 UTC OWNER APPROVAL "Swap it" (after Claude recommended swapping SU42): SU42 (687325218715, 0.19% CTR after 1,077 impressions) PAUSED; backup SU36 "final printable" (687325121385, APPROVED, CTA Shop now, utm_content=su36) ACTIVE. Active set now SU35, SU36, SU37, SU39, SU40, SU41. Budget, keywords and targeting unchanged ($20/day). Watch SU40 (0.15% at 687 impressions) at ~1,000 impressions.
+
+- 2026-11-28 ~06:33 UTC OWNER APPROVAL "remove 18-24": suite SEARCH group 2680093142504 AGE_BUCKET changed from [18-24, 25-34, 35-44] to [25-34, 35-44]; all else unchanged (search placement, keywords, US/CA/AU/GB, female+unknown, $20/day). Data: 18-24 took $23.64 of $26.91 at $2.63/click vs 25-34 $0.30 and 35-44 $0.52. Note: at check time the campaign, group and ads already showed summary_status ADVERTISER_DISABLED (delivery stopped ~05:00 UTC, before this edit) — account-level, likely billing; owner to check Ads > Billing.
