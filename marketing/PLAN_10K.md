@@ -8,9 +8,9 @@ Updated 2026-11-28. Owner-approved changes only; every ads/price/discount change
 |---|---|---|---|
 | Paid | Pinterest SEARCH ads (buyer keywords, women 25-44, US/CA/AU/GB, $20/day) | $34 suite page | Main sales engine |
 | Unpaid | 3 organic pins/day (suite ~1/day, save-the-date freebie, signs/kit) | Suite, freebie, others | Free reach, saves, retargeting pool |
-| Attraction | Free save the date (/l/zjqhml, $0) | Receipt + description link to $34 suite (utm_medium=freebie) | Lets cold visitors try the real design; collects emails |
+| Attraction | Free save the date (/l/zjqhml, $0) | Receipt: $5-off code SAVETHEDATE5 ($29) + description link to $34 suite (utm_medium=freebie) | Lets cold visitors try the real design; collects emails |
 | Downsell | $12 signs, $14.99 kit | Already linked to the suite | For people who won't pay $34 |
-| Retargeting | Audience 2542623659761 (suite visitors) | Paused ad group at 100+ people (owner "turn on retargeting") | Second chance at warm visitors |
+| Retargeting | Audiences 2542623659761 (suite visitors) + 2542623662786 (freebie visitors) | Paused ad group at 100+ people (owner "turn on retargeting") | Second chance at warm visitors |
 | Follow-up email | Gumroad emails to freebie downloaders | Suite offer | BLOCKED until ~$100 earned + first payout (Gumroad rule) |
 
 ## 2. Decision rules (when to wait, when to judge, when to edit)
