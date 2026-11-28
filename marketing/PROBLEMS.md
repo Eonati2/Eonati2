@@ -18,7 +18,7 @@ Last full check: 2026-11-27 ~15:30 UTC: SUITE ADS LIVE: campaign 626760377248 + 
 | A | 0 sales | $105 all-time ad spend, 101 clicks, 0 sales; suite $27.90, 18 clicks | Funnel in PLAN_10K.md; no budget rise before first sales | Ongoing |
 | B | Suite ad visitors leave fast | 69 paid sessions, 2 engaged, ~4s | Ages 18-24 removed 11-28 (cost $2.63/click vs $0.30-0.61); judge again at 30-40 visits | ~Dec 1-3 |
 | C | Only 1 of 29 keywords serves | 'wedding invitation suite' 4,224 impressions; others ~0 | Do not touch in learning; at Dec 3 review search terms, move proven phrases to BROAD/add style keywords (Canva phrases from autocomplete) with owner yes | Dec 3 |
-| D | SU40 weak ad | 0.12% CTR at 883 impressions | At ~1,000: recommend swap to SU20/SU24/SU17 (owner yes) | ~Nov 28-29 |
+| D | SU40 weak ad | 0.20% at 993 impressions, $2.06/click, 0s visit | ✅ Swapped 11-28 for SU20 (owner 'swap SU40'). SU39 kept (0.13% CTR but 2 visits engaged ~4 min) | Done |
 | E | 0 reviews | 0 sales | Receipt asks for a rating; owner declined free review copies | After first buyers |
 | F | Retargeting audiences empty | suite 0, freebie 0 | Fill from traffic; at 100+ build paused group for 'turn on retargeting' | When 100+ |
 | G | Organic reach low but recovering | 58 -> 137 views/week (Oct peak 1,754) | 3 varied pins/day incl. suite + save-the-date | Judge ~Dec 6 |

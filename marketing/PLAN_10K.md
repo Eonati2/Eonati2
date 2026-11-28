@@ -18,7 +18,7 @@ Updated 2026-11-28. Owner-approved changes only; every ads/price/discount change
 | Metric | Wait until | Then |
 |---|---|---|
 | Learning period | ~Dec 3 | No budget/keyword changes before, except clear waste with owner yes |
-| Ad click rate | ~1,000 impressions per ad | Under 0.5% = recommend swap (backups SU20, SU24, SU17) |
+| Ad click rate + visit quality | ~1,000 impressions per ad | Under 0.5% AND weak visits (GA engaged time) = recommend swap (backups SU24, SU17). Low CTR but engaged visitors = keep (e.g. SU39) |
 | Page engagement | 30-40 ad visits | Still ~0 engaged = page/offer problem, propose fix |
 | Add-to-cart | ~60 clicks | 0 add-to-cart = recommend pause and rethink |
 | Scaling | Cost per sale < ~$20 | +20-30% budget every 3-4 days (owner yes) |
