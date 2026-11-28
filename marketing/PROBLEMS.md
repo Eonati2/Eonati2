@@ -10,6 +10,25 @@ RETARGETING REMINDER (owner, 2026-11-24: "You are not reminding me again for ret
 
 Last full check: 2026-11-27 ~15:30 UTC: SUITE ADS LIVE: campaign 626760377248 + SEARCH group + SU35, SU37, SU39, SU40, SU41, SU42 ACTIVE/APPROVED, $20/day cap. All other campaigns PAUSED; only the suite campaign spends (Signs sc1-4 ads and 3 Kit ad groups show ACTIVE but sit inside PAUSED campaigns, $0 spend; no pause needed). Since keyword fix: $20 spent, 2,688 impressions, 11 clicks (CTR 0.41%, CPC $1.82), 0 add-to-cart/checkout. GA suite34: 8 sessions, 0 engaged. Gumroad: 0 sales. Tag on all 7 pages. Retargeting audience INITIALIZING, size 0. Learning to ~Dec 3.
 
+
+## OPEN NOW (clean list, 2026-11-28 ~07:45 UTC). Older rows below are history.
+
+| # | Open problem | Data | Fix | When |
+|---|---|---|---|---|
+| A | 0 sales | $105 all-time ad spend, 101 clicks, 0 sales; suite $27.90, 18 clicks | Funnel in PLAN_10K.md; no budget rise before first sales | Ongoing |
+| B | Suite ad visitors leave fast | 69 paid sessions, 2 engaged, ~4s | Ages 18-24 removed 11-28 (cost $2.63/click vs $0.30-0.61); judge again at 30-40 visits | ~Dec 1-3 |
+| C | Only 1 of 29 keywords serves | 'wedding invitation suite' 4,224 impressions; others ~0 | Do not touch in learning; at Dec 3 review search terms, move proven phrases to BROAD/add style keywords (Canva phrases from autocomplete) with owner yes | Dec 3 |
+| D | SU40 weak ad | 0.12% CTR at 883 impressions | At ~1,000: recommend swap to SU20/SU24/SU17 (owner yes) | ~Nov 28-29 |
+| E | 0 reviews | 0 sales | Receipt asks for a rating; owner declined free review copies | After first buyers |
+| F | Retargeting audiences empty | suite 0, freebie 0 | Fill from traffic; at 100+ build paused group for 'turn on retargeting' | When 100+ |
+| G | Organic reach low but recovering | 58 -> 137 views/week (Oct peak 1,754) | 3 varied pins/day incl. suite + save-the-date | Judge ~Dec 6 |
+| H | Emails blocked | Gumroad needs ~$100 earned + payout | Then email save-the-date downloaders + abandoned cart | After first sales |
+| I | $1M goal undefined | - | Owner picks the definition | Owner |
+
+Fixed today: billing failure (card changed), 18-24 removed, SU42 swapped for SU36, refund cover + bonus wording, free save the date + $5 code SAVETHEDATE5 + freebie audience, stray ACTIVE ads/groups inside paused campaigns paused (Signs sc1-4, 3 Kit groups; $0 spend, safety only).
+
+## History
+
 | # | Problem | Data | Fix | Who / status |
 |---|---|---|---|---|
 | 1 | 0 paid sales ever on wedding products | Gumroad: 0 sales on all 6 products | Items 2-6 below | Open |
@@ -60,5 +79,5 @@ Last full check: 2026-11-27 ~15:30 UTC: SUITE ADS LIVE: campaign 626760377248 + 
 | 46 | No attraction offer for the suite (Hormozi money model) | All suite traffic is cold; no email capture | Owner "#3": built FREE save the date (one-page Canva copy 'Eonati FREE Save the Date - Ivory Garden 5x7', paid suite untouched) + Gumroad DRAFT zjqhml ($0, cover, description + receipt link to the $34 suite with utm_medium=freebie) | DRAFT, not published. Owner sent Canva template link (verified: opens the free one-page design), added as 'Open in Canva' button. ✅ PUBLISHED 2026-11-28 (owner 'publish save the date'): live at /l/zjqhml, $0, Open in Canva button, Pinterest tag present. 3 organic pins (SD01-SD03, no 'free' in text/images, $0 wording) added to manifest_v22 (queue 131.5 / 135.5 / 138.5). Next: track downloads (emails) and freebie -> suite clicks (utm_medium=freebie) |
 | 47 | Ads stopped: ADVERTISER_DISABLED (2026-11-28 ~05:00 UTC) | Delivery stopped after hour 04 UTC ($6.91 spent today); campaign, group and all 6 ads show summary_status ADVERTISER_DISABLED while status ACTIVE and ads APPROVED; account updated ~05:01 UTC. API shows no billing detail | Cause confirmed by owner screenshot: 11/28 bill (5 campaigns, Nov 4-27) FAILED. Owner changed the card ~07:05 UTC | ✅ FIXED 07:08 UTC: campaign + group RUNNING again, impressions resumed hour 07. Ages 25-44 now live |
 | 48 | Freebie had no reason to upgrade now; freebie visitors not collected for ads | Hormozi attraction -> upsell | Owner approved: code SAVETHEDATE5 ($5 off suite, $29) in the freebie receipt (link applies code, verified 200); Pinterest audience 2542623662786 for freebie page visitors (INITIALIZING) | ✅ Done 2026-11-28. Judge with freebie data at ~50 downloads |
-| 49 | Full status 2026-11-28 07:30 UTC | All-time ads (Oct 30-Nov 28) $105 spent, 101 clicks, 0 sales. GA: ~10 checkout starts that look real (Oct 31, Nov 1, Nov 17-19; Nov 12 and Nov 23 look like owner tests) and 0 completed. Suite search traffic 69 sessions, 2 engaged (~4s) vs old interest ads (paid_social) 169 sessions, 29 engaged (~116s). Only 1 of 29 keywords serves ('wedding invitation suite', 4,224 impressions). Organic views/week 58 -> 137 | Recommended: suite test purchase with a 100%-off code to prove checkout + receipt + download end to end; review codes; at ~Dec 3 judge keywords and consider a paused 25-44 BROWSE test | OPEN, needs owner yes |
+| 49 | Full status 2026-11-28 07:30 UTC | All-time ads (Oct 30-Nov 28) $105 spent, 101 clicks, 0 sales. GA: ~10 checkout starts that look real (Oct 31, Nov 1, Nov 17-19; Nov 12 and Nov 23 look like owner tests) and 0 completed. Suite search traffic 69 sessions, 2 engaged (~4s) vs old interest ads (paid_social) 169 sessions, 29 engaged (~116s). Only 1 of 29 keywords serves ('wedding invitation suite', 4,224 impressions). Organic views/week 58 -> 137 | CORRECTED by owner 2026-11-28: all checkout starts were the owner's own tests, so no real buyer abandoned checkout. Owner does not want test or review codes (no free suite copies). Remaining: ad-click quality and keywords, judged ~Dec 3 | Partly closed |
 
